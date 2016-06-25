@@ -16,7 +16,9 @@
 	- [3.9. Fake full-screen mode](#fakeFullScreen)
 	- [3.10. Saving games the right way](#casm)
 * [4. Enhancing the game](#enhancingGame)
-	- [4.1. Mods to install](#modsToInstall)
+	- [4.1. Improving the user interface](#improvingUserInterface)
+		+ [4.1.1. Building the basement](#buildingBasement)
+		+ [4.1.2. Face-washing the user interface](#faceWashingUI)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -196,7 +198,7 @@ The only clean file in your load order is `Unofficial Fallout 3 Patch.esm`, as e
 
 In every single case, LOOT has a sugestion: clean with [FO3Edit](http://www.nexusmods.com/fallout3/mods/637/?).
 
-FO3Edit is a utility aimed at mod creators and users both, weighting more on the first group. Gopher has a fantastic video explaining [how to use TES5Edit (the _Skyrim_ version of the tool) to clean your master files](https://www.youtube.com/watch?v=fw3g_N1jcZQ) (13:24). You should left what you were doing right now and watch the video. I'll wait.
+FO3Edit is an utility aimed at mod creators and users both, weighting more on the first group. Gopher has a fantastic video explaining [how to use TES5Edit (the _Skyrim_ version of the tool) to clean your master files](https://www.youtube.com/watch?v=fw3g_N1jcZQ) (13:24). You should left what you were doing right now and watch the video. I'll wait.
 
 We are going to clean the master files, one by one. This guide about [cleaning files with TES5Edit](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit) comes in handy, but ignore it if you just want the heart of the issue.
 
@@ -401,6 +403,10 @@ CASM also saves the game automatically with a given frequency and under certain 
 ![NMM CASM loaded last](Images/NMM%20CASM%20loaded%20last.png)
 6. Close NMM and run LOOT. Click on the _Sort Plugins_ icon to fix the load order. Notice that CASM still sits at the bottom, and no conflicts are detected (this step is fairly unnecessary, but you need to get used to routinely rearrange your load order).
 ![LOOT after installing CASM](Images/LOOT%20after%20installing%20CASM.png)
+7. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Buy by pressing <kbd>TAB</kbd> and navigate to the _Aid_ section. You will see an "item" called _CASM Options Menu_.
+![Fallout 3 CASM option](Images/Fallout%203%20CASM%20option.png)
+8. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
+![Fallout 3 CASM settings](Images/Fallout%203%20CASM%20settings.png)
 
 ## <a id="enhancingGame"></a>4. Enhancing the game
 
@@ -426,45 +432,90 @@ This is not for the faint of heart, and, remember, our goal is _to play the game
 
 When it comes to mods, not only the load order is important, but also the [_install order_](http://www.ign.com/wikis/fallout-3/PC_Mods#Install_Order). You need to be careful, because some mods overwrite files previously written (or overwritten) by other mods.
 
-### <a id="modsToInstall"></a>4.1. Mods to install
+### <a id="improvingUserInterface"></a>4.1. Improving the user interface
 
-These are the mods we are going to install:
+The first thing we are going to improve is the user interface.
 
-* New content:
-	- [Fallout 3 Wanderers Edition](http://www.nexusmods.com/fallout3/mods/2761/?) or FWE.
-	- [Marts Mutant Mod](http://fallout3.nexusmods.com/mods/3211) or MMM (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
-	- [Alton IL](http://www.nexusmods.com/fallout3/mods/16949/?).
-	- [Mothership Zeta Crew](http://www.nexusmods.com/fallout3/mods/8747/?).
-	- [Arefu Expanded](http://www.nexusmods.com/fallout3/mods/8976/?).
-	- [Sydney Follower](http://www.nexusmods.com/fallout3/mods/9320/?).
-* Visual enhancements:
-	- [Project Reality](http://www.nexusmods.com/fallout3/mods/17418/?).
-	- [NMCS Texture Pack](http://www.nexusmods.com/fallout3/mods/12056/?).
-	- [Dynavision](http://fallout3.nexusmods.com/mods/17876/).
-	- [Fallout 3 redesigned](http://fallout3.nexusmods.com/mods/6341).
-	- [Fallout 3 re-animated](http://fallout3.nexusmods.com/mods/7670).
-	- [Fallout Street Lights](http://www.nexusmods.com/fallout3/mods/8069/?).
-	- [Flora overhaul](http://www.nexusmods.com/fallout3/mods/19864/?).
-	- [Better High Detail Map and Icons](http://www.nexusmods.com/fallout3/mods/16898/?).
-	- [Enhanced Night Sky](http://www.nexusmods.com/fallout3/mods/442/?).
-	- [krzymar HI-RES Moon](http://www.nexusmods.com/fallout3/mods/538/?).
-	- [Lost in Light](http://www.nexusmods.com/fallout3/mods/19163/?) or LiL.
-	- [Pure Water](http://www.nexusmods.com/fallout3/mods/2599/?).
-* User interface enhancements:
-	- [Darnified UI](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/) or DarnUI.
-	- [Adjustable HUD](http://fallout3.nexusmods.com/mods/15886) or aHUD.
-	- [Immersive HUD](http://fallout3.nexusmods.com/mods/15790) or iHUD.
-	- [User Interface Organizer](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
-* Weapons mods:
-	- [Weapon Mod Kits](http://fallout3.nexusmods.com/mods/3388) or WMK.
-	- [Energy Visuals Enhanced](http://fallout3.nexusmods.com/mods/8340) or EVE.
-	- [RH Ironsights](http://fallout3.nexusmods.com/mods/6938) (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
-	- [Community Ammunition Library](http://www.nexusmods.com/fallout3/mods/3447/?) or CALIBR.
-* Compatibility patches:
-	- [Blackened](http://www.nexusmods.com/fallout3/mods/18173/?).
-	- [Fallout Interoperability Program](http://fallout3.nexusmods.com/mods/4968) or FOIP.
-	- [DarnUI compatibility patch for FWE](http://fallout3.nexusmods.com/mods/2761).
-	- [EVE compatibility patch for FOIP](http://fallout3.nexusmods.com/mods/15961).
+Bethesda games have, broadly speaking, a shitty user interface, designed with blind, spastic monkeys in mind. The fonts are humongous, the menu layout is weird, and so forth and so on.
+
+Thus, we are starting with a series of mods that have a low impact on the overall state of the game and, at the same time, are pleasant and noticeable.
+
+There are several videos to warm up the engines: one to cover [the installation of the mods](https://www.youtube.com/watch?v=aqCzCXEydwU) (25:05), and the other to explain how to [stitch them all together](https://www.youtube.com/watch?v=bTlXOqV6pBA) (4:42) (there is also an [extended version](https://www.youtube.com/watch?v=qSA2BFQ2zc4) (11:23)).
+
+#### <a id="buildingBasement"></a>4.1.1. Building the basement
+
+First things first, we are going to need a way for all the mods to collaborate seamlessly, and for this, we are going to install [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867/?), or UIO. This mod will keep every important user interface mod out there in line.
+
+If you have followed the guide so far, you have a grasp of the basics to download, activate and reorder any mod, so:
+
+1. Download UIO with NMM.
+2. Activate it.
+
+And that's really it. No need to use LOOT because this is a FOSE plugin. FOSE plugins are placed in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]`, so there should be a file named `ui_organizer.dll` in that folder.
+
+#### <a id="faceWashingUI"></a>4.1.2. Face-washing the user interface
+
+Next, we are going to _shrink_ the user interface using [_DarNified UI F3_](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/), or DUIF3.
+
+This will be a bit tricky, because there are no NMM packages right out-of-the-box. Instead, we have the FOMOD ([_Fallout Mod Manager_](http://www.nexusmods.com/fallout3/mods/640/?)) packages... But they are compatible with NMM, so bear with me.
+
+1. Download [DUIF3 Alpha<sup>11</sup>](http://ui.darnified.net/wip/F3/dui_f3a11.zip).
+2. Download [DUIF3 Alpha<sup>11</sup> Hotfix](http://ui.darnified.net/wip/F3/dui_f3a11_HF.7z).
+3. Start NMM, go to the _Mods_ tab and click on the green plus sign to add mod from file.
+![NMM Adding mod from file](Images/NMM%20Adding%20mod%20from%20file.png)
+4. In the file selector that appears, navigate to the location of the downloaded DUIF3 files and open `dui_f3a11.zip`, corresponding to the main file.
+5. Repeat the process for the patch, `dui_f3a11_HF.7z`.
+![NMM DUIF3 files loaded](Images/NMM%20DUIF3%20files%20loaded.png)
+6. The mods have no very friendly names, but we can change it in NMM. Just click on the main mod (DarNified UI F3 alpha) and click on the _Gets missing mod info_ icon.
+![NMM change DUIF3 mod name](Images/NMM%20change%20DUIF3%20mod%20name.png)
+7. In the window with the mod info, change the contents of the _Name_ field to "DarNified UI F3 Alpha 11" and click _Ok_.
+![NMM edit mod information](Images/NMM%20edit%20mod%20information.png)
+8. Do the same for the hotfix, renaming it to "DarNified UI F3 Alpha 11 Hotfix". Check the new names in NMM.
+![NMM DUIF3 friendly names](Images/NMM%20DUIF3%20friendly%20names.png)
+9. Activate the main mod file by double-clicking on it. Eventually, you will be asked to confirm if you want to use the fonts provided with DUIF3. As crazy as it sounds, you want to say _No_, for now.
+![NMM DUIF3 font config confirmation](Images/NMM%20DUIF3%20font%20config%20confirmation.png)
+10. Activate the hotfix and answer _Yes to all_ when asked to overwrite previous files (from the main mod file, in fact).
+![NMM DUIF3 hotfix overwriting](Images/NMM%20DUIF3%20hotfix%20overwriting.png)
+11. Check that DUIF3 is installed in the _Plugins_ tab.
+![NMM DUIF3 installed](Images/NMM%20DUIF3%20installed.png)
+12. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
+![LOOT DUIF3](Images/LOOT%20DUIF3.png)
+13. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have made half the job for you, even.
+```INI
+[Fonts]
+;sFontFile_1=Textures\Fonts\Glow_Monofonto_Large.fnt
+sFontFile_1=Textures\Fonts\DarN_FranKleinBold_14.fnt
+;sFontFile_2=Textures\Fonts\Monofonto_Large.fnt
+sFontFile_2=Textures\Fonts\DarN_FranKleinBold_16.fnt
+sFontFile_3=Textures\Fonts\Glow_Monofonto_Medium.fnt
+;sFontFile_4=Textures\Fonts\Monofonto_VeryLarge02_Dialogs2.fnt
+;sFontFile_4=Textures\Fonts\DarN_FranKleinBold_Otl_12.fnt
+sFontFile_4=Textures\Fonts\DarN_Sui_Generis_Otl_10.fnt
+sFontFile_5=Textures\Fonts\Fixedsys_Comp_uniform_width.fnt
+;sFontFile_6=Textures\Fonts\Glow_Monofonto_VL_dialogs.fnt
+;sFontFile_6=Textures\Fonts\DarN_PetitaMedium_Outline_18.fnt
+;sFontFile_6=Textures\Fonts\DarN_Forgotten_Futurist_Otl_18.fnt
+sFontFile_6=Textures\Fonts\DarN_Sui_Generis_Otl_13.fnt
+;sFontFile_7=Textures\Fonts\Baked-in_Monofonto_Large.fnt
+sFontFile_7=Textures\Fonts\DarN_Libel_Suit_Otl_24.fnt
+;sFontFile_7=Textures\Fonts\DarN_Klill_Outline_20.fnt
+sFontFile_8=Textures\Fonts\Glow_Futura_Caps_Large.fnt
+```
+14. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the `[Fonts]` section.
+15. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
+```
+Fallout 3 1.7.0.3
+DarNified UI F3 0.11.1a
+Powered by FOSE 1.2 b2
+```
+16. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
+![Fallout 3 DUIF3 installed](Images/Fallout%203%20DUIF3%20installed.png)
+17. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
+![Fallout 3 DUIF3 small HUD](Images/Fallout%203%20DUIF3%20small%20HUD.png)
+18. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
+![Fallout 3 DUIF3 ingame option](Images/Fallout%203%20DUIF3%20ingame%20option.png)
+19. There are a lot of settings for you to configure, adjusting the HUD to your liking.
+![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
 
 ## <a id="resources"></a>5. Resources
 
@@ -485,16 +536,57 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 ### <a id="mods"></a>5.3. Mods
 
-* [Unofficial Fallout 3 Patch](http://www.nexusmods.com/fallout3/mods/19122/?)
-* [Large Address Aware Enabler for Fallout 3](http://www.nexusmods.com/fallout3/mods/6510/?)
-* [Fallout Stutter Remover](http://www.nexusmods.com/fallout3/mods/8886/?)
+This is the list of mods used throughout this guide, in ascending alphabetical order.
+
+* [Adjustable HUD](http://fallout3.nexusmods.com/mods/15886) or aHUD.
+* [Alton IL](http://www.nexusmods.com/fallout3/mods/16949/?).
+* [Arefu Expanded](http://www.nexusmods.com/fallout3/mods/8976/?).
+* [Better High Detail Map and Icons](http://www.nexusmods.com/fallout3/mods/16898/?).
+* [Blackened](http://www.nexusmods.com/fallout3/mods/18173/?).
+* [Community Ammunition Library](http://www.nexusmods.com/fallout3/mods/3447/?) or CALIBR.
+* [Darnified UI](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/) or DarnUI.
+* [DarnUI compatibility patch for FWE](http://fallout3.nexusmods.com/mods/2761).
+* [Dynavision](http://fallout3.nexusmods.com/mods/17876/).
+* [Energy Visuals Enhanced](http://fallout3.nexusmods.com/mods/8340) or EVE.
+* [Enhanced Night Sky](http://www.nexusmods.com/fallout3/mods/442/?).
+* [EVE compatibility patch for FOIP](http://fallout3.nexusmods.com/mods/15961).
 * [Fake Fullscreen Mode Windowed - Alt Tab Fix](http://www.nexusmods.com/fallout3/mods/16001/?)
+* [Fallout 3 re-animated](http://fallout3.nexusmods.com/mods/7670).
+* [Fallout 3 redesigned](http://fallout3.nexusmods.com/mods/6341).
+* [Fallout 3 Wanderers Edition](http://www.nexusmods.com/fallout3/mods/2761/?) or FWE.
+* [Fallout Interoperability Program](http://fallout3.nexusmods.com/mods/4968) or FOIP.
+* [Fallout Street Lights](http://www.nexusmods.com/fallout3/mods/8069/?).
+* [Fallout Stutter Remover](http://www.nexusmods.com/fallout3/mods/8886/?)
+* [Flora overhaul](http://www.nexusmods.com/fallout3/mods/19864/?).
+* [Immersive HUD](http://fallout3.nexusmods.com/mods/15790) or iHUD.
+* [krzymar HI-RES Moon](http://www.nexusmods.com/fallout3/mods/538/?).
+* [Large Address Aware Enabler for Fallout 3](http://www.nexusmods.com/fallout3/mods/6510/?)
+* [Lost in Light](http://www.nexusmods.com/fallout3/mods/19163/?) or LiL.
+* [Marts Mutant Mod](http://fallout3.nexusmods.com/mods/3211) or MMM (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
+* [Mothership Zeta Crew](http://www.nexusmods.com/fallout3/mods/8747/?).
+* [NMCS Texture Pack](http://www.nexusmods.com/fallout3/mods/12056/?).
+* [Project Reality](http://www.nexusmods.com/fallout3/mods/17418/?).
+* [Pure Water](http://www.nexusmods.com/fallout3/mods/2599/?).
+* [RH Ironsights](http://fallout3.nexusmods.com/mods/6938) (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
+* [Sydney Follower](http://www.nexusmods.com/fallout3/mods/9320/?).
+* [Unofficial Fallout 3 Patch](http://www.nexusmods.com/fallout3/mods/19122/?)
+* [User Interface Organizer](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
+* [Weapon Mod Kits](http://fallout3.nexusmods.com/mods/3388) or WMK.
+
 
 ### <a id="videos"></a>5.4. Videos
 
+These are the videos which served as spiritual inspiration for the humble author of this awesome guide.
+
+* [Fallout 3 : To ENB or not to ENB](https://www.youtube.com/watch?v=BP3timf65O4) (21:36).
+* [Fallout 3 Mod Clinic part 1 : Remastered, Blackened and Merged](https://www.youtube.com/watch?v=TeWV1wvg7cU) (24:12).
+* [Fallout 3 Mod Clinic part 2 : RH Ironsights](https://www.youtube.com/watch?v=fHbJjkBSD4g) (16:33).
+* [FALLOUT 3 Mod Clinic#3: UIO - User Interface Organizer](https://www.youtube.com/watch?v=bTlXOqV6pBA) (4:42).
+* [Fallout 3 Multicore Crash Fix](https://www.youtube.com/watch?v=gIY2J6W8FBU) (03:17).
+* [Fallout 3 Script Extender : FOSE (Installing and using)](https://www.youtube.com/watch?v=QK_f4vHiutA) (10:07).
+* [Fallout New Vegas Mod Clinic #24 : UIO - User Interface Organizer](https://www.youtube.com/watch?v=qSA2BFQ2zc4).
 * [Load Order # 1 - What is it?](https://www.youtube.com/watch?v=YzsBKYUrcbE) (20:00).
 * [Load Order # 2 - LOOT](https://www.youtube.com/watch?v=SzoyWugzZAw) (13:59).
-* [Skyrim Mod Tool TES5EDIT : Cleaning your master files (REVISED)](https://www.youtube.com/watch?v=fw3g_N1jcZQ) (13:24).
 * [Modding Fallout 3 - Part 1 : Getting Started with FWE and Marts Mutant Mod](https://www.youtube.com/watch?v=-SAeXsA6Nt8) (39:38).
 * [Modding Fallout 3 - Part 2 : User Interface mods](https://www.youtube.com/watch?v=aqCzCXEydwU) (25:06).
 * [Modding Fallout 3 - Part 3 : Weather and Lighting mods](https://www.youtube.com/watch?v=oHariRMIryI) (14:56).
@@ -504,9 +596,4 @@ This is a comprehensive list of the resources used throughtout this guide.
 * [Modding Fallout 3 - Part 7 : People Redesigned and Reanimated mods](https://www.youtube.com/watch?v=smLZNJIMCQA) (11:06).
 * [Modding Fallout 3 - Part 8 : Unified HUD Project](https://www.youtube.com/watch?v=oSaJVzGmQaI) (11:00).
 * [Modding Fallout 3 - Part 9 : FO3Edit](https://www.youtube.com/watch?v=uPK7R71zcwM) (39:13).
-* [Fallout 3 : To ENB or not to ENB](https://www.youtube.com/watch?v=BP3timf65O4) (21:36).
-* [Fallout 3 Multicore Crash Fix](https://www.youtube.com/watch?v=gIY2J6W8FBU) (03:17).
-* [Fallout 3 Script Extender : FOSE (Installing and using)](https://www.youtube.com/watch?v=QK_f4vHiutA) (10:07).
-* [Fallout 3 Mod Clinic part 1 : Remastered, Blackened and Merged](https://www.youtube.com/watch?v=TeWV1wvg7cU) (24:12).
-* [Fallout 3 Mod Clinic part 2 : RH Ironsights](https://www.youtube.com/watch?v=fHbJjkBSD4g) (16:33).
-* [FALLOUT 3 Mod Clinic#3: UIO - User Interface Organizer](https://www.youtube.com/watch?v=bTlXOqV6pBA) (4:42).
+* [Skyrim Mod Tool TES5EDIT : Cleaning your master files (REVISED)](https://www.youtube.com/watch?v=fw3g_N1jcZQ) (13:24).
