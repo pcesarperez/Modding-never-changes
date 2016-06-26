@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[26/06/2016] Section about UI finished.**
+
+The section 4.1 is finished, covering from the HUD to the Pip-Boy. The game should look slightly better now, but not in a blowing-off-your-head way.
+
+**[25/06/2016] Rough draft of the section about UI.**
+
+Two sections finished about improving how your user interface looks (sections 4.1.1 and 4.1.2).
+
 **[24/06/2016] First chapter finished.**
 
 The first chapter is about fixing the game. At the end of the chapter, you will have a fully patched and (mostly) flawless game to play with. The content, visuals and mechanics of the game are not altered in this stage.
