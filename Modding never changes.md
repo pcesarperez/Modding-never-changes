@@ -19,6 +19,10 @@
 	- [4.1. Improving the user interface](#improvingUserInterface)
 		+ [4.1.1. Building the basement](#buildingBasement)
 		+ [4.1.2. Face-washing the user interface](#faceWashingUI)
+		+ [4.1.3. Rearranging the user interface](#rearrangingUI)
+		+ [4.1.3. Seeing things just when you need to](#seeingThingsWhenNeeded)
+		+ [4.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
+		+ [4.1.5. You don't want to ask for directions](#betterMap)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -480,7 +484,7 @@ This will be a bit tricky, because there are no NMM packages right out-of-the-bo
 ![NMM DUIF3 installed](Images/NMM%20DUIF3%20installed.png)
 12. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
 ![LOOT DUIF3](Images/LOOT%20DUIF3.png)
-13. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have made half the job for you, even.
+13. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even made half the job for you.
 ```INI
 [Fonts]
 ;sFontFile_1=Textures\Fonts\Glow_Monofonto_Large.fnt
@@ -516,6 +520,138 @@ Powered by FOSE 1.2 b2
 ![Fallout 3 DUIF3 ingame option](Images/Fallout%203%20DUIF3%20ingame%20option.png)
 19. There are a lot of settings for you to configure, adjusting the HUD to your liking.
 ![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
+
+#### <a id="rearrangingUI"></a>4.1.3. Rearranging the user interface
+
+For those of you who don't like the default layout of the Heads Up Display (HUD), there is a little mod (little in size, that is) which helps you to change exactly that: [_Adjustable HUD_](http://www.nexusmods.com/fallout3/mods/15886/?) or aHUD.
+
+1. Download the mod with NMM, as usual. Take care to download the DarNified UI F3 version.
+2. Activate it in the _Mods_ tab by double-clicking on its name.
+3. The mod changes files installed by DUIF3, so answer _Yes to all_ when asked to overwrite files.
+4. Run LOOT and sort your load order, which should be:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
+![Fallout 3 aHUD settings](Images/Fallout%203%20aHUD%20settings.png)
+6. Using the menu options you can select any of the following items to relocate:
+	* Compass.
+	* Hitpoints.
+	* Actions points.
+	* Weapon condition and ammo.
+7. Select the items you want to relocate and move them around using the numpad arrow keys (that is <kbd>Num8</kbd>, <kbd>Num2</kbd>, <kbd>Num4</kbd> and <kbd>Num6</kbd> for up, down, left and right, respectively). The <kbd>R</kbd> and <kbd>Num5</kbd> keys are used to reset the current movement operation (be careful; I restarted unintentionally the movement of the compass three times because I am used to the arrow keys, so I insisted on using <kbd>Num5</kbd> as "Down", instead of <kbd>Num2</kbd> `¬¬`). Any other key finishes the movement operation.
+![Fallout 3 aHUD relocated items](Images/Fallout%203%20aHUD%20relocated%20items.png)
+
+#### <a id="seeingThingsWhenNeeded"></a>4.1.3. Seeing things just when you need to
+
+In addition to have the HUD elements placed where you like, you can improve the immersion by hiding these elements when you don't need them. I like to have them hidden when I am wandering around and have them shown when I am in combat. We have [_Immersive HUD_](http://www.nexusmods.com/fallout3/mods/15790/?) or iHUD for this.
+
+1. Download the mod with NMM.
+2. Activate it, the usual way.
+3. Answer _Yes to all_ when asked to overwrite files.
+4. Use LOOT to sort your load order, which should be:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+5. Launch the game and notice the absence of HUD elements on screen.
+![Fallout 3 iHUD default](Images/Fallout%203%20iHUD%20default.png)
+6. keep key <kbd>I</kbd> pressed a few moments. The iHUD settings menu will appear.
+![Fallout 3 iHUD settings](Images/Fallout%203%20iHUD%20settings.png)
+7. There are a lot of customization options in iHUD. Tweak around until you feel comfortable with the results ([Gopher's video](https://youtu.be/aqCzCXEydwU?t=18m20s) should help, around 18:20).
+
+#### <a id="retexturingPipBoy"></a>4.1.4. Cleaning up your faithful companion
+
+One of the things you are going to see a lot in this game is your Pip-Boy. And when I say "a lot", I mean an awful-fucking lot. It's your personal assistant, after all.
+
+It's a little sad to see that glorious piece of junk in low resolution, so, let's improve how it looks, using [_PipBoy 3000 HD Retexture_](http://www.nexusmods.com/fallout3/mods/20373/?).
+
+1. Download and activate the mod using NMM. There shouldn't be any overwritten files.
+2. This is a pure textures mod, so there are no `.esm` or `.esp` files here. No need to LOOT-reorder your files then.
+3. Launch the game and just compare.
+
+Before:
+![Fallout 3 Pip-Boy before retexturing](Images/Fallout%203%20Pip-Boy%20before%20retexturing.png)
+
+After:
+![Fallout 3 Pip-Boy after retexturing](Images/Fallout%203%20Pip-Boy%20after%20retexturing.png)
+
+#### <a id="betterMap"></a>4.1.5. You don't want to ask for directions
+
+Let's face it: the vanilla map in _Fallout 3_ seems to have been produced from Dora the explorer's backpack. And you don't want to start asking directions in D.C., because super-mutants are not known for their kindness of heart with strangers.
+
+We are going to use [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?) to have decent maps.
+
+1. Download and activate the mod with NMM. It will take a while, because the texture files are pretty big (43 MB or so).
+2. NMM shows a floating window with the installation options for the mod. Choose one map size and brightness (I chose 8k with roads and 50% more brightness, but your mileage may vary). Click on _Next_.
+![NMM Better High Detail Map and Icons install options](Images/NMM%20Better%20High%20Detail%20Map%20and%20Icons%20install%20options.png)
+3. Next window contains the customization options for the mod. I checked "Custom icons", "Clean Pipboy Scren" and green markers. Click on _Finish_.
+![NMM Better High Detail Map and Icons customization options](Images/NMM%20Better%20High%20Detail%20Map%20and%20Icons%20customization%20options.png)
+4. Answer _Yes to all_ when asked to overwrite files.
+5. Launch the game, fire up your Pip-Boy and compare.
+
+Before:
+
+![Fallout 3 world map before](Images/Fallout%203%20world%20map%20before.png)
+
+After:
+
+![Fallout 3 world map after](Images/Fallout%203%20world%20map%20after.png)
+
+There's just a single caveat: the hot click area for the options in the _Data_ section of your Pip-Boy gets shrinked to a few pixels below each option:
+
+Outside the hot click area:
+
+![Fallout 3 data option outside hot zone](Images/Fallout%203%20data%20option%20outside%20hot%20zone.png)
+
+Inside the hot click area:
+
+![Fallout 3 data option inside hot zone](Images/Fallout%203%20data%20option%20inside%20hot%20zone.png)
+
+If you feel uncomfortable with this, open the file `map_menu.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\main]` and change the values of the `<height />` tags for these three elements:
+
+1. Around line 149:
+```XML
+<hotrect name="MM_LocalMap_ClipWindow">
+	...
+	<height> 660 </height>
+	...
+</hotrect>
+```
+2. Around line 268:
+```XML
+<hotrect name="MM_WorldMap_ClipWindow">
+	...
+	<height> 660 </height>
+	...
+</hotrect>
+```
+3. Around line 393:
+```XML
+<hotrect name="MM_Highlight_ClipWindow">
+	...
+	<height> 660 </height>
+	...
+</hotrect>
+```
+
+Just lower the value between 5 and 20 pixels, using the same value in the three elements. Notice the increment in the clickable zone using a value of 640 pixels at expense of map height.
+
+![Fallout 3 data option hot zone expanded](Images/Fallout%203%20data%20option%20hot%20zone%20expanded.png)
 
 ## <a id="resources"></a>5. Resources
 
@@ -565,6 +701,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [Marts Mutant Mod](http://fallout3.nexusmods.com/mods/3211) or MMM (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
 * [Mothership Zeta Crew](http://www.nexusmods.com/fallout3/mods/8747/?).
 * [NMCS Texture Pack](http://www.nexusmods.com/fallout3/mods/12056/?).
+* [PipBoy 3000 HD Retexture](http://www.nexusmods.com/fallout3/mods/20373/?)
 * [Project Reality](http://www.nexusmods.com/fallout3/mods/17418/?).
 * [Pure Water](http://www.nexusmods.com/fallout3/mods/2599/?).
 * [RH Ironsights](http://fallout3.nexusmods.com/mods/6938) (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
