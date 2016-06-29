@@ -6,6 +6,9 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[29/06/2016] Section about _Fallout 2 Wanderers Edition_ finished.**
+The section 4.2.1 is finished, coverint the installation of FWE, letting us play a completely different game, harsher and more challenging.
+
 **[26/06/2016] Section about UI finished.**
 
 The section 4.1 is finished, covering from the HUD to the Pip-Boy. The game should look slightly better now, but not in a blowing-off-your-head way.
