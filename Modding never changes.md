@@ -18,11 +18,12 @@
 * [4. Enhancing the game](#enhancingGame)
 	- [4.1. Improving the user interface](#improvingUserInterface)
 		+ [4.1.1. Building the basement](#buildingBasement)
-		+ [4.1.2. Face-washing the user interface](#faceWashingUI)
-		+ [4.1.3. Rearranging the user interface](#rearrangingUI)
+		+ [4.1.2. Face-washing the HUD](#faceWashingHUD)
+		+ [4.1.3. Rearranging things](#rearrangingThings)
 		+ [4.1.3. Seeing things just when you need to](#seeingThingsWhenNeeded)
 		+ [4.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
+	- [4.2. Playing the bad-ass way](#playingBadAss)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -43,7 +44,7 @@ There is an awesome [guide to fix the game in order to run under modern versions
 
 So, there is no original work here, just an extended guide to put things into perspective. And this perspective is divided into two parts:
 
-1. The firs part is about _fixing_ the game. At the end of this chapter, you will have a flawless _Fallout 3_ game, running smoothly, with no CTD's (_Crash to Desktop_ in jargon), but it will be a vanilla game, at least content, graphics and audio-wise. No changes will be made to the story or the way you perceive the Wasteland.
+1. The firs part is about _fixing_ the game. At the end of this chapter, you will have a flawless _Fallout 3_ game, running smoothly, with no CTD (_Crash to Desktop_ in jargon), but it will be a vanilla game, at least content, graphics and audio-wise. No changes will be made to the story or the way you perceive the Wasteland.
 2. The second part is about _enhancing_ the game. This is pretty based on personal taste, so feel free to ignore me (too bad) or, even better, modify this guide to your heart's content. I have picked the mods I like most, but your mileage may vary.
 
 _I <del>don't</del> **DO** want to set the world on fire..._
@@ -64,7 +65,7 @@ Install them first and we are good to go.
 
 At the end of this section, you will have a version of _Fallout 3 Game of the Year Edition_ that:
 
-* Is flawless (well, almost).
+* Runs flawlessly (well, almost).
 * Is patched to the max, with most silly (and not-so-silly) errors corrected.
 * Takes advantage of your system memory.
 * Has no (or little) microstutter.
@@ -457,7 +458,7 @@ If you have followed the guide so far, you have a grasp of the basics to downloa
 
 And that's really it. No need to use LOOT because this is a FOSE plugin. FOSE plugins are placed in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]`, so there should be a file named `ui_organizer.dll` in that folder.
 
-#### <a id="faceWashingUI"></a>4.1.2. Face-washing the user interface
+#### <a id="faceWashingHUD"></a>4.1.2. Face-washing the HUD
 
 Next, we are going to _shrink_ the user interface using [_DarNified UI F3_](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/), or DUIF3.
 
@@ -521,7 +522,7 @@ Powered by FOSE 1.2 b2
 19. There are a lot of settings for you to configure, adjusting the HUD to your liking.
 ![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
 
-#### <a id="rearrangingUI"></a>4.1.3. Rearranging the user interface
+#### <a id="rearrangingThings"></a>4.1.3. Rearranging things
 
 For those of you who don't like the default layout of the Heads Up Display (HUD), there is a little mod (little in size, that is) which helps you to change exactly that: [_Adjustable HUD_](http://www.nexusmods.com/fallout3/mods/15886/?) or aHUD.
 
@@ -652,6 +653,61 @@ If you feel uncomfortable with this, open the file `map_menu.xml` in `[%STEAM_HO
 Just lower the value between 5 and 20 pixels, using the same value in the three elements. Notice the increment in the clickable zone using a value of 640 pixels at expense of map height.
 
 ![Fallout 3 data option hot zone expanded](Images/Fallout%203%20data%20option%20hot%20zone%20expanded.png)
+
+###<a id="playingBadAss"></a>4.2. Playing the bad-ass way
+
+We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks in the previous chapter, but the base game still remains the same.
+
+We are going to dramatically change that. Think of a chicken nugget that turns itself into a _filet mignon_, all of a sudden.
+
+I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again.
+
+### <a id=""></a>4.2.1. _Ad astra per aspera_
+
+The title of this chapter means "through hardships to the stars", in Latin, and it would be a good way to define our next mod: [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?), or FWE. As usual, Gopher has a video [explaining how to install FWE](https://www.youtube.com/watch?v=-SAeXsA6Nt8), and there is a [page for the project](https://sites.google.com/site/fo3wanderersedition) with lots of useful information.
+
+The list of changes made by FWE is so long and their implications so deep that you'd better read the mod page to get a glimpse of that. The bottom line is: you will be playing a harsher, more challenging version of the game.
+
+We will be needing four files:
+
+* FWE Master Release 6-0 - Part 1.
+* FWE Master Release 6-0 - Part 2.
+* FWE 6-03a HOTFIX PATCH.
+* DarnUI Support for FWE 6-02
+
+1. Download all the files with NMM, but _do not activate them_.
+![NMM FWE entries](Images/NMM%20FWE%20entries.png)
+2. Double click on _FWE - FO3 Wanderers Edition_ to bring up a window with some options. Leave all default options checked and check _Alternate Travel_, and maybe [_VATS Halftime_ and _VATS Realtime_](https://sites.google.com/site/fo3wanderersedition/detailed-changes/02combat#TOC-VATS-Tweaks) if you feel up to.
+![NMM FWE setup](Images/NMM%20FWE%20setup.png)
+3. The installation takes a while, for the mod is _huge_...
+![NMM FWE installing](Images/NMM%20FWE%20installing.png)
+4. Finally, the manager notifies us about a successful installation.
+![NMM FWE installed](Images/NMM%20FWE%20installed.png)
+5. Double click on _FWE - FO3 Wanderers Edition - Part 2 Assets_ to install the second part of the mod. This time, the mod gets installed silently.
+![NMM FWE two files installed](Images/NMM%20FWE%20two%20files%20installed.png)
+6. Double click on _FWE - FO3 Wanderers Edition - 6.03 HOTFIX_, and just accept the overwriting of some files in the main mod.
+![NMM FWE confirm hotfix overwrite](Images/NMM%20FWE%20confirm%20hotfix%20overwrite.png)
+7. Now check the _Plugins_ tab. There are two uninvited guests there: the two `.esp` files corresponding to options we did not choose to install (_Optional Restore Tracers_ and _Optional Restore Tracers (automatics only)_).
+![NMM FWE uninvited guests](Images/NMM%20FWE%20uninvited%20guests.png)
+8. We don't want any unwanted mod cluttering our load order, so let's navigate to the folder where mod files are installed (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`), and just delete the two offending `.esp` files.
+![NMM FWE deleting unwanted files](Images/NMM%20FWE%20deleting%20unwanted%20files.png)
+9. Relaunch NMM and check the files are vanished.
+![NMM FWE plugins](Images/NMM%20FWE%20plugins.png)
+10. Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
+11. And that's it. We have FWE completely installed. Launch the game and start a new game (yes, a new game). At certain point, you may choose between the classic storyline or an alternate start.
+![Fallout 3 FWE alternate start](Images/Fallout%203%20FWE%20alternate%20start.png)
+12. You can assign your skills, perks and even a background story in a terminal right in front of you right after waking up.
+![Fallout 3 FWE special terminal](Images/Fallout%203%20FWE%20special%20terminal.png)
+13. When you have selected the skill set for your journey, just sleep in the mat on the floor and wake up to your new life. After a moment, a dialog will appear talking about _Wasteland Explorer_, a motorcycle which replaces fast travel (we disabled it, remember?). Enable it for good.
+![Fallout 3 FWE Wasteland Explorer enabled](Images/Fallout%203%20FWE%20Wasteland%20Explorer%20enabled.png)
+14. And now we are at it... Remember when we relocated the HUD elements to fit our needs? Well, FWE resets that, so, regretably, you will have to relocate them again.
+![Fallout 3 FWE HUD reset](Images/Fallout%203%20FWE%20HUD%20reset.png)
+15. Pull out your Pip-Boy and go to the _Items_ and then _Apparel_. There it is the option to configure FWE.
+![Fallout 3 FWE Pip-Boy option](Images/Fallout%203%20FWE%20Pip-Boy%20option.png)
+16. Click on the option to show the shitload of configurable settings for this mod.
+![Fallout 3 FWE settings](Images/Fallout%203%20FWE%20settings.png)
+
+You may be wondering why the hell we installed aHUD first and then FWE... Well, it's a matter of scalability. Each chapter in the enhancing section will give you a playable milestone. The first one was about having an improved UI, and this one is about playing a radically different game. Each section builds on top of the previous one, but, in this case, the drawbacks are no big deal.
 
 ## <a id="resources"></a>5. Resources
 
