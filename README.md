@@ -6,8 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[04/07/2016] Corrections and additions.**
+
+Corrections and additions in sections 4.1.3 and 4.2.1.
+
 **[29/06/2016] Section about _Fallout 2 Wanderers Edition_ finished.**
-The section 4.2.1 is finished, coverint the installation of FWE, letting us play a completely different game, harsher and more challenging.
+The section 4.2.1 is finished, covering the installation of FWE, letting us play a completely different game, harsher and more challenging.
 
 **[26/06/2016] Section about UI finished.**
 
