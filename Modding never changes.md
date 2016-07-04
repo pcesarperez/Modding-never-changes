@@ -694,6 +694,34 @@ We will be needing four files:
 9. Relaunch NMM and check the files are vanished.
 ![NMM FWE plugins](Images/NMM%20FWE%20plugins.png)
 10. Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
+11. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files. This should be your load order:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CRAFT.esm`
+	* `CALIBR.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `CASM.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `DarNifiedUIF3.esp`
+12. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in [the chapter about cleaning up the master files](#cleaningMasterFiles). To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
+	* `Fallout3.esm`
+	* `Fallout3.exe`
+	* `CRAFT.esm`
+	* `CALIBR.esm`
+13. When all the files have been cleaned, run LOOT again and check there are no ITM records or undeleted references in your load order. There shouldn't be any.
 11. And that's it. We have FWE completely installed. Launch the game and start a new game (yes, a new game). At certain point, you may choose between the classic storyline or an alternate start.
 ![Fallout 3 FWE alternate start](Images/Fallout%203%20FWE%20alternate%20start.png)
 12. You can assign your skills, perks and even a background story in a terminal right in front of you right after waking up.
