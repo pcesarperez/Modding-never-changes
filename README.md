@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[10/07/2016] Section about _Martigen's Mutant Mod_ finished.**
+
+New section (4.2.2. Fraternizing with the neighborhood) about _Martigen's Mutant Mod_, a mod that adds a lot of new creatures and encounter/fight mechanics to the game.
+
 **[04/07/2016] Corrections and additions.**
 
 Corrections and additions in sections 4.1.3 and 4.2.1.

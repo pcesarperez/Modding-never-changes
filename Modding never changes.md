@@ -24,6 +24,8 @@
 		+ [4.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
 	- [4.2. Playing the bad-ass way](#playingBadAss)
+		+ [4.2.1. _Ad astra per aspera_](#adAstraPerAspera)
+		+ [4.2.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -664,7 +666,7 @@ We are going to dramatically change that. Think of a chicken nugget that turns i
 
 I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again.
 
-### <a id=""></a>4.2.1. _Ad astra per aspera_
+### <a id="adAstraPerAspera"></a>4.2.1. _Ad astra per aspera_
 
 The title of this chapter means "through hardships to the stars", in Latin, and it would be a good way to define our next mod: [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?), or FWE. As usual, Gopher has a video [explaining how to install FWE](https://www.youtube.com/watch?v=-SAeXsA6Nt8), and there is a [page for the project](https://sites.google.com/site/fo3wanderersedition) with lots of useful information.
 
@@ -738,6 +740,67 @@ We will be needing four files:
 ![Fallout 3 FWE settings](Images/Fallout%203%20FWE%20settings.png)
 
 You may be wondering why the hell we installed aHUD first and then FWE... Well, it's a matter of scalability. Each chapter in the enhancing section will give you a playable milestone. The first one was about having an improved UI, and this one is about playing a radically different game. Each section builds on top of the previous one, but, in this case, the drawbacks are no big deal.
+
+### <a id="fraternizingNeighborhood"></a> 4.2.2. Fraternizing with the neighborhood
+
+If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of love in the form of rotten flesh.
+
+1. Download the files _Marts Mutant Mod 1-RC61 FOMOD Ready_ and _MMM-6_2-update_ with NMM (yeah, half of this book is plagued with acronyms; I am acutely aware of that). Notice the two mod files loaded in NMM.
+![NMM MMM files downloaded](Images/NMM%20MMM%20files%20downloaded.png)
+2. Activate _Martigen's Mutant Mod_ by double-clicking on it. NMM shows a window to select the preferred configuration method. We will choose the in-game menu, as it requires far less tinkering than its ESP counterpart.
+![NMM MMM menu configuration](Images/NMM%20MMM%20menu%20configuration.png)
+3. In the next window, all the DLC options should be checked, but leave the global options unchecked. More on that later.
+![NMM MMM global options](Images/NMM%20MMM%20global%20options.png)
+4. MMM overwrites several files from FWE, as it overhauls the monster system in the game. Let it do its magic.
+![NMM MMM FWE overwrite](Images/NMM%20MMM%20FWE%20overwrite.png)
+5. Activate the RC6.2 update in NMM, overwriting any file from MMM original installation.
+6. MMM collides with FWE in certain areas, so we need a way to ensure both mods working together seamlessly. We need [_Fallout Interoperability Program_](http://www.nexusmods.com/fallout3/mods/4968/?) or FOIP, for that, and write down that mod, for we are going to use its files several times. Download _FOIP - Marts Mutant Mod and FWE_ file with NMM.
+![NMM MMM interoperability with FWE](Images/NMM%20MMM%20interoperability%20with%20FWE.png)
+7. Activate _Fallout Interoperability Program - FOIP - FOIP - Marts Mutant Mod and FWE_. When installed, go to the _Plugins_ tab and check the bunch of newly installed files.
+![NMM MMM installed files](Images/NMM%20MMM%20installed%20files.png)
+8. There are certain files we don't need in our setup, so close NMM and browse to the _Fallout 3_ data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`). Delete the following files:
+	* `Mart's Mutant Mod - FWE Master Release.esp`
+	* `Mart's Mutant Mod - Natural Selection.esp`
+	* `Mart's Mutant Mod - Tougher Traders.esp`
+	* `Mart's Mutant Mod - Zones Respawn.esp`
+9. Run NMM again, go to the _Plugins_ tab and uncheck _Mart's Mutant Mod - FWE Master Release + Project Beauty.esp_. We don't have _Project Beauty_ installed (yet), but when we do, we will need this compatibility patch.
+![NMM MMM Project Beauty compatibility patch unckecked](Images/NMM%20MMM%20Project%20Beauty%20compatibility%20patch%20unckecked.png)
+10. Run LOOT as usual and rearrange your load order. This should be the deal:
+	- `Fallout3.esm`
+	- `Anchorage.esm`
+	- `ThePitt.esm`
+	- `BrokenSteel.esm`
+	- `PointLookout.esm`
+	- `Zeta.esm`
+	- `Unofficial Fallout 3 Patch.esm`
+	- `aHUD.esm`
+	- `iHUD.esm`
+	- `CRAFT.esm`
+	- `CALIBR.esm`
+	- `FO3 Wanderers Edition - Main File.esm`
+	- `FO3 Wanderers Edition - Alternate Travel.esp`
+	- `Mart's Mutant Mod.esm`
+	- `CASM.esp`
+	- `FO3 Wanderers Edition - Main File.esp`
+	- `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	- `FO3 Wanderers Edition - DLC Anchorage.esp`
+	- `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	- `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	- `FO3 Wanderers Edition - DLC The Pitt.esp`
+	- `DarNifiedUIF3.esp`
+	- `Mart's Mutant Mod - DLC Anchorage.esp`
+	- `Mart's Mutant Mod - DLC Point Lookout.esp`
+	- `Mart's Mutant Mod - DLC The Pitt.esp`
+	- `Mart's Mutant Mod.esp`
+	- `Mart's Mutant Mod - Master Menu Module.esp`
+	- `Mart's Mutant Mod - DLC Broken Steel.esp`
+	- `Mart's Mutant Mod - DLC Zeta.esp`
+	- `Mart's Mutant Mod - FWE Master Release + DLCs.esp`
+	- `Mart's Mutant Mod - FWE Master Release + Project Beauty.esp`
+11. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
+![Fallout 3 MMM control panel option](Images/Fallout%203%20MMM%20control%20panel%20option.png)
+12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
+![Fallout 3 MMM settings](Images/Fallout%203%20MMM%20settings.png)
 
 ## <a id="resources"></a>5. Resources
 
