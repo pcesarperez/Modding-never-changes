@@ -26,6 +26,7 @@
 	- [4.2. Playing the bad-ass way](#playingBadAss)
 		+ [4.2.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.2.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
+		+ [4.2.3. Expanding your world](#expandingYourWorld)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -802,6 +803,64 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
 ![Fallout 3 MMM settings](Images/Fallout%203%20MMM%20settings.png)
 
+### <a id="expandingYourWorld"></a>4.2.3. Expanding your world
+
+It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
+
+We are going to add three mods that add new content to the game: [_Alton, IL_](http://www.nexusmods.com/fallout3/mods/16949/?), [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?) and [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?). Let's start.
+
+1. Download _Alton IL Version 2-0-1_ and _Alton IL Hotfix 2-0-3_ with NMM.
+2. Download _Arefu Expanded v1_7a - Data Files_ and _Arefu Expanded v1\_7d - ESP and ESM files_ with NMM.
+3. Download _Mothership Zeta Crew V 166 ZIP_ with NMM.
+4. Check they are all downloaded and ready in NMM. Take into account that _Mothership Zeta Crew_ is **HUGE** (over 1 GB), so be patient and make the most of your time reading online documentation about creating a book using LaTeX, for example.
+![NMM new content mods](Images/NMM%20new%20content%20mods.png)
+5. Activate the files in the following order, overwriting all files when necessary (the mods shouldn't overlap, except patches over original files):
+	* _Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_
+	* _Alton IL Hotfix 2-0-3 RC_
+	* _Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7a - Data Files_
+	* _Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7d - ESP and ESM files_
+	* _Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_
+6. When all mods are installed, fire up LOOT to rearrange your load order. This should be the load order now:
+	- `Fallout3.esm`
+	- `Anchorage.esm`
+	- `ThePitt.esm`
+	- `BrokenSteel.esm`
+	- `PointLookout.esm`
+	- `Zeta.esm`
+	- `Unofficial Fallout 3 Patch.esm`
+	- `aHUD.esm`
+	- `iHUD.esm`
+	- `CALIBR.esm`
+	- `Mart's Mutant Mod.esm`
+	- `ArefuExpandedByAzar.esm`
+	- `Mothership Crew.esm`
+	- `Alton, IL.esm`
+	- `CRAFT.esm`
+	- `FO3 Wanderers Edition - Main File.esm`
+	- `FO3 Wanderers Edition - Alternate Travel.esp`
+	- `CASM.esp`
+	- `DarNifiedUIF3.esp`
+	- `Mart's Mutant Mod - DLC Anchorage.esp`
+	- `Mart's Mutant Mod - DLC Point Lookout.esp`
+	- `AltonAddon.esp`
+	- `FO3 Wanderers Edition - Main File.esp`
+	- `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	- `FO3 Wanderers Edition - DLC Anchorage.esp`
+	- `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	- `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	- `FO3 Wanderers Edition - DLC The Pitt.esp`
+	- `Mart's Mutant Mod - DLC The Pitt.esp`
+	- `Mart's Mutant Mod.esp`
+	- `Mart's Mutant Mod - Master Menu Module.esp`
+	- `Mart's Mutant Mod - DLC Broken Steel.esp`
+	- `Mart's Mutant Mod - DLC Zeta.esp`
+	- `Mart's Mutant Mod - FWE Master Release + DLCs.esp`
+	- `Mart's Mutant Mod - FWE Master Release + Project Beauty.esp`
+	- `ArefuExpandedByAzar-Radio.esp`
+7. Launch the game and wait a few moments to see two reminders about _Alton, IL_ and _Arefu Expanded_ (there's no mention about _Mothership Zeta Crew_, as the mod kick-in is embedded in-game).
+![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
+![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
+
 ## <a id="resources"></a>5. Resources
 
 This is a comprehensive list of the resources used throughtout this guide.
@@ -827,7 +886,6 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [Alton IL](http://www.nexusmods.com/fallout3/mods/16949/?).
 * [Arefu Expanded](http://www.nexusmods.com/fallout3/mods/8976/?).
 * [Better High Detail Map and Icons](http://www.nexusmods.com/fallout3/mods/16898/?).
-* [Blackened](http://www.nexusmods.com/fallout3/mods/18173/?).
 * [Community Ammunition Library](http://www.nexusmods.com/fallout3/mods/3447/?) or CALIBR.
 * [Darnified UI](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/) or DarnUI.
 * [DarnUI compatibility patch for FWE](http://fallout3.nexusmods.com/mods/2761).
@@ -847,14 +905,13 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [krzymar HI-RES Moon](http://www.nexusmods.com/fallout3/mods/538/?).
 * [Large Address Aware Enabler for Fallout 3](http://www.nexusmods.com/fallout3/mods/6510/?)
 * [Lost in Light](http://www.nexusmods.com/fallout3/mods/19163/?) or LiL.
-* [Marts Mutant Mod](http://fallout3.nexusmods.com/mods/3211) or MMM (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
-* [Mothership Zeta Crew](http://www.nexusmods.com/fallout3/mods/8747/?).
+* [Marts Mutant Mod](http://fallout3.nexusmods.com/mods/3211) or MMM.
+* [Mothership Zeta Crew](http://www.nexusmods.com/fallout3/mods/8747/?)
 * [NMCS Texture Pack](http://www.nexusmods.com/fallout3/mods/12056/?).
 * [PipBoy 3000 HD Retexture](http://www.nexusmods.com/fallout3/mods/20373/?)
 * [Project Reality](http://www.nexusmods.com/fallout3/mods/17418/?).
 * [Pure Water](http://www.nexusmods.com/fallout3/mods/2599/?).
-* [RH Ironsights](http://fallout3.nexusmods.com/mods/6938) (through [The Mergers](http://www.nexusmods.com/fallout3/mods/16787/?)).
-* [Sydney Follower](http://www.nexusmods.com/fallout3/mods/9320/?).
+* [RH Ironsights](http://fallout3.nexusmods.com/mods/6938).
 * [Unofficial Fallout 3 Patch](http://www.nexusmods.com/fallout3/mods/19122/?)
 * [User Interface Organizer](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
 * [Weapon Mod Kits](http://fallout3.nexusmods.com/mods/3388) or WMK.
@@ -862,7 +919,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 
 ### <a id="videos"></a>5.4. Videos
 
-These are the videos which served as spiritual inspiration for the humble author of this awesome guide.
+These are the videos which served as spiritual inspiration author of this guide. That's me.
 
 * [Fallout 3 : To ENB or not to ENB](https://www.youtube.com/watch?v=BP3timf65O4) (21:36).
 * [Fallout 3 Mod Clinic part 1 : Remastered, Blackened and Merged](https://www.youtube.com/watch?v=TeWV1wvg7cU) (24:12).

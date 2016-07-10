@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[10/07/2016] Section about new content finished.**
+
+New section (4.2.3. Expanding your world) about new content mods (_Alton, IL_, _Arefu Expanded_ and _Mothership Zeta Crew_).
+
 **[10/07/2016] Section about _Martigen's Mutant Mod_ finished.**
 
 New section (4.2.2. Fraternizing with the neighborhood) about _Martigen's Mutant Mod_, a mod that adds a lot of new creatures and encounter/fight mechanics to the game.
