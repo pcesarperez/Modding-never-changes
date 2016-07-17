@@ -685,7 +685,7 @@ We are going to dramatically change that. Think of a chicken nugget that turns i
 
 I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again.
 
-### <a id="adAstraPerAspera"></a>4.2.1. _Ad astra per aspera_
+#### <a id="adAstraPerAspera"></a>4.2.1. _Ad astra per aspera_
 
 The title of this chapter means "through hardships to the stars", in Latin, and it would be a good way to define our next mod: [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?), or FWE. As usual, Gopher has a video [explaining how to install FWE](https://www.youtube.com/watch?v=-SAeXsA6Nt8), and there is a [page for the project](https://sites.google.com/site/fo3wanderersedition) with lots of useful information.
 
@@ -760,7 +760,7 @@ We will be needing four files:
 
 You may be wondering why the hell we installed aHUD first and then FWE... Well, it's a matter of scalability. Each chapter in the enhancing section will give you a playable milestone. The first one was about having an improved UI, and this one is about playing a radically different game. Each section builds on top of the previous one, but, in this case, the drawbacks are no big deal.
 
-### <a id="fraternizingNeighborhood"></a> 4.2.2. Fraternizing with the neighborhood
+#### <a id="fraternizingNeighborhood"></a> 4.2.2. Fraternizing with the neighborhood
 
 If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of love in the form of rotten flesh.
 
@@ -821,9 +821,9 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
 ![Fallout 3 MMM settings](Images/Fallout%203%20MMM%20settings.png)
 
-### <a id="expandingYourWorld"></a>4.2.3. Expanding your world
+#### <a id="expandingYourWorld"></a>4.2.3. Expanding your world
 
-It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
+It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
 We are going to add three mods that add new content to the game: [_Alton, IL_](http://www.nexusmods.com/fallout3/mods/16949/?), [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?) and [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?). Let's start.
 
@@ -879,7 +879,7 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
 
-### <a id="#weNeedMoreFirepower"></a>4.2.4. We need more firepower!
+#### <a id="weNeedMoreFirepower"></a>4.2.4. We need more firepower!
 
 The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will sure find the aiming system a fucking crap.
 
