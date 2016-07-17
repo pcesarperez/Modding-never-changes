@@ -23,10 +23,12 @@
 		+ [4.1.3. Seeing things just when you need to](#seeingThingsWhenNeeded)
 		+ [4.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
+		+ [4.1.6. No more dots](#noMoreDots)
 	- [4.2. Playing the bad-ass way](#playingBadAss)
 		+ [4.2.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.2.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
 		+ [4.2.3. Expanding your world](#expandingYourWorld)
+		+ [4.2.4. We need more firepower!](#weNeedMoreFirepower)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -659,6 +661,22 @@ Just lower the value between 5 and 20 pixels, using the same value in the three 
 
 ![Fallout 3 data option hot zone expanded](Images/Fallout%203%20data%20option%20hot%20zone%20expanded.png)
 
+####<a id="noMoreDots"></a>4.1.6. No more dots
+
+There's one final thing left to have a perfect-although-cranky GPS in our hands (literallly). Have you noticed the small white dots in your map connecting where you are and your current quest location?
+
+![Fallout 3 white dots](Images/Fallout%203%20white%20dots.png)
+
+Well, in mathematics the straight line may be the shortest path between two points, but in real life, and specially in the Capital Wasteland, it usually is the shortest path between you and a Darwin-cleansing-style death. So, let's remove the goddamn dots with [_No more dots_](http://www.nexusmods.com/fallout3/mods/15918/?).
+
+1. Download the mod with NMM.
+2. Activate it by double-clicking.
+3. That's it.
+
+There's no `.esp` or `.esm` installed with this mod, so there's no need to rearrange the load order. Just launch the game and check your map.
+
+![Fallout 3 no more dots](Images/Fallout%203%20no%20more%20dots.png)
+
 ###<a id="playingBadAss"></a>4.2. Playing the bad-ass way
 
 We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks in the previous chapter, but the base game still remains the same.
@@ -861,6 +879,33 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
 
+### <a id="#weNeedMoreFirepower"></a>4.2.4. We need more firepower!
+
+The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will sure find the aiming system a fucking crap.
+
+We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video [covering weapon mods](https://www.youtube.com/watch?v=Vli2y7ZDUbo) (15:02), although not all of them.
+
+We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_ironsights). This is going to throw a lot of files in our data folder, so, let's get started.
+
+1. Download the following WMK files with NMM:
+	* _Weapon Mod Kits_
+	* _WMK Broken Steel Compatibility Patch_
+	* _WMK Mothership Zeta Compatibility Patch_
+	* _WMK Operation Anchorage Compatibility Patch_
+	* _WMK Point Lookout Compatibility Patch_
+	* _WMK The Pitt Compatibility Patch_
+2. Download _EVE 099_ file for EVE with NMM. Ignore the optional files.
+3. Download the following RH_IronSights files with NMM:
+	* _RH\_IronSights BETA_
+	* _RH\_IronSights BETA Update 1_
+4. We will need a bunch of compatibility patches, starting with the ones along with _RH\_IronSights_.
+	* _RH IronSights - FWE Bridge_
+	* _RH\_IronSights - EVE Bridge_
+	* _RH\_IronSights - WMK Bridge_
+5. Finally, we need to download the compatibility patches which come with FOIP:
+	* _FOIP - EVE and FWE 6-01_
+	* _FOIP - Weapon Mod Kits and FWE 6-03_
+
 ## <a id="resources"></a>5. Resources
 
 This is a comprehensive list of the resources used throughtout this guide.
@@ -915,7 +960,6 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [Unofficial Fallout 3 Patch](http://www.nexusmods.com/fallout3/mods/19122/?)
 * [User Interface Organizer](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
 * [Weapon Mod Kits](http://fallout3.nexusmods.com/mods/3388) or WMK.
-
 
 ### <a id="videos"></a>5.4. Videos
 
