@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[24/07/2016] Section about MMM reworked.**
+
+I have rewritten the section about _Martigen's Mutant Mod_, using one of the merged patches from Paradox Ignition. I am going to use these patches for WMK, EVE and RH_IronSights also, applying a _Blackened_ compatibility patch when finished.
+
 **[24/07/2016] Section about audio overhaul finished.**
 
 New section (4.2. Lend me your ears) about audio overhaul of the game. I have added a short chapter (4.1.7. Shed some light here, please) about Pip-Boy's lamplight revamp.

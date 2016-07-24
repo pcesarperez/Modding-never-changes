@@ -5,18 +5,18 @@
 * [1. Introduction](#introduction)
 * [2. The tools we need](#toolsWeNeed)
 * [3. Fixing the game](#fixingGame)
-	- [3.1. Install the game](#installGame)
-	- [3.2. Disable Games for Windows Live](#disableGFWL)
-	- [3.3. Patching the game](#patchingGame)
-	- [3.4. Cleaning up the master files](#cleaningMasterFiles)
-	- [3.5. Enabling the console](#enablingConsole)
-	- [3.6. Enabling access to 4+ GB of memory](#largeAddressAware)
-	- [3.7. _Fallout 3_ Script Extender](#fose)
-	- [3.8. Getting rid of stutter](#gettingRidStutter)
-	- [3.9. Fake full-screen mode](#fakeFullScreen)
-	- [3.10. Saving games the right way](#casm)
+	* [3.1. Install the game](#installGame)
+	* [3.2. Disable Games for Windows Live](#disableGFWL)
+	* [3.3. Patching the game](#patchingGame)
+	* [3.4. Cleaning up the master files](#cleaningMasterFiles)
+	* [3.5. Enabling the console](#enablingConsole)
+	* [3.6. Enabling access to 4+ GB of memory](#largeAddressAware)
+	* [3.7. _Fallout 3_ Script Extender](#fose)
+	* [3.8. Getting rid of stutter](#gettingRidStutter)
+	* [3.9. Fake full-screen mode](#fakeFullScreen)
+	* [3.10. Saving games the right way](#casm)
 * [4. Enhancing the game](#enhancingGame)
-	- [4.1. Improving the user interface](#improvingUserInterface)
+	* [4.1. Improving the user interface](#improvingUserInterface)
 		+ [4.1.1. Building the basement](#buildingBasement)
 		+ [4.1.2. Face-washing the HUD](#faceWashingHUD)
 		+ [4.1.3. Rearranging things](#rearrangingThings)
@@ -25,17 +25,17 @@
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
 		+ [4.1.6. No more dots](#noMoreDots)
 		+ [4.1.7. Shed some light here, please](#shedSomeLight)
-	- [4.2. Lend me your ears](#lendMeYourEars)
-	- [4.3. Playing the bad-ass way](#playingBadAss)
+	* [4.2. Lend me your ears](#lendMeYourEars)
+	* [4.3. Playing the bad-ass way](#playingBadAss)
 		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
 		+ [4.3.3. Expanding your world](#expandingYourWorld)
 		+ [4.3.4. We need more firepower!](#weNeedMoreFirepower)
 * [5. Resources](#resources)
-	- [5.1. Tools](#tools)
-	- [5.2. Guides](#guides)
-	- [5.3. Mods](#mods)
-	- [5.4. Videos](#videos)
+	* [5.1. Tools](#tools)
+	* [5.2. Guides](#guides)
+	* [5.3. Mods](#mods)
+	* [5.4. Videos](#videos)
 
 ## <a id="introduction"></a>1. Introduction
 
@@ -550,10 +550,10 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
 ![Fallout 3 aHUD settings](Images/Fallout%203%20aHUD%20settings.png)
 6. Using the menu options you can select any of the following items to relocate:
-	*`Compass.`
-	*`Hitpoints.`
-	*`Actions points.`
-	*`Weapon condition and ammo.`
+	* Compass.
+	* Hitpoints.
+	* Actions points.
+	* Weapon condition and ammo.
 7. Select the items you want to relocate and move them around using the numpad arrow keys (that is <kbd>Num8</kbd>, <kbd>Num2</kbd>, <kbd>Num4</kbd> and <kbd>Num6</kbd> for up, down, left and right, respectively). The <kbd>R</kbd> and <kbd>Num5</kbd> keys are used to reset the current movement operation (be careful; I restarted unintentionally the movement of the compass three times because I am used to the arrow keys, so I insisted on using <kbd>Num5</kbd> as "Down", instead of <kbd>Num2</kbd> `¬¬`). Any other key finishes the movement operation.
 ![Fallout 3 aHUD relocated items](Images/Fallout%203%20aHUD%20relocated%20items.png)
 
@@ -686,7 +686,20 @@ Lighting in _Fallout 3_ is somewhat weird. Sometimes you will find your self int
 This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/?), comes to the rescue. Here we go.
 
 1. Download and activate the mod with NMM. There souldn't be any conflicts.
-2. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.
+2. Use LOOT to sort your load order, which should be:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `HZSmoothLight - FO3.esp`
+3. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.
 
 See the difference for yourself.
 
@@ -757,7 +770,8 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 9. Relaunch NMM and check the files are vanished.
 ![NMM FWE plugins](Images/NMM%20FWE%20plugins.png)
 10. Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
-11. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files. This should be your load order:
+11. Double click on _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ and answer _Yes to all_ when asked to overwrite files.
+12. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files. This should be your load order:
 	* `Fallout 3.esm`
 	* `Anchorage.esm`
 	* `ThePitt.esm`
@@ -773,58 +787,55 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* `CASM.esp`
 	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
 	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
 	* `FO3 Wanderers Edition - DLC Anchorage.esp`
 	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
 	* `FO3 Wanderers Edition - DLC The Pitt.esp`
 	* `DarNifiedUIF3.esp`
-12. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in [the chapter about cleaning up the master files](#cleaningMasterFiles). To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
+13. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in [the chapter about cleaning up the master files](#cleaningMasterFiles). To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
 	* `Fallout3.esm`
 	* `Fallout3.exe`
 	* `CRAFT.esm`
 	* `CALIBR.esm`
-13. When all the files have been cleaned, run LOOT again and check there are no ITM records or undeleted references in your load order. There shouldn't be any.
-11. And that's it. We have FWE completely installed. Launch the game and start a new game (yes, a new game). At certain point, you may choose between the classic storyline or an alternate start.
+14. When all the files have been cleaned, run LOOT again and check there are no ITM records or undeleted references in your load order. There shouldn't be any.
+15. And that's it. We have FWE completely installed. Launch the game and start a new game (yes, a new game). At certain point, you may choose between the classic storyline or an alternate start.
 ![Fallout 3 FWE alternate start](Images/Fallout%203%20FWE%20alternate%20start.png)
-12. You can assign your skills, perks and even a background story in a terminal right in front of you right after waking up.
+16. You can assign your skills, perks and even a background story in a terminal right in front of you right after waking up.
 ![Fallout 3 FWE special terminal](Images/Fallout%203%20FWE%20special%20terminal.png)
-13. When you have selected the skill set for your journey, just sleep in the mat on the floor and wake up to your new life. After a moment, a dialog will appear talking about _Wasteland Explorer_, a motorcycle which replaces fast travel (we disabled it, remember?). Enable it for good.
+17. When you have selected the skill set for your journey, just sleep in the mat on the floor and wake up to your new life. After a moment, a dialog will appear talking about _Wasteland Explorer_, a motorcycle which replaces fast travel (we disabled it, remember?). Enable it for good.
 ![Fallout 3 FWE Wasteland Explorer enabled](Images/Fallout%203%20FWE%20Wasteland%20Explorer%20enabled.png)
-14. And now we are at it... Remember when we relocated the HUD elements to fit our needs? Well, FWE resets that, so, regretably, you will have to relocate them again.
+18. And now we are at it... Remember when we relocated the HUD elements to fit our needs? Well, FWE resets that, so, regrettably, you will have to relocate them again.
 ![Fallout 3 FWE HUD reset](Images/Fallout%203%20FWE%20HUD%20reset.png)
-15. Pull out your Pip-Boy and go to the _Items_ and then _Apparel_. There it is the option to configure FWE.
+19. Pull out your Pip-Boy and go to the _Items_ and then _Apparel_. There it is the option to configure FWE.
 ![Fallout 3 FWE Pip-Boy option](Images/Fallout%203%20FWE%20Pip-Boy%20option.png)
-16. Click on the option to show the shitload of configurable settings for this mod.
+20. Click on the option to show the shitload of configurable settings for this mod.
 ![Fallout 3 FWE settings](Images/Fallout%203%20FWE%20settings.png)
 
 You may be wondering why the hell we installed aHUD first and then FWE... Well, it's a matter of scalability. Each chapter in the enhancing section will give you a playable milestone. The first one was about having an improved UI, and this one is about playing a radically different game. Each section builds on top of the previous one, but, in this case, the drawbacks are no big deal.
 
+From this point on, we will be using [_The Mergers_](http://www.nexusmods.com/fallout3/mods/16787/?), from Paradox Ignition. These are merged patches for the main mods we are going to install. They are aimed to reduce the file load in our data folder and increase stability.
+
 #### <a id="fraternizingNeighborhood"></a> 4.3.2. Fraternizing with the neighborhood
 
-If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of love in the form of rotten flesh.
+If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of rotten flesh-shaped love.
 
-1. Download the files _Marts Mutant Mod 1-RC61 FOMOD Ready_ and _MMM-6_2-update_ with NMM (yeah, half of this book is plagued with acronyms; I am acutely aware of that). Notice the two mod files loaded in NMM.
+1. Download the files _Marts Mutant Mod 1-RC61 FOMOD Ready_ and _MMM-6_2-update_ with NMM (yeah, half of this book is plagued with acronyms; I am acutely aware of that).
+2. Download _Marts Mutant Mod Merged_ from [_The Mergers_](http://www.nexusmods.com/fallout3/mods/16787/?) page with NMM. Notice the downloaded files.
 ![NMM MMM files downloaded](Images/NMM%20MMM%20files%20downloaded.png)
-2. Activate _Martigen's Mutant Mod_ by double-clicking on it. NMM shows a window to select the preferred configuration method. We will choose the in-game menu, as it requires far less tinkering than its ESP counterpart.
+3. Activate _Martigen's Mutant Mod_ by double-clicking on it. NMM shows a window to select the preferred configuration method. We will choose the in-game menu, as it requires far less tinkering than its ESP counterpart.
 ![NMM MMM menu configuration](Images/NMM%20MMM%20menu%20configuration.png)
-3. In the next window, all the DLC options should be checked, but leave the global options unchecked. More on that later.
+4. In the next window, all the DLC options should be checked, but leave the global options unchecked. More on that later.
 ![NMM MMM global options](Images/NMM%20MMM%20global%20options.png)
-4. MMM overwrites several files from FWE, as it overhauls the monster system in the game. Let it do its magic.
+5. MMM overwrites several files from FWE, as it overhauls the monster system in the game. Let it do its magic.
 ![NMM MMM FWE overwrite](Images/NMM%20MMM%20FWE%20overwrite.png)
-5. Activate the RC6.2 update in NMM, overwriting any file from MMM original installation.
-6. MMM collides with FWE in certain areas, so we need a way to ensure both mods working together seamlessly. We need [_Fallout Interoperability Program_](http://www.nexusmods.com/fallout3/mods/4968/?) or FOIP, for that, and write down that mod, for we are going to use its files several times. Download _FOIP - Marts Mutant Mod and FWE_ file with NMM.
-![NMM MMM interoperability with FWE](Images/NMM%20MMM%20interoperability%20with%20FWE.png)
-7. Activate _Fallout Interoperability Program - FOIP - FOIP - Marts Mutant Mod and FWE_. When installed, go to the _Plugins_ tab and check the bunch of newly installed files.
-![NMM MMM installed files](Images/NMM%20MMM%20installed%20files.png)
-8. There are certain files we don't need in our setup, so close NMM and browse to the _Fallout 3_ data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`). Delete the following files:
-	* `Mart's Mutant Mod - FWE Master Release.esp`
+6. Activate the RC6.2 update in NMM, overwriting any file from MMM original installation.
+7. There are certain files we don't need in our setup, so close NMM and browse to the _Fallout 3_ data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`). Delete the following files:
 	* `Mart's Mutant Mod - Natural Selection.esp`
 	* `Mart's Mutant Mod - Tougher Traders.esp`
 	* `Mart's Mutant Mod - Zones Respawn.esp`
-9. Run NMM again, go to the _Plugins_ tab and uncheck _Mart's Mutant Mod - FWE Master Release + Project Beauty.esp_. We don't have _Project Beauty_ installed (yet), but when we do, we will need this compatibility patch.
-![NMM MMM Project Beauty compatibility patch unckecked](Images/NMM%20MMM%20Project%20Beauty%20compatibility%20patch%20unckecked.png)
-11. We are going to use a [merged patch from Paradox](http://www.nexusmods.com/fallout3/mods/16787/?) for the first time. These merged patches replace a lot of files from the original mods with just one file, reducing the clutter in our load order and improving load times. Download _Marts Mutant Mod Merged_ with NMM, which replaces the following files:
+8. We are going to get rid of the files instaled by MMM to use the merged path we downloaded before. Create a folder in your data folder (namely `[MMM backup]`), and move the following files:
 	* `Mart's Mutant Mod.esm`
 	* `Mart's Mutant Mod.esp`
 	* `Mart's Mutant Mod - DLC Anchorage.esp`
@@ -833,43 +844,40 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 	* `Mart's Mutant Mod - DLC Point Lookout.esp`
 	* `Mart's Mutant Mod - DLC Zeta.esp`
 	* `Mart's Mutant Mod - Master Menu Module.esp`
-12. In the _Plugins_ tab of NMM, uncheck  
-10. Run LOOT as usual and rearrange your load order. This should be the deal:
-	- `Fallout3.esm`
-	- `Anchorage.esm`
-	- `ThePitt.esm`
-	- `BrokenSteel.esm`
-	- `PointLookout.esm`
-	- `Zeta.esm`
-	- `Unofficial Fallout 3 Patch.esm`
-	- `aHUD.esm`
-	- `iHUD.esm`
-	- `CRAFT.esm`
-	- `CALIBR.esm`
-	- `FO3 Wanderers Edition - Main File.esm`
-	- `FO3 Wanderers Edition - Alternate Travel.esp`
-	- `Mart's Mutant Mod.esm`
-	- `CASM.esp`
-	- `FO3 Wanderers Edition - Main File.esp`
-	- `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	- `FO3 Wanderers Edition - DLC Anchorage.esp`
-	- `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	- `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	- `FO3 Wanderers Edition - DLC The Pitt.esp`
-	- `DarNifiedUIF3.esp`
-	- `Mart's Mutant Mod - DLC Anchorage.esp`
-	- `Mart's Mutant Mod - DLC Point Lookout.esp`
-	- `Mart's Mutant Mod - DLC The Pitt.esp`
-	- `Mart's Mutant Mod.esp`
-	- `Mart's Mutant Mod - Master Menu Module.esp`
-	- `Mart's Mutant Mod - DLC Broken Steel.esp`
-	- `Mart's Mutant Mod - DLC Zeta.esp`
-	- `Mart's Mutant Mod - FWE Master Release + DLCs.esp`
-	- `Mart's Mutant Mod - FWE Master Release + Project Beauty.esp`
-11. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
+9. Reopen NMM and activate _Paradox Ignition presents The Mergers - Marts Mutant Mod Merged_ in the _Mods_ tab. The merged patch will ask for permission to overwrite already installed files. Proceed as usual.
+![NMM MMM merged patch overwriting](Images/NMM%20MMM%20merged%20patch%20overwriting.png)
+10. In the _Plugins_ tab, check the presence of the file `Mart's Mutant Mod.esm`, replacing all the files we installed before.
+![NMM MMM installed](Images/NMM%20MMM%20installed.png)
+11. Run LOOT as usual and rearrange your load order. This should be the deal:
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CRAFT.esm`
+	* `CALIBR.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Mart's Mutant Mod.esm`
+	* `CASM.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `DarNifiedUIF3.esp`
+12. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
 ![Fallout 3 MMM control panel option](Images/Fallout%203%20MMM%20control%20panel%20option.png)
-12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
+13. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
 ![Fallout 3 MMM settings](Images/Fallout%203%20MMM%20settings.png)
+
+Take into account that we need a [_Blackened_ compatibility patch](http://www.nexusmods.com/fallout3/mods/18173/?) to run FWE and MMM seamlessly, but these patches come in combos, so we are going to use the one which suits best our mod stack.
 
 #### <a id="expandingYourWorld"></a>4.3.3. Expanding your world
 
@@ -883,48 +891,48 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 4. Check they are all downloaded and ready in NMM. Take into account that _Mothership Zeta Crew_ is **HUGE** (over 1 GB), so be patient and make the most of your time reading online documentation about creating a book using LaTeX, for example.
 ![NMM new content mods](Images/NMM%20new%20content%20mods.png)
 5. Activate the files in the following order, overwriting all files when necessary (the mods shouldn't overlap, except patches over original files):
-	*`_Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_`
-	*`_Alton IL Hotfix 2-0-3 RC_`
-	*`_Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7a - Data Files_`
-	*`_Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7d - ESP and ESM files_`
-	*`_Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_`
+	* `_Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_`
+	* `_Alton IL Hotfix 2-0-3 RC_`
+	* `_Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7a - Data Files_`
+	* `_Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7d - ESP and ESM files_`
+	* `_Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_`
 6. When all mods are installed, fire up LOOT to rearrange your load order. This should be the load order now:
-	- `Fallout3.esm`
-	- `Anchorage.esm`
-	- `ThePitt.esm`
-	- `BrokenSteel.esm`
-	- `PointLookout.esm`
-	- `Zeta.esm`
-	- `Unofficial Fallout 3 Patch.esm`
-	- `aHUD.esm`
-	- `iHUD.esm`
-	- `CALIBR.esm`
-	- `Mart's Mutant Mod.esm`
-	- `ArefuExpandedByAzar.esm`
-	- `Mothership Crew.esm`
-	- `Alton, IL.esm`
-	- `CRAFT.esm`
-	- `FO3 Wanderers Edition - Main File.esm`
-	- `FO3 Wanderers Edition - Alternate Travel.esp`
-	- `CASM.esp`
-	- `DarNifiedUIF3.esp`
-	- `Mart's Mutant Mod - DLC Anchorage.esp`
-	- `Mart's Mutant Mod - DLC Point Lookout.esp`
-	- `AltonAddon.esp`
-	- `FO3 Wanderers Edition - Main File.esp`
-	- `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	- `FO3 Wanderers Edition - DLC Anchorage.esp`
-	- `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	- `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	- `FO3 Wanderers Edition - DLC The Pitt.esp`
-	- `Mart's Mutant Mod - DLC The Pitt.esp`
-	- `Mart's Mutant Mod.esp`
-	- `Mart's Mutant Mod - Master Menu Module.esp`
-	- `Mart's Mutant Mod - DLC Broken Steel.esp`
-	- `Mart's Mutant Mod - DLC Zeta.esp`
-	- `Mart's Mutant Mod - FWE Master Release + DLCs.esp`
-	- `Mart's Mutant Mod - FWE Master Release + Project Beauty.esp`
-	- `ArefuExpandedByAzar-Radio.esp`
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `Mart's Mutant Mod - DLC Anchorage.esp`
+	* `Mart's Mutant Mod - DLC Point Lookout.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Mart's Mutant Mod - DLC The Pitt.esp`
+	* `Mart's Mutant Mod.esp`
+	* `Mart's Mutant Mod - Master Menu Module.esp`
+	* `Mart's Mutant Mod - DLC Broken Steel.esp`
+	* `Mart's Mutant Mod - DLC Zeta.esp`
+	* `Mart's Mutant Mod - FWE Master Release + DLCs.esp`
+	* `Mart's Mutant Mod - FWE Master Release + Project Beauty.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
 7. Launch the game and wait a few moments to see two reminders about _Alton, IL_ and _Arefu Expanded_ (there's no mention about _Mothership Zeta Crew_, as the mod kick-in is embedded in-game).
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
@@ -938,23 +946,23 @@ We are getting serious here, because, at the end of the chapter, we will have a 
 We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_ironsights). This is going to throw a lot of files in our data folder, so, let's get started.
 
 1. Download the following WMK files with NMM:
-	*`_Weapon Mod Kits_`
-	*`_WMK Broken Steel Compatibility Patch_`
-	*`_WMK Mothership Zeta Compatibility Patch_`
-	*`_WMK Operation Anchorage Compatibility Patch_`
-	*`_WMK Point Lookout Compatibility Patch_`
-	*`_WMK The Pitt Compatibility Patch_`
+	* `_Weapon Mod Kits_`
+	* `_WMK Broken Steel Compatibility Patch_`
+	* `_WMK Mothership Zeta Compatibility Patch_`
+	* `_WMK Operation Anchorage Compatibility Patch_`
+	* `_WMK Point Lookout Compatibility Patch_`
+	* `_WMK The Pitt Compatibility Patch_`
 2. Download _EVE 099_ file for EVE with NMM. Ignore the optional files.
 3. Download the following RH_IronSights files with NMM:
-	*`_RH\_IronSights BETA_`
-	*`_RH\_IronSights BETA Update 1_`
+	* `_RH\_IronSights BETA_`
+	* `_RH\_IronSights BETA Update 1_`
 4. We will need a bunch of compatibility patches, starting with the ones along with _RH\_IronSights_.
-	*`_RH IronSights - FWE Bridge_`
-	*`_RH\_IronSights - EVE Bridge_`
-	*`_RH\_IronSights - WMK Bridge_`
+	* `_RH IronSights - FWE Bridge_`
+	* `_RH\_IronSights - EVE Bridge_`
+	* `_RH\_IronSights - WMK Bridge_`
 5. Finally, we need to download the compatibility patches which come with FOIP:
-	*`_FOIP - EVE and FWE 6-01_`
-	*`_FOIP - Weapon Mod Kits and FWE 6-03_`
+	* `_FOIP - EVE and FWE 6-01_`
+	* `_FOIP - Weapon Mod Kits and FWE 6-03_`
 6. We have a good bunch of mods ready to be installed.
 ![!NMM weapon mods ready](Images/NMM%20weapon%20mods%20ready.png)
 7. Install WMK and all its compatibility patches (the main file first and then the patches, in the order you like). Answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
@@ -992,6 +1000,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/?).
 * [_EVE compatibility patch for FOIP_](http://fallout3.nexusmods.com/mods/15961).
 * [_Fake Fullscreen Mode Windowed - Alt Tab Fix_](http://www.nexusmods.com/fallout3/mods/16001/?)
+* [_Fallout 3 - HD Audio Overhaul - v1.21_](http://www.nexusmods.com/fallout3/mods/13055/?)
 * [_Fallout 3 re-animated_](http://fallout3.nexusmods.com/mods/7670).
 * [_Fallout 3 redesigned_](http://fallout3.nexusmods.com/mods/6341).
 * [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?) or FWE.
