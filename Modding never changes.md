@@ -24,6 +24,7 @@
 		+ [4.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
 		+ [4.1.6. No more dots](#noMoreDots)
+		+ [4.1.7. Shed some light here, please](#shedSomeLight)
 	- [4.2. Playing the bad-ass way](#playingBadAss)
 		+ [4.2.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.2.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
@@ -345,7 +346,7 @@ FOSE provides a [whole new set of console commands](http://fose.silverlock.org/f
 
 ### <a id="gettingRidStutter"></a>3.8. Getting rid of stutter
 
-_Fallout 3_ suffers from stuttering, this is, there are certain points in the game where the visuals are lacking in fluidity. Although this can be reduced by optimizing your system (updating your graphics driver to the top, unfragmenting the hard drive, and son on), there is still a micro-stuttering that can be perceived in lower-spec machines when framerate suddenly changes.
+_Fallout 3_ suffers from stuttering, this is, there are certain points in the game where the visuals are lacking in fluidity. Although this can be reduced by optimizing your system (updating your graphics driver to the top, unfragmenting the hard drive, and so on), there is still a micro-stuttering that can be perceived in lower-spec machines when framerate suddenly changes.
 
 In the same video about [performance and stability](https://www.youtube.com/watch?v=tONiXNbwSt0) (26:38), Gopher talks about this problem, from minute 08:55 to 16:40, more or less. We are going to install our first mod (apart from the unofficial patch), and for this, we are going to need [_Nexus Mod Manager_] or NMM. This is the tool that allows to keep track of the installed mods, along with their updates.
 
@@ -413,7 +414,7 @@ CASM also saves the game automatically with a given frequency and under certain 
 ![NMM CASM loaded last](Images/NMM%20CASM%20loaded%20last.png)
 6. Close NMM and run LOOT. Click on the _Sort Plugins_ icon to fix the load order. Notice that CASM still sits at the bottom, and no conflicts are detected (this step is fairly unnecessary, but you need to get used to routinely rearrange your load order).
 ![LOOT after installing CASM](Images/LOOT%20after%20installing%20CASM.png)
-7. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Buy by pressing <kbd>TAB</kbd> and navigate to the _Aid_ section. You will see an "item" called _CASM Options Menu_.
+7. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing <kbd>TAB</kbd> and navigate to the _Aid_ section. You will see an "item" called _CASM Options Menu_.
 ![Fallout 3 CASM option](Images/Fallout%203%20CASM%20option.png)
 8. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
 ![Fallout 3 CASM settings](Images/Fallout%203%20CASM%20settings.png)
@@ -548,10 +549,10 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
 ![Fallout 3 aHUD settings](Images/Fallout%203%20aHUD%20settings.png)
 6. Using the menu options you can select any of the following items to relocate:
-	* Compass.
-	* Hitpoints.
-	* Actions points.
-	* Weapon condition and ammo.
+	*`Compass.`
+	*`Hitpoints.`
+	*`Actions points.`
+	*`Weapon condition and ammo.`
 7. Select the items you want to relocate and move them around using the numpad arrow keys (that is <kbd>Num8</kbd>, <kbd>Num2</kbd>, <kbd>Num4</kbd> and <kbd>Num6</kbd> for up, down, left and right, respectively). The <kbd>R</kbd> and <kbd>Num5</kbd> keys are used to reset the current movement operation (be careful; I restarted unintentionally the movement of the compass three times because I am used to the arrow keys, so I insisted on using <kbd>Num5</kbd> as "Down", instead of <kbd>Num2</kbd> `¬¬`). Any other key finishes the movement operation.
 ![Fallout 3 aHUD relocated items](Images/Fallout%203%20aHUD%20relocated%20items.png)
 
@@ -607,7 +608,7 @@ We are going to use [_Better High Detail Map and Icons_](http://www.nexusmods.co
 1. Download and activate the mod with NMM. It will take a while, because the texture files are pretty big (43 MB or so).
 2. NMM shows a floating window with the installation options for the mod. Choose one map size and brightness (I chose 8k with roads and 50% more brightness, but your mileage may vary). Click on _Next_.
 ![NMM Better High Detail Map and Icons install options](Images/NMM%20Better%20High%20Detail%20Map%20and%20Icons%20install%20options.png)
-3. Next window contains the customization options for the mod. I checked "Custom icons", "Clean Pipboy Scren" and green markers. Click on _Finish_.
+3. Next window contains the customization options for the mod. I checked "Custom icons", "Clean Pipboy Screen" and green markers. Click on _Finish_.
 ![NMM Better High Detail Map and Icons customization options](Images/NMM%20Better%20High%20Detail%20Map%20and%20Icons%20customization%20options.png)
 4. Answer _Yes to all_ when asked to overwrite files.
 5. Launch the game, fire up your Pip-Boy and compare.
@@ -677,13 +678,38 @@ There's no `.esp` or `.esm` installed with this mod, so there's no need to rearr
 
 ![Fallout 3 no more dots](Images/Fallout%203%20no%20more%20dots.png)
 
+####<a id="shedSomeLight"></a>4.1.7. Shed some light here, please
+
+Lighting in _Fallout 3_ is somewhat weird. Sometimes you will find your self into what seems to be a lucid LSD-induced dream, with overexposed lights all around you. If you use your Pip-Boy's lamplight, things get much worse.
+
+This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/?), comes to the rescue. Here we go.
+
+1. Download and activate the mod with NMM. There souldn't be any conflicts.
+2. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.
+
+See the difference for yourself.
+
+With no light:
+
+![Fallout 3 no Pip-Boy light](Images/Fallout%203%20no%20Pip-Boy%20light.png)
+
+With standard light:
+
+![Fallout 3 standard light](Images/Fallout%203%20standard%20light.png)
+
+With enhanced light:
+
+![Fallout 3 enhanced light](Images/Fallout%203%20enhanced%20light.png)
+
+The difference is subtle, more noticeable in dark interiors.
+
 ###<a id="playingBadAss"></a>4.2. Playing the bad-ass way
 
 We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks in the previous chapter, but the base game still remains the same.
 
 We are going to dramatically change that. Think of a chicken nugget that turns itself into a _filet mignon_, all of a sudden.
 
-I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again.
+I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again... And trust me, I know what I am talking about.
 
 #### <a id="adAstraPerAspera"></a>4.2.1. _Ad astra per aspera_
 
@@ -691,12 +717,15 @@ The title of this chapter means "through hardships to the stars", in Latin, and 
 
 The list of changes made by FWE is so long and their implications so deep that you'd better read the mod page to get a glimpse of that. The bottom line is: you will be playing a harsher, more challenging version of the game.
 
-We will be needing four files:
+We will be needing five files:
 
 * FWE Master Release 6-0 - Part 1.
 * FWE Master Release 6-0 - Part 2.
 * FWE 6-03a HOTFIX PATCH.
 * DarnUI Support for FWE 6-02
+* Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch
+
+The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fallout3/mods/15790/?).
 
 1. Download all the files with NMM, but _do not activate them_.
 ![NMM FWE entries](Images/NMM%20FWE%20entries.png)
@@ -784,6 +813,16 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 	* `Mart's Mutant Mod - Zones Respawn.esp`
 9. Run NMM again, go to the _Plugins_ tab and uncheck _Mart's Mutant Mod - FWE Master Release + Project Beauty.esp_. We don't have _Project Beauty_ installed (yet), but when we do, we will need this compatibility patch.
 ![NMM MMM Project Beauty compatibility patch unckecked](Images/NMM%20MMM%20Project%20Beauty%20compatibility%20patch%20unckecked.png)
+11. We are going to use a [merged patch from Paradox](http://www.nexusmods.com/fallout3/mods/16787/?) for the first time. These merged patches replace a lot of files from the original mods with just one file, reducing the clutter in our load order and improving load times. Download _Marts Mutant Mod Merged_ with NMM, which replaces the following files:
+	* `Mart's Mutant Mod.esm`
+	* `Mart's Mutant Mod.esp`
+	* `Mart's Mutant Mod - DLC Anchorage.esp`
+	* `Mart's Mutant Mod - DLC The Pitt.esp`
+	* `Mart's Mutant Mod - DLC Broken Steel.esp`
+	* `Mart's Mutant Mod - DLC Point Lookout.esp`
+	* `Mart's Mutant Mod - DLC Zeta.esp`
+	* `Mart's Mutant Mod - Master Menu Module.esp`
+12. In the _Plugins_ tab of NMM, uncheck  
 10. Run LOOT as usual and rearrange your load order. This should be the deal:
 	- `Fallout3.esm`
 	- `Anchorage.esm`
@@ -833,11 +872,11 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 4. Check they are all downloaded and ready in NMM. Take into account that _Mothership Zeta Crew_ is **HUGE** (over 1 GB), so be patient and make the most of your time reading online documentation about creating a book using LaTeX, for example.
 ![NMM new content mods](Images/NMM%20new%20content%20mods.png)
 5. Activate the files in the following order, overwriting all files when necessary (the mods shouldn't overlap, except patches over original files):
-	* _Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_
-	* _Alton IL Hotfix 2-0-3 RC_
-	* _Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7a - Data Files_
-	* _Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7d - ESP and ESM files_
-	* _Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_
+	*`_Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_`
+	*`_Alton IL Hotfix 2-0-3 RC_`
+	*`_Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7a - Data Files_`
+	*`_Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7d - ESP and ESM files_`
+	*`_Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_`
 6. When all mods are installed, fire up LOOT to rearrange your load order. This should be the load order now:
 	- `Fallout3.esm`
 	- `Anchorage.esm`
@@ -888,23 +927,26 @@ We are getting serious here, because, at the end of the chapter, we will have a 
 We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_ironsights). This is going to throw a lot of files in our data folder, so, let's get started.
 
 1. Download the following WMK files with NMM:
-	* _Weapon Mod Kits_
-	* _WMK Broken Steel Compatibility Patch_
-	* _WMK Mothership Zeta Compatibility Patch_
-	* _WMK Operation Anchorage Compatibility Patch_
-	* _WMK Point Lookout Compatibility Patch_
-	* _WMK The Pitt Compatibility Patch_
+	*`_Weapon Mod Kits_`
+	*`_WMK Broken Steel Compatibility Patch_`
+	*`_WMK Mothership Zeta Compatibility Patch_`
+	*`_WMK Operation Anchorage Compatibility Patch_`
+	*`_WMK Point Lookout Compatibility Patch_`
+	*`_WMK The Pitt Compatibility Patch_`
 2. Download _EVE 099_ file for EVE with NMM. Ignore the optional files.
 3. Download the following RH_IronSights files with NMM:
-	* _RH\_IronSights BETA_
-	* _RH\_IronSights BETA Update 1_
+	*`_RH\_IronSights BETA_`
+	*`_RH\_IronSights BETA Update 1_`
 4. We will need a bunch of compatibility patches, starting with the ones along with _RH\_IronSights_.
-	* _RH IronSights - FWE Bridge_
-	* _RH\_IronSights - EVE Bridge_
-	* _RH\_IronSights - WMK Bridge_
+	*`_RH IronSights - FWE Bridge_`
+	*`_RH\_IronSights - EVE Bridge_`
+	*`_RH\_IronSights - WMK Bridge_`
 5. Finally, we need to download the compatibility patches which come with FOIP:
-	* _FOIP - EVE and FWE 6-01_
-	* _FOIP - Weapon Mod Kits and FWE 6-03_
+	*`_FOIP - EVE and FWE 6-01_`
+	*`_FOIP - Weapon Mod Kits and FWE 6-03_`
+6. We have a good bunch of mods ready to be installed.
+![!NMM weapon mods ready](Images/NMM%20weapon%20mods%20ready.png)
+7. Install WMK and all its compatibility patches (the main file first and then the patches, in the order you like). Answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
 
 ## <a id="resources"></a>5. Resources
 
@@ -927,39 +969,40 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 This is the list of mods used throughout this guide, in ascending alphabetical order.
 
-* [Adjustable HUD](http://fallout3.nexusmods.com/mods/15886) or aHUD.
-* [Alton IL](http://www.nexusmods.com/fallout3/mods/16949/?).
-* [Arefu Expanded](http://www.nexusmods.com/fallout3/mods/8976/?).
-* [Better High Detail Map and Icons](http://www.nexusmods.com/fallout3/mods/16898/?).
-* [Community Ammunition Library](http://www.nexusmods.com/fallout3/mods/3447/?) or CALIBR.
-* [Darnified UI](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/) or DarnUI.
-* [DarnUI compatibility patch for FWE](http://fallout3.nexusmods.com/mods/2761).
-* [Dynavision](http://fallout3.nexusmods.com/mods/17876/).
-* [Energy Visuals Enhanced](http://fallout3.nexusmods.com/mods/8340) or EVE.
-* [Enhanced Night Sky](http://www.nexusmods.com/fallout3/mods/442/?).
-* [EVE compatibility patch for FOIP](http://fallout3.nexusmods.com/mods/15961).
-* [Fake Fullscreen Mode Windowed - Alt Tab Fix](http://www.nexusmods.com/fallout3/mods/16001/?)
-* [Fallout 3 re-animated](http://fallout3.nexusmods.com/mods/7670).
-* [Fallout 3 redesigned](http://fallout3.nexusmods.com/mods/6341).
-* [Fallout 3 Wanderers Edition](http://www.nexusmods.com/fallout3/mods/2761/?) or FWE.
-* [Fallout Interoperability Program](http://fallout3.nexusmods.com/mods/4968) or FOIP.
-* [Fallout Street Lights](http://www.nexusmods.com/fallout3/mods/8069/?).
-* [Fallout Stutter Remover](http://www.nexusmods.com/fallout3/mods/8886/?)
-* [Flora overhaul](http://www.nexusmods.com/fallout3/mods/19864/?).
-* [Immersive HUD](http://fallout3.nexusmods.com/mods/15790) or iHUD.
-* [krzymar HI-RES Moon](http://www.nexusmods.com/fallout3/mods/538/?).
-* [Large Address Aware Enabler for Fallout 3](http://www.nexusmods.com/fallout3/mods/6510/?)
-* [Lost in Light](http://www.nexusmods.com/fallout3/mods/19163/?) or LiL.
-* [Marts Mutant Mod](http://fallout3.nexusmods.com/mods/3211) or MMM.
-* [Mothership Zeta Crew](http://www.nexusmods.com/fallout3/mods/8747/?)
-* [NMCS Texture Pack](http://www.nexusmods.com/fallout3/mods/12056/?).
-* [PipBoy 3000 HD Retexture](http://www.nexusmods.com/fallout3/mods/20373/?)
-* [Project Reality](http://www.nexusmods.com/fallout3/mods/17418/?).
-* [Pure Water](http://www.nexusmods.com/fallout3/mods/2599/?).
-* [RH Ironsights](http://fallout3.nexusmods.com/mods/6938).
-* [Unofficial Fallout 3 Patch](http://www.nexusmods.com/fallout3/mods/19122/?)
-* [User Interface Organizer](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
-* [Weapon Mod Kits](http://fallout3.nexusmods.com/mods/3388) or WMK.
+* [_Adjustable HUD_](http://fallout3.nexusmods.com/mods/15886) or aHUD.
+* [_Alton IL_](http://www.nexusmods.com/fallout3/mods/16949/?).
+* [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?).
+* [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?).
+* [_Community Ammunition Library_](http://www.nexusmods.com/fallout3/mods/3447/?) or CALIBR.
+* [_Darnified UI_](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/) or DarnUI.
+* [_DarnUI compatibility patch for FWE_](http://fallout3.nexusmods.com/mods/2761).
+* [_Dynavision_](http://fallout3.nexusmods.com/mods/17876/).
+* [_Energy Visuals Enhanced_](http://fallout3.nexusmods.com/mods/8340) or EVE.
+* [_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/?).
+* [_EVE compatibility patch for FOIP_](http://fallout3.nexusmods.com/mods/15961).
+* [_Fake Fullscreen Mode Windowed - Alt Tab Fix_](http://www.nexusmods.com/fallout3/mods/16001/?)
+* [_Fallout 3 re-animated_](http://fallout3.nexusmods.com/mods/7670).
+* [_Fallout 3 redesigned_](http://fallout3.nexusmods.com/mods/6341).
+* [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?) or FWE.
+* [_Fallout Interoperability Program_](http://fallout3.nexusmods.com/mods/4968) or FOIP.
+* [_Fallout Street Lights_](http://www.nexusmods.com/fallout3/mods/8069/?).
+* [_Fallout Stutter Remover_](http://www.nexusmods.com/fallout3/mods/8886/?)
+* [_Flora overhaul_](http://www.nexusmods.com/fallout3/mods/19864/?).
+* [_Immersive HUD_](http://fallout3.nexusmods.com/mods/15790) or iHUD.
+* [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/?).
+* [_Large Address Aware Enabler for Fallout 3_](http://www.nexusmods.com/fallout3/mods/6510/?)
+* [_Lost in Light_](http://www.nexusmods.com/fallout3/mods/19163/?) or LiL.
+* [_Marts Mutant Mod_](http://fallout3.nexusmods.com/mods/3211) or MMM.
+* [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?)
+* [_NMCS Texture Pack_](http://www.nexusmods.com/fallout3/mods/12056/?).
+* [_PipBoy 3000 HD Retexture_](http://www.nexusmods.com/fallout3/mods/20373/?)
+* [_Project Reality_](http://www.nexusmods.com/fallout3/mods/17418/?).
+* [_Pure Water_](http://www.nexusmods.com/fallout3/mods/2599/?).
+* [_RH Ironsights_](http://fallout3.nexusmods.com/mods/6938).
+* [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/?)
+* [_Unofficial Fallout 3 Patch_](http://www.nexusmods.com/fallout3/mods/19122/?)
+* [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
+* [_Weapon Mod Kits_](http://fallout3.nexusmods.com/mods/3388) or WMK.
 
 ### <a id="videos"></a>5.4. Videos
 
