@@ -1,6 +1,6 @@
 # README
 
-This is a thorough guide about fixing and enhancing _Fallout 3 Game of the Year Edition_, that is, _Fallout 3_ and all its DLCs.
+This is a thorough guide about fixing and enhancing _Fallout 3 Game of the Year Edition_, that is, _Fallout 3_ and all its DLCs. For now, this is a work in progress, as I am focusing on the contents first and on the layout later.
 
 Take a look at the file `Modding never changes.md`. That is the main guide file, and it will be used to generate different final products (HTML, PDF, etc.).
 
