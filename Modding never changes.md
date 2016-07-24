@@ -25,11 +25,12 @@
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
 		+ [4.1.6. No more dots](#noMoreDots)
 		+ [4.1.7. Shed some light here, please](#shedSomeLight)
-	- [4.2. Playing the bad-ass way](#playingBadAss)
-		+ [4.2.1. _Ad astra per aspera_](#adAstraPerAspera)
-		+ [4.2.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
-		+ [4.2.3. Expanding your world](#expandingYourWorld)
-		+ [4.2.4. We need more firepower!](#weNeedMoreFirepower)
+	- [4.2. Lend me your ears](#lendMeYourEars)
+	- [4.3. Playing the bad-ass way](#playingBadAss)
+		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
+		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
+		+ [4.3.3. Expanding your world](#expandingYourWorld)
+		+ [4.3.4. We need more firepower!](#weNeedMoreFirepower)
 * [5. Resources](#resources)
 	- [5.1. Tools](#tools)
 	- [5.2. Guides](#guides)
@@ -703,7 +704,17 @@ With enhanced light:
 
 The difference is subtle, more noticeable in dark interiors.
 
-###<a id="playingBadAss"></a>4.2. Playing the bad-ass way
+###<a id="lendMeYourEars"></a>4.2. Lend me your ears
+
+One of the most underrated things in videogames is audio. Every gamer out there crave for the ultimate graphics experience when playing her now-favorite-videogame. But audio is a subtle but very important part of that experience. Good ambient sounds and soundtrack can make your journey something memorable.
+
+There is just one mod in this chapter, [_Fallout 3 - HD Audio Overhaul - v1.21_](http://www.nexusmods.com/fallout3/mods/13055/?), and it's a complete overhaul of all things related with audio in _Fallout 3_, from ambient sounds to soundtrack.
+
+This mod is _massive_, so grab a mug of coffee and stay tuned with the latest news while installing it. You just have to download and install it with NMM. No conflicts should arise.
+
+Launch the game and _listen_ carefully...
+
+###<a id="playingBadAss"></a>4.3. Playing the bad-ass way
 
 We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks in the previous chapter, but the base game still remains the same.
 
@@ -711,7 +722,7 @@ We are going to dramatically change that. Think of a chicken nugget that turns i
 
 I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again... And trust me, I know what I am talking about.
 
-#### <a id="adAstraPerAspera"></a>4.2.1. _Ad astra per aspera_
+#### <a id="adAstraPerAspera"></a>4.3.1. _Ad astra per aspera_
 
 The title of this chapter means "through hardships to the stars", in Latin, and it would be a good way to define our next mod: [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?), or FWE. As usual, Gopher has a video [explaining how to install FWE](https://www.youtube.com/watch?v=-SAeXsA6Nt8), and there is a [page for the project](https://sites.google.com/site/fo3wanderersedition) with lots of useful information.
 
@@ -789,7 +800,7 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 
 You may be wondering why the hell we installed aHUD first and then FWE... Well, it's a matter of scalability. Each chapter in the enhancing section will give you a playable milestone. The first one was about having an improved UI, and this one is about playing a radically different game. Each section builds on top of the previous one, but, in this case, the drawbacks are no big deal.
 
-#### <a id="fraternizingNeighborhood"></a> 4.2.2. Fraternizing with the neighborhood
+#### <a id="fraternizingNeighborhood"></a> 4.3.2. Fraternizing with the neighborhood
 
 If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of love in the form of rotten flesh.
 
@@ -860,7 +871,7 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
 ![Fallout 3 MMM settings](Images/Fallout%203%20MMM%20settings.png)
 
-#### <a id="expandingYourWorld"></a>4.2.3. Expanding your world
+#### <a id="expandingYourWorld"></a>4.3.3. Expanding your world
 
 It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
@@ -918,7 +929,7 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
 
-#### <a id="weNeedMoreFirepower"></a>4.2.4. We need more firepower!
+#### <a id="weNeedMoreFirepower"></a>4.3.4. We need more firepower!
 
 The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will sure find the aiming system a fucking crap.
 

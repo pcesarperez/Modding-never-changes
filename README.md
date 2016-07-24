@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[24/07/2016] Section about audio overhaul finished.**
+
+New section (4.2. Lend me your ears) about audio overhaul of the game. I have added a short chapter (4.1.7. Shed some light here, please) about Pip-Boy's lamplight revamp.
+
+However, the big thing here is that I had to start modding the game from scratch, because I realized I had to use Paradox's The Mergers patches (along with Blackened compatibility patches) to the next main series of mods (FWE, MMM, EVE and WMK).
+
+I didn't feel comfortable rolling back some mods, and my 7 GB backup copy didn't work because I didn't copy metadata from NMM describing the actual installed mods, so, I had no other choice.
+
 **[10/07/2016] Section about new content finished.**
 
 New section (4.2.3. Expanding your world) about new content mods (_Alton, IL_, _Arefu Expanded_ and _Mothership Zeta Crew_).
