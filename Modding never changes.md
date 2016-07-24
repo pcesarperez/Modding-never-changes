@@ -1,5 +1,8 @@
 # Modding... Modding never changes
 
+
+
+
 ## Table of contents
 
 * [1. Introduction](#introduction)
@@ -29,13 +32,16 @@
 	* [4.3. Playing the bad-ass way](#playingBadAss)
 		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
-		+ [4.3.3. Expanding your world](#expandingYourWorld)
-		+ [4.3.4. We need more firepower!](#weNeedMoreFirepower)
+		+ [4.3.3. We need more firepower!](#weNeedMoreFirepower)
+		+ [4.3.4. Expanding your world](#expandingYourWorld)
 * [5. Resources](#resources)
 	* [5.1. Tools](#tools)
 	* [5.2. Guides](#guides)
 	* [5.3. Mods](#mods)
 	* [5.4. Videos](#videos)
+
+
+
 
 ## <a id="introduction"></a>1. Introduction
 
@@ -56,6 +62,9 @@ So, there is no original work here, just an extended guide to put things into pe
 
 _I <del>don't</del> **DO** want to set the world on fire..._
 
+
+
+
 ## <a id="toolsWeNeed"></a>2. The tools we need
 
 First and foremost, we need _Fallout 3 Game Of The Year Edition_ installed. This guide refers to the Steam version of the game.
@@ -68,6 +77,9 @@ We will need three additional tools to get the job done:
 
 Install them first and we are good to go.
 
+
+
+
 ## <a id="fixingGame"></a>3. Fixing the game
 
 At the end of this section, you will have a version of _Fallout 3 Game of the Year Edition_ that:
@@ -79,6 +91,8 @@ At the end of this section, you will have a version of _Fallout 3 Game of the Ye
 * Runs in windowed mode, faking full-screen.
 * Has a clean set of data files, including a merged patch to further ensure compatibility among them.
 * Creates saved games automatically and frequently, so that you always have means to recover from a disaster.
+
+
 
 ### <a id="installGame"></a>3.1. Install the game
 
@@ -111,6 +125,8 @@ Bear in mind that no matter how hard you pray or curse, this is as far as the ga
 * `FalloutPrefs.ini`
 * `RendererInfo.txt`
 
+
+
 ### <a id="disableGFWL"></a>3.2. Disable Games for Windows Live
 
 In BenWah's guide you can either update your Games for Windows Live (GFWL for short) installation, or disable it. Unless it's vital to you, I recommend disabling GFWL, just in case.
@@ -138,6 +154,8 @@ We have our first patch!
 Notice the absent _LIVE_ option in the main menu screen:
 
 ![Fallout 3 main menu with no LIVE](Images/Fallout%203%20main%20menu%20with%20no%20LIVE.png)
+
+
 
 ### <a id="patchingGame"></a>3.3. Patching the game
 
@@ -191,6 +209,8 @@ You should test the game right now. If everything went OK, you should be able to
 ![Fallout 3 first run](Images/Fallout%203%20first%20run.png)
 
 Yippee ki-yay, motherfucker!
+
+
 
 ### <a id="cleaningMasterFiles"></a>3.4. Cleaning up the master files
 
@@ -287,6 +307,8 @@ There is no way to change the key assigned to the console, unless you install [_
 
 Finally, there is an exhaustive [list of console commands](http://www.tweakguides.com/Fallout3_11.html) in the awesome [_Fallout 3 Tweaking Guide_](http://www.tweakguides.com/Fallout3_1.html).
 
+
+
 ### <a id="largeAddressAware"></a>3.6. Enabling access to 4+ GB of memory
 
 _Fallout 3_ does not use all the available memory it could have due to its 32 bits nature. However, you can modify the game executable to take advantage of all the memory it can get.
@@ -308,6 +330,8 @@ We don't want to clutter our system with unnecessary tools, so we are sticking w
 8. Copy back `Fallout3.exe` to its original location.
 
 And that's really it. Now _Fallout 3_ is prepared to handle more than 2 GB of RAM, improving stability.
+
+
 
 ### <a id="fose"></a>3.7. _Fallout 3_ Script Extender
 
@@ -345,6 +369,8 @@ As usual, Gopher has published a worth watching video about the [installation an
 
 FOSE provides a [whole new set of console commands](http://fose.silverlock.org/fose_command_doc.html) you can use, although they are not strictly necessary.
 
+
+
 ### <a id="gettingRidStutter"></a>3.8. Getting rid of stutter
 
 _Fallout 3_ suffers from stuttering, this is, there are certain points in the game where the visuals are lacking in fluidity. Although this can be reduced by optimizing your system (updating your graphics driver to the top, unfragmenting the hard drive, and so on), there is still a micro-stuttering that can be perceived in lower-spec machines when framerate suddenly changes.
@@ -375,6 +401,8 @@ Provided that you have installed NMM:
 ![NMM FSR installation](Images/NMM%20FSR%20installation%20complete.png)
 11. Edit the file `sr_Fallout_Stutter_Remover.ini` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]` and change the value of the `bInject_iFPSClamp` to 1. Save the file and we are good to go!
 
+
+
 ### <a id="fakeFullScreen"></a>3.9. Fake full-screen mode
 
 Believe or not, one of the things that could produce a CTD every other game, is the full-screen mode. As usual, Gopher has a [video explaining the problem](https://www.youtube.com/watch?v=tONiXNbwSt0) (26:38), same as before (this part spans roughly from 17:30 to the end).
@@ -389,6 +417,8 @@ Believe or not, one of the things that could produce a CTD every other game, is 
 6. Mark _Windowed mode_ and change the resolution to the previous one (every time you change to windowed mode and back, the resolution combo resets). Click _Ok_ and exit the launcher.
 ![Fallout 3 options windowed](Images/Fallout%203%20options%20windowed.png)
 7. Run the game with the new shortcut. The game will start with the window border, but after a little while, the window border disappears, resembling the actual fullscreen mode. This version is fully compatible with FOSE, which you can test running `GetFOSEVersion` in the console.
+
+
 
 ### <a id="casm"></a>3.10. Saving games the right way
 
@@ -420,6 +450,9 @@ CASM also saves the game automatically with a given frequency and under certain 
 8. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
 ![Fallout 3 CASM settings](Images/Fallout%203%20CASM%20settings.png)
 
+
+
+
 ## <a id="enhancingGame"></a>4. Enhancing the game
 
 What comes next is pretty much a matter of personal taste. While fixing the game should be completed head to toe for everyone, enhancing the game is something you need to consider, balancing pros and cons.
@@ -444,6 +477,8 @@ This is not for the faint of heart, and, remember, our goal is _to play the game
 
 When it comes to mods, not only the load order is important, but also the [_install order_](http://www.ign.com/wikis/fallout-3/PC_Mods#Install_Order). You need to be careful, because some mods overwrite files previously written (or overwritten) by other mods.
 
+
+
 ### <a id="improvingUserInterface"></a>4.1. Improving the user interface
 
 The first thing we are going to improve is the user interface.
@@ -453,6 +488,7 @@ Bethesda games have, broadly speaking, a shitty user interface, designed with bl
 Thus, we are starting with a series of mods that have a low impact on the overall state of the game and, at the same time, are pleasant and noticeable.
 
 There are several videos to warm up the engines: one to cover [the installation of the mods](https://www.youtube.com/watch?v=aqCzCXEydwU) (25:05), and the other to explain how to [stitch them all together](https://www.youtube.com/watch?v=bTlXOqV6pBA) (4:42) (there is also an [extended version](https://www.youtube.com/watch?v=qSA2BFQ2zc4) (11:23)).
+
 
 #### <a id="buildingBasement"></a>4.1.1. Building the basement
 
@@ -464,6 +500,7 @@ If you have followed the guide so far, you have a grasp of the basics to downloa
 2. Activate it.
 
 And that's really it. No need to use LOOT because this is a FOSE plugin. FOSE plugins are placed in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]`, so there should be a file named `ui_organizer.dll` in that folder.
+
 
 #### <a id="faceWashingHUD"></a>4.1.2. Face-washing the HUD
 
@@ -529,6 +566,7 @@ Powered by FOSE 1.2 b2
 19. There are a lot of settings for you to configure, adjusting the HUD to your liking.
 ![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
 
+
 #### <a id="rearrangingThings"></a>4.1.3. Rearranging things
 
 For those of you who don't like the default layout of the Heads Up Display (HUD), there is a little mod (little in size, that is) which helps you to change exactly that: [_Adjustable HUD_](http://www.nexusmods.com/fallout3/mods/15886/?) or aHUD.
@@ -559,6 +597,7 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 
 Take into account that if you plan to keep on installing mods using this guide, you may not want to relocate your HUD items, because several of the mods overwrite the XML files used to keep the HUD layout.
 
+
 #### <a id="seeingThingsWhenNeeded"></a>4.1.3. Seeing things just when you need to
 
 In addition to have the HUD elements placed where you like, you can improve the immersion by hiding these elements when you don't need them. I like to have them hidden when I am wandering around and have them shown when I am in combat. We have [_Immersive HUD_](http://www.nexusmods.com/fallout3/mods/15790/?) or iHUD for this.
@@ -584,6 +623,7 @@ In addition to have the HUD elements placed where you like, you can improve the 
 ![Fallout 3 iHUD settings](Images/Fallout%203%20iHUD%20settings.png)
 7. There are a lot of customization options in iHUD. Tweak around until you feel comfortable with the results ([Gopher's video](https://youtu.be/aqCzCXEydwU?t=18m20s) should help, around 18:20).
 
+
 #### <a id="retexturingPipBoy"></a>4.1.4. Cleaning up your faithful companion
 
 One of the things you are going to see a lot in this game is your Pip-Boy. And when I say "a lot", I mean an awful-fucking lot. It's your personal assistant, after all.
@@ -599,6 +639,7 @@ Before:
 
 After:
 ![Fallout 3 Pip-Boy after retexturing](Images/Fallout%203%20Pip-Boy%20after%20retexturing.png)
+
 
 #### <a id="betterMap"></a>4.1.5. You don't want to ask for directions
 
@@ -663,6 +704,7 @@ Just lower the value between 5 and 20 pixels, using the same value in the three 
 
 ![Fallout 3 data option hot zone expanded](Images/Fallout%203%20data%20option%20hot%20zone%20expanded.png)
 
+
 ####<a id="noMoreDots"></a>4.1.6. No more dots
 
 There's one final thing left to have a perfect-although-cranky GPS in our hands (literallly). Have you noticed the small white dots in your map connecting where you are and your current quest location?
@@ -678,6 +720,7 @@ Well, in mathematics the straight line may be the shortest path between two poin
 There's no `.esp` or `.esm` installed with this mod, so there's no need to rearrange the load order. Just launch the game and check your map.
 
 ![Fallout 3 no more dots](Images/Fallout%203%20no%20more%20dots.png)
+
 
 ####<a id="shedSomeLight"></a>4.1.7. Shed some light here, please
 
@@ -717,6 +760,8 @@ With enhanced light:
 
 The difference is subtle, more noticeable in dark interiors.
 
+
+
 ###<a id="lendMeYourEars"></a>4.2. Lend me your ears
 
 One of the most underrated things in videogames is audio. Every gamer out there crave for the ultimate graphics experience when playing her now-favorite-videogame. But audio is a subtle but very important part of that experience. Good ambient sounds and soundtrack can make your journey something memorable.
@@ -727,6 +772,8 @@ This mod is _massive_, so grab a mug of coffee and stay tuned with the latest ne
 
 Launch the game and _listen_ carefully...
 
+
+
 ###<a id="playingBadAss"></a>4.3. Playing the bad-ass way
 
 We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks in the previous chapter, but the base game still remains the same.
@@ -734,6 +781,7 @@ We have a pretty much vanilla game up to this point. Yeah, we changed the way th
 We are going to dramatically change that. Think of a chicken nugget that turns itself into a _filet mignon_, all of a sudden.
 
 I would recommend creating a backup of your game, even though It will rack up to 7 GB of space or more. Better safe than starting the process all over again... And trust me, I know what I am talking about.
+
 
 #### <a id="adAstraPerAspera"></a>4.3.1. _Ad astra per aspera_
 
@@ -817,6 +865,7 @@ You may be wondering why the hell we installed aHUD first and then FWE... Well, 
 
 From this point on, we will be using [_The Mergers_](http://www.nexusmods.com/fallout3/mods/16787/?), from Paradox Ignition. These are merged patches for the main mods we are going to install. They are aimed to reduce the file load in our data folder and increase stability.
 
+
 #### <a id="fraternizingNeighborhood"></a> 4.3.2. Fraternizing with the neighborhood
 
 If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of rotten flesh-shaped love.
@@ -879,7 +928,39 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 
 Take into account that we need a [_Blackened_ compatibility patch](http://www.nexusmods.com/fallout3/mods/18173/?) to run FWE and MMM seamlessly, but these patches come in combos, so we are going to use the one which suits best our mod stack.
 
-#### <a id="expandingYourWorld"></a>4.3.3. Expanding your world
+
+#### <a id="weNeedMoreFirepower"></a>4.3.3. We need more firepower!
+
+The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will sure find the aiming system a fucking crap.
+
+We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video [covering weapon mods](https://www.youtube.com/watch?v=Vli2y7ZDUbo) (15:02), although not all of them.
+
+We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_ironsights). This is going to throw a lot of files in our data folder, so, let's get started.
+
+1. Download the following WMK files with NMM:
+	* `_Weapon Mod Kits_`
+	* `_WMK Broken Steel Compatibility Patch_`
+	* `_WMK Mothership Zeta Compatibility Patch_`
+	* `_WMK Operation Anchorage Compatibility Patch_`
+	* `_WMK Point Lookout Compatibility Patch_`
+	* `_WMK The Pitt Compatibility Patch_`
+2. Download _EVE 099_ file for EVE with NMM. Ignore the optional files.
+3. Download the following RH_IronSights files with NMM:
+	* `_RH\_IronSights BETA_`
+	* `_RH\_IronSights BETA Update 1_`
+4. We will need a bunch of compatibility patches, starting with the ones along with _RH\_IronSights_.
+	* `_RH IronSights - FWE Bridge_`
+	* `_RH\_IronSights - EVE Bridge_`
+	* `_RH\_IronSights - WMK Bridge_`
+5. Finally, we need to download the compatibility patches which come with FOIP:
+	* `_FOIP - EVE and FWE 6-01_`
+	* `_FOIP - Weapon Mod Kits and FWE 6-03_`
+6. We have a good bunch of mods ready to be installed.
+![!NMM weapon mods ready](Images/NMM%20weapon%20mods%20ready.png)
+7. Install WMK and all its compatibility patches (the main file first and then the patches, in the order you like). Answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
+
+
+#### <a id="expandingYourWorld"></a>4.3.4. Expanding your world
 
 It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
@@ -937,39 +1018,14 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
 
-#### <a id="weNeedMoreFirepower"></a>4.3.4. We need more firepower!
 
-The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will sure find the aiming system a fucking crap.
 
-We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video [covering weapon mods](https://www.youtube.com/watch?v=Vli2y7ZDUbo) (15:02), although not all of them.
-
-We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_ironsights). This is going to throw a lot of files in our data folder, so, let's get started.
-
-1. Download the following WMK files with NMM:
-	* `_Weapon Mod Kits_`
-	* `_WMK Broken Steel Compatibility Patch_`
-	* `_WMK Mothership Zeta Compatibility Patch_`
-	* `_WMK Operation Anchorage Compatibility Patch_`
-	* `_WMK Point Lookout Compatibility Patch_`
-	* `_WMK The Pitt Compatibility Patch_`
-2. Download _EVE 099_ file for EVE with NMM. Ignore the optional files.
-3. Download the following RH_IronSights files with NMM:
-	* `_RH\_IronSights BETA_`
-	* `_RH\_IronSights BETA Update 1_`
-4. We will need a bunch of compatibility patches, starting with the ones along with _RH\_IronSights_.
-	* `_RH IronSights - FWE Bridge_`
-	* `_RH\_IronSights - EVE Bridge_`
-	* `_RH\_IronSights - WMK Bridge_`
-5. Finally, we need to download the compatibility patches which come with FOIP:
-	* `_FOIP - EVE and FWE 6-01_`
-	* `_FOIP - Weapon Mod Kits and FWE 6-03_`
-6. We have a good bunch of mods ready to be installed.
-![!NMM weapon mods ready](Images/NMM%20weapon%20mods%20ready.png)
-7. Install WMK and all its compatibility patches (the main file first and then the patches, in the order you like). Answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
 
 ## <a id="resources"></a>5. Resources
 
 This is a comprehensive list of the resources used throughtout this guide.
+
+
 
 ### <a id="tools"></a>5.1. Tools
 
@@ -977,12 +1033,16 @@ This is a comprehensive list of the resources used throughtout this guide.
 * [LOOT](https://loot.github.io/). Installing mods on Bethesda games can be a pain in the ass, especially if you try to install a lot of possibly-colliding mods. This tool keeps the load order straight.
 * [FO3Edit](http://www.nexusmods.com/fallout3/mods/637/?). _Fallout 3_ itself comes out-of-the-box with certain errors in the main and DLC files, and this tool comes in handy to correct them. Besides, this is **THE** tool to create a merged patch to run the game with an absurd amount of mods.
 
+
+
 ### <a id="guides"></a>5.2. Guides
 
 * [Guide to fix the game in order to run under modern versions of Windows](http://steamcommunity.com/sharedfiles/filedetails/?id=149946772).
 * [Why the game crashes if it runs in a box with multiple cores](http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html).
 * [TES5Edit cleaning guide](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).
 * [_Fallout 3_ Tweaking Guide](http://www.tweakguides.com/Fallout3_1.html).
+
+
 
 ### <a id="mods"></a>5.3. Mods
 
@@ -1023,6 +1083,8 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_Unofficial Fallout 3 Patch_](http://www.nexusmods.com/fallout3/mods/19122/?)
 * [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
 * [_Weapon Mod Kits_](http://fallout3.nexusmods.com/mods/3388) or WMK.
+
+
 
 ### <a id="videos"></a>5.4. Videos
 
