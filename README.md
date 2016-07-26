@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[26/07/2016] Section about weapons finished.**
+
+At last!
+
+I have finished the section about weapons system revamp (WMK, EVE and RH_IronSights). The game runs without crashes (apparently), but I have no installed the compability patch among FWE, EVE and MMM, because we are going to install Project Beauty, and there is a combo patch for all of them.
+
+The end is nigh!
+
 **[24/07/2016] Section about MMM reworked.**
 
 I have rewritten the section about _Martigen's Mutant Mod_, using one of the merged patches from Paradox Ignition. I am going to use these patches for WMK, EVE and RH_IronSights also, applying a _Blackened_ compatibility patch when finished.
