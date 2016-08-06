@@ -33,7 +33,7 @@
 		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
 		+ [4.3.3. We need more firepower!](#weNeedMoreFirepower)
-		+ [4.3.4. Expanding your world](#expandingYourWorld)
+	* [4.4. Expanding your world](#expandingYourWorld)
 * [5. Resources](#resources)
 	* [5.1. Tools](#tools)
 	* [5.2. Guides](#guides)
@@ -935,7 +935,7 @@ The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll 
 
 We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video [covering weapon mods](https://www.youtube.com/watch?v=Vli2y7ZDUbo) (15:02), although not all of them.
 
-We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_ironsights), along with the corresponding Paradox Ignition merged patches. This is going to throw a lot of files in our data folder, so, let's get started.
+We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_IronSights), along with the corresponding Paradox Ignition merged patches. This is going to throw a lot of files in our data folder, so, let's get started.
 
 1. Download the following WMK files with NMM:
 	* _Weapon Mod Kits_
@@ -1051,7 +1051,7 @@ If you run the game, you will notice the dramatic change when aiming your weapon
 
 ![Fallout 3 new sights](Images/Fallout%203%20new%20sights.png)
 
-#### <a id="expandingYourWorld"></a>4.3.4. Expanding your world
+### <a id="expandingYourWorld"></a>4.4. Expanding your world
 
 It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
@@ -1080,30 +1080,31 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 	* `iHUD.esm`
 	* `CALIBR.esm`
 	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
 	* `ArefuExpandedByAzar.esm`
 	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
 	* `Alton, IL.esm`
 	* `CRAFT.esm`
 	* `FO3 Wanderers Edition - Main File.esm`
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* `CASM.esp`
 	* `DarNifiedUIF3.esp`
-	* `Mart's Mutant Mod - DLC Anchorage.esp`
-	* `Mart's Mutant Mod - DLC Point Lookout.esp`
 	* `AltonAddon.esp`
 	* `FO3 Wanderers Edition - Main File.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
 	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `HZSmoothLight - FO3.esp`
 	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `Mart's Mutant Mod - DLC The Pitt.esp`
-	* `Mart's Mutant Mod.esp`
-	* `Mart's Mutant Mod - Master Menu Module.esp`
-	* `Mart's Mutant Mod - DLC Broken Steel.esp`
-	* `Mart's Mutant Mod - DLC Zeta.esp`
-	* `Mart's Mutant Mod - FWE Master Release + DLCs.esp`
-	* `Mart's Mutant Mod - FWE Master Release + Project Beauty.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
 	* `ArefuExpandedByAzar-Radio.esp`
 7. Launch the game and wait a few moments to see two reminders about _Alton, IL_ and _Arefu Expanded_ (there's no mention about _Mothership Zeta Crew_, as the mod kick-in is embedded in-game).
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)

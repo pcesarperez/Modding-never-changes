@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[06/08/2016] Section about expanded content revisited.**
+
+I have made a few minor adjustments to the section 4.4 (former 4.3.4), about expanded content. The only remarkable change is the load order.
+
+We are ready to change the way the game looks now.
+
+On a side note, it's a bit difficult to write a guide like this with a cat craving for attention in your lap.
+
 **[26/07/2016] Section about weapons finished.**
 
 At last!
@@ -38,7 +46,7 @@ New section (4.2.2. Fraternizing with the neighborhood) about _Martigen's Mutant
 
 Corrections and additions in sections 4.1.3 and 4.2.1.
 
-**[29/06/2016] Section about _Fallout 2 Wanderers Edition_ finished.**
+**[29/06/2016] Section about _Fallout 3 Wanderers Edition_ finished.**
 The section 4.2.1 is finished, covering the installation of FWE, letting us play a completely different game, harsher and more challenging.
 
 **[26/06/2016] Section about UI finished.**
