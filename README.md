@@ -10,7 +10,7 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 I have added a small section about a mod that creates a list of all your fulfilled achievements in the game, with retroactive effect.
 
-There are no screenshots, though, because I am not getting the option in my PipBoy, nor in my regulator saved game, neither in my vault dweller saved game.
+There are no screenshots, though, because I am not getting the option in my PipBoy, neither in my regulator, nor in my vault dweller saved games.
 
 If I don't get this mod to work in a fresh playthrough, I will remove this chapter.
 
