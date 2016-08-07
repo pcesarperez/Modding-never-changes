@@ -39,6 +39,7 @@
 		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
 	- [5. Unveiling the real Wasteland](#unveilingRealWasteland)
 		+ [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
+		+ [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
 * [6. Resources](#resources)
 	* [6.1. Tools](#tools)
 	* [6.2. Guides](#guides)
@@ -1293,7 +1294,7 @@ If you have followed this guide up to this point, you could play a greatly enjoy
 However, be advised: the mods in this section will push your machine capabilities to the limit.
 
 
-### <a id="sheWalksInBeauty"></a> 5.1. She walks in beauty, like the night of cloudless climes and starry skies
+### <a id="sheWalksInBeauty"></a>5.1. She walks in beauty, like the night of cloudless climes and starry skies
 
 One of the first things we can improve regarding the appearance of our world is the night sky. There are two mods ([_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/?) and [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/?)) that will make you cry tears of joy everytime you look up to the Moon.
 
@@ -1305,6 +1306,105 @@ That will also grant you a short lifespan, killed by any night-crawling creature
 4. Launch the game and just compare.
 ![Fallout 3 night before](Images/Fallout%203%20night%20before.png)
 ![Fallout 3 night after](Images/Fallout%203%20night%20after.png)
+
+
+
+### <a id="uncannyNuclearHolocaust"></a>5.2. The Nuclear Holocaust like you have never seen before
+
+One of the things I like less of the visual aspect of the game is the green tint that paints everything. I guess that is supposed to depict the residual haze from a nuclear holocaust, but I don't like it anyway.
+
+There is a single mod that not only removes the green tint, but also adds an incredible look to the game and a weather system: [_Project Reality_](http://www.nexusmods.com/fallout3/mods/17418/?). No more fixed skin-burning sunny days for the Capital Wasteland.
+
+Gopher has a video which covers different [weather and lighting mods available](https://www.youtube.com/watch?v=oHariRMIryI) (14:56), including _Project Reality_. However, we are going to tinker with the mod file because there is apparently a significant framerate drop with the default rain textures. We are going to replace them with [_Enhanced weather_](http://www.nexusmods.com/fallout3/mods/6170/?) rain textures.
+
+1. Download _F3ProjectRealityMkI_ manually, **NOT** with NMM.
+2. Download _RECCOMANDED Enhanced Weather - Rain and Snow v2 hotfix b Fomod Package- FULL DO NOT DOWNLOAD ANYTHING ELSE_ manually, **NOT** with NMM.
+3. Uncompress `RECCOMANDED Enhanced Weather - Rain and Snow v2  hotfix b Fomod Package- FULL DO NOT DOWNLOAD ANYTHING ELSE-6170.zip` in a location of your choice. The ZIP contains a single file, `Enhanced Weather - Rain and Snow v2 hotfix b.fomod`.
+4. Using 7-zip or any other unzipping tool, extract the contents of `Enhanced Weather - Rain and Snow v2 hotfix b.fomod` to a location of your choice, namely `[%ENHANCED_WEATHER%]`.
+5. Uncompress `F3ProjectRealityMkI-17418-v1-0beta.rar` in a location of your choice, namely `[%PROJECT_REALITY%]`.
+6. Browse to `[%ENHANCED_WEATHER%\Textures\Mieimod\Different Weather]`, and copy these two files to `[%PROJECT_REALITY%\\textures\F3NV\Weather]`:
+	* `Rain.dds`
+	* `Rain2.dds`
+![Fallout 3 Project Reality with enhanced weather textures](Images/Fallout%203%20Project%20Reality%20with%20enhanced%20weather%20textures.png)
+7. Now, remove the following files from that folder:
+	* `F3NVRain.dds`
+	* `F3NVRain2.dds`
+8. Rename the _Enhanced Weather_ files as follows:
+	* `Rain.dds` &rarr; `F3NVRain.dds`
+	* `Rain2.dds` &rarr; `F3NVRain2.dds`
+9. Re-zip the contents of the `[%PROJECT_REALITY%]` folder into an archive named `F3ProjectRealityMkI-17418-v1-0beta-retextured.7z`
+10. Open NMM and click on the green plus sign in the left button bar to manually add the file we just created.
+![NMM install mod from file](Images/NMM%20install%20mod%20from%20file.png)
+11. When the file is loaded, select it and click on the info button to change the name to "F3ProjectRealityMkI retextured".
+![NMM renaming Project Reality](Images/NMM%20renaming%20Project%20Reality.png)
+12. Double-click on the mod's name to activate it. There shouldn't be any overwriting.
+13. Launch LOOT to rearrange your load order.
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* **`F3ProjectRealityMkI.esp`**
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+14. Launch the game and check the incredible look the Wasteland just got!
+![Fallout 3 Project Reality installed](Images/Fallout%203%20Project%20Reality%20installed.png)
+15. Pull up your PipBoy to check the new option in _Items_/_Apparel_ section to configure _Project Reality_.
+![Fallout 3 Project Reality option](Images/Fallout%203%20Project%20Reality%20option.png)
+16. Click on _Project Reality MkI_ and check the settings. There are a lot of things for you to tinker with until you feel comfortable (or uncomfortable, since I guess radioactive rain is not a pretty thing to be under).
+![Fallout 3 Project Reality settings](Images/Fallout%203%20Project%20Reality%20settings.png)
+
+Just a small note... Remember the previous screenshot showing our enhanced night? Well, look at this:
+
+![Fallout 3 night after Project Reality](Images/Fallout%203%20night%20after%20Project%20Reality.png)
+
+Things keep getting better and better!
+
+
+
 
 ## <a id="resources"></a>6. Resources
 

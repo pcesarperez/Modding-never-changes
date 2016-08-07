@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[07/08/2016] Section about Project Reality finished.**
+
+Added a new section about Project Reality, a mod that changes the way the Wasteland looks (much better, in my opinion), and adds dynamic weather and much darker (and terrifying) nights.
+
 **[07/08/2016] Section about night sky enhancement finished.**
 
 Finally!
