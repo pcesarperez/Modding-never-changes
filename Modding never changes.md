@@ -1301,7 +1301,7 @@ That will also grant you a short lifespan, killed by any night-crawling creature
 
 1. Download _Enhanced Night Sky_ file with NMM.
 2. Download _krzymar_HI-RES_Moon-0_2_0-bright_ file with NMM (I prefer the brighter version, instead of the darker one).
-3. Activate them in the same order you downloaded them. There shouln't be any overwriting. There are not data files installed either, so no need to run LOOT.
+3. Activate them in the same order you downloaded them. There shouln't be any overwriting. There are no data files installed either, so no need to run LOOT.
 4. Launch the game and just compare.
 ![Fallout 3 night before](Images/Fallout%203%20night%20before.png)
 ![Fallout 3 night after](Images/Fallout%203%20night%20after.png)
