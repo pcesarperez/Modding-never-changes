@@ -1210,7 +1210,74 @@ Let's install them:
 
 #### <a id="achievementJunkie"></a>4.4.3. For the achievement junkie in you
 
+If you have ever played _World of Warcraft_, you will know that there is a deep, ingrained part of your reptillian brain that generates a huge amount of endorphines every time you get an _Achievement unlocked_ message after fulfilling a series of tasks.
 
+I know what I am talking about. Trust me.
+
+Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible after their first (and only) appearance. [This mod](http://www.nexusmods.com/fallout3/mods/11326/?) (and [its fix](http://www.nexusmods.com/fallout3/mods/18678/?)) lets you view all your achievements in the _Data_/_Notes_ section of your PipBoy, _from the beginning of your playthrough_. Be advised, for this creates the achievement list retroactively.
+
+1. Download _Personal Achievements Log v12_ from [_Personal Achievements Log_ page](http://www.nexusmods.com/fallout3/mods/11326/?) with NMM.
+2. Download _SeraphTCs Personal Achievements Log FIX_ from [_SeraphTCs Personal Achievements Log FIX_ page](http://www.nexusmods.com/fallout3/mods/18678/?) with NMM.
+3. Activate the mods in the same order you downloaded them. The fix should overwrite files from the main mod, as usual.
+4. The mod installs a number of `.esp` files, but we don't need all of them. Since we are using the GOTY version of _Fallout 3_, we only need `PAL - MERGED.esp`, so open the data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`) and delete the following files:
+	* `PAL - BASE File.esp`
+	* `PAL - Broken Steel.esp`
+	* `PAL - Mothership Zeta.esp`
+	* `PAL - Operation Anchorage.esp`
+	* `PAL - Point Lookout.esp`
+	* `PAL - The Pitt.esp`
+5. Run LOOT to rearrange your load order:
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+6. Launch the game and check your PipBoy _Data_ button, _Notes_ option. There should be a _Personal achievements log_ option to view your achievement list.
 
 
 ## <a id="resources"></a>5. Resources

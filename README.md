@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[07/08/2016] Section about achievement list finished.**
+
+I have added a small section about a mod that creates a list of all your fulfilled achievements in the game, with retroactive effect.
+
+There are no screenshots, though, because I am not getting the option in my PipBoy, nor in my regulator saved game, neither in my vault dweller saved game.
+
+If I don't get this mod to work in a fresh playthrough, I will remove this chapter.
+
 **[07/08/2016] Section about Advanced Gear set finished.**
 
 I have included a new section (4.4.2) about Gopher's Advanced Recon set, with new armor, trap detector, nightvision, thermal vision and range finder.
