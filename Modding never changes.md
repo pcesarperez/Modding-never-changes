@@ -8,18 +8,18 @@
 * [1. Introduction](#introduction)
 * [2. The tools we need](#toolsWeNeed)
 * [3. Fixing the game](#fixingGame)
-	* [3.1. Install the game](#installGame)
-	* [3.2. Disable Games for Windows Live](#disableGFWL)
-	* [3.3. Patching the game](#patchingGame)
-	* [3.4. Cleaning up the master files](#cleaningMasterFiles)
-	* [3.5. Enabling the console](#enablingConsole)
-	* [3.6. Enabling access to 4+ GB of memory](#largeAddressAware)
-	* [3.7. _Fallout 3_ Script Extender](#fose)
-	* [3.8. Getting rid of stutter](#gettingRidStutter)
-	* [3.9. Fake full-screen mode](#fakeFullScreen)
-	* [3.10. Saving games the right way](#casm)
+	- [3.1. Install the game](#installGame)
+	- [3.2. Disable Games for Windows Live](#disableGFWL)
+	- [3.3. Patching the game](#patchingGame)
+	- [3.4. Cleaning up the master files](#cleaningMasterFiles)
+	- [3.5. Enabling the console](#enablingConsole)
+	- [3.6. Enabling access to 4+ GB of memory](#largeAddressAware)
+	- [3.7. _Fallout 3_ Script Extender](#fose)
+	- [3.8. Getting rid of stutter](#gettingRidStutter)
+	- [3.9. Fake full-screen mode](#fakeFullScreen)
+	- [3.10. Saving games the right way](#casm)
 * [4. Enhancing the game](#enhancingGame)
-	* [4.1. Improving the user interface](#improvingUserInterface)
+	- [4.1. Improving the user interface](#improvingUserInterface)
 		+ [4.1.1. Building the basement](#buildingBasement)
 		+ [4.1.2. Face-washing the HUD](#faceWashingHUD)
 		+ [4.1.3. Rearranging things](#rearrangingThings)
@@ -28,12 +28,15 @@
 		+ [4.1.5. You don't want to ask for directions](#betterMap)
 		+ [4.1.6. No more dots](#noMoreDots)
 		+ [4.1.7. Shed some light here, please](#shedSomeLight)
-	* [4.2. Lend me your ears](#lendMeYourEars)
-	* [4.3. Playing the bad-ass way](#playingBadAss)
+	- [4.2. Lend me your ears](#lendMeYourEars)
+	- [4.3. Playing the bad-ass way](#playingBadAss)
 		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
 		+ [4.3.3. We need more firepower!](#weNeedMoreFirepower)
-	* [4.4. Expanding your world](#expandingYourWorld)
+	- [4.4. Expanding your world](#expandingYourWorld)
+		+ [4.4.1. _Hic sunt dracones_](#hicSuntDracones)
+		+ [4.4.2. Gear for a fallen brother](#gearFallenBrother)
+		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
 * [5. Resources](#resources)
 	* [5.1. Tools](#tools)
 	* [5.2. Guides](#guides)
@@ -1051,7 +1054,14 @@ If you run the game, you will notice the dramatic change when aiming your weapon
 
 ![Fallout 3 new sights](Images/Fallout%203%20new%20sights.png)
 
+
+
 ### <a id="expandingYourWorld"></a>4.4. Expanding your world
+
+This section is about adding new content to the game, and it's the last block before changing the way the game looks. We are going to add a few new places, a new playable set (armor, range finder, trap detector and nightvision gear), and pulling out a feature the game actually has, but does not show by default.
+
+
+#### <a id="hicSuntDracones"></a>4.4.1. _Hic sunt dracones_
 
 It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
@@ -1109,6 +1119,93 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 7. Launch the game and wait a few moments to see two reminders about _Alton, IL_ and _Arefu Expanded_ (there's no mention about _Mothership Zeta Crew_, as the mod kick-in is embedded in-game).
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
+
+
+#### <a id="gearFallenBrother"></a>4.4.2. Gear for a fallen brother
+
+Gopher has created four mods which add an interesting gear set based on a fallen Brotherhood of Steel's operative. These mods are:
+
+* [_Advanced Recon Stealth Armor_](http://www.nexusmods.com/fallout3/mods/2654/?)
+* [_Advanced Recon Trap Detection_](http://www.nexusmods.com/fallout3/mods/15641/?)
+* [_Advanced Recon Range Finder_](http://www.nexusmods.com/fallout3/mods/15744/?)
+* [_Advanced Recon Thermal Nightvision_](http://www.nexusmods.com/fallout3/mods/15653/?)
+
+There is a small Gopher's video showing the [features of the Advanced Recon gear set](https://www.youtube.com/watch?v=OsstmRso_Jw) (4:42).
+
+Let's install them:
+
+1. Download _Advanced Recon Armor v 4_ with NMM.
+2. Download _Detect Traps v 2_ and _Adv Recon Thermal Nightvision - Detect Traps Patch_ with NMM.
+3. Download _Adv Recon Range Finder_ with NMM.
+4. Download _Adv Recon Thermal Nightvision_ and _Adv Recon Thermal Nightvision - FWE Patch_ with NMM.
+5. There is an interesting patch which [enables nightvision/thermalvision on any headgear](http://www.nexusmods.com/fallout3/mods/20806/?), not limited to Advanced Recon Armor. Download _Advanced Recon Patcher_ with NMM.
+5. You should have the complete _Advanced Recon_ set by now.
+![NMM Advanced Recon set](Images/NMM%20Advanced%20Recon%20set.png)
+6. Activate the mods in the following order.
+	* _Advanced Recon Stealth Armor_
+	* _Advanced Recon Trap Detection - Detect Traps v 2_
+	* _Advanced Recon Range Finder FO3 - Adv Recon Range Finder_
+	* _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision_
+	* _Advanced Recon Trap Detection - Adv Recon Thermal Nightvision - Detect Traps Patch_
+	* _Advanced Recon Thermal Nightvision Patcher - Advanced Recon Patcher_
+	* _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision - FWE Patch_
+7. When you activate _Advanced Recon Stealth Armor_, a pop-up with options will, well, pop up. Leave the options unchanged and click on _Install_.
+![NMM Advanced Recon Stealth Armor install options](Images/NMM%20Advanced%20Recon%20Stealth%20Armor%20install%20options.png)
+8. When you activate _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision_, NMM asks for permission to overwrite files from the previous iHUD installation. It adds certain overlay items when using scopes and binoculars. Answer _Yes to all_, as usual.
+![NMM Advanced Recon Range Finder overwrite](Images/NMM%20Advanced%20Recon%20Range%20Finder%20overwrite.png)
+9. Fire up LOOT to rearrange your load order. This should be your mod stack:
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+
+
+#### <a id="achievementJunkie"></a>4.4.3. For the achievement junkie in you
 
 
 

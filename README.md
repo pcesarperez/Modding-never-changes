@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[07/08/2016] Section about Advanced Gear set finished.**
+
+I have included a new section (4.4.2) about Gopher's Advanced Recon set, with new armor, trap detector, nightvision, thermal vision and range finder.
+
+Besides, I have rearranged section 4, moving the expanded content to its own section (4.4.1), and planning a new section about a revamped achievement log (4.4.3).
+
 **[06/08/2016] Section about expanded content revisited.**
 
 I have made a few minor adjustments to the section 4.4 (former 4.3.4), about expanded content. The only remarkable change is the load order.
