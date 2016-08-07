@@ -1203,6 +1203,9 @@ Let's install them:
 	* `Advanced Recon Tech - Detect Traps.esp`
 	* `Advanced Recon Equipment Patcher.esp`
 	* `Advanced Recon Tech FWE.esp`
+10. Launch the game and check a new message about the gear seat. In your PipBoy (section _Items_, option _Apparel_), there are two new options to configure your Advanced Recon gear settings.
+![Fallout 3 Advanced Recon set added](Images/Fallout%203%20Advanced%20Recon%20set%20added.png)
+![Fallout 3 Advanced Recon gear settings](Images/Fallout%203%20Advanced%20Recon%20gear%20settings.png)
 
 
 #### <a id="achievementJunkie"></a>4.4.3. For the achievement junkie in you
