@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[07/08/2016] Section about night sky enhancement finished.**
+
+Finally!
+
+I have started the final big chapter of the book. This big chapter (5) deals with graphic-enhancement mods.
+
+The first chapter (5.1) changes the detail and brightness of the night sky with two simple mods.
+
 **[07/08/2016] Section about achievement list finished.**
 
 I have added a small section about a mod that creates a list of all your fulfilled achievements in the game, with retroactive effect.

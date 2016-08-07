@@ -37,11 +37,13 @@
 		+ [4.4.1. _Hic sunt dracones_](#hicSuntDracones)
 		+ [4.4.2. Gear for a fallen brother](#gearFallenBrother)
 		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
-* [5. Resources](#resources)
-	* [5.1. Tools](#tools)
-	* [5.2. Guides](#guides)
-	* [5.3. Mods](#mods)
-	* [5.4. Videos](#videos)
+	- [5. Unveiling the real Wasteland](#unveilingRealWasteland)
+		+ [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
+* [6. Resources](#resources)
+	* [6.1. Tools](#tools)
+	* [6.2. Guides](#guides)
+	* [6.3. Mods](#mods)
+	* [6.4. Videos](#videos)
 
 
 
@@ -1280,13 +1282,37 @@ Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible 
 6. Launch the game and check your PipBoy _Data_ button, _Notes_ option. There should be a _Personal achievements log_ option to view your achievement list.
 
 
-## <a id="resources"></a>5. Resources
+
+
+## <a id="unveilingRealWasteland"></a>5. Unveiling the real Wasteland
+
+_Fallout 3_ is a terrific game, but it shows its age at first sight. Moreover, the greenish tint that pervades everything is, by far, one of the most questionable design decisions Bethesda made, at least graphics-wise.
+
+If you have followed this guide up to this point, you could play a greatly enjoyable game just with the mods I have recommended. But if you want to go the extra mile and change your visual perception of the Wasteland forever, please, be my guest and keep on reading.
+
+However, be advised: the mods in this section will push your machine capabilities to the limit.
+
+
+### <a id="sheWalksInBeauty"></a> 5.1. She walks in beauty, like the night of cloudless climes and starry skies
+
+One of the first things we can improve regarding the appearance of our world is the night sky. There are two mods ([_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/?) and [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/?)) that will make you cry tears of joy everytime you look up to the Moon.
+
+That will also grant you a short lifespan, killed by any night-crawling creature which happens to find you an easy meal, ready to be disemboweled.
+
+1. Download _Enhanced Night Sky_ file with NMM.
+2. Download _krzymar_HI-RES_Moon-0_2_0-bright_ file with NMM (I prefer the brighter version, instead of the darker one).
+3. Activate them in the same order you downloaded them. There shouln't be any overwriting. There are not data files installed either, so no need to run LOOT.
+4. Launch the game and just compare.
+![Fallout 3 night before](Images/Fallout%203%20night%20before.png)
+![Fallout 3 night after](Images/Fallout%203%20night%20after.png)
+
+## <a id="resources"></a>6. Resources
 
 This is a comprehensive list of the resources used throughtout this guide.
 
 
 
-### <a id="tools"></a>5.1. Tools
+### <a id="tools"></a>6.1. Tools
 
 * [Nexus Mod Manager](http://www.nexusmods.com/games/mods/modmanager/?). This is the tool of choice when it comes to keep all your mods organized and up-to-date.
 * [LOOT](https://loot.github.io/). Installing mods on Bethesda games can be a pain in the ass, especially if you try to install a lot of possibly-colliding mods. This tool keeps the load order straight.
@@ -1294,7 +1320,7 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 
 
-### <a id="guides"></a>5.2. Guides
+### <a id="guides"></a>6.2. Guides
 
 * [Guide to fix the game in order to run under modern versions of Windows](http://steamcommunity.com/sharedfiles/filedetails/?id=149946772).
 * [Why the game crashes if it runs in a box with multiple cores](http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html).
@@ -1303,11 +1329,16 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 
 
-### <a id="mods"></a>5.3. Mods
+### <a id="mods"></a>6.3. Mods
 
 This is the list of mods used throughout this guide, in ascending alphabetical order.
 
 * [_Adjustable HUD_](http://fallout3.nexusmods.com/mods/15886) or aHUD.
+* [_Advanced Recon Range Finder_](http://www.nexusmods.com/fallout3/mods/15744/?)
+* [_Advanced Recon Stealth Armor_](http://www.nexusmods.com/fallout3/mods/2654/?)
+* [_Advanced Recon Thermal Nightvision Patcher_](http://www.nexusmods.com/fallout3/mods/20806/?)
+* [_Advanced Recon Thermal Nightvision_](http://www.nexusmods.com/fallout3/mods/15653/?)
+* [_Advanced Recon Trap Detection_](http://www.nexusmods.com/fallout3/mods/15641/?)
 * [_Alton IL_](http://www.nexusmods.com/fallout3/mods/16949/?).
 * [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?).
 * [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?).
@@ -1334,18 +1365,19 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_Marts Mutant Mod_](http://fallout3.nexusmods.com/mods/3211) or MMM.
 * [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?)
 * [_NMCS Texture Pack_](http://www.nexusmods.com/fallout3/mods/12056/?).
+* [_Personal Achievements Log_](http://www.nexusmods.com/fallout3/mods/11326/?)
 * [_PipBoy 3000 HD Retexture_](http://www.nexusmods.com/fallout3/mods/20373/?)
 * [_Project Reality_](http://www.nexusmods.com/fallout3/mods/17418/?).
 * [_Pure Water_](http://www.nexusmods.com/fallout3/mods/2599/?).
 * [_RH Ironsights_](http://fallout3.nexusmods.com/mods/6938).
+* [_SeraphTCs Personal Achievements Log FIX_](http://www.nexusmods.com/fallout3/mods/18678/?)
 * [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/?)
 * [_Unofficial Fallout 3 Patch_](http://www.nexusmods.com/fallout3/mods/19122/?)
 * [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
 * [_Weapon Mod Kits_](http://fallout3.nexusmods.com/mods/3388) or WMK.
 
 
-
-### <a id="videos"></a>5.4. Videos
+### <a id="videos"></a>6.4. Videos
 
 These are the videos which served as spiritual inspiration author of this guide. That's me.
 
@@ -1368,3 +1400,4 @@ These are the videos which served as spiritual inspiration author of this guide.
 * [Modding Fallout 3 - Part 8 : Unified HUD Project](https://www.youtube.com/watch?v=oSaJVzGmQaI) (11:00).
 * [Modding Fallout 3 - Part 9 : FO3Edit](https://www.youtube.com/watch?v=uPK7R71zcwM) (39:13).
 * [Skyrim Mod Tool TES5EDIT : Cleaning your master files (REVISED)](https://www.youtube.com/watch?v=fw3g_N1jcZQ) (13:24).
+* [Fallout 3 mod : Advanced Recon Gear (Version 3.1)](https://www.youtube.com/watch?v=OsstmRso_Jw)
