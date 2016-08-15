@@ -40,6 +40,10 @@
 	- [5. Unveiling the real Wasteland](#unveilingRealWasteland)
 		+ [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
 		+ [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
+		+ [5.3. Everything depends on the point of view](#pointOfView)
+		+ [5.4. A beautiful skin](#beautifulSkin)
+		+ [5.5. Let there be light!](#letThereBeLight)
+		+ [5.6. I don't like your face](#dontLikeYourFace)
 * [6. Resources](#resources)
 	* [6.1. Tools](#tools)
 	* [6.2. Guides](#guides)
@@ -1405,6 +1409,118 @@ Things keep getting better and better!
 
 
 
+### <a id="pointOfView"></a>5.3. Everything depends on the point of view
+
+At first, I didn't think to include these four mod in this guide:
+
+* [_CINEMATECH_](http://www.nexusmods.com/fallout3/mods/15745/?)
+* [_Director's Chair_](http://www.nexusmods.com/fallout3/mods/17899/?)
+* [_Dynavision_](http://fallout3.nexusmods.com/mods/17876/)
+* [_The IMAGINATOR_](http://www.nexusmods.com/fallout3/mods/16875/?)
+
+I only considered _Dynavision_ worth installing, but after revisiting Gopher's video about [visual enhancements mods](https://www.youtube.com/watch?v=ry-84eqDvr0) (29:59), I changed my mind, not only because the customization posibilities of the combined mods, but also because you don't even need the Pip-Boy menu to change the settings of the mods (specially _Dynavision_). That's a great plus.
+
+These four mods give you total control about light. And no, these are not lighting mods (we'll be there [in a breeze](#letThereBeLight)). These are mods to _control_ the way the light behaves in your game.
+
+Let me explain. At a very basic level, every game lets you customize three parameters: brightness, contrast and saturation. However, the sum of the aforementioned mods let you control the kind of light, the "film grain" and even the depth of field of your point of view.
+
+Let's get started.
+
+1. Download _Dynavision_ with NMM.
+2. Download _CINEMATECH_ with NMM.
+3. Download _The IMAGINATOR_ with NMM.
+4. Download _Director's Chair_ with NMM.
+5. We should have the four mods downloaded in no time.
+![NMM visual enhancements downloaded](Images/NMM%20visual%20enhancements%20downloaded.png)
+6. Activate _DYNAVISION - Dynamic Depth of Field - DYNAVISION - Dynamic Lens Effect 1\_0\_1_ by double-clicking on it. No overwriting is required.
+7. Activate _CINEMATECH - Film Grains and Styles - CINEMATECH_ the same way. It will ask you to overwrite a HUD file previously installed by _Advanced Recon Thermal Nightvision_. Go on and answer _Yes to all_.
+8. Activate _The IMAGINATOR for FO3 - Visual Control Device - The IMAGINATOR for FO3 - Visual Control Device_ the same way. No overwriting required.
+9. Finally, activate _Directors Chair - Total Visual Control - Directors Chair_. No overwriting either.
+10. Fire up LOOT to rearrange your load order. This should be the deal.
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* **`CINEMATECH.esm`**
+	* **`ImaginatorFO3.esp`**
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `F3ProjectRealityMkI.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+	* **`DYNAVISION - Dynamic Lens Effect.esp`**
+	* **`Directors Chair - Fallout 3.esp`**
+11. Launch the game to check the new menus. Pressing <kbd>F7</kbd> will show the _Director's Chair_ in-game menu. The best way to get the grasp of the possibilities given by these four mods is watching Gopher's video.
+![Fallout 3 Director's Chair](Images/Fallout%203%20Director's%20Chair.png)
+
+
+
+### <a id="beautifulSkin"></a>5.4. A beautiful skin
+
+* Flora Overhaul
+* NMCS Texture Pack
+* Pure Water
+* Clean-Deluxe
+
+
+
+### <a id="letThereBeLight"></a>5.5. Let there be light!
+
+* Darkened Interiors
+* Fallout Street Lights
+* Megaton Lighting Overhaul
+
+
+
+### <a id="dontLikeYourFace"></a>5.6. I don't like your face
+
+* Fallout 3 re-animated
+* Fallout 3 redesigned
+* Lost in Light
+
+
 
 ## <a id="resources"></a>6. Resources
 
@@ -1442,9 +1558,13 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_Alton IL_](http://www.nexusmods.com/fallout3/mods/16949/?).
 * [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?).
 * [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?).
+* [_CINEMATECH_](http://www.nexusmods.com/fallout3/mods/15745/?)
+* [_Clean-Deluxe_](http://www.nexusmods.com/fallout3/mods/17115/?)
 * [_Community Ammunition Library_](http://www.nexusmods.com/fallout3/mods/3447/?) or CALIBR.
+* [_Darkened Interiors_](http://www.nexusmods.com/fallout3/mods/16935/?)
 * [_Darnified UI_](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/) or DarnUI.
 * [_DarnUI compatibility patch for FWE_](http://fallout3.nexusmods.com/mods/2761).
+* [_Director’s Chair_](http://www.nexusmods.com/fallout3/mods/17899/?)
 * [_Dynavision_](http://fallout3.nexusmods.com/mods/17876/).
 * [_Energy Visuals Enhanced_](http://fallout3.nexusmods.com/mods/8340) or EVE.
 * [_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/?).
@@ -1463,6 +1583,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_Large Address Aware Enabler for Fallout 3_](http://www.nexusmods.com/fallout3/mods/6510/?)
 * [_Lost in Light_](http://www.nexusmods.com/fallout3/mods/19163/?) or LiL.
 * [_Marts Mutant Mod_](http://fallout3.nexusmods.com/mods/3211) or MMM.
+* [_Megaton Lighting Overhaul_](http://www.nexusmods.com/fallout3/mods/7875/?)
 * [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?)
 * [_NMCS Texture Pack_](http://www.nexusmods.com/fallout3/mods/12056/?).
 * [_Personal Achievements Log_](http://www.nexusmods.com/fallout3/mods/11326/?)
@@ -1472,9 +1593,11 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_RH Ironsights_](http://fallout3.nexusmods.com/mods/6938).
 * [_SeraphTCs Personal Achievements Log FIX_](http://www.nexusmods.com/fallout3/mods/18678/?)
 * [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/?)
+* [_The IMAGINATOR_](http://www.nexusmods.com/fallout3/mods/16875/?)
 * [_Unofficial Fallout 3 Patch_](http://www.nexusmods.com/fallout3/mods/19122/?)
 * [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867) or UIO.
 * [_Weapon Mod Kits_](http://fallout3.nexusmods.com/mods/3388) or WMK.
+
 
 
 ### <a id="videos"></a>6.4. Videos

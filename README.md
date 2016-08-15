@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[15/08/2016] Section about vision control finished.**
+
+Added a new section about vision control (5.3), with four mods which allow to change the way we see the Wasteland.
+
+The final three chapters (5.4, 5.5 and 5.6) are on their way. I have planned the install order, so I have added the chapter stubs, writing down the remaining mods to install.
+
 **[07/08/2016] Section about Project Reality finished.**
 
 Added a new section about Project Reality, a mod that changes the way the Wasteland looks (much better, in my opinion), and adds dynamic weather and much darker (and terrifying) nights.
