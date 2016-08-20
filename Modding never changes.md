@@ -37,13 +37,13 @@
 		+ [4.4.1. _Hic sunt dracones_](#hicSuntDracones)
 		+ [4.4.2. Gear for a fallen brother](#gearFallenBrother)
 		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
-	- [5. Unveiling the real Wasteland](#unveilingRealWasteland)
-		+ [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
-		+ [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
-		+ [5.3. Everything depends on the point of view](#pointOfView)
-		+ [5.4. A beautiful skin](#beautifulSkin)
-		+ [5.5. Let there be light!](#letThereBeLight)
-		+ [5.6. I don't like your face](#dontLikeYourFace)
+* [5. Unveiling the real Wasteland](#unveilingRealWasteland)
+	- [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
+	- [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
+	- [5.3. Everything depends on the point of view](#pointOfView)
+	- [5.4. A beautiful skin](#beautifulSkin)
+	- [5.5. Let there be light!](#letThereBeLight)
+	- [5.6. I don't like your face](#dontLikeYourFace)
 * [6. Resources](#resources)
 	* [6.1. Tools](#tools)
 	* [6.2. Guides](#guides)
@@ -1666,13 +1666,11 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_Dynavision_](http://fallout3.nexusmods.com/mods/17876/).
 * [_Energy Visuals Enhanced_](http://fallout3.nexusmods.com/mods/8340) or EVE.
 * [_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/?).
-* [_EVE compatibility patch for FOIP_](http://fallout3.nexusmods.com/mods/15961).
 * [_Fake Fullscreen Mode Windowed - Alt Tab Fix_](http://www.nexusmods.com/fallout3/mods/16001/?)
 * [_Fallout 3 - HD Audio Overhaul - v1.21_](http://www.nexusmods.com/fallout3/mods/13055/?)
 * [_Fallout 3 re-animated_](http://fallout3.nexusmods.com/mods/7670).
 * [_Fallout 3 redesigned_](http://fallout3.nexusmods.com/mods/6341).
 * [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/?) or FWE.
-* [_Fallout Interoperability Program_](http://fallout3.nexusmods.com/mods/4968) or FOIP.
 * [_Fallout Street Lights_](http://www.nexusmods.com/fallout3/mods/8069/?).
 * [_Fallout Stutter Remover_](http://www.nexusmods.com/fallout3/mods/8886/?)
 * [_Flora overhaul_](http://www.nexusmods.com/fallout3/mods/19864/?).
