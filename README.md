@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[20/08/2016] Section about new visuals finished.**
+
+Added a new section about visuals (5.4), covering ground from new textures to increased flora, going through crystal clear waters and a cleaned-up environment.
+
+Almost there!
+
 **[15/08/2016] Section about vision control finished.**
 
 Added a new section about vision control (5.3), with four mods which allow to change the way we see the Wasteland.

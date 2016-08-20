@@ -1426,10 +1426,10 @@ Let me explain. At a very basic level, every game lets you customize three param
 
 Let's get started.
 
-1. Download _Dynavision_ with NMM.
+1. Download _DYNAVISION - Dynamic Lens Effect 1\_0\_1_ with NMM.
 2. Download _CINEMATECH_ with NMM.
-3. Download _The IMAGINATOR_ with NMM.
-4. Download _Director's Chair_ with NMM.
+3. Download _The IMAGINATOR for FO3 - Visual Control Device_ with NMM.
+4. Download _Directors Chair_ with NMM.
 5. We should have the four mods downloaded in no time.
 ![NMM visual enhancements downloaded](Images/NMM%20visual%20enhancements%20downloaded.png)
 6. Activate _DYNAVISION - Dynamic Depth of Field - DYNAVISION - Dynamic Lens Effect 1\_0\_1_ by double-clicking on it. No overwriting is required.
@@ -1499,10 +1499,107 @@ Let's get started.
 
 ### <a id="beautifulSkin"></a>5.4. A beautiful skin
 
-* Flora Overhaul
-* NMCS Texture Pack
-* Pure Water
-* Clean-Deluxe
+_Fallout 3_ was released in 2008... and it really shows its age when you look at it more than two whole seconds.
+
+Old graphics shouldn't be an issue with a game like this, but when you see how the game improves with new textures... Well, you will never be able to play the vanilla version again. Ever.
+
+Be advised though: these mods will push your rig capabilities to its limits. Gopher explains the different flavours of textures you can install in the [visual enhancements mods](https://www.youtube.com/watch?v=ry-84eqDvr0) (29:59) we saw earlier, although he covers just _NMCS Texture Pack_.
+
+These are the mods we are going to install:
+
+* [_Flora Overhaul_](http://www.nexusmods.com/fallout3/mods/19864/?)
+* [_NMCS Texture Pack_](http://www.nexusmods.com/fallout3/mods/12056/?)
+* [_Pure Water_](http://www.nexusmods.com/fallout3/mods/2599/?)
+* [_Clean-Deluxe_](http://www.nexusmods.com/fallout3/mods/17115/?)
+
+We are not going to use the full version of _NMCS Texture Pack_ because the performance version is just about as good. Regarding to _Flora Overhaul_, I prefer the _Dead Edition_ because, you know, a Wasteland full of trees cannot barely considered a wasteland anymore. However, feel free to ignore me (why the hell are you reading this, anyway?).
+
+Finally, _Pure Water_ removes the muddy aspect of the water (but not its radiation, although it's optional, too), and _Clean-Deluxe_ will give us a 5-10% improvement in FPS, removing clutter and atmospheric haze which, in fact, add nothing meaningful to the game.
+
+Let's begin!
+
+1. Download _NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ with NMM. Go partying the whole night while this mod is downloaded.
+2. Download _Dead Edition v13C_ with NMM.
+3. Download _PureWater_ with NMM.
+4. Download _Clean-Deluxe GOTY Edition_ with NMM.
+5. We have our 4 mods downloaded and ready to be installed.
+![NMM texture mods](Images/NMM%20texture%20mods.png)
+6. Activate _NMCs\_Texture\_Pack\_for\_FO3 - NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ double-clicking on it. No overwriting required, as this mods comprises just textures.
+7. Activate _FO3 Flora Overhaul - Dead Edition v13C_ double-clicking on it. Again, no overwriting required.
+8. Activate _PureWater - PureWater_. No overwriting required.
+9. Activate _Clean-Deluxe - Clean-Deluxe GOTY Edition_. No overwriting required.
+10. _Pure Water_ comes in four flavours, each one with its own `.esp` file:
+	* `PureWater-VeryClearNoRad-.esp`: High water transparency and no radiation poisoning.
+	* `PureWater-VeryCleanLittleRad-.esp`: High water transparency and radiation poisoning.
+	* `PureWater-NoRad-.esp`: Normal water transparency and no radiation poisoning.
+	* `PureWater-LittleRad-.esp`: Normal water transparency and radiation poisoning.
+11. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
+12. Run LOOT to rearrange your load order, as usual.
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* `CINEMATECH.esm`
+	* `ImaginatorFO3.esp`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
+	* **`Clean-Deluxe GOTY.esp`**
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `F3ProjectRealityMkI.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+	* `DYNAVISION - Dynamic Lens Effect.esp`
+	* `Directors Chair - Fallout 3.esp`
+	* **`Flora Overhaul.esp`**
+	* **`PureWater-VeryCleanLittleRad-.esp`**
+11. Launch the game to see for yourself.
+![Fallout 3 new textures and flora night](Images/Fallout%203%20new%20textures%20and%20flora%20night.png)
+![Fallout 3 new textures and flora day](Images/Fallout%203%20new%20textures%20and%20flora%20day.png)
+
+The quality of the textures is hard to miss, not to mention the fuckload of trees that are thrown to your face all of a sudden.
+
+![Fallout 3 new textures](Images/Fallout%203%20new%20textures.png)
 
 
 
@@ -1538,10 +1635,11 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 ### <a id="guides"></a>6.2. Guides
 
-* [Guide to fix the game in order to run under modern versions of Windows](http://steamcommunity.com/sharedfiles/filedetails/?id=149946772).
-* [Why the game crashes if it runs in a box with multiple cores](http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html).
-* [TES5Edit cleaning guide](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).
 * [_Fallout 3_ Tweaking Guide](http://www.tweakguides.com/Fallout3_1.html).
+* [_Let's mod Fallout 3 with over 100 mods_](http://www.gamingboulevard.com/2015/01/lets-mod-fallout-3-100-mods/)
+* [Guide to fix the game in order to run under modern versions of Windows](http://steamcommunity.com/sharedfiles/filedetails/?id=149946772).
+* [TES5Edit cleaning guide](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).
+* [Why the game crashes if it runs in a box with multiple cores](http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html).
 
 
 
