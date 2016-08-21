@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+***[21/08/2016] Section about lighting finished.**
+
+Added a new section about lighting, both in interiors and exteriors, setting a scarier mood in the nights. These mods fit perfectly with darker nights from _Project Reality_.
+
 **[20/08/2016] Section about new visuals finished.**
 
 Added a new section about visuals (5.4), covering ground from new textures to increased flora, going through crystal clear waters and a cleaned-up environment.

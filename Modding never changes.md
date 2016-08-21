@@ -1605,9 +1605,92 @@ The quality of the textures is hard to miss, not to mention the fuckload of tree
 
 ### <a id="letThereBeLight"></a>5.5. Let there be light!
 
-* Darkened Interiors
-* Fallout Street Lights
-* Megaton Lighting Overhaul
+Lighting in _Fallout 3_ is somewhat unnatural. You would think everyone in the Capital Wasteland has developed nightvision, because you can see perfectly in pitch black underground places. Not to mention the horrid HDR blooming you get when the game does not handle well multiple light sources.
+
+The three following mods try to enhance lighting in _Fallout 3_.
+
+* [_Darkened Interiors_](http://www.nexusmods.com/fallout3/mods/16935/?)
+* [_Fallout Street Lights_](http://www.nexusmods.com/fallout3/mods/8069/?)
+* [_Megaton Lighting Overhaul_](http://www.nexusmods.com/fallout3/mods/7875/?)
+
+_Darkened Interiors_ tries to give interiors a realistic lighting, with deep shadows and islands of light, which creates a scarier atmosphere. _Fallout Street Lights_ revamps, well, the street lights, creating light beams where there was just diffuse glows. Finally, _Megaton Lighting Overhaul_ adds lights in Megaton, the first settlement you are going to find in your wanderings around the Wasteland (you will spend quite a lot of time there).
+
+1. Download _Darkened Interiors v0\_3_ with NMM.
+2. Download _Fallout Street Lights Version 2_ with NMM.
+3. Download _Megaton Lighting Overhaul_ with NMM.
+4. These are small mods, so you will have them downloaded in a breeze.
+![NMM Lighting mods](Images/NMM%20Lighting%20mods.png)
+5. Activate them in the same order you downloaded them. Each mod has its own set of files, so no overwriting is required.
+6. Yeah, you guessed. Run LOOT.
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* **`StreetLights.esm`**
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* `CINEMATECH.esm`
+	* `ImaginatorFO3.esp`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `Clean-Deluxe GOTY.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* **`Xepha's Darkened Interiors.esp`**
+	* `WeaponModKits.esp`
+	* **`Xepha's Darkened Interiors - BS.esp`**
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* **`Xepha's Darkened Interiors - PL.esp`**
+	* `WeaponModKits - PointLookout.esp`
+	* `F3ProjectRealityMkI.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+	* `DYNAVISION - Dynamic Lens Effect.esp`
+	* `Directors Chair - Fallout 3.esp`
+	* `Flora Overhaul.esp`
+	* `PureWater-VeryCleanLittleRad-.esp`
+	* **`Xepha's Darkened Interiors - OA.esp`**
+	* **`megalight.esp`**
+7. LOOT informs us that the file `StreetLights.esm` containts identical to master records, so we need to clean it with FO3Edit. Follow the usual procedure, selecting only that file and letting FO3Edit load the dependencies for you.
+8. Launch the game and take a stroll in the night.
+![Fallout 3 new lighting](Images/Fallout%203%20new%20lighting.png)
+![Fallout 3 Megaton entrance light](Images/Fallout%203%20Megaton%20entrance%20light.png)
+![Fallout 3 Megaton street lights](Images/Fallout%203%20Megaton%20street%20lights.png)
 
 
 
