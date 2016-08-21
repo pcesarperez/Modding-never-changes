@@ -6,7 +6,7 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
-***[21/08/2016] Section about lighting finished.**
+**[21/08/2016] Section about lighting finished.**
 
 Added a new section about lighting, both in interiors and exteriors, setting a scarier mood in the nights. These mods fit perfectly with darker nights from _Project Reality_.
 
