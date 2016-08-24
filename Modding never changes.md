@@ -1819,9 +1819,9 @@ Let's see how the game changes with this. What about the defining moment of your
 
 ![Fallout 3 not so scary first sight](Images/Fallout%203%20not%20so%20scary%20first%20sight.png)
 
-Well, it's a little bit les scary, although there are some remaining scolds in these eyes.
+Well, it's a little bit les scary, although there are some remaining embers in these eyes.
 
-![Fallout 3 scold in your eyes](Images/Fallout%203%20scold%20in%20your%20eyes.png)
+![Fallout 3 embers in your eyes](Images/Fallout%203%20embers%20in%20your%20eyes.png)
 
 There are certain improvements in the character customization options, although I don't quite get my own look-alike.
 
