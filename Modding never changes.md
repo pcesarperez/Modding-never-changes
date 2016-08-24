@@ -210,6 +210,16 @@ After clicking on the leftmost icon, the program proposes the proper load order,
 
 ![LOOT after sorting](Images/LOOT%20after%20sorting.png)
 
+This should be your load order:
+
+* `Fallout 3.esm`
+* `Anchorage.esm`
+* `ThePitt.esm`
+* `BrokenSteel.esm`
+* `PointLookout.esm`
+* `Zeta.esm`
+* **`Unofficial Fallout 3 Patch.esm`**
+
 You might be surprised to check that there are inconsistencies in the main DLC files, like `Anchorage.esm` (master file for _Operation Anchorage_ DLC). As we said, Bethesda is not known for releasing solid, fully tested programs. We'll address that later.
 
 For now, just click on _Apply_ to put the unofficial patch at the bottom of the load order.
@@ -455,9 +465,18 @@ CASM also saves the game automatically with a given frequency and under certain 
 ![NMM CASM loaded last](Images/NMM%20CASM%20loaded%20last.png)
 6. Close NMM and run LOOT. Click on the _Sort Plugins_ icon to fix the load order. Notice that CASM still sits at the bottom, and no conflicts are detected (this step is fairly unnecessary, but you need to get used to routinely rearrange your load order).
 ![LOOT after installing CASM](Images/LOOT%20after%20installing%20CASM.png)
-7. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing <kbd>TAB</kbd> and navigate to the _Aid_ section. You will see an "item" called _CASM Options Menu_.
+7. This should be your load order:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* **`CASM.esp`**
+8. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing <kbd>TAB</kbd> and navigate to the _Aid_ section. You will see an "item" called _CASM Options Menu_.
 ![Fallout 3 CASM option](Images/Fallout%203%20CASM%20option.png)
-8. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
+9. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
 ![Fallout 3 CASM settings](Images/Fallout%203%20CASM%20settings.png)
 
 
@@ -539,7 +558,17 @@ This will be a bit tricky, because there are no NMM packages right out-of-the-bo
 ![NMM DUIF3 installed](Images/NMM%20DUIF3%20installed.png)
 12. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
 ![LOOT DUIF3](Images/LOOT%20DUIF3.png)
-13. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even made half the job for you.
+13. Check your load order:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `CASM.esp`
+	* **`DarNifiedUIF3.esp`**
+14. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even made half the job for you.
 ```INI
 [Fonts]
 ;sFontFile_1=Textures\Fonts\Glow_Monofonto_Large.fnt
@@ -560,20 +589,20 @@ sFontFile_7=Textures\Fonts\DarN_Libel_Suit_Otl_24.fnt
 ;sFontFile_7=Textures\Fonts\DarN_Klill_Outline_20.fnt
 sFontFile_8=Textures\Fonts\Glow_Futura_Caps_Large.fnt
 ```
-14. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the `[Fonts]` section.
-15. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
+15. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the `[Fonts]` section.
+16. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
 ```
 Fallout 3 1.7.0.3
 DarNified UI F3 0.11.1a
 Powered by FOSE 1.2 b2
 ```
-16. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
+17. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
 ![Fallout 3 DUIF3 installed](Images/Fallout%203%20DUIF3%20installed.png)
-17. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
+18. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
 ![Fallout 3 DUIF3 small HUD](Images/Fallout%203%20DUIF3%20small%20HUD.png)
-18. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
+19. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
 ![Fallout 3 DUIF3 ingame option](Images/Fallout%203%20DUIF3%20ingame%20option.png)
-19. There are a lot of settings for you to configure, adjusting the HUD to your liking.
+20. There are a lot of settings for you to configure, adjusting the HUD to your liking.
 ![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
 
 
@@ -592,7 +621,7 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 	* `PointLookout.esm`
 	* `Zeta.esm`
 	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
+	* **`aHUD.esm`**
 	* `CASM.esp`
 	* `DarNifiedUIF3.esp`
 5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
@@ -624,7 +653,7 @@ In addition to have the HUD elements placed where you like, you can improve the 
 	* `Zeta.esm`
 	* `Unofficial Fallout 3 Patch.esm`
 	* `aHUD.esm`
-	* `iHUD.esm`
+	* **`iHUD.esm`**
 	* `CASM.esp`
 	* `DarNifiedUIF3.esp`
 5. Launch the game and notice the absence of HUD elements on screen.
@@ -751,7 +780,7 @@ This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.co
 	* `iHUD.esm`
 	* `CASM.esp`
 	* `DarNifiedUIF3.esp`
-	* `HZSmoothLight - FO3.esp`
+	* **`HZSmoothLight - FO3.esp`**
 3. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.
 
 See the difference for yourself.
@@ -839,18 +868,18 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 	* `Unofficial Fallout 3 Patch.esm`
 	* `aHUD.esm`
 	* `iHUD.esm`
-	* `CRAFT.esm`
-	* `CALIBR.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* **`CRAFT.esm`**
+	* **`CALIBR.esm`**
+	* **`FO3 Wanderers Edition - Main File.esm`**
+	* **`FO3 Wanderers Edition - Alternate Travel.esp`**
 	* `CASM.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
+	* **`FO3 Wanderers Edition - Main File.esp`**
 	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* **`FO3 Wanderers Edition - DLC Broken Steel.esp`**
+	* **`FO3 Wanderers Edition - DLC Point Lookout.esp`**
+	* **`FO3 Wanderers Edition - DLC Anchorage.esp`**
+	* **`FO3 Wanderers Edition - DLC Mothership Zeta.esp`**
+	* **`FO3 Wanderers Edition - DLC The Pitt.esp`**
 	* `DarNifiedUIF3.esp`
 13. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in [the chapter about cleaning up the master files](#cleaningMasterFiles). To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
 	* `Fallout3.esm`
@@ -921,7 +950,7 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 	* `CALIBR.esm`
 	* `FO3 Wanderers Edition - Main File.esm`
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Mart's Mutant Mod.esm`
+	* **`Mart's Mutant Mod.esm`**
 	* `CASM.esp`
 	* `FO3 Wanderers Edition - Main File.esp`
 	* `HZSmoothLight - FO3.esp`
@@ -993,8 +1022,8 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 	* `CALIBR.esm`
 	* `FO3 Wanderers Edition - Main File.esm`
 	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `RH_IRONSIGHTS.esm`
+	* **`EVE.esm`**
+	* **`RH_IRONSIGHTS.esm`**
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* `CASM.esp`
 	* `FO3 Wanderers Edition - Main File.esp`
@@ -1005,12 +1034,12 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
 	* `FO3 Wanderers Edition - DLC The Pitt.esp`
 	* `DarNifiedUIF3.esp`
-	* `WeaponModKits.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - PointLookout.esp`
+	* **`WeaponModKits.esp`**
+	* **`WeaponModKits - BrokenSteel.esp`**
+	* **`WeaponModKits - OperationAnchorage.esp`**
+	* **`WeaponModKits - Zeta.esp`**
+	* **`WeaponModKits - ThePitt.esp`**
+	* **`WeaponModKits - PointLookout.esp`**
 12. According to LOOT, the file `RH_IRONSIGHTS.esm` is dirty, so proceed to clean it up with FO3Edit. Remember: select just that file and the files it depends on will be automatically loaded.
 
 We have just installed a lot of overlapping mods, so we will need a compatibility patch to have them all working together. Nevertheless we have two alternatives here, both from [Blackened compatibility patches page](http://www.nexusmods.com/fallout3/mods/18173/?):
@@ -1046,7 +1075,7 @@ Since I am going to deep-follow this guide (of course), I will give instructions
 	* `FO3 Wanderers Edition - DLC Anchorage.esp`
 	* `FO3 Wanderers Edition - DLC The Pitt.esp`
 	* `DarNifiedUIF3.esp`
-	* `Blackened RH + FWE + EVE.esp`
+	* **`Blackened RH + FWE + EVE.esp`**
 	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
 	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
 	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
@@ -1098,16 +1127,16 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 	* `CALIBR.esm`
 	* `Mart's Mutant Mod.esm`
 	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
+	* **`ArefuExpandedByAzar.esm`**
+	* **`Mothership Crew.esm`**
 	* `RH_IRONSIGHTS.esm`
-	* `Alton, IL.esm`
+	* **`Alton, IL.esm`**
 	* `CRAFT.esm`
 	* `FO3 Wanderers Edition - Main File.esm`
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* `CASM.esp`
 	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
+	* **`AltonAddon.esp`**
 	* `FO3 Wanderers Edition - Main File.esp`
 	* `FO3 Wanderers Edition - DLC Anchorage.esp`
 	* `HZSmoothLight - FO3.esp`
@@ -1122,7 +1151,7 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 	* `WeaponModKits - Zeta.esp`
 	* `WeaponModKits - ThePitt.esp`
 	* `WeaponModKits - PointLookout.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
+	* **`ArefuExpandedByAzar-Radio.esp`**
 7. Launch the game and wait a few moments to see two reminders about _Alton, IL_ and _Arefu Expanded_ (there's no mention about _Mothership Zeta Crew_, as the mod kick-in is embedded in-game).
 ![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
 ![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
@@ -1180,8 +1209,8 @@ Let's install them:
 	* `CRAFT.esm`
 	* `FO3 Wanderers Edition - Main File.esm`
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Advanced Recon Tech.esm`
+	* **`Detect Traps.esm`**
+	* **`Advanced Recon Tech.esm`**
 	* `CASM.esp`
 	* `DarNifiedUIF3.esp`
 	* `AltonAddon.esp`
@@ -1200,16 +1229,16 @@ Let's install them:
 	* `WeaponModKits - ThePitt.esp`
 	* `WeaponModKits - PointLookout.esp`
 	* `ArefuExpandedByAzar-Radio.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
+	* **`Advanced Recon Gear.esp`**
+	* **`Advanced Recon Armor.esp`**
+	* **`Detect Traps - Perk.esp`**
+	* **`Detect Traps - The Traponator 4000.esp`**
+	* **`Detect Traps - DLC.esp`**
+	* **`Advanced Recon Range Finder.esp`**
+	* **`Advanced Recon Tech.esp`**
+	* **`Advanced Recon Tech - Detect Traps.esp`**
+	* **`Advanced Recon Equipment Patcher.esp`**
+	* **`Advanced Recon Tech FWE.esp`**
 10. Launch the game and check a new message about the gear seat. In your PipBoy (section _Items_, option _Apparel_), there are two new options to configure your Advanced Recon gear settings.
 ![Fallout 3 Advanced Recon set added](Images/Fallout%203%20Advanced%20Recon%20set%20added.png)
 ![Fallout 3 Advanced Recon gear settings](Images/Fallout%203%20Advanced%20Recon%20gear%20settings.png)
@@ -1283,7 +1312,7 @@ Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible 
 	* `Advanced Recon Tech - Detect Traps.esp`
 	* `Advanced Recon Equipment Patcher.esp`
 	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
+	* **`PAL - MERGED.esp`**
 6. Launch the game and check your PipBoy _Data_ button, _Notes_ option. There should be a _Personal achievements log_ option to view your achievement list.
 
 

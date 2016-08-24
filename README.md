@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[25/08/2016] Fixed load order lists.**
+
+I have added a few missing load order lists in the initial chapters. I have also highlighted the installed files in the lists that didn't have them highlighted (all load order lists previous to _Project Reality_).
+
 **[24/08/2016] Section about people redesigned finished.**
 
 At last!
