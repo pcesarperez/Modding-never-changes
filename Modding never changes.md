@@ -1016,9 +1016,9 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 We have just installed a lot of overlapping mods, so we will need a compatibility patch to have them all working together. Nevertheless we have two alternatives here, both from [Blackened compatibility patches page](http://www.nexusmods.com/fallout3/mods/18173/?):
 
 1. We can install _Blackened FWE - MMM - EVE_ and _Blackened RH\_Ironsights - FWE - EVE_ and stop installing mods right here.
-2. We can install _Blackened FWE - MMM - EVE - Project Beauty_ and _Blackened RH\_Ironsights - FWE - EVE_, keepeng on installing mods from this guide, as we are going to get to Project Beauty, eventually.
+2. We can install _Blackened FWE - MMM - EVE - Project Beauty_ and _Blackened RH\_Ironsights - FWE - EVE_, keeping on installing mods from this guide, as we are going to get to _Project Beauty_, eventually.
 
-This is important... If you don't want to go further, install the FWE/MMM/EVE patch, but if you want to get to the section about face-washing the game, **DON'T** install any patch yet. Take into account that you won't be able to play until a proper compatibility patch is installed, one way or another, so curb your enthusiasm.
+This is important... If you don't want to go further, install the FWE/MMM/EVE patch, but if you want to get to the section about face-washing the game, **DON'T** install any patch yet. Take into account that you won't be able to play without random crashes until a proper compatibility patch is installed, one way or another, so curb your enthusiasm.
 
 Since I am going to deep-follow this guide (of course), I will give instructions about the RH_IronSights/FWE/EVE patch only.
 
@@ -1696,9 +1696,147 @@ _Darkened Interiors_ tries to give interiors a realistic lighting, with deep sha
 
 ### <a id="dontLikeYourFace"></a>5.6. I don't like your face
 
-* Fallout 3 re-animated
-* Fallout 3 redesigned
-* Lost in Light
+I guess no one is able to remember the moment of her birth, unless you are a trickster. However, I would be shitting bricks my whole life if my first sight in this world were these eyes.
+
+![Fallout 3 WTF with your eyes](Images/Fallout%203%20WTF%20with%20your%20eyes.png)
+
+Seriously, look at _that_.
+
+![Fallout 3 WTF WTF WTF DADDY](Images/Fallout%203%20WTF%20WTF%20WTF%20DADDY.png)
+
+A poor face modelling is one of the worst thing I can imagine to get a proper immersion in the game. Imagine your ninth birthday, surrounded by a bunch of people like this.
+
+![Fallout 3 ugly faces](Images/Fallout%203%20ugly%20faces.png)
+
+Consider the face of your childhood friend Amata, and take into account that hers is not the ugliest face you will encounter in the game.
+
+![Fallout 3 Amata is not so ugly after all](Images/Fallout%203%20Amata%20is%20not%20so%20ugly%20after%20all.png)
+
+The following mods target the faces, character animation and eye textures.
+
+* [_Fallout 3 re-animated_](http://www.nexusmods.com/fallout3/mods/7670/?)
+* [_Fallout 3 redesigned_](http://www.nexusmods.com/fallout3/mods/6341/?)
+* [_Lost in Light_](http://www.nexusmods.com/fallout3/mods/19163/?)
+
+_Fallout 3 re-animated_ changes the default animations of every character in-game, getting a more natural stance, both in combat and resting. _Fallout 3 redesigned_, formerly known as _Project Beauty_, changes all the faces throughout the game, giving people a more natural look. Finally, _Lost in Light_ (LiL, for short) replaces the vanilla eye textures with proper eyeballs using proper light reflection. No more people screaming out their pain of their wretched souls through the eyes. As usual, Gopher has a video about [people reanimated and redesigned](https://www.youtube.com/watch?v=smLZNJIMCQA) (11:06), although he doesn't cover LiL.
+
+The installation is a bit tricky, regarding to _Fallout 3 Redesigned_, so let's do it.
+
+1. Download _Release v0\_22_ and _Idle Revisions2 - Fixed_ from _Fallout 3 re-animated_ with NMM.
+2. Download _FO3 Redesigned HD_, but download it **manually**. We are going to meddle with the file a little. The file is named `FO3 Redesigned HD-6341-2-74-2.zip` (obviously, these instructions may not apply with a different version of the mod).
+3. Download _Lost in Light - An Eye Improvement Mod_ with NMM.
+4. Unzip `FO3 Redesigned HD-6341-2-74-2.zip` in a location of your choice, say `[%FO3_REDESIGNED%]`.
+5. The structure of the ZIP file is a bit weird.
+![FO3 Redesigned mod structure](Images/FO3%20Redesigned%20mod%20structure.png)
+6. We are going to create a mod file with just the items we need, in the proper place. Create a folder anywhere you want, say `[%FO3_REDESIGNED_REPACK%]`.
+7. Create the following folders under `[%FO3_REDESIGNED_REPACK%]`:
+	* `Meshes`
+	* `textures`
+8. Copy the following files from `[%FO3_REDESIGNED%]` into `[%FO3_REDESIGNED_REPACK%]`:
+	* `/meshes/*.*` &rarr; `/Meshes/`
+	* `/textures/*.*` &rarr; `/textures/`
+	* `/Optional Merged Version/Project Beauty.esm` &rarr; `/`
+9. Zip the contents of the `[%FO3_REDESIGNED_REPACK%]` folder into a file named `FO3_REDESIGNED_REPACK.zip`. The folders `/Meshes/` and `/textures/` should be in the root of the ZIP file.
+10. In NMM, use the option _Add Mod from File_ (green plus sign in the leftmost button bar) and select the newly created file.
+11. We need one final thing to put all the pieces together. Remember the chapter about [weaponry](#weNeedMoreFirepower), when I told you about a Blackened patch we couldn't install yet? That was _Blackened FWE - MMM - EVE - Project Beauty_ file from [_Blackened_](http://www.nexusmods.com/fallout3/mods/18173/?). Now it's the time to download it with NMM.
+12. Ok, we have all the files we need, ready to be installed.
+![NMM people redesigned and reanimated mods](Images/NMM%20people%20redesigned%20and%20reanimated%20mods.png)
+13. Activate the mods in the following order:
+	* _Fallout 3 Re-Animated - Release v0\_22_ (this one overwrites files from _RH\_IronSights_, so answer _Yes to all_ when asked to).
+	* _Fallout 3 Re-Animated - Idle Revisions2 - Fixed_ (this one overwrites files from the previous file, so answer _Yes to all_ when asked to).
+	* _FO3\_REDESIGNED\_REPACK_ (no overwriting required).
+	* _LiL - An Eye Improvement Mod - Lost in Light - An Eye Improvement Mod_ (this one overwrites files from _Fallout 3 Redesigned_, so answer _Yes to all_ when asked to).
+	* _Blackened - Blackened FWE - MMM - EVE - Project Beauty_ (this is a patch, so overwriting is expected; you know the drill).
+14. Run LOOT to rearrange your load order. This should be it.
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `StreetLights.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* **`Project Beauty.esm`**
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `Alton, IL.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Advanced Recon Tech.esm`
+	* `CINEMATECH.esm`
+	* `ImaginatorFO3.esp`
+	* `Flora Overhaul.esp`
+	* `CASM.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `Clean-Deluxe GOTY.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `Xepha's Darkened Interiors.esp`
+	* `Xepha's Darkened Interiors - BS.esp`
+	* `Xepha's Darkened Interiors - PL.esp`
+	* **`Blackened FWE + MMM + EVE + Project Beauty.esp`**
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `Blackened RH + FWE + EVE.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `F3ProjectRealityMkI.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+	* `DYNAVISION - Dynamic Lens Effect.esp`
+	* `Directors Chair - Fallout 3.esp`
+	* `PureWater-VeryCleanLittleRad-.esp`
+	* `Xepha's Darkened Interiors - OA.esp`
+	* `megalight.esp`
+
+Let's see how the game changes with this. What about the defining moment of your birth?
+
+![Fallout 3 not so scary first sight](Images/Fallout%203%20not%20so%20scary%20first%20sight.png)
+
+Well, it's a little bit les scary, although there are some remaining scolds in these eyes.
+
+![Fallout 3 scold in your eyes](Images/Fallout%203%20scold%20in%20your%20eyes.png)
+
+There are certain improvements in the character customization options, although I don't quite get my own look-alike.
+
+![Fallout 3 enhanced character customization](Images/Fallout%203%20enhanced%20character%20customization.png)
+
+Let's check the bunch of people in your ninth birthday.
+
+![Fallout 3 better faces](Images/Fallout%203%20better%20faces.png)
+
+And what about Amata?
+
+![Fallout 3 Amata has changed a bit](Images/Fallout%203%20Amata%20has%20changed%20a%20bit.png)
+
+The changes are remarkable, as you can see by looking at before/after images side by side.
+
 
 
 

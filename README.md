@@ -6,6 +6,16 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**[24/08/2016] Section about people redesigned finished.**
+
+At last!
+
+Final chapter finished... Well, _almost_ final chapter. There are a few remaining loose ends to finish (a merged patch, highlighting of the installed files in each load order listing, etc.).
+
+This chapter is about people reanimated (new and more natural animations) and redesigned (a huge overhaul of face meshes all around the game). And that's it. This is the game we are going to play.
+
+However, there are certain mods that I would like to include in the following rehearshal. I have wrote them down in a separate sheet in `Mods installed.ods`. I will consider the contents finished then.
+
 **[21/08/2016] Section about lighting finished.**
 
 Added a new section about lighting, both in interiors and exteriors, setting a scarier mood in the nights. These mods fit perfectly with darker nights from _Project Reality_.
