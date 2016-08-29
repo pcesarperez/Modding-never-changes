@@ -44,11 +44,12 @@
 	- [5.4. A beautiful skin](#beautifulSkin)
 	- [5.5. Let there be light!](#letThereBeLight)
 	- [5.6. I don't like your face](#dontLikeYourFace)
-* [6. Resources](#resources)
-	* [6.1. Tools](#tools)
-	* [6.2. Guides](#guides)
-	* [6.3. Mods](#mods)
-	* [6.4. Videos](#videos)
+* [6. Wrapping up](#wrappingUp)
+* [7. Resources](#resources)
+	* [7.1. Tools](#tools)
+	* [7.2. Guides](#guides)
+	* [7.3. Mods](#mods)
+	* [7.4. Videos](#videos)
 
 
 
@@ -1869,13 +1870,43 @@ The changes are remarkable, as you can see by looking at before/after images sid
 
 
 
-## <a id="resources"></a>6. Resources
+## <a id="wrappingUp"></a>6. Wrapping up
+
+No matter which mods you have installed to this point, you will want to create a merged patch to ensure all of them work together like a charm.
+
+Even with Bethesda's main files there are inconsistencies across the different DLCs, let alone with a fuckload of mods installed, each one with its own set of items and rules. A merged patch is no magic fix, but it is a good start point to solve certain basic problems that arise when different mods have different visions of the same issue. As usual, Gopher has [a video about FO3Edit](https://www.youtube.com/watch?v=uPK7R71zcwM) (39:12) which explains (from 14:05) what is a merged patch, how to create it and the things you will need to know about what it does and what it does not do.
+
+1. Open FO3Edit and load **ALL** the plugins you have installed. This is important, as you are going to create a merged patch for your whole mod stack. Don't pay attention to the mods shown in the screenshots. Your mileage may vary.
+![FO3Edit load all plugins](Images/FO3Edit%20load%20all%20plugins.png)
+2. Wait until FO3Edit finishes loading all data files.
+![FO3Edit background loader finished](Images/FO3Edit%20background%20loader%20finished.png)
+3. Right-click anywhere in the leftmost panel (the one with the plugin list) and select _Other_, then _Create merged patch_.
+![FO3 create merged patch](Images/FO3%20create%20merged%20patch.png)
+4. Give the merged patch a meaningful name. I am using the version number of this guide, but you are free to choose whatever you like.
+![FO3 merged patch name](Images/FO3%20merged%20patch%20name.png)
+5. Check the leftmost panel at the bottom. Your merged patch should sit there.
+![FO3Edit merged patch created](Images/FO3Edit%20merged%20patch%20created.png)
+6. We need to exit FO3Edit to save the merged patch. Click on the _Close Window_ icon and make sure the merged patch is selected in the next window. Click _Ok_ to have the `.esp` file saved to your data folder.
+![FO3Edit saving merged patch](Images/FO3Edit%20saving%20merged%20patch.png)
+7. We need to activate the merged patch, so open NMM and navigate to the _Plugins_ tab. Tick the merged patch at the bottom, and you are good to go!
+![NMM merged patch loaded](Images/NMM%20merged%20patch%20loaded.png)
+
+Remember these golden rules regarding to merged patches:
+
+1. A merged patch will not fix any inconsistency you have in your mod stack. As Gopher shows in the aforementioned video, a merged patch may, in fact, add some inconsistencies of its own (although they are minor ones). However, it will stitch together firmly the whole stack.
+2. The merged patch should **ALWAYS** sit at the bottom of your load order. In case of conflict, the deepest mod always wins, so you need your merged patch sitting at the bottom to ensure proper conflict resolution.
+3. As tedious as it sounds, everytime you change your mod stack, adding or removing mods, you need to create a **NEW** merged patch. Otherwise, the game will miserably crash. As you can imagine, I have been creating _a lot_ of merged patches throughout the creation of this guide.
+
+
+
+
+## <a id="resources"></a>7. Resources
 
 This is a comprehensive list of the resources used throughtout this guide.
 
 
 
-### <a id="tools"></a>6.1. Tools
+### <a id="tools"></a>7.1. Tools
 
 * [Nexus Mod Manager](http://www.nexusmods.com/games/mods/modmanager/?). This is the tool of choice when it comes to keep all your mods organized and up-to-date.
 * [LOOT](https://loot.github.io/). Installing mods on Bethesda games can be a pain in the ass, especially if you try to install a lot of possibly-colliding mods. This tool keeps the load order straight.
@@ -1883,7 +1914,7 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 
 
-### <a id="guides"></a>6.2. Guides
+### <a id="guides"></a>7.2. Guides
 
 * [_Fallout 3_ Tweaking Guide](http://www.tweakguides.com/Fallout3_1.html).
 * [_Let's mod Fallout 3 with over 100 mods_](http://www.gamingboulevard.com/2015/01/lets-mod-fallout-3-100-mods/)
@@ -1893,7 +1924,7 @@ This is a comprehensive list of the resources used throughtout this guide.
 
 
 
-### <a id="mods"></a>6.3. Mods
+### <a id="mods"></a>7.3. Mods
 
 This is the list of mods used throughout this guide, in ascending alphabetical order.
 
@@ -1946,7 +1977,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 
 
 
-### <a id="videos"></a>6.4. Videos
+### <a id="videos"></a>7.4. Videos
 
 These are the videos which served as spiritual inspiration author of this guide. That's me.
 
