@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.22) [29/08/2016] Chapter 3 rewritten and updated.**
+
+I have started the next iteration, with new mods. However, I am making the most of it by rescaling the images and correcting errors in the text.
+
+The chapter 3 has been rewritten, with downscaled images (a lot less weight in the final file) and with a new section, 3.11, about removing unused objects from the game.
+
 **(v0.21) [29/08/2016] New section about creating a merged patch.**
 
 I have written a new chapter (6; I moved previous chapter 6 to number 7) about creating a merged patch with the mod stack you have installed to that point. It is an important final step in every mod installation we are going to do.
