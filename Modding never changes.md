@@ -573,8 +573,8 @@ Next, we are going to _shrink_ the user interface using [_DarNified UI F3_](http
 
 This will be a bit tricky, because there are no NMM packages right out-of-the-box. Instead, we have the FOMOD ([_Fallout Mod Manager_](http://www.nexusmods.com/fallout3/mods/640/?)) packages... But they are compatible with NMM, so bear with me.
 
-1. Download [DUIF3 Alpha<sup>11</sup>](http://ui.darnified.net/wip/F3/dui_f3a11.zip).
-2. Download [DUIF3 Alpha<sup>11</sup> Hotfix](http://ui.darnified.net/wip/F3/dui_f3a11_HF.7z).
+1. Download [DUIF3 Alpha<sup>11</sup>](http://ui.darnified.net/wip/F3/dui_f3a11.zip). The file is called `dui_f3a11.zip`.
+2. Download [DUIF3 Alpha<sup>11</sup> Hotfix](http://ui.darnified.net/wip/F3/dui_f3a11_HF.7z). The file is called `dui_f3a11_HF.7z`.
 3. Start NMM, go to the _Mods_ tab and click on the green plus sign to add mod from file.
 ![NMM Adding mod from file](Images/NMM%20Adding%20mod%20from%20file.png)
 4. In the file selector that appears, navigate to the location of the downloaded DUIF3 files and open `dui_f3a11.zip`, corresponding to the main file.
@@ -590,7 +590,7 @@ This will be a bit tricky, because there are no NMM packages right out-of-the-bo
 ![NMM DUIF3 font config confirmation](Images/NMM%20DUIF3%20font%20config%20confirmation.png)
 10. Activate the hotfix and answer _Yes to all_ when asked to overwrite previous files (from the main mod file, in fact).
 ![NMM DUIF3 hotfix overwriting](Images/NMM%20DUIF3%20hotfix%20overwriting.png)
-11. Check that DUIF3 is installed in the _Plugins_ tab.
+11. DUIF3 is finally installed.
 ![NMM DUIF3 installed](Images/NMM%20DUIF3%20installed.png)
 12. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
 ![LOOT DUIF3](Images/LOOT%20DUIF3.png)
@@ -603,8 +603,9 @@ This will be a bit tricky, because there are no NMM packages right out-of-the-bo
 	* `Zeta.esm`
 	* `Unofficial Fallout 3 Patch.esm`
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
 	* **`DarNifiedUIF3.esp`**
-14. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even made half the job for you.
+14. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even done half the job for you.
 ```INI
 [Fonts]
 ;sFontFile_1=Textures\Fonts\Glow_Monofonto_Large.fnt
@@ -625,7 +626,7 @@ sFontFile_7=Textures\Fonts\DarN_Libel_Suit_Otl_24.fnt
 ;sFontFile_7=Textures\Fonts\DarN_Klill_Outline_20.fnt
 sFontFile_8=Textures\Fonts\Glow_Futura_Caps_Large.fnt
 ```
-15. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the `[Fonts]` section.
+15. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the contents of the `[Fonts]` section.
 16. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
 ```
 Fallout 3 1.7.0.3
@@ -634,11 +635,13 @@ Powered by FOSE 1.2 b2
 ```
 17. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
 ![Fallout 3 DUIF3 installed](Images/Fallout%203%20DUIF3%20installed.png)
-18. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
+18. However, I don't like that option to be visible, so open the file `DUIF3Settings.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\prefabs]` with your favourite text editor. Change the option `<_sm_hideLIVE />` to 1. Save and exit. Launch the game to check the absent LIVE option.
+![Fallout 3 DUIF3 absent LIVE option](Images/Fallout%203%20DUIF3%20absent%20LIVE%20option.png)
+19. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
 ![Fallout 3 DUIF3 small HUD](Images/Fallout%203%20DUIF3%20small%20HUD.png)
-19. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
+20. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
 ![Fallout 3 DUIF3 ingame option](Images/Fallout%203%20DUIF3%20ingame%20option.png)
-20. There are a lot of settings for you to configure, adjusting the HUD to your liking.
+21. There are a lot of settings for you to configure, adjusting the HUD to your liking.
 ![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
 
 
@@ -659,6 +662,7 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 	* `Unofficial Fallout 3 Patch.esm`
 	* **`aHUD.esm`**
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
 	* `DarNifiedUIF3.esp`
 5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
 ![Fallout 3 aHUD settings](Images/Fallout%203%20aHUD%20settings.png)
@@ -677,7 +681,7 @@ Take into account that if you plan to keep on installing mods using this guide, 
 
 In addition to have the HUD elements placed where you like, you can improve the immersion by hiding these elements when you don't need them. I like to have them hidden when I am wandering around and have them shown when I am in combat. We have [_Immersive HUD_](http://www.nexusmods.com/fallout3/mods/15790/?) or iHUD for this.
 
-1. Download the mod with NMM.
+1. Download the mod with NMM. We are saving the file _Immersive HUD - Darnified FWE Patch_ for later, when we install _Fallout 3 Wanderer's Edition_.
 2. Activate it, the usual way.
 3. Answer _Yes to all_ when asked to overwrite files.
 4. Use LOOT to sort your load order, which should be:
@@ -691,12 +695,19 @@ In addition to have the HUD elements placed where you like, you can improve the 
 	* `aHUD.esm`
 	* **`iHUD.esm`**
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
 	* `DarNifiedUIF3.esp`
 5. Launch the game and notice the absence of HUD elements on screen.
 ![Fallout 3 iHUD default](Images/Fallout%203%20iHUD%20default.png)
-6. keep key <kbd>I</kbd> pressed a few moments. The iHUD settings menu will appear.
+6. Keep the <kbd>I</kbd> key pressed a few moments. The iHUD settings menu will appear.
 ![Fallout 3 iHUD settings](Images/Fallout%203%20iHUD%20settings.png)
 7. There are a lot of customization options in iHUD. Tweak around until you feel comfortable with the results ([Gopher's video](https://youtu.be/aqCzCXEydwU?t=18m20s) should help, around 18:20).
+
+A final step: we are going to create a backup copy of the folder with the menu definitions (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus]`).
+
+Why this backup? Well, there are a lot of mods which change the user interface, and we are going to use them. In these matters, installation order is more important than load order, because each mod _overwrites_ several files to fulfill its own goals, thus losing the modifications created by previous mods.
+
+The way we are installing mods in this guide is more functional than technical, so the installation order we are following is less than ideal. However, we are going to manually keep track of the changes made by each mod to stitch all them together.
 
 
 #### <a id="retexturingPipBoy"></a>4.1.4. Cleaning up your faithful companion
@@ -718,7 +729,7 @@ After:
 
 #### <a id="betterMap"></a>4.1.5. You don't want to ask for directions
 
-Let's face it: the vanilla map in _Fallout 3_ seems to have been produced from Dora the explorer's backpack. And you don't want to start asking directions in D.C., because super-mutants are not known for their kindness of heart with strangers.
+Let's face it: the vanilla map in _Fallout 3_ seems to have been produced from Dora the Explorer's backpack. And you don't want to start asking directions in D.C., because super-mutants are not known for their kindness of heart with strangers.
 
 We are going to use [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?) to have decent maps.
 
@@ -728,6 +739,7 @@ We are going to use [_Better High Detail Map and Icons_](http://www.nexusmods.co
 3. Next window contains the customization options for the mod. I checked "Custom icons", "Clean Pipboy Screen" and green markers. Click on _Finish_.
 ![NMM Better High Detail Map and Icons customization options](Images/NMM%20Better%20High%20Detail%20Map%20and%20Icons%20customization%20options.png)
 4. Answer _Yes to all_ when asked to overwrite files.
+5. We need to change a value in the file `FalloutPrefs.ini`, located in the folder `[%USERPROFILE%\Documents\My Games\Fallout3]`, in order to get rid of the green tint that pervades the whole screen. Open that file and change the value in the item `uPipboyColor` (near the bottom) from 452952319 to 2930678016.
 5. Launch the game, fire up your Pip-Boy and compare.
 
 Before:
@@ -775,7 +787,7 @@ If you feel uncomfortable with this, open the file `map_menu.xml` in `[%STEAM_HO
 </hotrect>
 ```
 
-Just lower the value between 5 and 20 pixels, using the same value in the three elements. Notice the increment in the clickable zone using a value of 640 pixels at expense of map height.
+Just lower the value between 5 and 30 pixels, using the same value in the three elements. Notice the increment in the clickable zone using a value of 630 pixels at expense of map height.
 
 ![Fallout 3 data option hot zone expanded](Images/Fallout%203%20data%20option%20hot%20zone%20expanded.png)
 
@@ -786,7 +798,7 @@ There's one final thing left to have a perfect-although-cranky GPS in our hands 
 
 ![Fallout 3 white dots](Images/Fallout%203%20white%20dots.png)
 
-Well, in mathematics the straight line may be the shortest path between two points, but in real life, and specially in the Capital Wasteland, it usually is the shortest path between you and a Darwin-cleansing-style death. So, let's remove the goddamn dots with [_No more dots_](http://www.nexusmods.com/fallout3/mods/15918/?).
+Well, in mathematics the straight line may be the shortest path between two points, but in real life, and specially in the Capital Wasteland, it usually is the shortest path between you and a suitable [Darwin Awards](http://www.darwinawards.com/) death. So, let's remove the goddamn dots with [_No more dots_](http://www.nexusmods.com/fallout3/mods/15918/?).
 
 1. Download the mod with NMM.
 2. Activate it by double-clicking.
@@ -815,6 +827,7 @@ This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.co
 	* `aHUD.esm`
 	* `iHUD.esm`
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
 	* `DarNifiedUIF3.esp`
 	* **`HZSmoothLight - FO3.esp`**
 3. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.

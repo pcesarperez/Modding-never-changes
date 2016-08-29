@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.23) [29/08/2016] Chapter 4.1 rewritten and updated.**
+
+The chapter 4.1 (user interface) has been easier. Most of the pictures already had red boxes pointing out selected options/buttons. I have downscaled the screenshots anyway.
+
+The biggest changes have been made in 4.1.5 (world map retexturing), because I finally managed to get rid of the green tint of the original map. The full-sized map of the mod is shown in all its colorful glory.
+
+I have not used [_Color Hi-Detailed map and icons_](http://www.nexusmods.com/fallout3/mods/1789/?) because I thought the maps in that mod were high-resolution, but nope!
+
 **(v0.22) [29/08/2016] Chapter 3 rewritten and updated.**
 
 I have started the next iteration, with new mods. However, I am making the most of it by rescaling the images and correcting errors in the text.
