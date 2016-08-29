@@ -1917,7 +1917,7 @@ This is a comprehensive list of the resources used throughtout this guide.
 ### <a id="guides"></a>7.2. Guides
 
 * [_Fallout 3_ Tweaking Guide](http://www.tweakguides.com/Fallout3_1.html).
-* [_Let's mod Fallout 3 with over 100 mods_](http://www.gamingboulevard.com/2015/01/lets-mod-fallout-3-100-mods/)
+* [Let's mod _Fallout 3_ with over 100 mods](http://www.gamingboulevard.com/2015/01/lets-mod-fallout-3-100-mods/)
 * [Guide to fix the game in order to run under modern versions of Windows](http://steamcommunity.com/sharedfiles/filedetails/?id=149946772).
 * [TES5Edit cleaning guide](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).
 * [Why the game crashes if it runs in a box with multiple cores](http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html).
