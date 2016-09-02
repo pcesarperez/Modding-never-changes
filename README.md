@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.24) [02/09/2016] Complete chapter 4.2 overhaul.**
+
+I have completely rewritten chapter 4.2 about sound and music. Where we had just one mod, we have now six different mods, ranging from weapon sounds to new songs from radio stations scattered throughout the Wasteland. The sense of immersion has greatly improved with the contents of this chapter.
+
 **(v0.23) [29/08/2016] Chapter 4.1 rewritten and updated.**
 
 The chapter 4.1 (user interface) has been easier. Most of the pictures already had red boxes pointing out selected options/buttons. I have downscaled the screenshots anyway.

@@ -33,7 +33,7 @@
 			+ Existence 2_0 - Robot Radio	http://www.nexusmods.com/fallout3/mods/5612/?
 			+ GNR Enhanced	http://www.nexusmods.com/fallout3/mods/14946/?
 		+ **NEW** [4.2.4. A sound for Chekhov's gun](#checkhovsGun)
-			+ Realistic Gunshot Sounds	http://www.nexusmods.com/fallout3/mods/23/?
+			+ Improved Sound FX v1_3	http://www.nexusmods.com/fallout3/mods/627/?
 	- [4.3. Playing the bad-ass way](#playingBadAss)
 		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)

@@ -30,6 +30,10 @@
 		+ [4.1.6. No more dots](#noMoreDots)
 		+ [4.1.7. Shed some light here, please](#shedSomeLight)
 	- [4.2. Lend me your ears](#lendMeYourEars)
+		+ [4.2.1. Hearing the nukes fly in high quality](#hearingNukesFly)
+		+ [4.2.2. Those crickets are driving me mad](#thoseCrickets)
+		+ [4.2.3. A soundtrack for your lonely Wasteland nights](#radioStations)
+		+ [4.2.4. A sound for Chekhov's gun](#checkhovsGun)
 	- [4.3. Playing the bad-ass way](#playingBadAss)
 		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
 		+ [4.3.2. Fraternizing with the neighborhood](#fraternizingNeighborhood)
@@ -792,7 +796,7 @@ Just lower the value between 5 and 30 pixels, using the same value in the three 
 ![Fallout 3 data option hot zone expanded](Images/Fallout%203%20data%20option%20hot%20zone%20expanded.png)
 
 
-####<a id="noMoreDots"></a>4.1.6. No more dots
+#### <a id="noMoreDots"></a>4.1.6. No more dots
 
 There's one final thing left to have a perfect-although-cranky GPS in our hands (literallly). Have you noticed the small white dots in your map connecting where you are and your current quest location?
 
@@ -809,7 +813,7 @@ There's no `.esp` or `.esm` installed with this mod, so there's no need to rearr
 ![Fallout 3 no more dots](Images/Fallout%203%20no%20more%20dots.png)
 
 
-####<a id="shedSomeLight"></a>4.1.7. Shed some light here, please
+#### <a id="shedSomeLight"></a>4.1.7. Shed some light here, please
 
 Lighting in _Fallout 3_ is somewhat weird. Sometimes you will find your self into what seems to be a lucid LSD-induced dream, with overexposed lights all around you. If you use your Pip-Boy's lamplight, things get much worse.
 
@@ -850,19 +854,86 @@ The difference is subtle, more noticeable in dark interiors.
 
 
 
-###<a id="lendMeYourEars"></a>4.2. Lend me your ears
+### <a id="lendMeYourEars"></a>4.2. Lend me your ears
 
-One of the most underrated things in videogames is audio. Every gamer out there crave for the ultimate graphics experience when playing her now-favorite-videogame. But audio is a subtle but very important part of that experience. Good ambient sounds and soundtrack can make your journey something memorable.
+Audio is one of the most underrated aspects in videogames. There is an unfortunate term coined for those gamers craving for the ultimate graphics experience: _graphic whores_. For audio? There is none, except if you would consider _audiophile_, but that has not the same taste.
+
+Gaming experience is built on top of both graphics and audio. The latter is a subtle part, but very important, nonetheless. Good ambient sounds and soundtrack can make your journey something memorable.
+
+In this chapter we will take care of that, changing the way you hear and listen to the Wasteland.
+
+
+#### <a id="hearingNukesFly"></a>4.2.1. Hearing the nukes fly in high quality
 
 There is just one mod in this chapter, [_Fallout 3 - HD Audio Overhaul - v1.21_](http://www.nexusmods.com/fallout3/mods/13055/?), and it's a complete overhaul of all things related with audio in _Fallout 3_, from ambient sounds to soundtrack.
 
-This mod is _massive_, so grab a mug of coffee and stay tuned with the latest news while installing it. You just have to download and install it with NMM. No conflicts should arise.
+This mod is _massive_, so grab a mug of coffee and stay tuned with the latest news while installing it. You just have to download and install it with NMM. No conflicts should arise. No need to rearrange the load order, either, for there is not `.esp` or `.esm` installed.
 
 Launch the game and _listen_ carefully...
 
 
+#### <a id="thoseCrickets"></a>4.2.2. Those crickets are driving me mad
 
-###<a id="playingBadAss"></a>4.3. Playing the bad-ass way
+Imagine yourself wandering at night in the radioctive wastes of the slums in D.C. There are a lot of things going on, even in a desolate barren like this: insects, night birds of prey, dogs, etc. These are the small things that boost a real sense of immersion in the game.
+
+[_Ambient Wasteland 2_](http://www.nexusmods.com/fallout3/mods/12602/?) is for ambient sounds what [_Fallout 3 HQ Audio Overhaul_](http://www.nexusmods.com/fallout3/mods/13055/?) is for music. It changes the small sounds of the Wasteland so you can shit your pants looking for that owl you heard in the dark.
+
+1. Download _Ambient Wasteland 2 WAV edition_ with NMM. Be careful: we want the WAV edition, not the MP3 edition. We want to give it all we've got.
+2. Download _Ambient Wasteland 2 Wav Patch_ with NMM.
+3. Activate them in the same order you downloaded them. The patch will overwrite files from the main file. Otherwise, there will be no conflicts.
+
+And that's really it. Launch the game and search for a deserted area with no imminent danger. Sit back and listen.
+
+
+#### <a id="radioStations"></a>4.2.3. A soundtrack for your lonely Wasteland nights
+
+I have to confess I have never listened to a single radio station in the game in any of my playthroughs. I usually prefer to listen to the ambient sounds, because you'll never when you are about to become the next meal of a hungry deformed creature.
+
+Radio stations, not being my cup of tea (with butter, Tibet style), are an immersive piece of lore, though. We are going to add two new radio stations and to improve an existent one:
+
+* [_GNR Enhanced_](http://www.nexusmods.com/fallout3/mods/14946/?): 100 aditional songs to the 20 original in _Galaxy News Radio_.
+* [_CONELRAD 640-1240 - Civil Defense Radio_](http://www.nexusmods.com/fallout3/mods/6104/?): A new station with _real_ Civil Defense broadcasting messages.
+* [_Existence 2_0 - Robot Radio_](http://www.nexusmods.com/fallout3/mods/5612/?): Can you imagine a robot with existential dread? Well, that's what you get with this radio station.
+
+Let's go, then.
+
+1. Download _GNR Enhanced_ with NMM. Download _Beta Update_ too. The main file is _huge_, so go and get a Nuka-Cola somewhere.
+2. Download _Conelrad 640-1240_ with NMM.
+3. Download _Existence 2.0_ with NMM.
+4. Activate them in any order. There will be no overlapping, except for the _Beta Update_ in GNR.
+5. Run LOOT to rearrange your load order:
+	* `Fallout 3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CASM.esp`
+	* `BetterGamePerformance.esp`
+	* `DarNifiedUIF3.esp`
+	* `HZSmoothLight - FO3.esp`
+	* **`GNR Enhanced.esp`**
+	* **`Existence 2.0.esp`**
+	* **`Conelrad 640-1240.esp`**
+
+You will need to be in the station's range to tune in (_Data_ button, _Radio_ section in your Pip-Boy), but when you do, enjoy the rythm! _Conelrad 640-1240_ and _Existence 2.0_ will be immediately available right after leaving Vault 101.
+
+![Fallout 3 new radio stations](Images/Fallout%203%20new%20radio%20stations.png)
+
+
+#### <a id="checkhovsGun"></a>4.2.4. A sound for Chekhov's gun
+
+I have never fired a real weapon in my life, so I couldn't tell the sound of a real gun from a virtual one. However, with the [_Improved Sound FX v1_3_](http://www.nexusmods.com/fallout3/mods/627/?) mod, it's not difficult to guess which version sound better.
+
+See, or I should say, listen for yourself, in this [lenghty video](https://www.youtube.com/watch?v=aMm31gnXzk8) (6:38) (for what it is), showcasing the difference between vanilla and improved weapon sounds. You will have a much more satisfying rain of bullets in your everyday shoot-outs.
+
+Just download and activate _Improved Sounds FX v13_ with NMM. There will be no conflicts and no data files installes, so no need to use LOOT.
+
+
+### <a id="playingBadAss"></a>4.3. Playing the bad-ass way
 
 We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks in the previous chapter, but the base game still remains the same.
 
