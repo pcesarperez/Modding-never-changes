@@ -6,6 +6,24 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.25) [06/09/2016] Rewrite complete up to 4.3.2.**
+
+Well, this has been a hell of a task.
+
+After finishing chapter 4.2, I started with 4.3.1, about FWE. But I made _tree_ mistakes.
+
+1. I didn't read BenWah's advice about creating a single file with the three available files for FWE in Nexus, provided you where using NMM instead of FOMOD (as I am doing). NMM doesn't install FWE the right way unless you merge the files first and foremost. As a collateral result, I discovered Xuul's videos, which have been **VERY** helpful.
+2. I installed _Improved Sound FX v1\_3_ before FWE, and I didn't know, at the time, that these two mods collide. And, maybe due to NMM corruption (that's the third point), this simple fact fucked up the installation of FWE.
+3. My copy of NMM was corrupted. I don't know why, but the file which keeps track of the installed files per mod (thus, using them to detect overlaps), located in `%NMM_HOME%\Fallout3\Mods\VirtualInstall\VirtualModConfig.xml`, contained information about _deleted_ mods I was no longer using (or I hadn't installed yet). You can imagine the plethora of WTFs I expelled when my installed mods count didn't match with my active mods count.
+
+In short, I had to start over again! However, several bonuses have been gained:
+
+* I found a new mod to speed up the Pip-Boy animation ([_Faster Pipboy Faster_](http://www.nexusmods.com/newvegas/mods/35225/?)), so pulling it up is not excruciatingly slow.
+* I fixed the green tint problem with high resolution maps using [_Shiloh DS - Clean Pipboy Screen_](http://www.nexusmods.com/newvegas/mods/36255/?) mod. The "Clean Pipboy Screen" feature in [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?) only removes "old electronics" artifacts from the Pip-Boy screen, but it doesn't remove the green tint. Besides, with this mod the map fits perfectly within the bounds of the usable area, without need to tinker with configuration files.
+* I relocated [_Improved Sound FX v1\_3_](http://www.nexusmods.com/fallout3/mods/627/?) after FWE, screwing up my functional approach to mod setup, but hey, you have to make sacrifices now and then.
+
+Next stop: Mart Mutants Mod!
+
 **(v0.24) [02/09/2016] Complete chapter 4.2 overhaul.**
 
 I have completely rewritten chapter 4.2 about sound and music. Where we had just one mod, we have now six different mods, ranging from weapon sounds to new songs from radio stations scattered throughout the Wasteland. The sense of immersion has greatly improved with the contents of this chapter.
