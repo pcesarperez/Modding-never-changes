@@ -10,7 +10,7 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 Well, this has been a hell of a task.
 
-After finishing chapter 4.2, I started with 4.3.1, about FWE. But I made _tree_ mistakes.
+After finishing chapter 4.2, I started with 4.3.1, about FWE. But I made _three_ mistakes.
 
 1. I didn't read BenWah's advice about creating a single file with the three available files for FWE in Nexus, provided you where using NMM instead of FOMOD (as I am doing). NMM doesn't install FWE the right way unless you merge the files first and foremost. As a collateral result, I discovered Xuul's videos, which have been **VERY** helpful.
 2. I installed _Improved Sound FX v1\_3_ before FWE, and I didn't know, at the time, that these two mods collide. And, maybe due to NMM corruption (that's the third point), this simple fact fucked up the installation of FWE.
