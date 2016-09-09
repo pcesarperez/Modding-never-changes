@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.26) [09/09/2016] Rewrite complete up to 4.3.3.**
+
+The chapter about Mart's Mutant Mod is complete. I have only made a few minor corrections because the chapter was updated enough.
+
+Let's go on.
+
 **(v0.25) [06/09/2016] Rewrite complete up to 4.3.2.**
 
 Well, this has been a hell of a task.

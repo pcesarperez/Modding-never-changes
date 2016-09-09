@@ -994,7 +994,7 @@ By the way, this chapter should have been included into the chapter about [music
 
 If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/?), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of rotten flesh-shaped love.
 
-1. Download the files _Marts Mutant Mod 1-RC61 FOMOD Ready_ and _MMM-6_2-update_ with NMM (yeah, half of this book is plagued with acronyms; I am acutely aware of that).
+1. Download the file _Marts Mutant Mod 1-RC61 FOMOD Ready_ with NMM (yeah, half of this book is plagued with acronyms; I am acutely aware of that). No need to download the update because the merged patch we are going to use overwrites the files in it.
 2. Download _Marts Mutant Mod Merged_ from [_The Mergers_](http://www.nexusmods.com/fallout3/mods/16787/?) page with NMM. Notice the downloaded files.
 ![NMM MMM files downloaded](Images/NMM%20MMM%20files%20downloaded.png)
 3. Activate _Martigen's Mutant Mod_ by double-clicking on it. NMM shows a window to select the preferred configuration method. We will choose the in-game menu, as it requires far less tinkering than its ESP counterpart.
@@ -1003,12 +1003,7 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 ![NMM MMM global options](Images/NMM%20MMM%20global%20options.png)
 5. MMM overwrites several files from FWE, as it overhauls the monster system in the game. Let it do its magic.
 ![NMM MMM FWE overwrite](Images/NMM%20MMM%20FWE%20overwrite.png)
-6. Activate the RC6.2 update in NMM, overwriting any file from MMM original installation.
-7. There are certain files we don't need in our setup, so close NMM and browse to the _Fallout 3_ data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`). Delete the following files:
-	* `Mart's Mutant Mod - Natural Selection.esp`
-	* `Mart's Mutant Mod - Tougher Traders.esp`
-	* `Mart's Mutant Mod - Zones Respawn.esp`
-8. We are going to get rid of the files instaled by MMM to use the merged path we downloaded before. Create a folder in your data folder (namely `[MMM backup]`), and move the following files:
+6. We are going to get rid of the files instaled by MMM to use the merged path we downloaded before. Create a folder in your data folder (namely `[MMM backup]`), and move the following files:
 	* `Mart's Mutant Mod.esm`
 	* `Mart's Mutant Mod.esp`
 	* `Mart's Mutant Mod - DLC Anchorage.esp`
@@ -1017,12 +1012,16 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 	* `Mart's Mutant Mod - DLC Point Lookout.esp`
 	* `Mart's Mutant Mod - DLC Zeta.esp`
 	* `Mart's Mutant Mod - Master Menu Module.esp`
-9. Reopen NMM and activate _Paradox Ignition presents The Mergers - Marts Mutant Mod Merged_ in the _Mods_ tab. The merged patch will ask for permission to overwrite already installed files. Proceed as usual.
+7. Reopen NMM and activate _Paradox Ignition presents The Mergers - Marts Mutant Mod Merged_ in the _Mods_ tab. The merged patch will ask for permission to overwrite already installed files. Proceed as usual.
 ![NMM MMM merged patch overwriting](Images/NMM%20MMM%20merged%20patch%20overwriting.png)
-10. In the _Plugins_ tab, check the presence of the file `Mart's Mutant Mod.esm`, replacing all the files we installed before.
+8. There are three files installed we are not going to need, corresponding to the options we didn't choose before regarding MMM configuration. They are in the data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`), and can be safely removed, because the options they provide are yet included in FWE. Navigate to the data folder and delete them.
+	* `Mart's Mutant Mod - Natural Selection.esp`
+	* `Mart's Mutant Mod - Tougher Traders.esp`
+	* `Mart's Mutant Mod - Zones Respawn.esp`
+9. In the _Plugins_ tab, check the presence of the file `Mart's Mutant Mod.esm`, replacing all the files we installed before.
 ![NMM MMM installed](Images/NMM%20MMM%20installed.png)
-11. Run LOOT as usual and rearrange your load order. This should be the deal:
-	* `Fallout3.esm`
+10. Run LOOT as usual and rearrange your load order. This should be the deal:
+	* `Fallout 3.esm`
 	* `Anchorage.esm`
 	* `ThePitt.esm`
 	* `BrokenSteel.esm`
@@ -1037,20 +1036,24 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* **`Mart's Mutant Mod.esm`**
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
+	* `GNR Enhanced.esp`
 	* `FO3 Wanderers Edition - Main File.esp`
 	* `HZSmoothLight - FO3.esp`
+	* `Existence 2.0.esp`
+	* `Conelrad 640-1240.esp`
 	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
 	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
 	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
 	* `DarNifiedUIF3.esp`
-12. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
+11. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
 ![Fallout 3 MMM control panel option](Images/Fallout%203%20MMM%20control%20panel%20option.png)
-13. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
+12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
 ![Fallout 3 MMM settings](Images/Fallout%203%20MMM%20settings.png)
 
-Take into account that we need a [_Blackened_ compatibility patch](http://www.nexusmods.com/fallout3/mods/18173/?) to run FWE and MMM seamlessly, but these patches come in combos, so we are going to use the one which suits best our mod stack.
+Take into account that we need a [_Blackened_ compatibility patch](http://www.nexusmods.com/fallout3/mods/18173/?) to run FWE and MMM seamlessly, but Blackened patches come in combos (for example, FWE + MMM + EVE), so we are going to postpone the installation of a patch until we have some other mods installed.
 
 
 #### <a id="weNeedMoreFirepower"></a>4.3.4. We need more firepower!
