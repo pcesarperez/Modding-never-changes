@@ -1058,45 +1058,62 @@ Take into account that we need a [_Blackened_ compatibility patch](http://www.ne
 
 #### <a id="weNeedMoreFirepower"></a>4.3.4. We need more firepower!
 
-The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will sure find the aiming system a fucking crap.
+The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will surely find the aiming system a fucking crap.
 
-We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video [covering weapon mods](https://www.youtube.com/watch?v=Vli2y7ZDUbo) (15:02), although not all of them.
+We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video [covering weapon mods](https://www.youtube.com/watch?v=Vli2y7ZDUbo) (15:02), although not all of them. I have used also a similar Xuul's [video to update the weapon systems](https://www.youtube.com/watch?v=TOSIL9k9dKk) to get cutting edge modding procedure.
 
-We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_IronSights), along with the corresponding Paradox Ignition merged patches. This is going to throw a lot of files in our data folder, so, let's get started.
+We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/?) (WMK), [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/?) (EVE) and [_Rogue Hallow's Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/?) (RH_IronSights), along with the corresponding [Paradox Ignition merged patches](http://www.nexusmods.com/fallout3/mods/16787/?).
 
-1. Download the following WMK files with NMM:
-	* _Weapon Mod Kits_
-	* _WMK Broken Steel Compatibility Patch_
-	* _WMK Mothership Zeta Compatibility Patch_
-	* _WMK Operation Anchorage Compatibility Patch_
-	* _WMK Point Lookout Compatibility Patch_
-	* _WMK The Pitt Compatibility Patch_
-2. Download _EVE 099_ file for EVE with NMM. Ignore the optional files.
-3. Download the following RH_IronSights files with NMM:
-	* _RH\_IronSights BETA_
-	* _RH\_IronSights BETA Update 1_
-	* _New Weapons for BETA_
-	* _RH\_IronSights - Better Uniques_
-4. We have a good bunch of mods ready to be installed.
-![!NMM weapon mods ready](Images/NMM%20weapon%20mods%20ready.png)
-5. Install WMK and all its compatibility patches (the main file first and then the patches, in any order you like). Answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
-6. Install EVE. Again, it's going to overwrite several FWE files.
-7. Install RH_IronSights (main file, update and optionals, in this order). Answer _Yes to all_ when asked to overwrite files, as usual.
-8. Download the merged path for RH_IronSights (_RH\_Ironsights Merged_) from [Paradox Ignition page](http://www.nexusmods.com/fallout3/mods/16787/?) with NMM.
-9. Close NMM and navigate to the data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`) to move the following files to a folder of your choice (say, `[RH_IronSights Backup]`):
-	* `RH_IronSights_Basic_VanillaPlugin.esp`
+1. Download the following WMK files manually, not with NMM:
+	* [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/download/64569)
+	* [_WMK Broken Steel Compatibility Patch_](http://www.nexusmods.com/fallout3/download/62400)
+	* [_WMK Mothership Zeta Compatibility Patch_](http://www.nexusmods.com/fallout3/download/64570)
+	* [_WMK Operation Anchorage Compatibility Patch_](http://www.nexusmods.com/fallout3/download/53514)
+	* [_WMK Point Lookout Compatibility Patch_](http://www.nexusmods.com/fallout3/download/63656)
+	* [_WMK The Pitt Compatibility Patch_](http://www.nexusmods.com/fallout3/download/58184)
+2. Create a folder in a location of your choice, namely `[%WMK_FULL%]`.
+3. Unpack the contents of every WMK file we have downloaded into that folder. There shouldn't be any overwriting.
+4. Zip _the contents_ of `[%WMK_FULL%]` into a file named `WMK.zip`. The root of this file should contain a bunch of `.esp` files, a bunch of `*_readme.txt` files and several folders.
+5. Add `WMK.zip` to NMM (_Add mod from file_, in the green plus sign on the toolbar).
+6. Download the following RH_IronSights files manually, not with NMM:
+	* [_RH\_IronSights BETA_](http://www.nexusmods.com/fallout3/download/83555)
+	* [_RH\_IronSights BETA Update 1_](http://www.nexusmods.com/fallout3/download/86279)
+	* [_New Weapons for BETA_](http://www.nexusmods.com/fallout3/download/83777)
+	* [_RH\_IronSights - Better Uniques_](http://www.nexusmods.com/fallout3/download/86278)
+7. Create a folder in a location of your choice, say `[%RH_IRONSIGHTS_FULL%]`.
+8. Unpack the contents of every RH_IronSights file we have downloaded into that folder. Overwrite files when necessary.
+9. Every RH_IronSights file contained a `[Data]` folder, but we are going to simplify things a little. _Move_ all the contents of `[%RH_IRONSIGHTS_FULL%\Data]` to `[%RH_IRONSIGHTS_FULL%]` (up a level), and delete `[%RH_IRONSIGHTS_FULL%\Data]` folder.
+10. Download [_RH\_Ironsights Merged_](http://www.nexusmods.com/fallout3/download/1000005036) manually from [_Paradox Ignition the Mergers_](http://www.nexusmods.com/fallout3/mods/16787/?) page. This is a merged patch that allows us to reduce the number of loaded files for RH_IronSights.
+11. Unpack the contents of the merged patch into `[%RH_IRONSIGHTS_FULL%]`, overwriting when necessary. Notice there is no `[Data]` folder this time.
+12. Delete the following files, which are replaced by the merged patch (every `.esp` file, in fact):
 	* `RH_IronSights_Basic_AnchoragePlugin.esp`
-	* `RH_IronSights_Basic_PittPlugin.esp`
 	* `RH_IronSights_Basic_BrokenSteelPlugin.esp`
+	* `RH_IronSights_Basic_PittPlugin.esp`
 	* `RH_IronSights_Basic_PointLookoutPlugin.esp`
+	* `RH_IronSights_Basic_VanillaPlugin.esp`
 	* `RH_IronSights_Basic_ZetaPlugin.esp`
 	* `RH_IronSights_Pitt_NewRifleSights.esp`
-	* `RH_IronSights_RemoveReticule.esp`
 	* `RH_IronSights_PL_NewItems.esp`
+	* `RH_IronSights_RemoveReticule.esp`
 	* `RH_IronSights_Vanilla_BetterUniques.esp`
 	* `RH_IronSights_Vanilla_NewWeapons.esp`
-10. Run NMM again and install _Paradox Ignition presents The Mergers - RH\_Ironsights Merged_. The merged patch overwrites some files from the original installation to correct/update them, so let it be.
-11. Run LOOT to rearrange your load order. This should be your setup by now.
+13. Zip the contents of `[%RH_IRONSIGHTS_FULL%]` into a file named `RH_IronSights.zip`.
+14. Add `RH_IronSights.zip` to NMM (_Add mod from file_, in the green plus sign on the toolbar).
+15. Download _EVE 099_ file from [EVE](http://www.nexusmods.com/fallout3/mods/8340/?) with NMM. Ignore the optional files.
+16. Download _RH IronSights - FWE Bridge_ from [_RH\_IronSights_](http://www.nexusmods.com/fallout3/mods/6938/?) with NMM.
+17. Download _RH\_IronSights - EVE Bridge_ from [_RH\_IronSights_](http://www.nexusmods.com/fallout3/mods/6938/?) with NMM.
+18. Download _RH\_IronSights - WMK Bridge_ from [_RH\_IronSights_](http://www.nexusmods.com/fallout3/mods/6938/?) with NMM.
+19. We have a good bunch of mods ready to be installed.
+![!NMM weapon mods ready](Images/NMM%20weapon%20mods%20ready.png)
+20. Activate _WMK_ and answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
+21. Activate _EVE - Energy Visuals Enhanced - EVE 099_. Again, it's going to overwrite several FWE files.
+22. Activate _RH\_IronSights_. Answer _Yes to all_ when asked to overwrite files, as usual.
+23. Activate the RH_IronSights bridges, in the following order:
+	* _RH\_IronSights - FOSE - RH\_IronSights - EVE Bridge_
+	* _RH\_IronSights - FOSE - RH\_IronSights - WMK Bridge_
+	* _RH\_IronSights - FOSE - RH IronSights - FWE Bridge_
+24. We are going to need a compatibility patch to stitch all these mods together, so navigate to the [_Blackened_ compatibility patches](http://www.nexusmods.com/fallout3/mods/18173/?) page, download and activated _Blackened FWE - MMM - EVE_ file with NMM.
+25. Run LOOT to rearrange your load order. This should be your setup by now.
 	* `Fallout3.esm`
 	* `Anchorage.esm`
 	* `ThePitt.esm`
@@ -1114,68 +1131,30 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 	* **`RH_IRONSIGHTS.esm`**
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
+	* `GNR Enhanced.esp`
 	* `FO3 Wanderers Edition - Main File.esp`
 	* `HZSmoothLight - FO3.esp`
+	* `Existence 2.0.esp`
+	* `Conelrad 640-1240.esp`
 	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
 	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
 	* `DarNifiedUIF3.esp`
+	* **`Blackened FWE + MMM + EVE.esp`**
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* **`RH_FWE_Bridge.esp`**
 	* **`WeaponModKits.esp`**
 	* **`WeaponModKits - BrokenSteel.esp`**
 	* **`WeaponModKits - OperationAnchorage.esp`**
-	* **`WeaponModKits - Zeta.esp`**
 	* **`WeaponModKits - ThePitt.esp`**
+	* **`WeaponModKits - Zeta.esp`**
 	* **`WeaponModKits - PointLookout.esp`**
-12. According to LOOT, the file `RH_IRONSIGHTS.esm` is dirty, so proceed to clean it up with FO3Edit. Remember: select just that file and the files it depends on will be automatically loaded.
-
-We have just installed a lot of overlapping mods, so we will need a compatibility patch to have them all working together. Nevertheless we have two alternatives here, both from [Blackened compatibility patches page](http://www.nexusmods.com/fallout3/mods/18173/?):
-
-1. We can install _Blackened FWE - MMM - EVE_ and _Blackened RH\_Ironsights - FWE - EVE_ and stop installing mods right here.
-2. We can install _Blackened FWE - MMM - EVE - Project Beauty_ and _Blackened RH\_Ironsights - FWE - EVE_, keeping on installing mods from this guide, as we are going to get to _Project Beauty_, eventually.
-
-This is important... If you don't want to go further, install the FWE/MMM/EVE patch, but if you want to get to the section about face-washing the game, **DON'T** install any patch yet. Take into account that you won't be able to play without random crashes until a proper compatibility patch is installed, one way or another, so curb your enthusiasm.
-
-Since I am going to deep-follow this guide (of course), I will give instructions about the RH_IronSights/FWE/EVE patch only.
-
-1. Download and install _Blackened RH\_Ironsights - FWE - EVE_ with NMM, from [Blackened](http://www.nexusmods.com/fallout3/mods/18173/?).
-2. Rearrange your load order with LOOT. Interesting changes arise:
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CRAFT.esm`
-	* `CALIBR.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `CASM.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `DarNifiedUIF3.esp`
-	* **`Blackened RH + FWE + EVE.esp`**
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - PointLookout.esp`
-
-If you run the game, you will notice the dramatic change when aiming your weapon. **NOW**, this is serious shit.
-
+	* **`RH_EVE_Bridge.esp`**
+	* **`RH_WMK_Bridge.esp`**
+26. According to LOOT, the files `RH_IRONSIGHTS.esm` and `RH_EVE_Bridge.esp` are dirty, so proceed to clean them up with FO3Edit. Remember: select just that file and the files it depends on will be automatically loaded.
+27. Run the game and you will notice the dramatic change when aiming your weapon. **NOW**, this is serious shit.
 ![Fallout 3 new sights](Images/Fallout%203%20new%20sights.png)
 
 

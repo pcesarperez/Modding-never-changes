@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.27) [11/09/2016] Rewrite complete up to 4.4.4.**
+
+The chapter about weapons (_EVE_, _RH\_IronSights_ and _WMK_) has changed dramatically. Using Xuul's video as a source of enlightenment, I have a less cluttered procedure, although a bit more complex. _RH\_IronSights_ and _WMK_ install procedures have been completely rewritten, and I have installed several bridges I left out the previous iteration.
+
+I also included the _Blackened_ patch between _FWE_, _MMM_ and _EVE_ permanently. I think it's safer to do so. I will include instructions for the _Project Beauty_ patch later.
+
 **(v0.26) [09/09/2016] Rewrite complete up to 4.3.3.**
 
 The chapter about Mart's Mutant Mod is complete. I have only made a few minor corrections because the chapter was updated enough.
