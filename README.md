@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.28) [15/09/2016] Rewrite complete up to 4.4.1.**
+
+The chapter about new quests have plumped up a lot. From just 3 mods/quest, the count has increased to 8. Aside from that, there's nothing really remarkable about this update (and I am a little absentminded right now).
+
+I have not tested the mods, so I hope the game won't crash when going on any of these quests.
+
 **(v0.27) [11/09/2016] Rewrite complete up to 4.4.4.**
 
 The chapter about weapons (_EVE_, _RH\_IronSights_ and _WMK_) has changed dramatically. Using Xuul's video as a source of enlightenment, I have a less cluttered procedure, although a bit more complex. _RH\_IronSights_ and _WMK_ install procedures have been completely rewritten, and I have installed several bridges I left out the previous iteration.

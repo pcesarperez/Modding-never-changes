@@ -1161,27 +1161,65 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 
 ### <a id="expandingYourWorld"></a>4.4. Expanding your world
 
-This section is about adding new content to the game, and it's the last block before changing the way the game looks. We are going to add a few new places, a new playable set (armor, range finder, trap detector and nightvision gear), and pulling out a feature the game actually has, but does not show by default.
+This section is about adding new content to the game, and it's the last block before changing the way the game looks. We are going to add a few new places and quests, a new playable set (armor, range finder, trap detector and nightvision gear), and pulling out a feature the game actually has, but does not show by default.
 
 
 #### <a id="hicSuntDracones"></a>4.4.1. _Hic sunt dracones_
 
 It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
-We are going to add three mods that add new content to the game: [_Alton, IL_](http://www.nexusmods.com/fallout3/mods/16949/?), [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?) and [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?). Let's start.
+We are going to install several mods that add new content to the game:
 
-1. Download _Alton IL Version 2-0-1_ and _Alton IL Hotfix 2-0-3_ with NMM.
-2. Download _Arefu Expanded v1_7a - Data Files_ and _Arefu Expanded v1\_7d - ESP and ESM files_ with NMM.
-3. Download _Mothership Zeta Crew V 166 ZIP_ with NMM.
-4. Check they are all downloaded and ready in NMM. Take into account that _Mothership Zeta Crew_ is **HUGE** (over 1 GB), so be patient and make the most of your time reading online documentation about creating a book using LaTeX, for example.
+* [_A Note Easily Missed_](http://www.nexusmods.com/fallout3/mods/4730/?)
+* [_Alton, IL_](http://www.nexusmods.com/fallout3/mods/16949/?)
+* [_An Evening With Mister Manchester_](http://www.nexusmods.com/fallout3/mods/5630/?)
+* [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/?)
+* [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/?).
+* [_The Institute - a fully voiced quest mod_](http://www.nexusmods.com/fallout3/mods/14449/?)
+* [_To sleep - perchance to dream_](http://www.nexusmods.com/fallout3/mods/6921/?)
+* [_Vault 101 Revisited_](http://www.nexusmods.com/fallout3/mods/13308/?)
+
+Visit each mod's page to find out more about what you will find with the new quests and areas.
+
+Let's start.
+
+1. Download the following files for each mod, all with NMM, unless otherwise specified:
+	* _A Note Easily Missed v107_ for _A Note Easily Missed_.
+	* _Alton IL Version 2-0-1_ and _Alton IL Hotfix 2-0-3_ for _Alton, IL_.
+	* Manually download [_Alton Re-voiced update without lip files_](http://www.nexusmods.com/fallout3/download/1000007113) from [_Alton Revoicing Project_](http://www.nexusmods.com/fallout3/mods/20859/?).
+	* _Alton\_IL\_lip\_for\_Revoiced_ from [_Alton Revoiced lip files_](http://www.nexusmods.com/fallout3/mods/22041/?).
+	* _An Evening with Mister Manchester v181_ and _An Evening With Mister manchester v181 UPDATE_ for _An Evening with Mister Manchester_.
+	* _Arefu Expanded v1\_7a - Data Files_ and _Arefu Expanded v1\_7d - ESP and ESM files_ for _Arefu Expanded_.
+	* _Mothership Zeta Crew V 166 ZIP_ for _Mothership Zeta Crew_.
+	* _The Institute - a fully voiced quest mod 1\_0\_1_ and _The Institute 1\_0\_1 ESM only_ from _The Institute - a fully voiced quest mod_.
+	* _To sleep - perchance to dream v106_ and _To sleep - perchance to dream v1061_ for _To sleep - perchance to dream_.
+	* _Vault 101 Revisited - Main 104_ for _Vault 101 Revisited_.
+2. Manually add the file `Alton Re-voiced update without lip files-20859-v1-3.zip` to NMM (this is the only file not downloaded with NMM in this series).
+3. Check all the files are downloaded and ready in NMM. Take into account that _Mothership Zeta Crew_ is **HUGE** (over 1 GB), so be patient and make the most of your time reading online documentation about creating a book using Asciidoc, for example.
 ![NMM new content mods](Images/NMM%20new%20content%20mods.png)
-5. Activate the files in the following order, overwriting all files when necessary (the mods shouldn't overlap, except patches over original files):
+4. We are going to activate _Alton, IL_ files first, because there is a main file and several patches. Activate them in the following order, overwriting when asked to.
 	* _Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_
 	* _Alton IL Hotfix 2-0-3 RC_
+	* _Alton Revoicing Project_
+	* _Alton Revoiced lip files - Alton\_IL\_lip\_for\_Revoiced_
+5. Activate the following files next, in this order, overwriting original files with patches/updates:
 	* _Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7a - Data Files_
 	* _Arefu Expanded v1\_7d by Azar - Arefu Expanded v1\_7d - ESP and ESM files_
 	* _Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_
-6. When all mods are installed, fire up LOOT to rearrange your load order. This should be the load order now:
+	* _A Note Easily Missed - A Note Easily Missed v107_
+	* _An Evening With Mister Manchester - An Evening with Mister Manchester v181_
+	* _An Evening With Mister Manchester - An Evening With Mister manchester v181 UPDATE_
+	* _The Institute - a fully voiced quest mod - The Institute - a fully voiced quest mod 1\_0\_1_
+	* _The Institute - a fully voiced quest mod - The Institute 1\_0\_1 ESM only_
+	* _To sleep - perchance to dream - To sleep - perchance to dream v106_
+	* _To sleep - perchance to dream - To sleep - perchance to dream v1061_
+	* _Vault 101 Revisited - Vault 101 Revisited - Main 104_
+6. When all them mods are installed, fire up LOOT to rearrange your load order. Ignore the load order for now, because there are several dirty files we have to clean first. These are the dirty files to clean with FO3Edit:
+	* `Vault 101 Revisited.esm`
+	* `HeirApparent.esp`
+	* `NotSoFast.esp`
+	* `IntoTheDeepWoods.esp`
+7. Fire up LOOT again an rearrange your load order, which will change due to the cleaning. This should be the deal:
 	* `Fallout3.esm`
 	* `Anchorage.esm`
 	* `ThePitt.esm`
@@ -1197,31 +1235,48 @@ We are going to add three mods that add new content to the game: [_Alton, IL_](h
 	* **`ArefuExpandedByAzar.esm`**
 	* **`Mothership Crew.esm`**
 	* `RH_IRONSIGHTS.esm`
+	* **`TheInstitute.esm`**
+	* **`Vault 101 Revisited.esm`**
 	* **`Alton, IL.esm`**
 	* `CRAFT.esm`
 	* `FO3 Wanderers Edition - Main File.esm`
 	* `FO3 Wanderers Edition - Alternate Travel.esp`
 	* `CASM.esp`
+	* `BetterGamePerformance.esp`
+	* `GNR Enhanced.esp`
 	* `DarNifiedUIF3.esp`
 	* **`AltonAddon.esp`**
 	* `FO3 Wanderers Edition - Main File.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
 	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `Blackened RH + FWE + EVE.esp`
 	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
 	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `Blackened FWE + MMM + EVE.esp`
+	* `RH_FWE_Bridge.esp`
+	* **`HeirApparent.esp`**
+	* **`NotSoFast.esp`**
 	* `WeaponModKits.esp`
+	* `RH_EVE_Bridge.esp`
+	* **`IntoTheDeepWoods.esp`**
+	* `Existence 2.0.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
 	* `WeaponModKits - BrokenSteel.esp`
 	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
 	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - Zeta.esp`
 	* `WeaponModKits - PointLookout.esp`
+	* `RH_WMK_Bridge.esp`
 	* **`ArefuExpandedByAzar-Radio.esp`**
-7. Launch the game and wait a few moments to see two reminders about _Alton, IL_ and _Arefu Expanded_ (there's no mention about _Mothership Zeta Crew_, as the mod kick-in is embedded in-game).
-![Fallout 3 Arefu Expanded installed](Images/Fallout%203%20Arefu%20Expanded%20installed.png)
-![Fallout 3 Alton IL installed](Images/Fallout%203%20Alton%20IL%20installed.png)
+	* `Conelrad 640-1240.esp`
+	* **`FasterMorePowerfulMines.esp`**
+8. Launch the game and wait a few moments to see several dialogs to kick-in the missions (except _Mothership Zeta Crew_, which launches elsewhere).
+![Fallout 3 new quests dialog 1](Images/Fallout%203%20new%20quests%20dialog%201.png)
+![Fallout 3 new quests dialog 2](Images/Fallout%203%20new%20quests%20dialog%202.png)
+![Fallout 3 new quests dialog 3](Images/Fallout%203%20new%20quests%20dialog%203.png)
+![Fallout 3 new quests dialog 4](Images/Fallout%203%20new%20quests%20dialog%204.png)
+9. You can check the quests pulling up your Pip-Boy and navigating to the _Data_ section, _Notes_ option. The following notes should be there for you:
+![Fallout 3 new quests notes](Images/Fallout%203%20new%20quests%20notes.png)
 
 
 #### <a id="gearFallenBrother"></a>4.4.2. Gear for a fallen brother
@@ -1968,7 +2023,7 @@ Remember these golden rules regarding to merged patches:
 
 ## <a id="resources"></a>7. Resources
 
-This is a comprehensive list of the resources used throughtout this guide.
+This is a comprehensive list of the resources used throughout this guide.
 
 
 
@@ -1998,6 +2053,23 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 
 |Mod|URL|
 |---|---|
+|_A Note Easily Missed_|http://www.nexusmods.com/fallout3/mods/4730/|
+|_Adjustable HUD_|http://www.nexusmods.com/fallout3/mods/15886/|
+|_Advanced Recon Range Finder_|http://www.nexusmods.com/fallout3/mods/15744/|
+|_Advanced Recon Stealth Armor_|http://www.nexusmods.com/fallout3/mods/2654/|
+|_Advanced Recon Thermal Nightvision Patcher_|http://www.nexusmods.com/fallout3/mods/20806/|
+|_Advanced Recon Thermal Nightvision_|http://www.nexusmods.com/fallout3/mods/15653/|
+|_Advanced Recon Trap Detection_|http://www.nexusmods.com/fallout3/mods/15641/|
+|_Alton IL_|http://www.nexusmods.com/fallout3/mods/16949/|
+|_Alton Revoiced lip files_|http://www.nexusmods.com/fallout3/mods/22041/|
+|_Alton Revoicing Project_|http://www.nexusmods.com/fallout3/mods/20859/|
+|_Ambient Wasteland 2_|http://www.nexusmods.com/fallout3/mods/12602/|
+|_An Evening With Mister Manchester_|http://www.nexusmods.com/fallout3/mods/5630/|
+|_Arefu Expanded_|http://www.nexusmods.com/fallout3/mods/8976/|
+|_Beards of Fallout_|http://www.nexusmods.com/fallout3/mods/18622/|
+|_Better Booze_|http://www.nexusmods.com/fallout3/mods/626/|
+|_Better Game Performance_|http://www.nexusmods.com/fallout3/mods/13520/|
+|_Better High Detail Map and Icons_|http://www.nexusmods.com/fallout3/mods/16898/|
 |_Better HiRes Skill Books_|http://www.nexusmods.com/fallout3/mods/3876/|
 |_Chems and Meds Re-Texture Pack_|http://www.nexusmods.com/fallout3/mods/15960/|
 |_CINEMATECH_|http://www.nexusmods.com/fallout3/mods/15745/|
@@ -2010,10 +2082,10 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 |_Dynavision_|http://www.nexusmods.com/fallout3/mods/17876/|
 |_Earth from Space texture for Mothership Zeta_|http://www.nexusmods.com/fallout3/mods/19294/|
 |_Energy Visuals Enhanced_|http://www.nexusmods.com/fallout3/mods/8340/|
-|_Enhanced Blood Textures v2\_22b_|http://www.nexusmods.com/fallout3/mods/101/|
+|_Enhanced Blood Textures v2_22b_|http://www.nexusmods.com/fallout3/mods/101/|
 |_Enhanced Night Sky_|http://www.nexusmods.com/fallout3/mods/442/|
 |_eXcalibr - ammo eXpansion pack_|http://www.nexusmods.com/fallout3/mods/11684/|
-|_Existence 2\_0 - Robot Radio_|http://www.nexusmods.com/fallout3/mods/5612/|
+|_Existence 2_0 - Robot Radio_|http://www.nexusmods.com/fallout3/mods/5612/|
 |_Expanded Megaton House V3_|http://www.nexusmods.com/fallout3/mods/2136/|
 |_Fake Fullscreen Mode Windowed - Alt Tab Fix_|http://www.nexusmods.com/fallout3/mods/16001/|
 |_Fallout 3 - Enhanced Camera_|http://www.nexusmods.com/fallout3/mods/20183/|
@@ -2034,7 +2106,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 |_Immersive HUD_|http://www.nexusmods.com/fallout3/mods/15790/|
 |_Improved Glass Bullet Impact_|http://www.nexusmods.com/fallout3/mods/13120/|
 |_Improved LOD Noise Texture_|http://www.nexusmods.com/fallout3/mods/17743/|
-|_Improved Sound FX v1\_3_|http://www.nexusmods.com/fallout3/mods/627/|
+|_Improved Sound FX v1.3_|http://www.nexusmods.com/fallout3/mods/627/|
 |_krzymar HI-RES Moon_|http://www.nexusmods.com/fallout3/mods/538/|
 |_Large Address Aware Enabler for Fallout 3_|http://www.nexusmods.com/fallout3/mods/6510/|
 |_Lost in Light_|http://www.nexusmods.com/fallout3/mods/19163/|
@@ -2062,7 +2134,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 |_To sleep - perchance to dream_|http://www.nexusmods.com/fallout3/mods/6921/|
 |_UHQ Terrain Overhaul_|http://www.nexusmods.com/fallout3/mods/19799/|
 |_Unofficial Fallout 3 Patch_|http://www.nexusmods.com/fallout3/mods/19122/|
-|_User Interface Organizer_|http://www.nexusmods.com/fallout3/mods/20867|
+|_User Interface Organizer_|http://www.nexusmods.com/fallout3/mods/20867/|
 |_UWWUT - Unique Weapons With Unique Textures_|http://www.nexusmods.com/fallout3/mods/6309/|
 |_Vault 101 Revisited_|http://www.nexusmods.com/fallout3/mods/13308/|
 |_Weapon Mod Kits_|http://www.nexusmods.com/fallout3/mods/3388/|
