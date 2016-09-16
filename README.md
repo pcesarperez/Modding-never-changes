@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.29) [16/09/2016] Rewrite complete up to 4.4.2.**
+
+Chapter 4.4.2 has gone through minor corrections. The most significant change is the addition of a file which gives a twist about the way you find the Advanced Recon gear.
+
 **(v0.28) [15/09/2016] Rewrite complete up to 4.4.1.**
 
 The chapter about new quests have plumped up a lot. From just 3 mods/quest, the count has increased to 8. Aside from that, there's nothing really remarkable about this update (and I am a little absentminded right now).
