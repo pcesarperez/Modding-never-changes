@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.30) [16/09/2016] Rewrite complete up to 4.4.3.**
+
+The chapter about personal achievements log has been corrected. The log only appears in a fresh playthrough _using the main Vault 101 start_, not one of the FWE alternate starts.
+
+I have included a screenshot of the log in the ninth birthday of the Wanderer.
+
 **(v0.29) [16/09/2016] Rewrite complete up to 4.4.2.**
 
 Chapter 4.4.2 has gone through minor corrections. The most significant change is the addition of a file which gives a twist about the way you find the Advanced Recon gear.
