@@ -43,6 +43,7 @@
 		+ [4.4.2. Gear for a fallen brother](#gearFallenBrother)
 		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
 	- [4.5. So you want to take over the world, uh?](#takeOverTheWorkd)
+	- [4.6. There's no place like Megaton](#thereIsNoPlaceLikeMegaton)
 * [5. Unveiling the real Wasteland](#unveilingRealWasteland)
 	- [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
 	- [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
@@ -1589,6 +1590,100 @@ This mod requires a bit of fiddling because it's not ready to work along the Par
 	* `Companion Core DLC Addon.esp`
 13. When you level up, you will get the RobCo Certified perk for you to unleash your nerdy urges.
 ![Fallout 3 RobCo Certified perk](Images/Fallout%203%20RobCo%20Certified%20perk.png)
+
+
+
+### <a id="thereIsNoPlaceLikeMegaton"></a>4.6. There's no place like Megaton
+
+Megaton will be the first settlement you will find right after leaving Vault 101 (or elsewhere, if you choose an alternate start from FWE). You will spend quite a lot of time there, at least at the beginning, because a) it's a main quest hub, and b) you will get homesick with the memories of that rusty pile of shit, eventually.
+
+However, Megaton has the same problem all the major cities on this planet have: poor urban planning. I guess having an undetonated nuke half-buried in your main square impose certain trade-offs.
+
+We are going to install two mods here. One will add an [overhead walkway](http://www.nexusmods.com/fallout3/mods/8247/) which links the most interesting places with your own house (in case you end owning it). The other adds a [third floor](http://www.nexusmods.com/fallout3/mods/2136/) to that house, giving you extra room to store the tons of junk you are going to collect (I guess this game is disturbing for people with OCD).
+
+1. Download _Megaton Walkway_ from [_Megaton Walkway_](http://www.nexusmods.com/fallout3/mods/8247/) with NMM.
+2. Download _Expanded Megaton House V3_ from [_Expanded Megaton House V3_](http://www.nexusmods.com/fallout3/mods/2136/) with NMM.
+3. Activate them in the same order you downloaded them. No conflicts here.
+4. Fire up LOOT to rearrange your load order, as usual:
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `TheInstitute.esm`
+	* `Vault 101 Revisited.esm`
+	* `Alton, IL.esm`
+	* `Advanced Recon Tech.esm`
+	* `Companion Core.esm`
+	* `RobCo Certified v2.esm`
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* `Impervious Power Armour.esm`
+	* `CASM.esp`
+	* `BetterGamePerformance.esp`
+	* `GNR Enhanced.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `Blackened FWE + MMM + EVE.esp`
+	* `RH_FWE_Bridge.esp`
+	* `HeirApparent.esp`
+	* `RobCo Certified v2 Omnipatch.esp`
+	* `Mr Smith's Scrapyard.esp`
+	* **`Expanded Megaton House V3.esp`**
+	* **`Expanded Megaton House V3-No Stove.esp`**
+	* **`Megaton Walkway.esp`**
+	* `NotSoFast.esp`
+	* `WeaponModKits.esp`
+	* `RH_EVE_Bridge.esp`
+	* `IntoTheDeepWoods.esp`
+	* `Existence 2.0.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `RH_WMK_Bridge.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Conelrad 640-1240.esp`
+	* `FasterMorePowerfulMines.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+	* `RobcoCertified24SideMod.esp`
+	* `RobCo Certified v2 Impervious FWE.esp`
+	* `RobCo Certified v2 Impervious.esp`
+	* `RobCo Certified v2 Mechanist's Edition.esp`
+	* `Companion Core DLC Addon.esp`
+5. Launch the game and take a look at the walkway and the extra story in your house
+![Fallout 3 Megaton walkway](Images/Fallout%203%20Megaton%20walkway.png)
+![Fallout 3 Megaton new balcony](Images/Fallout%203%20Megaton%20new%20balcony.png)
 
 
 

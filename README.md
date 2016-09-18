@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.32) [18/09/2016] New chapter about Megaton urban planning.**
+
+I have added a new chapter with two mods that change the urban landscape of Megaton, with a new walkway (making easier to get to the key places) and a new story to your house.
+
 **(v0.31) [18/09/2016] New chapter about crafting robots.**
 
 This is a brand new chapter about _RobCo Certified_, a mod which allows you to repair and create robots for a better nerdy experience.
