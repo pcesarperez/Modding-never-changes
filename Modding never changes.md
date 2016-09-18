@@ -221,13 +221,13 @@ After clicking on the sort icon, the program proposes the proper load order, mea
 
 This should be your load order by now:
 
-* `Fallout 3.esm`
-* `Anchorage.esm`
-* `ThePitt.esm`
-* `BrokenSteel.esm`
-* `PointLookout.esm`
-* `Zeta.esm`
-* **`Unofficial Fallout 3 Patch.esm`**
+* (0) `Fallout 3.esm`
+* (1) `Anchorage.esm`
+* (2) `ThePitt.esm`
+* (3) `BrokenSteel.esm`
+* (4) `PointLookout.esm`
+* (5) `Zeta.esm`
+* ** (6) `Unofficial Fallout 3 Patch.esm`**
 
 You might be surprised to check that there are inconsistencies in the main DLC files, like `Anchorage.esm` (master file for _Operation Anchorage_ DLC). As we said, Bethesda is not known for releasing solid, fully tested programs. We'll address that later.
 
@@ -478,14 +478,14 @@ CASM also saves the game automatically with a given frequency and under certain 
 7. Close NMM and run LOOT. Click on the _Sort Plugins_ icon to fix the load order. Notice that CASM still sits at the bottom, and no conflicts are detected (this step is fairly unnecessary, but you need to get used to routinely rearrange your load order).
 ![LOOT after installing CASM](Images/LOOT%20after%20installing%20CASM.png)
 8. This should be your load order:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* **`CASM.esp`**
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* **(7) `CASM.esp`**
 9. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing <kbd>TAB</kbd> and navigate to the _Items_ button, _Aid_ section. You will see an "item" called _CASM Options Menu_.
 ![Fallout 3 CASM option](Images/Fallout%203%20CASM%20option.png)
 10. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
@@ -510,15 +510,15 @@ Let's install this mod.
 2. Activate the mod by double-clicking on its name. The mod will be installed with no hiccups.
 ![NMM Better Game Performance installed](Images/NMM%20Better%20Game%20Performance%20installed.png)
 3. Run LOOT to rearrange your load order. The newly installed mod should sit at the bottom of your load order.
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `CASM.esp`
-	* **`BetterGamePerformance.esp`**
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `CASM.esp`
+	* **(8) `BetterGamePerformance.esp`**
 
 That's it. We have removed a lot of unused objects from the game. It's difficult to show the difference, because, these are mainly rocks, but take my word for it.
 
@@ -602,16 +602,16 @@ This will be a bit tricky, because there are no NMM packages right out-of-the-bo
 11. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
 ![LOOT DUIF3](Images/LOOT%20DUIF3.png)
 12. Check your load order:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* **`DarNifiedUIF3.esp`**
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `CASM.esp`
+	* (8) `BetterGamePerformance.esp`
+	* **(9) `DarNifiedUIF3.esp`**
 13. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even done half the job for you.
 ```INI
 [Fonts]
@@ -660,17 +660,17 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 2. Activate it in the _Mods_ tab by double-clicking on its name.
 3. The mod changes files installed by DUIF3, so answer _Yes to all_ when asked to overwrite files.
 4. Run LOOT and sort your load order, which should be:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* **`aHUD.esm`**
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `DarNifiedUIF3.esp`
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* **(7) `aHUD.esm`**
+	* (8) `CASM.esp`
+	* (9) `BetterGamePerformance.esp`
+	* (a) `DarNifiedUIF3.esp`
 5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
 ![Fallout 3 aHUD settings](Images/Fallout%203%20aHUD%20settings.png)
 6. Using the menu options you can select any of the following items to relocate:
@@ -692,18 +692,18 @@ In addition to have the HUD elements placed where you like, you can improve the 
 2. Activate it, the usual way.
 3. Answer _Yes to all_ when asked to overwrite files.
 4. Use LOOT to sort your load order, which should be:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* **`iHUD.esm`**
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `DarNifiedUIF3.esp`
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4 `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* **(8) `iHUD.esm`**
+	* (9) `CASM.esp`
+	* (a) `BetterGamePerformance.esp`
+	* (b) `DarNifiedUIF3.esp`
 5. Launch the game and notice the absence of HUD elements on screen.
 ![Fallout 3 iHUD default](Images/Fallout%203%20iHUD%20default.png)
 6. Keep the <kbd>I</kbd> key pressed a few moments. The iHUD settings menu will appear.
@@ -776,19 +776,19 @@ This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.co
 
 1. Download and activate the mod with NMM. There shouldn't be any conflicts.
 2. Use LOOT to sort your load order, which should be:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `DarNifiedUIF3.esp`
-	* **`HZSmoothLight - FO3.esp`**
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CASM.esp`
+	* (a) `BetterGamePerformance.esp`
+	* (b) `DarNifiedUIF3.esp`
+	* **(c) `HZSmoothLight - FO3.esp`**
 3. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.
 
 See the difference for yourself.
@@ -857,22 +857,22 @@ Let's go, then.
 3. Download _Existence 2.0_ with NMM.
 4. Activate them in any order. There will be no overlapping, except for the _Beta Update_ in GNR.
 5. Run LOOT to rearrange your load order:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `DarNifiedUIF3.esp`
-	* `HZSmoothLight - FO3.esp`
-	* **`GNR Enhanced.esp`**
-	* **`Existence 2.0.esp`**
-	* **`Conelrad 640-1240.esp`**
+	* (1) `Fallout 3.esm`
+	* (2) `Anchorage.esm`
+	* (3) `ThePitt.esm`
+	* (4) `BrokenSteel.esm`
+	* (5) `PointLookout.esm`
+	* (6) `Zeta.esm`
+	* (7) `Unofficial Fallout 3 Patch.esm`
+	* (8) `aHUD.esm`
+	* (9) `iHUD.esm`
+	* (a) `CASM.esp`
+	* (b) `BetterGamePerformance.esp`
+	* (c) `DarNifiedUIF3.esp`
+	* (d) `HZSmoothLight - FO3.esp`
+	* **(e) `GNR Enhanced.esp`**
+	* **(f) `Existence 2.0.esp`**
+	* **(10) `Conelrad 640-1240.esp`**
 
 You will need to be in the station's range to tune in (_Data_ button, _Radio_ section in your Pip-Boy), but when you do, enjoy the rhythm! _Conelrad 640-1240_ and _Existence 2.0_ will be immediately available right after leaving Vault 101.
 
@@ -931,32 +931,32 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 17. Double click on _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ and answer _Yes to all_ when asked to overwrite files.
 18. Due to the install order we are following (functional, instead of technical), the two user interface patches we have just activated make a little mess of the HUD. To correct that, I have created a small patch of my own (_Modding never changes DUIF3-FWE patch_) with the merged files. Download the patch, add it to NMM and activate it, overwriting files when needed.
 19. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files. This should be your load order:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* **`CRAFT.esm`**
-	* **`CALIBR.esm`**
-	* **`FO3 Wanderers Edition - Main File.esm`**
-	* **`FO3 Wanderers Edition - Alternate Travel.esp`**
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* **`FO3 Wanderers Edition - Main File.esp`**
-	* `HZSmoothLight - FO3.esp`
-	* `Existence 2.0.esp`
-	* `Conelrad 640-1240.esp`
-	* **`FO3 Wanderers Edition - DLC Broken Steel.esp`**
-	* **`FO3 Wanderers Edition - DLC Anchorage.esp`**
-	* **`FO3 Wanderers Edition - DLC Point Lookout.esp`**
-	* **`FO3 Wanderers Edition - DLC The Pitt.esp`**
-	* **`FO3 Wanderers Edition - DLC Mothership Zeta.esp`**
-	* `DarNifiedUIF3.esp`
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* **(9) `CRAFT.esm`**
+	* **(a) `CALIBR.esm`**
+	* **(b) `FO3 Wanderers Edition - Main File.esm`**
+	* **(c) `FO3 Wanderers Edition - Alternate Travel.esp`**
+	* (d) `CASM.esp`
+	* (e) `BetterGamePerformance.esp`
+	* (f) `GNR Enhanced.esp`
+	* **(10) `FO3 Wanderers Edition - Main File.esp`**
+	* (11) `HZSmoothLight - FO3.esp`
+	* (12) `Existence 2.0.esp`
+	* (13) `Conelrad 640-1240.esp`
+	* **(14) `FO3 Wanderers Edition - DLC Broken Steel.esp`**
+	* **(15) `FO3 Wanderers Edition - DLC Anchorage.esp`**
+	* **(16) `FO3 Wanderers Edition - DLC Point Lookout.esp`**
+	* **(17) `FO3 Wanderers Edition - DLC The Pitt.esp`**
+	* **(18) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`**
+	* (19) `DarNifiedUIF3.esp`
 20. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in [the chapter about cleaning up the master files](#cleaningMasterFiles). To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
 	* `Fallout3.esm`
 	* `Fallout3.exe`
@@ -1024,33 +1024,33 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 9. In the _Plugins_ tab, check the presence of the file `Mart's Mutant Mod.esm`, replacing all the files we installed before.
 ![NMM MMM installed](Images/NMM%20MMM%20installed.png)
 10. Run LOOT as usual and rearrange your load order. This should be the deal:
-	* `Fallout 3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CRAFT.esm`
-	* `CALIBR.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* **`Mart's Mutant Mod.esm`**
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `Existence 2.0.esp`
-	* `Conelrad 640-1240.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `DarNifiedUIF3.esp`
+	* (0) `Fallout 3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CRAFT.esm`
+	* (a) `CALIBR.esm`
+	* (b) `FO3 Wanderers Edition - Main File.esm`
+	* (c) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* **(d) `Mart's Mutant Mod.esm`**
+	* (e) `CASM.esp`
+	* (f) `BetterGamePerformance.esp`
+	* (10) `GNR Enhanced.esp`
+	* (11) `FO3 Wanderers Edition - Main File.esp`
+	* (12) `HZSmoothLight - FO3.esp`
+	* (13) `Existence 2.0.esp`
+	* (14) `Conelrad 640-1240.esp`
+	* (15) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (16) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (17) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (18) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (19) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (1a) `DarNifiedUIF3.esp`
 11. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
 ![Fallout 3 MMM control panel option](Images/Fallout%203%20MMM%20control%20panel%20option.png)
 12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
@@ -1117,45 +1117,45 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 	* _RH\_IronSights - FOSE - RH IronSights - FWE Bridge_
 24. We are going to need a compatibility patch to stitch all these mods together, so navigate to the [_Blackened_ compatibility patches](http://www.nexusmods.com/fallout3/mods/18173/) page, download and activated _Blackened FWE - MMM - EVE_ file with NMM.
 25. Run LOOT to rearrange your load order. This should be your setup by now.
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CRAFT.esm`
-	* `CALIBR.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `Mart's Mutant Mod.esm`
-	* **`EVE.esm`**
-	* **`RH_IRONSIGHTS.esm`**
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `Existence 2.0.esp`
-	* `Conelrad 640-1240.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `DarNifiedUIF3.esp`
-	* **`Blackened FWE + MMM + EVE.esp`**
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* **`RH_FWE_Bridge.esp`**
-	* **`WeaponModKits.esp`**
-	* **`WeaponModKits - BrokenSteel.esp`**
-	* **`WeaponModKits - OperationAnchorage.esp`**
-	* **`WeaponModKits - ThePitt.esp`**
-	* **`WeaponModKits - Zeta.esp`**
-	* **`WeaponModKits - PointLookout.esp`**
-	* **`RH_EVE_Bridge.esp`**
-	* **`RH_WMK_Bridge.esp`**
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CRAFT.esm`
+	* (a) `CALIBR.esm`
+	* (b) `FO3 Wanderers Edition - Main File.esm`
+	* (c) `Mart's Mutant Mod.esm`
+	* **(d) `EVE.esm`**
+	* **(e) `RH_IRONSIGHTS.esm`**
+	* (f) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (10) `CASM.esp`
+	* (11) `BetterGamePerformance.esp`
+	* (12) `GNR Enhanced.esp`
+	* (13) `FO3 Wanderers Edition - Main File.esp`
+	* (14) `HZSmoothLight - FO3.esp`
+	* (15) `Existence 2.0.esp`
+	* (16) `Conelrad 640-1240.esp`
+	* (17) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (18) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (19) `DarNifiedUIF3.esp`
+	* **(1a) `Blackened FWE + MMM + EVE.esp`**
+	* (1b) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (1c) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (1d) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* **(1e) `RH_FWE_Bridge.esp`**
+	* **(1f) `WeaponModKits.esp`**
+	* **(20) `WeaponModKits - BrokenSteel.esp`**
+	* **(21) `WeaponModKits - OperationAnchorage.esp`**
+	* **(22) `WeaponModKits - ThePitt.esp`**
+	* **(23) `WeaponModKits - Zeta.esp`**
+	* **(24) `WeaponModKits - PointLookout.esp`**
+	* **(25) `RH_EVE_Bridge.esp`**
+	* **(26) `RH_WMK_Bridge.esp`**
 26. According to LOOT, the files `RH_IRONSIGHTS.esm` and `RH_EVE_Bridge.esp` are dirty, so proceed to clean them up with FO3Edit. Remember: select just that file and the files it depends on will be automatically loaded.
 27. Run the game and you will notice the dramatic change when aiming your weapon. **NOW**, this is serious shit.
 ![Fallout 3 new sights](Images/Fallout%203%20new%20sights.png)
@@ -1223,56 +1223,56 @@ Let's start.
 	* `NotSoFast.esp`
 	* `IntoTheDeepWoods.esp`
 7. Fire up LOOT again an rearrange your load order, which will change due to the cleaning. This should be the deal:
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* **`ArefuExpandedByAzar.esm`**
-	* **`Mothership Crew.esm`**
-	* `RH_IRONSIGHTS.esm`
-	* **`TheInstitute.esm`**
-	* **`Vault 101 Revisited.esm`**
-	* **`Alton, IL.esm`**
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `DarNifiedUIF3.esp`
-	* **`AltonAddon.esp`**
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `Blackened FWE + MMM + EVE.esp`
-	* `RH_FWE_Bridge.esp`
-	* **`HeirApparent.esp`**
-	* **`NotSoFast.esp`**
-	* `WeaponModKits.esp`
-	* `RH_EVE_Bridge.esp`
-	* **`IntoTheDeepWoods.esp`**
-	* `Existence 2.0.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `RH_WMK_Bridge.esp`
-	* **`ArefuExpandedByAzar-Radio.esp`**
-	* `Conelrad 640-1240.esp`
-	* **`FasterMorePowerfulMines.esp`**
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* (b) `EVE.esm`
+	* **(c) `ArefuExpandedByAzar.esm`**
+	* **(d) `Mothership Crew.esm`**
+	* (e) `RH_IRONSIGHTS.esm`
+	* **(f) `TheInstitute.esm`**
+	* **(10) `Vault 101 Revisited.esm`**
+	* **(11) `Alton, IL.esm`**
+	* (12) `CRAFT.esm`
+	* (13) `FO3 Wanderers Edition - Main File.esm`
+	* (14) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (15) `CASM.esp`
+	* (16) `BetterGamePerformance.esp`
+	* (17) `GNR Enhanced.esp`
+	* (18) `DarNifiedUIF3.esp`
+	* **(19) `AltonAddon.esp`**
+	* (1a) `FO3 Wanderers Edition - Main File.esp`
+	* (1b) `HZSmoothLight - FO3.esp`
+	* (1c) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (1d) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (1f) `Blackened FWE + MMM + EVE.esp`
+	* (20) `RH_FWE_Bridge.esp`
+	* **(21) `HeirApparent.esp`**
+	* **(22) `NotSoFast.esp`**
+	* (23) `WeaponModKits.esp`
+	* (24) `RH_EVE_Bridge.esp`
+	* **(25) `IntoTheDeepWoods.esp`**
+	* (26) `Existence 2.0.esp`
+	* (27) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (28) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (29) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (2a) `WeaponModKits - BrokenSteel.esp`
+	* (2b) `WeaponModKits - OperationAnchorage.esp`
+	* (2c) `WeaponModKits - ThePitt.esp`
+	* (2d) `WeaponModKits - Zeta.esp`
+	* (2e) `WeaponModKits - PointLookout.esp`
+	* (2f) `RH_WMK_Bridge.esp`
+	* **(30) `ArefuExpandedByAzar-Radio.esp`**
+	* (31) `Conelrad 640-1240.esp`
+	* **(32) `FasterMorePowerfulMines.esp`**
 8. Launch the game and wait a few moments to see several dialogs to kick-in the missions (except _Mothership Zeta Crew_, which launches elsewhere).
 ![Fallout 3 new quests dialog 1](Images/Fallout%203%20new%20quests%20dialog%201.png)
 ![Fallout 3 new quests dialog 2](Images/Fallout%203%20new%20quests%20dialog%202.png)
@@ -1316,68 +1316,68 @@ Let's install them:
 8. When you activate _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision_, NMM asks for permission to overwrite files from the previous iHUD installation. It adds certain overlay items when using scopes and binoculars. Answer _Yes to all_, as usual.
 ![NMM Advanced Recon Range Finder overwrite](Images/NMM%20Advanced%20Recon%20Range%20Finder%20overwrite.png)
 9. Fire up LOOT to rearrange your load order. This should be your mod stack:
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `TheInstitute.esm`
-	* `Vault 101 Revisited.esm`
-	* `Alton, IL.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* **`Detect Traps.esm`**
-	* **`Advanced Recon Tech.esm`**
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `Blackened FWE + MMM + EVE.esp`
-	* `RH_FWE_Bridge.esp`
-	* `HeirApparent.esp`
-	* `NotSoFast.esp`
-	* `WeaponModKits.esp`
-	* `RH_EVE_Bridge.esp`
-	* `IntoTheDeepWoods.esp`
-	* `Existence 2.0.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `RH_WMK_Bridge.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Conelrad 640-1240.esp`
-	* `FasterMorePowerfulMines.esp`
-	* **`Advanced Recon Gear.esp`**
-	* **`Advanced Recon Armor.esp`**
-	* **`Detect Traps - Perk.esp`**
-	* **`Detect Traps - The Traponator 4000.esp`**
-	* **`Detect Traps - DLC.esp`**
-	* **`Advanced Recon Range Finder.esp`**
-	* **`Advanced Recon Tech.esp`**
-	* **`Advanced Recon Tech - Detect Traps.esp`**
-	* **`Advanced Recon Equipment Patcher.esp`**
-	* **`Advanced Recon Tech FWE.esp`**
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* (b) `EVE.esm`
+	* (c) `ArefuExpandedByAzar.esm`
+	* (d) `Mothership Crew.esm`
+	* (e) `RH_IRONSIGHTS.esm`
+	* (f) `TheInstitute.esm`
+	* (10) `Vault 101 Revisited.esm`
+	* (11) `Alton, IL.esm`
+	* (12) `CRAFT.esm`
+	* (13) `FO3 Wanderers Edition - Main File.esm`
+	* (14) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* **(15) `Detect Traps.esm`**
+	* **(16) `Advanced Recon Tech.esm`**
+	* (17) `CASM.esp`
+	* (18) `BetterGamePerformance.esp`
+	* (19) `GNR Enhanced.esp`
+	* (1a) `DarNifiedUIF3.esp`
+	* (1b) `AltonAddon.esp`
+	* (1c) `FO3 Wanderers Edition - Main File.esp`
+	* (1d) `HZSmoothLight - FO3.esp`
+	* (1e) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (1f) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (20) `Blackened FWE + MMM + EVE.esp`
+	* (21) `RH_FWE_Bridge.esp`
+	* (22) `HeirApparent.esp`
+	* (23) `NotSoFast.esp`
+	* (24) `WeaponModKits.esp`
+	* (25) `RH_EVE_Bridge.esp`
+	* (26) `IntoTheDeepWoods.esp`
+	* (27) `Existence 2.0.esp`
+	* (28) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (29) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (2a) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (2b) `WeaponModKits - BrokenSteel.esp`
+	* (2c) `WeaponModKits - OperationAnchorage.esp`
+	* (2d) `WeaponModKits - ThePitt.esp`
+	* (2e) `WeaponModKits - Zeta.esp`
+	* (2f) `WeaponModKits - PointLookout.esp`
+	* (30) `RH_WMK_Bridge.esp`
+	* (31) `ArefuExpandedByAzar-Radio.esp`
+	* (32) `Conelrad 640-1240.esp`
+	* (33) `FasterMorePowerfulMines.esp`
+	* **(34) `Advanced Recon Gear.esp`**
+	* **(35) `Advanced Recon Armor.esp`**
+	* **(36) `Detect Traps - Perk.esp`**
+	* **(37) `Detect Traps - The Traponator 4000.esp`**
+	* **(38) `Detect Traps - DLC.esp`**
+	* **(39) `Advanced Recon Range Finder.esp`**
+	* **(3a) `Advanced Recon Tech.esp`**
+	* **(3b) `Advanced Recon Tech - Detect Traps.esp`**
+	* **(3c) `Advanced Recon Equipment Patcher.esp`**
+	* **(3d) `Advanced Recon Tech FWE.esp`**
 10. Launch the game and check your new nice looking outfit. In your Pip-Boy (section _Items_, option _Apparel_), there are two new options to configure your Advanced Recon gear settings.
 ![Fallout 3 Advanced Recon black coat](Images/Fallout%203%20Advanced%20Recon%20black%20coat.png)
 ![Fallout 3 Advanced Recon gear settings](Images/Fallout%203%20Advanced%20Recon%20gear%20settings.png)
@@ -1402,69 +1402,69 @@ Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible 
 	* `PAL - Point Lookout.esp`
 	* `PAL - The Pitt.esp`
 5. Run LOOT to rearrange your load order:
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `TheInstitute.esm`
-	* `Vault 101 Revisited.esm`
-	* `Alton, IL.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Advanced Recon Tech.esm`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `Blackened FWE + MMM + EVE.esp`
-	* `RH_FWE_Bridge.esp`
-	* `HeirApparent.esp`
-	* `NotSoFast.esp`
-	* `WeaponModKits.esp`
-	* `RH_EVE_Bridge.esp`
-	* `IntoTheDeepWoods.esp`
-	* `Existence 2.0.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `RH_WMK_Bridge.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Conelrad 640-1240.esp`
-	* `FasterMorePowerfulMines.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* **`PAL - MERGED.esp`**
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* (b) `EVE.esm`
+	* (c) `ArefuExpandedByAzar.esm`
+	* (d) `Mothership Crew.esm`
+	* (e) `RH_IRONSIGHTS.esm`
+	* (f) `TheInstitute.esm`
+	* (10) `Vault 101 Revisited.esm`
+	* (11) `Alton, IL.esm`
+	* (12) `CRAFT.esm`
+	* (13) `FO3 Wanderers Edition - Main File.esm`
+	* (14) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (15) `Detect Traps.esm`
+	* (16) `Advanced Recon Tech.esm`
+	* (17) `CASM.esp`
+	* (18) `BetterGamePerformance.esp`
+	* (19) `GNR Enhanced.esp`
+	* (1a) `DarNifiedUIF3.esp`
+	* (1b) `AltonAddon.esp`
+	* (1c) `FO3 Wanderers Edition - Main File.esp`
+	* (1d) `HZSmoothLight - FO3.esp`
+	* (1e) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (1f) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (20) `Blackened FWE + MMM + EVE.esp`
+	* (21) `RH_FWE_Bridge.esp`
+	* (22) `HeirApparent.esp`
+	* (23) `NotSoFast.esp`
+	* (24) `WeaponModKits.esp`
+	* (25) `RH_EVE_Bridge.esp`
+	* (26) `IntoTheDeepWoods.esp`
+	* (27) `Existence 2.0.esp`
+	* (28) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (29) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (2a) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (2b) `WeaponModKits - BrokenSteel.esp`
+	* (2c) `WeaponModKits - OperationAnchorage.esp`
+	* (2d) `WeaponModKits - ThePitt.esp`
+	* (2e) `WeaponModKits - Zeta.esp`
+	* (2f) `WeaponModKits - PointLookout.esp`
+	* (30) `RH_WMK_Bridge.esp`
+	* (31) `ArefuExpandedByAzar-Radio.esp`
+	* (32) `Conelrad 640-1240.esp`
+	* (33) `FasterMorePowerfulMines.esp`
+	* (34) `Advanced Recon Gear.esp`
+	* (35) `Advanced Recon Armor.esp`
+	* (36) `Detect Traps - Perk.esp`
+	* (37) `Detect Traps - The Traponator 4000.esp`
+	* (38) `Detect Traps - DLC.esp`
+	* (39) `Advanced Recon Range Finder.esp`
+	* (3a) `Advanced Recon Tech.esp`
+	* (3b) `Advanced Recon Tech - Detect Traps.esp`
+	* (3c) `Advanced Recon Equipment Patcher.esp`
+	* (3d) `Advanced Recon Tech FWE.esp`
+	* **(3e) `PAL - MERGED.esp`**
 6. You will have to start a fresh game to see the achievements log in action. At your ninth birthday party, when you receive your own Pip-Boy from the hands of the Overseer,  navigate through the _Data_ button, _Notes_ option. There should be a _Personal achievements Log_ option to view your short achievement list (at least for the time being).
 ![Fallout 3 personal achievements log](Images/Fallout%203%20personal%20achievements%20log.png)
 
@@ -1511,79 +1511,79 @@ This mod requires a bit of fiddling because it's not ready to work along the Par
 	* _Impervious Power Armour - Impervious Power Armour v2-2_
 	* _Mr Smiths Scrapyard - Mister Smiths Scrapyard_
 11. Run LOOT to rearrange your load order, which should be like this:
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `TheInstitute.esm`
-	* `Vault 101 Revisited.esm`
-	* `Alton, IL.esm`
-	* `Advanced Recon Tech.esm`
-	* **`Companion Core.esm`**
-	* **`RobCo Certified v2.esm`**
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* **`Impervious Power Armour.esm`**
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `Blackened FWE + MMM + EVE.esp`
-	* `RH_FWE_Bridge.esp`
-	* `HeirApparent.esp`
-	* **`RobCo Certified v2 Omnipatch.esp`**
-	* **`Mr Smith's Scrapyard.esp`**
-	* `NotSoFast.esp`
-	* `WeaponModKits.esp`
-	* `RH_EVE_Bridge.esp`
-	* `IntoTheDeepWoods.esp`
-	* `Existence 2.0.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `RH_WMK_Bridge.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Conelrad 640-1240.esp`
-	* `FasterMorePowerfulMines.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
-	* **`RobcoCertified24SideMod.esp`**
-	* **`RobCo Certified v2 Impervious FWE.esp`**
-	* **`RobCo Certified v2 Impervious.esp`**
-	* **`RobCo Certified v2 Mechanist's Edition.esp`**
-	* **`Companion Core DLC Addon.esp`**
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* (b) `EVE.esm`
+	* (c) `ArefuExpandedByAzar.esm`
+	* (d) `Mothership Crew.esm`
+	* (e) `RH_IRONSIGHTS.esm`
+	* (f) `TheInstitute.esm`
+	* (10) `Vault 101 Revisited.esm`
+	* (11) `Alton, IL.esm`
+	* (12) `Advanced Recon Tech.esm`
+	* **(13) `Companion Core.esm`**
+	* **(14) `RobCo Certified v2.esm`**
+	* (15) `CRAFT.esm`
+	* (16) `FO3 Wanderers Edition - Main File.esm`
+	* (17) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (18) `Detect Traps.esm`
+	* **(19) `Impervious Power Armour.esm`**
+	* (1a) `CASM.esp`
+	* (1b) `BetterGamePerformance.esp`
+	* (1c) `GNR Enhanced.esp`
+	* (1d) `DarNifiedUIF3.esp`
+	* (1e) `AltonAddon.esp`
+	* (1f) `FO3 Wanderers Edition - Main File.esp`
+	* (20) `HZSmoothLight - FO3.esp`
+	* (21) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (22) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (23) `Blackened FWE + MMM + EVE.esp`
+	* (24) `RH_FWE_Bridge.esp`
+	* (25) `HeirApparent.esp`
+	* **(26) `RobCo Certified v2 Omnipatch.esp`**
+	* **(27) `Mr Smith's Scrapyard.esp`**
+	* (28) `NotSoFast.esp`
+	* (29) `WeaponModKits.esp`
+	* (2a) `RH_EVE_Bridge.esp`
+	* (2b) `IntoTheDeepWoods.esp`
+	* (2c) `Existence 2.0.esp`
+	* (2d) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (2e) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (2f) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (30) `WeaponModKits - BrokenSteel.esp`
+	* (31) `WeaponModKits - OperationAnchorage.esp`
+	* (32) `WeaponModKits - ThePitt.esp`
+	* (33) `WeaponModKits - Zeta.esp`
+	* (34) `WeaponModKits - PointLookout.esp`
+	* (35) `RH_WMK_Bridge.esp`
+	* (36) `ArefuExpandedByAzar-Radio.esp`
+	* (37) `Conelrad 640-1240.esp`
+	* (38) `FasterMorePowerfulMines.esp`
+	* (39) `Advanced Recon Gear.esp`
+	* (3a) `Advanced Recon Armor.esp`
+	* (3b) `Detect Traps - Perk.esp`
+	* (3c) `Detect Traps - The Traponator 4000.esp`
+	* (3d) `Detect Traps - DLC.esp`
+	* (3e) `Advanced Recon Range Finder.esp`
+	* (3f) `Advanced Recon Tech.esp`
+	* (40) `Advanced Recon Tech - Detect Traps.esp`
+	* (41) `Advanced Recon Equipment Patcher.esp`
+	* (42) `Advanced Recon Tech FWE.esp`
+	* (43) `PAL - MERGED.esp`
+	* **(44) `RobcoCertified24SideMod.esp`**
+	* **(45) `RobCo Certified v2 Impervious FWE.esp`**
+	* **(46) `RobCo Certified v2 Impervious.esp`**
+	* **(47) `RobCo Certified v2 Mechanist's Edition.esp`**
+	* **(48) `Companion Core DLC Addon.esp`**
 12. There are four dirty files in our mod stack. Clean them up with FO3Edit, as usual:
 	* `Companion Core.esm`
 	* `RobCo Certified v2.esm`
@@ -1606,82 +1606,82 @@ We are going to install two mods here. One will add an [overhead walkway](http:/
 2. Download _Expanded Megaton House V3_ from [_Expanded Megaton House V3_](http://www.nexusmods.com/fallout3/mods/2136/) with NMM.
 3. Activate them in the same order you downloaded them. No conflicts here.
 4. Fire up LOOT to rearrange your load order, as usual:
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `TheInstitute.esm`
-	* `Vault 101 Revisited.esm`
-	* `Alton, IL.esm`
-	* `Advanced Recon Tech.esm`
-	* `Companion Core.esm`
-	* `RobCo Certified v2.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Impervious Power Armour.esm`
-	* `CASM.esp`
-	* `BetterGamePerformance.esp`
-	* `GNR Enhanced.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `Blackened FWE + MMM + EVE.esp`
-	* `RH_FWE_Bridge.esp`
-	* `HeirApparent.esp`
-	* `RobCo Certified v2 Omnipatch.esp`
-	* `Mr Smith's Scrapyard.esp`
-	* **`Expanded Megaton House V3.esp`**
-	* **`Expanded Megaton House V3-No Stove.esp`**
-	* **`Megaton Walkway.esp`**
-	* `NotSoFast.esp`
-	* `WeaponModKits.esp`
-	* `RH_EVE_Bridge.esp`
-	* `IntoTheDeepWoods.esp`
-	* `Existence 2.0.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `RH_WMK_Bridge.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Conelrad 640-1240.esp`
-	* `FasterMorePowerfulMines.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
-	* `RobcoCertified24SideMod.esp`
-	* `RobCo Certified v2 Impervious FWE.esp`
-	* `RobCo Certified v2 Impervious.esp`
-	* `RobCo Certified v2 Mechanist's Edition.esp`
-	* `Companion Core DLC Addon.esp`
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* (b) `EVE.esm`
+	* (c) `ArefuExpandedByAzar.esm`
+	* (d) `Mothership Crew.esm`
+	* (e) `RH_IRONSIGHTS.esm`
+	* (f) `TheInstitute.esm`
+	* (10) `Vault 101 Revisited.esm`
+	* (11) `Alton, IL.esm`
+	* (12) `Advanced Recon Tech.esm`
+	* (13) `Companion Core.esm`
+	* (14) `RobCo Certified v2.esm`
+	* (15) `CRAFT.esm`
+	* (16) `FO3 Wanderers Edition - Main File.esm`
+	* (17) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (18) `Detect Traps.esm`
+	* (19) `Impervious Power Armour.esm`
+	* (1a) `CASM.esp`
+	* (1b) `BetterGamePerformance.esp`
+	* (1c) `GNR Enhanced.esp`
+	* (1d) `DarNifiedUIF3.esp`
+	* (1e) `AltonAddon.esp`
+	* (1f) `FO3 Wanderers Edition - Main File.esp`
+	* (20) `HZSmoothLight - FO3.esp`
+	* (21) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (22) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (23) `Blackened FWE + MMM + EVE.esp`
+	* (24) `RH_FWE_Bridge.esp`
+	* (25) `HeirApparent.esp`
+	* (26) `RobCo Certified v2 Omnipatch.esp`
+	* (27) `Mr Smith's Scrapyard.esp`
+	* **(28) `Expanded Megaton House V3.esp`**
+	* **(29) `Expanded Megaton House V3-No Stove.esp`**
+	* **(2a) `Megaton Walkway.esp`**
+	* (2b) `NotSoFast.esp`
+	* (2c) `WeaponModKits.esp`
+	* (2d) `RH_EVE_Bridge.esp`
+	* (2e) `IntoTheDeepWoods.esp`
+	* (2f) `Existence 2.0.esp`
+	* (30) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (31) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (32) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (33) `WeaponModKits - BrokenSteel.esp`
+	* (34) `WeaponModKits - OperationAnchorage.esp`
+	* (35) `WeaponModKits - ThePitt.esp`
+	* (36) `WeaponModKits - Zeta.esp`
+	* (37) `WeaponModKits - PointLookout.esp`
+	* (38) `RH_WMK_Bridge.esp`
+	* (39) `ArefuExpandedByAzar-Radio.esp`
+	* (3a) `Conelrad 640-1240.esp`
+	* (3b) `FasterMorePowerfulMines.esp`
+	* (3c) `Advanced Recon Gear.esp`
+	* (3d) `Advanced Recon Armor.esp`
+	* (3e) `Detect Traps - Perk.esp`
+	* (3f) `Detect Traps - The Traponator 4000.esp`
+	* (40) `Detect Traps - DLC.esp`
+	* (41) `Advanced Recon Range Finder.esp`
+	* (42) `Advanced Recon Tech.esp`
+	* (43) `Advanced Recon Tech - Detect Traps.esp`
+	* (44) `Advanced Recon Equipment Patcher.esp`
+	* (45) `Advanced Recon Tech FWE.esp`
+	* (46) `PAL - MERGED.esp`
+	* (47) `RobcoCertified24SideMod.esp`
+	* (48) `RobCo Certified v2 Impervious FWE.esp`
+	* (49) `RobCo Certified v2 Impervious.esp`
+	* (4a) `RobCo Certified v2 Mechanist's Edition.esp`
+	* (4b) `Companion Core DLC Addon.esp`
 5. Launch the game and take a look at the walkway and the extra story in your house
 ![Fallout 3 Megaton walkway](Images/Fallout%203%20Megaton%20walkway.png)
 ![Fallout 3 Megaton new balcony](Images/Fallout%203%20Megaton%20new%20balcony.png)
