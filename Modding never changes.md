@@ -42,6 +42,7 @@
 		+ [4.4.1. _Hic sunt dracones_](#hicSuntDracones)
 		+ [4.4.2. Gear for a fallen brother](#gearFallenBrother)
 		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
+	- [4.5. So you want to take over the world, uh?](#takeOverTheWorkd)
 * [5. Unveiling the real Wasteland](#unveilingRealWasteland)
 	- [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
 	- [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
@@ -1463,7 +1464,131 @@ Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible 
 	* `Advanced Recon Tech FWE.esp`
 	* **`PAL - MERGED.esp`**
 6. You will have to start a fresh game to see the achievements log in action. At your ninth birthday party, when you receive your own Pip-Boy from the hands of the Overseer,  navigate through the _Data_ button, _Notes_ option. There should be a _Personal achievements Log_ option to view your short achievement list (at least for the time being).
-7. ![Fallout 3 personal achievements log](Images/Fallout%203%20personal%20achievements%20log.png)
+![Fallout 3 personal achievements log](Images/Fallout%203%20personal%20achievements%20log.png)
+
+
+
+### <a id="takeOverTheWorkd"></a>4.5. So you want to take over the world, uh?
+
+Who has not ever dreamed of taking over the world with an army of half-crazed human-killing robots manufactured by oneself?
+
+Well, I have. Sort of.
+
+But let's talk about robots in _Fallout 3_. By now, you have seen them. They are ubiquitous, and if you mess with them, you will end up being some hundred degrees more roasted than usual. To begin with.
+
+However, they are just NPCs. Rusty, metal-ass NPCs, but NPCs nonetheless. You can't create new robots, and you can't command existing ones either.
+
+Until [_RobCo Certified_](http://www.nexusmods.com/fallout3/mods/712/) appeared, that is.
+
+With this mod you get a new perk which gives you the ability to repair destroyed robots or create new ones out of scrap collected throughout your wanderings. The wet dream of you, brother nerds. You can take a peek at the video [showcasing some of the mod features](https://www.youtube.com/watch?v=47sbkmImwDE) (1:03), by TheTalkieToaster, the mod author.
+
+This mod requires a bit of fiddling because it's not ready to work along the Paradox version of [_EVE_](http://www.nexusmods.com/fallout3/mods/8340/?), so we need to install a patch and make sure the right files are in place. Let's get on with it.
+
+1. Download the following files from [_RobCo Certified_](http://www.nexusmods.com/fallout3/mods/712/) manually, in a folder of your choice (say, `[%ROBCO_FULL%]`):
+	* [_RobCo Certified v2_](http://www.nexusmods.com/fallout3/download/81129)
+	* [_CuteUnits Side Mod_](http://www.nexusmods.com/fallout3/download/75621)
+	* [_RobCo Certified Mechanists Edition v2-01_](http://www.nexusmods.com/fallout3/download/71514)
+	* [_RobCo Certified v2 Patch Pack v1-41_](http://www.nexusmods.com/fallout3/download/75619)
+2. Unzip all four files into `[%ROBCO_FULL%]`. There will be no files with the same name.
+3. Delete the following files inside `[%ROBCO_FULL%]`:
+	* `RobCo Certified v2 EVE.esp`
+	* `RobCo Certified v2 FWE.esp`
+	* `RobCo Certified v2 Omnipatch.esp`
+	* `RobCo Certified v2 Version Updater.esp`
+	* `RobCo Certified v2 Zeta Addon.esp`
+4. Zip the contents of `[%ROBCO_FULL%]` into a file named `RobCo Certified v2.zip`.
+5. Fire up NMM and manually add `RobCo Certified v2.zip` in the _Mods_ tab.
+6. Download _RobCo Certified Omnipatch for Paradox EVE_ from [_EVE - Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/) with NMM.
+7. Download _Impervious Power Armour v2-2_ from [_Impervious Power Armour_](http://www.nexusmods.com/fallout3/mods/13325/) to add a stronger armour-plating to robots, impervious to small guns (it will also work with power armors for your character).
+8. Download _Mister Smiths Scrapyard_ from [_Mr Smiths Scrapyard_](http://www.nexusmods.com/fallout3/mods/14075/) to get a vendor specialized in robot parts and junk.
+9. We have all the files we need in NMM, locked and loaded.
+![NMM RobCo mods installed](Images/NMM%20RobCo%20mods%20installed.png)
+10. Activate the files in the following order, answering _Yes to all_ when asked to overwrite files:
+	* _RobCo Certified v2_
+	* _EVE - Energy Visuals Enhanced - RobCo Certified Omnipatch for Paradox EVE_
+	* _Impervious Power Armour - Impervious Power Armour v2-2_
+	* _Mr Smiths Scrapyard - Mister Smiths Scrapyard_
+11. Run LOOT to rearrange your load order, which should be like this:
+	* `Fallout3.esm`
+	* `Anchorage.esm`
+	* `ThePitt.esm`
+	* `BrokenSteel.esm`
+	* `PointLookout.esm`
+	* `Zeta.esm`
+	* `Unofficial Fallout 3 Patch.esm`
+	* `aHUD.esm`
+	* `iHUD.esm`
+	* `CALIBR.esm`
+	* `Mart's Mutant Mod.esm`
+	* `EVE.esm`
+	* `ArefuExpandedByAzar.esm`
+	* `Mothership Crew.esm`
+	* `RH_IRONSIGHTS.esm`
+	* `TheInstitute.esm`
+	* `Vault 101 Revisited.esm`
+	* `Alton, IL.esm`
+	* `Advanced Recon Tech.esm`
+	* **`Companion Core.esm`**
+	* **`RobCo Certified v2.esm`**
+	* `CRAFT.esm`
+	* `FO3 Wanderers Edition - Main File.esm`
+	* `FO3 Wanderers Edition - Alternate Travel.esp`
+	* `Detect Traps.esm`
+	* **`Impervious Power Armour.esm`**
+	* `CASM.esp`
+	* `BetterGamePerformance.esp`
+	* `GNR Enhanced.esp`
+	* `DarNifiedUIF3.esp`
+	* `AltonAddon.esp`
+	* `FO3 Wanderers Edition - Main File.esp`
+	* `HZSmoothLight - FO3.esp`
+	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* `Blackened FWE + MMM + EVE.esp`
+	* `RH_FWE_Bridge.esp`
+	* `HeirApparent.esp`
+	* **`RobCo Certified v2 Omnipatch.esp`**
+	* **`Mr Smith's Scrapyard.esp`**
+	* `NotSoFast.esp`
+	* `WeaponModKits.esp`
+	* `RH_EVE_Bridge.esp`
+	* `IntoTheDeepWoods.esp`
+	* `Existence 2.0.esp`
+	* `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* `WeaponModKits - BrokenSteel.esp`
+	* `WeaponModKits - OperationAnchorage.esp`
+	* `WeaponModKits - ThePitt.esp`
+	* `WeaponModKits - Zeta.esp`
+	* `WeaponModKits - PointLookout.esp`
+	* `RH_WMK_Bridge.esp`
+	* `ArefuExpandedByAzar-Radio.esp`
+	* `Conelrad 640-1240.esp`
+	* `FasterMorePowerfulMines.esp`
+	* `Advanced Recon Gear.esp`
+	* `Advanced Recon Armor.esp`
+	* `Detect Traps - Perk.esp`
+	* `Detect Traps - The Traponator 4000.esp`
+	* `Detect Traps - DLC.esp`
+	* `Advanced Recon Range Finder.esp`
+	* `Advanced Recon Tech.esp`
+	* `Advanced Recon Tech - Detect Traps.esp`
+	* `Advanced Recon Equipment Patcher.esp`
+	* `Advanced Recon Tech FWE.esp`
+	* `PAL - MERGED.esp`
+	* **`RobcoCertified24SideMod.esp`**
+	* **`RobCo Certified v2 Impervious FWE.esp`**
+	* **`RobCo Certified v2 Impervious.esp`**
+	* **`RobCo Certified v2 Mechanist's Edition.esp`**
+	* **`Companion Core DLC Addon.esp`**
+12. There are four dirty files in our mod stack. Clean them up with FO3Edit, as usual:
+	* `Companion Core.esm`
+	* `RobCo Certified v2.esm`
+	* `RobcoCertified24SideMod.esp`
+	* `Companion Core DLC Addon.esp`
+13. When you level up, you will get the RobCo Certified perk for you to unleash your nerdy urges.
+![Fallout 3 RobCo Certified perk](Images/Fallout%203%20RobCo%20Certified%20perk.png)
 
 
 
@@ -2132,6 +2257,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 |_HD Smoky Fire and Explosions for FO3_|http://www.nexusmods.com/fallout3/mods/20053/|
 |_Hi-Res Weapons v3_|http://www.nexusmods.com/fallout3/mods/481/|
 |_Immersive HUD_|http://www.nexusmods.com/fallout3/mods/15790/|
+|_Impervious Power Armor_|http://www.nexusmods.com/fallout3/mods/13325/|
 |_Improved Glass Bullet Impact_|http://www.nexusmods.com/fallout3/mods/13120/|
 |_Improved LOD Noise Texture_|http://www.nexusmods.com/fallout3/mods/17743/|
 |_Improved Sound FX v1.3_|http://www.nexusmods.com/fallout3/mods/627/|
@@ -2143,6 +2269,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 |_Megaton Walkway_|http://www.nexusmods.com/fallout3/mods/8247/|
 |_Mothership Zeta Crew_|http://www.nexusmods.com/fallout3/mods/8747/|
 |_Mothership Zeta DLC Retextured_|http://www.nexusmods.com/fallout3/mods/8260/|
+|_Mr Smiths Scrapyard_|http://www.nexusmods.com/fallout3/mods/14075/|
 |_NMCS Texture Pack_|http://www.nexusmods.com/fallout3/mods/12056/|
 |_Personal Achievements Log_|http://www.nexusmods.com/fallout3/mods/11326/|
 |_PipBoy 3000 HD Retexture_|http://www.nexusmods.com/fallout3/mods/20373/|
@@ -2152,6 +2279,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 |_Retextured Clutter Collection_|http://www.nexusmods.com/fallout3/mods/6894/|
 |_RH Ironsights_|http://www.nexusmods.com/fallout3/mods/6938/|
 |_Rivet City Texture Pack_|http://www.nexusmods.com/fallout3/mods/3612/|
+|_RobCo Certified Textures_|http://www.nexusmods.com/fallout3/mods/13428/|
 |_RobCo Certified_|http://www.nexusmods.com/fallout3/mods/712/|
 |_Robot Revolution HD - Protectron_|http://www.nexusmods.com/fallout3/mods/18902/|
 |_SeraphTCs Personal Achievements Log FIX_|http://www.nexusmods.com/fallout3/mods/18678/|

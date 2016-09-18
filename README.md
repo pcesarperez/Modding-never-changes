@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.31) [18/09/2016] New chapter about crafting robots.**
+
+This is a brand new chapter about _RobCo Certified_, a mod which allows you to repair and create robots for a better nerdy experience.
+
 **(v0.30) [16/09/2016] Rewrite complete up to 4.4.3.**
 
 The chapter about personal achievements log has been corrected. The log only appears in a fresh playthrough _using the main Vault 101 start_, not one of the FWE alternate starts.

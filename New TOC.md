@@ -52,6 +52,7 @@
 			+ Screenshots from actual game.
 	- **NEW** [4.5. So you want to take over the world, uh?](#takeOverTheWorkd)
 		- RobCo Certified	http://www.nexusmods.com/fallout3/mods/712/?
+		- Impervious Power Armor	http://www.nexusmods.com/fallout3/mods/13325/?
 	- **NEW** [4.6. There's no place like Megaton](#thereIsNoPlaceLikeMegaton)
 		- Expanded Megaton House V3	http://www.nexusmods.com/fallout3/mods/2136/?
 		- Megaton Walkway	http://www.nexusmods.com/fallout3/mods/8247/?
@@ -75,6 +76,7 @@
 		- Improved Glass Bullet Impact	http://www.nexusmods.com/fallout3/mods/13120/?
 		- Retextured Clutter Collection	http://www.nexusmods.com/fallout3/mods/6894/?
 		- Robot Revolution HD - Protectron	http://www.nexusmods.com/fallout3/mods/18902/?
+		- RobCo Certified Textures	http://www.nexusmods.com/fallout3/mods/13428/?
 		- Whats Your Brand - cigarette texture megapack	http://www.nexusmods.com/fallout3/mods/591/?
 	- [5.6. Let there be light!](#letThereBeLight)
 	- **UPDATED** [5.7. I don't like your face (nor the way you move)](#dontLikeYourFace)
