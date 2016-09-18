@@ -255,7 +255,7 @@ As we saw earlier, the DLC data files themselves are somewhat _dirty_. This is w
 
 The only clean file in your load order is `Unofficial Fallout 3 Patch.esm`, as expected. No wonder, this is a huge patch that fixes the game and all its DLCs.
 
-In every single case, LOOT has a sugestion: clean with [FO3Edit](http://www.nexusmods.com/fallout3/mods/637/).
+In every single case, LOOT has a suggestion: clean with [FO3Edit](http://www.nexusmods.com/fallout3/mods/637/).
 
 FO3Edit is an utility aimed at mod creators and users both, weighting more on the first group. Gopher has a fantastic video explaining [how to use TES5Edit (the _Skyrim_ version of the tool) to clean your master files](https://www.youtube.com/watch?v=fw3g_N1jcZQ) (13:24). You should left what you were doing right now and watch the video. I'll wait.
 
@@ -279,7 +279,7 @@ I will show the instructions to clean one of the files, considering the rest are
 ![FO3Edit after filtering](Images/FO3Edit%20after%20filtering.png)
 7. First, we are going to remove ITM (_Identical to Master_) records. They are not going to crash the game, but they take up space, and trust me, when you get the I-am-going-to-install-every-fancy-mod-available spree, you will need as much space as you can get. Right-click on the `Anchorage.esm` node in the left panel tree and select _Remove "Identical to Master" records_.
 ![FO3Edit remove ITM records](Images/FO3Edit%20remove%20ITM%20records.png)
-8. Everytime you try to change a data file, a big warning appears. But, as seasoned hard-ass mod installers, we are sure as hell of what we are doing. Aren't we?
+8. Every time you try to change a data file, a big warning appears. But, as seasoned hard-ass mod installers, we are sure as hell of what we are doing. Aren't we?
 ![FO3Edit warning](Images/FO3Edit%20warning.png)
 9. After a little while, a message shows up in the _Messages_ panel, reporting 43696 records processed and 54 records removed (don't worry if the numbers don't match; your setup may be slightly different).
 ![FO3Edit ITM records deleted](Images/FO3Edit%20ITM%20records%20deleted.png)
@@ -367,7 +367,7 @@ And that's really it. Now _Fallout 3_ is ready to handle more than 2 GB of RAM, 
 
 If you ever want to install a single mod in _Fallout 3_, you will need [_Fallout Script Extender_](http://fose.silverlock.org/) (FOSE, for short).
 
-Well... That's not exactly true, as there may be mods that does not make use of the capabilites provided by FOSE (we have been using a few, so far). But they will be a minority. And we will need this tool ahead the road.
+Well... That's not exactly true, as there may be mods that does not make use of the capabilities provided by FOSE (we have been using a few, so far). But they will be a minority. And we will need this tool ahead the road.
 
 As usual, Gopher has published a worth watching video about the [installation and use of FOSE](https://www.youtube.com/watch?v=QK_f4vHiutA) (10:07).
 
@@ -410,7 +410,7 @@ In the same video about [performance and stability](https://www.youtube.com/watc
 
 Provided that you have installed NMM:
 
-1. Run NMM. If this is the first time you do so, NMM searchs for the games it knows of, modding-wise. In this context, we are only interested in _Fallout 3_, so as soon as NMM finds it, we should confirm the location (with the green tick mark under the name of the game) and then click on _Ok_.
+1. Run NMM. If this is the first time you do so, NMM searches for the games it knows of, modding-wise. In this context, we are only interested in _Fallout 3_, so as soon as NMM finds it, we should confirm the location (with the green tick mark under the name of the game) and then click on _Ok_.
 ![NMM searching for games](Images/NMM%20searching%20for%20games.png)
 2. NMM shows then a game selection window, with a list of games which mods NMM is managing. Select _Fallout 3_ and click on _Ok_. You can select _Don't ask me next time_, if you feel like to. However, you can change the game once you start NMM.
 ![NMM select Fallout 3](Images/NMM%20select%20Fallout%203.png)
@@ -640,7 +640,7 @@ Powered by FOSE 1.2 b2
 ```
 16. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
 ![Fallout 3 DUIF3 installed](Images/Fallout%203%20DUIF3%20installed.png)
-17. However, I don't like that option to be visible, so open the file `DUIF3Settings.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\prefabs]` with your favourite text editor. Change the option `<_sm_hideLIVE />` to 1. Save and exit. Launch the game to check the absent LIVE option.
+17. However, I don't like that option to be visible, so open the file `DUIF3Settings.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\prefabs]` with your favorite text editor. Change the option `<_sm_hideLIVE />` to 1. Save and exit. Launch the game to check the absent LIVE option.
 ![Fallout 3 DUIF3 absent LIVE option](Images/Fallout%203%20DUIF3%20absent%20LIVE%20option.png)
 18. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
 ![Fallout 3 DUIF3 small HUD](Images/Fallout%203%20DUIF3%20small%20HUD.png)
@@ -772,7 +772,7 @@ Lighting in _Fallout 3_ is somewhat weird. Sometimes you will find your self int
 
 This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/), comes to the rescue. Here we go.
 
-1. Download and activate the mod with NMM. There souldn't be any conflicts.
+1. Download and activate the mod with NMM. There shouldn't be any conflicts.
 2. Use LOOT to sort your load order, which should be:
 	* `Fallout 3.esm`
 	* `Anchorage.esm`
@@ -827,7 +827,7 @@ Launch the game and _listen_ carefully...
 
 #### <a id="thoseCrickets"></a>4.2.2. Those crickets are driving me mad
 
-Imagine yourself wandering at night in the radioctive wastes of the slums in D.C. There are a lot of things going on, even in a desolate barren like this: insects, night birds of prey, dogs, etc. These are the small things that boost a real sense of immersion in the game.
+Imagine yourself wandering at night in the radioactive wastes of the slums in D.C. There are a lot of things going on, even in a desolate barren like this: insects, night birds of prey, dogs, etc. These are the small things that boost a real sense of immersion in the game.
 
 [_Ambient Wasteland 2_](http://www.nexusmods.com/fallout3/mods/12602/) is for ambient sounds what [_Fallout 3 HQ Audio Overhaul_](http://www.nexusmods.com/fallout3/mods/13055/) is for music. It changes the small sounds of the Wasteland so you can shit your pants looking for that owl you heard in the dark.
 
@@ -844,7 +844,7 @@ I have to confess I have never listened to a single radio station in the game in
 
 Radio stations, not being my cup of tea (with butter, Tibet style), are an immersive piece of lore, though. We are going to add two new radio stations and to improve an existent one:
 
-* [_GNR Enhanced_](http://www.nexusmods.com/fallout3/mods/14946/): 100 aditional songs to the 20 original in _Galaxy News Radio_.
+* [_GNR Enhanced_](http://www.nexusmods.com/fallout3/mods/14946/): 100 additional songs to the 20 original in _Galaxy News Radio_.
 * [_CONELRAD 640-1240 - Civil Defense Radio_](http://www.nexusmods.com/fallout3/mods/6104/): A new station with _real_ Civil Defense broadcasting messages.
 * [_Existence 2_0 - Robot Radio_](http://www.nexusmods.com/fallout3/mods/5612/): Can you imagine a robot with existential dread? Well, that's what you get with this radio station.
 
@@ -872,7 +872,7 @@ Let's go, then.
 	* **`Existence 2.0.esp`**
 	* **`Conelrad 640-1240.esp`**
 
-You will need to be in the station's range to tune in (_Data_ button, _Radio_ section in your Pip-Boy), but when you do, enjoy the rythm! _Conelrad 640-1240_ and _Existence 2.0_ will be immediately available right after leaving Vault 101.
+You will need to be in the station's range to tune in (_Data_ button, _Radio_ section in your Pip-Boy), but when you do, enjoy the rhythm! _Conelrad 640-1240_ and _Existence 2.0_ will be immediately available right after leaving Vault 101.
 
 ![Fallout 3 new radio stations](Images/Fallout%203%20new%20radio%20stations.png)
 
@@ -983,12 +983,12 @@ From this point on, we will be using [_The Mergers_](http://www.nexusmods.com/fa
 
 I have never fired a real weapon in my life, so I couldn't tell the sound of a real gun from a virtual one. However, with the [_Improved Sound FX v1\_3_](http://www.nexusmods.com/fallout3/mods/627/) mod, it's not difficult to guess which version sound better.
 
-See, or I should say, listen for yourself, in this [lenghty video](https://www.youtube.com/watch?v=aMm31gnXzk8) (6:38) (for what it is), showcasing the difference between vanilla and improved weapon sounds. You will have a much more satisfying rain of bullets in your everyday shoot-outs.
+See, or I should say, listen for yourself, in this [lengthy video](https://www.youtube.com/watch?v=aMm31gnXzk8) (6:38) (for what it is), showcasing the difference between vanilla and improved weapon sounds. You will have a much more satisfying rain of bullets in your everyday shoot-outs.
 
 1. Download and activate _Improved Sounds FX v13_.
 2. The sound files collide with previous files installed by FWE, so answer _Yes to all_ when asked to overwrite.
 
-By the way, this chapter should have been included into the chapter about [music and sound](#lendMeYourEars), but FWE collides with _Improved Sound FX v1\_3_ and doesn't get well along with it, so I decided to alter the funcional order I have been following so far to ensure a flawless setup.
+By the way, this chapter should have been included into the chapter about [music and sound](#lendMeYourEars), but FWE collides with _Improved Sound FX v1\_3_ and doesn't get well along with it, so I decided to alter the functional order I have been following so far to ensure a flawless setup.
 
 
 #### <a id="fraternizingNeighborhood"></a> 4.3.3. Fraternizing with the neighborhood
@@ -1004,7 +1004,7 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 ![NMM MMM global options](Images/NMM%20MMM%20global%20options.png)
 5. MMM overwrites several files from FWE, as it overhauls the monster system in the game. Let it do its magic.
 ![NMM MMM FWE overwrite](Images/NMM%20MMM%20FWE%20overwrite.png)
-6. We are going to get rid of the files instaled by MMM to use the merged path we downloaded before. Create a folder in your data folder (namely `[MMM backup]`), and move the following files:
+6. We are going to get rid of the files installed by MMM to use the merged path we downloaded before. Create a folder in your data folder (namely `[MMM backup]`), and move the following files:
 	* `Mart's Mutant Mod.esm`
 	* `Mart's Mutant Mod.esp`
 	* `Mart's Mutant Mod - DLC Anchorage.esp`
@@ -1604,13 +1604,13 @@ However, be advised: the mods in this section will push your machine capabilitie
 
 ### <a id="sheWalksInBeauty"></a>5.1. She walks in beauty, like the night of cloudless climes and starry skies
 
-One of the first things we can improve regarding the appearance of our world is the night sky. There are two mods ([_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/) and [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/)) that will make you cry tears of joy everytime you look up to the Moon.
+One of the first things we can improve regarding the appearance of our world is the night sky. There are two mods ([_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/) and [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/)) that will make you cry tears of joy every time you look up to the Moon.
 
 That will also grant you a short lifespan, killed by any night-crawling creature which happens to find you an easy meal, ready to be disemboweled.
 
 1. Download _Enhanced Night Sky_ file with NMM.
 2. Download _krzymar_HI-RES_Moon-0_2_0-bright_ file with NMM (I prefer the brighter version, instead of the darker one).
-3. Activate them in the same order you downloaded them. There shouln't be any overwriting. There are no data files installed either, so no need to run LOOT.
+3. Activate them in the same order you downloaded them. There shouldn't be any overwriting. There are no data files installed either, so no need to run LOOT.
 4. Launch the game and just compare.
 ![Fallout 3 night before](Images/Fallout%203%20night%20before.png)
 ![Fallout 3 night after](Images/Fallout%203%20night%20after.png)
@@ -1722,7 +1722,7 @@ At first, I didn't think to include these four mod in this guide:
 * [_Dynavision_](http://fallout3.nexusmods.com/mods/17876/)
 * [_The IMAGINATOR_](http://www.nexusmods.com/fallout3/mods/16875/)
 
-I only considered _Dynavision_ worth installing, but after revisiting Gopher's video about [visual enhancements mods](https://www.youtube.com/watch?v=ry-84eqDvr0) (29:59), I changed my mind, not only because the customization posibilities of the combined mods, but also because you don't even need the Pip-Boy menu to change the settings of the mods (specially _Dynavision_). That's a great plus.
+I only considered _Dynavision_ worth installing, but after revisiting Gopher's video about [visual enhancements mods](https://www.youtube.com/watch?v=ry-84eqDvr0) (29:59), I changed my mind, not only because the customization possibilities of the combined mods, but also because you don't even need the Pip-Boy menu to change the settings of the mods (specially _Dynavision_). That's a great plus.
 
 These four mods give you total control about light. And no, these are not lighting mods (we'll be there [in a breeze](#letThereBeLight)). These are mods to _control_ the way the light behaves in your game.
 
@@ -1990,7 +1990,7 @@ _Darkened Interiors_ tries to give interiors a realistic lighting, with deep sha
 	* `PureWater-VeryCleanLittleRad-.esp`
 	* **`Xepha's Darkened Interiors - OA.esp`**
 	* **`megalight.esp`**
-7. LOOT informs us that the file `StreetLights.esm` containts identical to master records, so we need to clean it with FO3Edit. Follow the usual procedure, selecting only that file and letting FO3Edit load the dependencies for you.
+7. LOOT informs us that the file `StreetLights.esm` contains identical to master records, so we need to clean it with FO3Edit. Follow the usual procedure, selecting only that file and letting FO3Edit load the dependencies for you.
 8. Launch the game and take a stroll in the night.
 ![Fallout 3 new lighting](Images/Fallout%203%20new%20lighting.png)
 ![Fallout 3 Megaton entrance light](Images/Fallout%203%20Megaton%20entrance%20light.png)
@@ -2008,7 +2008,7 @@ Seriously, look at _that_.
 
 ![Fallout 3 WTF WTF WTF DADDY](Images/Fallout%203%20WTF%20WTF%20WTF%20DADDY.png)
 
-A poor face modelling is one of the worst thing I can imagine to get a proper immersion in the game. Imagine your ninth birthday, surrounded by a bunch of people like this.
+A poor face modeling is one of the worst thing I can imagine to get a proper immersion in the game. Imagine your ninth birthday, surrounded by a bunch of people like this.
 
 ![Fallout 3 ugly faces](Images/Fallout%203%20ugly%20faces.png)
 
@@ -2169,7 +2169,7 @@ Remember these golden rules regarding to merged patches:
 
 1. A merged patch will not fix any inconsistency you have in your mod stack. As Gopher shows in the aforementioned video, a merged patch may, in fact, add some inconsistencies of its own (although they are minor ones). However, it will stitch together firmly the whole stack.
 2. The merged patch should **ALWAYS** sit at the bottom of your load order. In case of conflict, the deepest mod always wins, so you need your merged patch sitting at the bottom to ensure proper conflict resolution.
-3. As tedious as it sounds, everytime you change your mod stack, adding or removing mods, you need to create a **NEW** merged patch. Otherwise, the game will miserably crash. As you can imagine, I have been creating _a lot_ of merged patches throughout the creation of this guide.
+3. As tedious as it sounds, every time you change your mod stack, adding or removing mods, you need to create a **NEW** merged patch. Otherwise, the game will miserably crash. As you can imagine, I have been creating _a lot_ of merged patches throughout the creation of this guide.
 
 
 
