@@ -44,6 +44,7 @@
 		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
 	- [4.5. So you want to take over the world, uh?](#takeOverTheWorkd)
 	- [4.6. There's no place like Megaton](#thereIsNoPlaceLikeMegaton)
+	- [4.7. Let's go shopping to D.C.!](#letsGoShopping)
 * [5. Unveiling the real Wasteland](#unveilingRealWasteland)
 	- [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
 	- [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
@@ -1685,6 +1686,102 @@ We are going to install two mods here. One will add an [overhead walkway](http:/
 ![Fallout 3 Megaton walkway](Images/Fallout%203%20Megaton%20walkway.png)
 ![Fallout 3 Megaton new balcony](Images/Fallout%203%20Megaton%20new%20balcony.png)
 
+
+
+### <a id="letsGoShopping"></a>4.7. Let's go shopping to D.C.!
+
+Downtown D.C. used to be a place full of life.
+
+Well, it still is, but the life it has now doesn't like other lifeforms. It's not a very friendly neighborhood nowadays, with all the nuclear fallout, the mutants and all that.
+
+Unfriendly non-quite-human beings are not the best thing for small commerce, but why all these cardboard facades? Did everybody take their time to board up the entrances when the anti-aircraft sirens started wailing or what?
+
+The next mod addresses that, [adding a lot of places to investigate](http://www.nexusmods.com/fallout3/mods/5573) not only in D.C., but also around the Wasteland.
+
+1. Download _DCInteriors\_combo Edition Total Merge_ and _MMM\_DCinteriors Patch_ from [_DCInteriors Project_](http://www.nexusmods.com/fallout3/mods/5573/) with NMM.
+2. Activate _DCInteriors Project - DCInteriors\_combo Edition Total Merge_ first. No overwriting required.
+3. Activate _DCInteriors Project - MMM\_DCinteriors Patch_ next. No overwriting either.
+4. Run LOOT and, you know, the usual business:
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* **(b) `DCInteriors_ComboEdition.esm`**
+	* (c) `EVE.esm`
+	* (d) `ArefuExpandedByAzar.esm`
+	* (e) `Mothership Crew.esm`
+	* (f) `RH_IRONSIGHTS.esm`
+	* (10) `TheInstitute.esm`
+	* (11) `Vault 101 Revisited.esm`
+	* (12) `Alton, IL.esm`
+	* (13) `Advanced Recon Tech.esm`
+	* (14) `Companion Core.esm`
+	* (15) `RobCo Certified v2.esm`
+	* (16) `CRAFT.esm`
+	* (17) `FO3 Wanderers Edition - Main File.esm`
+	* (18) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (19) `Detect Traps.esm`
+	* (1a) `Impervious Power Armour.esm`
+	* (1b) `CASM.esp`
+	* (1c) `BetterGamePerformance.esp`
+	* (1d) `GNR Enhanced.esp`
+	* (1e) `DarNifiedUIF3.esp`
+	* (1f) `AltonAddon.esp`
+	* (20) `FO3 Wanderers Edition - Main File.esp`
+	* (21) `HZSmoothLight - FO3.esp`
+	* (22) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (23) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (24) `Blackened FWE + MMM + EVE.esp`
+	* (25) `RH_FWE_Bridge.esp`
+	* (26) `HeirApparent.esp`
+	* (27) `RobCo Certified v2 Omnipatch.esp`
+	* (28) `Mr Smith's Scrapyard.esp`
+	* (29) `Expanded Megaton House V3.esp`
+	* (2a) `Expanded Megaton House V3-No Stove.esp`
+	* (2b) `Megaton Walkway.esp`
+	* (2c) `NotSoFast.esp`
+	* (2d) `WeaponModKits.esp`
+	* (2e) `RH_EVE_Bridge.esp`
+	* (2f) `IntoTheDeepWoods.esp`
+	* (30) `Existence 2.0.esp`
+	* (31) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (32) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (33) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (34) `WeaponModKits - BrokenSteel.esp`
+	* (35) `WeaponModKits - OperationAnchorage.esp`
+	* (36) `WeaponModKits - ThePitt.esp`
+	* (37) `WeaponModKits - Zeta.esp`
+	* (38) `WeaponModKits - PointLookout.esp`
+	* (39) `RH_WMK_Bridge.esp`
+	* (3a) `ArefuExpandedByAzar-Radio.esp`
+	* (3b) `Conelrad 640-1240.esp`
+	* (3c) `FasterMorePowerfulMines.esp`
+	* (3d) `Advanced Recon Gear.esp`
+	* (3e) `Advanced Recon Armor.esp`
+	* (3f) `Detect Traps - Perk.esp`
+	* (40) `Detect Traps - The Traponator 4000.esp`
+	* (41) `Detect Traps - DLC.esp`
+	* (42) `Advanced Recon Range Finder.esp`
+	* (43) `Advanced Recon Tech.esp`
+	* (44) `Advanced Recon Tech - Detect Traps.esp`
+	* (45) `Advanced Recon Equipment Patcher.esp`
+	* (46) `Advanced Recon Tech FWE.esp`
+	* (47) `PAL - MERGED.esp`
+	* (48) `RobcoCertified24SideMod.esp`
+	* (49) `RobCo Certified v2 Impervious FWE.esp`
+	* (4a) `RobCo Certified v2 Impervious.esp`
+	* (4b) `RobCo Certified v2 Mechanist's Edition.esp`
+	* (4c) `Companion Core DLC Addon.esp`
+	* **(4d) `Mart's Mutant Mod - DC Interiors.esp`**
+5. The file `DCInteriors_ComboEdition.esm` is dirty, so we have to clean it with FO3Edit.
+6. Sorry, no screenshots here. It's a long way Downtown D.C.
 
 
 

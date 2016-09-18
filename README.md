@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.33) [18/09/2016] New chapter about new explorable places in D.C.**
+
+This is the final chapter before starting with textures, meshes and animations. It's a new chapter, and it covers _DCInteriors Project_, which add tons of explorable places in Downtown D.C. in particular and the Wasteland in general.
+
 **(v0.32) [18/09/2016] New chapter about Megaton urban planning.**
 
 I have added a new chapter with two mods that change the urban landscape of Megaton, with a new walkway (making easier to get to the key places) and a new story to your house.
