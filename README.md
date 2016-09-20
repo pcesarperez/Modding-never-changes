@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.35) [20/09/2016] Rewrite complete up to 5.3.**
+
+Well, another straightforward chapter. Things are getting interesting ahead.
+
 **(v0.34) [20/09/2016] Rewrite complete up to 5.2.**
 
 The chapters 5.1 and 5.2 have been easy to rewrite. I had just to take a couple of new screenshots, but aside from that, everything there is pretty much the same.

@@ -1947,14 +1947,14 @@ I only considered _Dynavision_ worth installing, but after revisiting Gopher's v
 
 These four mods give you total control about light. And no, these are not lighting mods (we'll be there [in a breeze](#letThereBeLight)). These are mods to _control_ the way the light behaves in your game.
 
-Let me explain. At a very basic level, every game lets you customize three parameters: brightness, contrast and saturation. However, the sum of the aforementioned mods let you control the kind of light, the "film grain" and even the depth of field of your point of view.
+Let me explain. At a very basic level, every game lets you customize three parameters: brightness, contrast and saturation. However, the sum of the aforementioned mods lets you control the kind of light, the "film grain" and even the depth of field of your point of view.
 
 Let's get started.
 
-1. Download _DYNAVISION - Dynamic Lens Effect 1\_0\_1_ with NMM.
-2. Download _CINEMATECH_ with NMM.
-3. Download _The IMAGINATOR for FO3 - Visual Control Device_ with NMM.
-4. Download _Directors Chair_ with NMM.
+1. Download _DYNAVISION - Dynamic Lens Effect 1\_0\_1_ from [_Dynavision_](http://fallout3.nexusmods.com/mods/17876/) with NMM.
+2. Download _CINEMATECH_ from [_CINEMATECH_](http://www.nexusmods.com/fallout3/mods/15745/) with NMM.
+3. Download _The IMAGINATOR for FO3 - Visual Control Device_ from [_The IMAGINATOR_](http://www.nexusmods.com/fallout3/mods/16875/) with NMM.
+4. Download _Directors Chair_ from [_Director's Chair_](http://www.nexusmods.com/fallout3/mods/17899/) with NMM.
 5. We should have the four mods downloaded in no time.
 ![NMM visual enhancements downloaded](Images/NMM%20visual%20enhancements%20downloaded.png)
 6. Activate _DYNAVISION - Dynamic Depth of Field - DYNAVISION - Dynamic Lens Effect 1\_0\_1_ by double-clicking on it. No overwriting is required.
@@ -1962,61 +1962,89 @@ Let's get started.
 8. Activate _The IMAGINATOR for FO3 - Visual Control Device - The IMAGINATOR for FO3 - Visual Control Device_ the same way. No overwriting required.
 9. Finally, activate _Directors Chair - Total Visual Control - Directors Chair_. No overwriting either.
 10. Fire up LOOT to rearrange your load order. This should be the deal.
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `Alton, IL.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Advanced Recon Tech.esm`
-	* **`CINEMATECH.esm`**
-	* **`ImaginatorFO3.esp`**
-	* `CASM.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `Blackened RH + FWE + EVE.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `F3ProjectRealityMkI.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
-	* **`DYNAVISION - Dynamic Lens Effect.esp`**
-	* **`Directors Chair - Fallout 3.esp`**
+	* (0) `Fallout3.esm`
+	* (1) `Anchorage.esm`
+	* (2) `ThePitt.esm`
+	* (3) `BrokenSteel.esm`
+	* (4) `PointLookout.esm`
+	* (5) `Zeta.esm`
+	* (6) `Unofficial Fallout 3 Patch.esm`
+	* (7) `aHUD.esm`
+	* (8) `iHUD.esm`
+	* (9) `CALIBR.esm`
+	* (a) `Mart's Mutant Mod.esm`
+	* (b) `DCInteriors_ComboEdition.esm`
+	* (c) `EVE.esm`
+	* (d) `ArefuExpandedByAzar.esm`
+	* (e) `Mothership Crew.esm`
+	* (f) `RH_IRONSIGHTS.esm`
+	* (10) `TheInstitute.esm`
+	* (11) `Vault 101 Revisited.esm`
+	* (12) `Alton, IL.esm`
+	* (13) `Advanced Recon Tech.esm`
+	* (14) `Companion Core.esm`
+	* (15) `RobCo Certified v2.esm`
+	* (16) `CRAFT.esm`
+	* (17) `FO3 Wanderers Edition - Main File.esm`
+	* (18) `FO3 Wanderers Edition - Alternate Travel.esp`
+	* (19) `Detect Traps.esm`
+	* (1a) `Impervious Power Armour.esm`
+	* **(1b) `CINEMATECH.esm`**
+	* **(1c) `ImaginatorFO3.esp`**
+	* (1d) `CASM.esp`
+	* (1e) `BetterGamePerformance.esp`
+	* (1f) `GNR Enhanced.esp`
+	* (20) `DarNifiedUIF3.esp`
+	* (21) `AltonAddon.esp`
+	* (22) `FO3 Wanderers Edition - Main File.esp`
+	* (23) `HZSmoothLight - FO3.esp`
+	* (24) `FO3 Wanderers Edition - DLC Broken Steel.esp`
+	* (25) `FO3 Wanderers Edition - DLC Point Lookout.esp`
+	* (26) `Blackened FWE + MMM + EVE.esp`
+	* (27) `RH_FWE_Bridge.esp`
+	* (28) `HeirApparent.esp`
+	* (29) `RobCo Certified v2 Omnipatch.esp`
+	* (2a) `Mr Smith's Scrapyard.esp`
+	* (2b) `Expanded Megaton House V3.esp`
+	* (2c) `Expanded Megaton House V3-No Stove.esp`
+	* (2d) `Megaton Walkway.esp`
+	* (2e) `NotSoFast.esp`
+	* (2f) `WeaponModKits.esp`
+	* (30) `F3ProjectRealityMkI.esp`
+	* (31) `RH_EVE_Bridge.esp`
+	* (32) `IntoTheDeepWoods.esp`
+	* (33) `Existence 2.0.esp`
+	* (34) `FO3 Wanderers Edition - DLC Anchorage.esp`
+	* (35) `FO3 Wanderers Edition - DLC The Pitt.esp`
+	* (36) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
+	* (37) `WeaponModKits - BrokenSteel.esp`
+	* (38) `WeaponModKits - OperationAnchorage.esp`
+	* (39) `WeaponModKits - ThePitt.esp`
+	* (3a) `WeaponModKits - Zeta.esp`
+	* (3b) `WeaponModKits - PointLookout.esp`
+	* (3c) `RH_WMK_Bridge.esp`
+	* (3d) `ArefuExpandedByAzar-Radio.esp`
+	* (3e) `Conelrad 640-1240.esp`
+	* (3f) `FasterMorePowerfulMines.esp`
+	* (40) `Advanced Recon Gear.esp`
+	* (41) `Advanced Recon Armor.esp`
+	* (42) `Detect Traps - Perk.esp`
+	* (43) `Detect Traps - The Traponator 4000.esp`
+	* (44) `Detect Traps - DLC.esp`
+	* (45) `Advanced Recon Range Finder.esp`
+	* (46) `Advanced Recon Tech.esp`
+	* (47) `Advanced Recon Tech - Detect Traps.esp`
+	* (48) `Advanced Recon Equipment Patcher.esp`
+	* (49) `Advanced Recon Tech FWE.esp`
+	* (4a) `PAL - MERGED.esp`
+	* (4b) `RobcoCertified24SideMod.esp`
+	* (4c) `RobCo Certified v2 Impervious FWE.esp`
+	* (4d) `RobCo Certified v2 Impervious.esp`
+	* (4e) `RobCo Certified v2 Mechanist's Edition.esp`
+	* (4f) `Companion Core DLC Addon.esp`
+	* (50) `Mart's Mutant Mod - DC Interiors.esp`
+	* **(51) `DYNAVISION - Dynamic Lens Effect.esp`**
+	* **(52) `Directors Chair - Fallout 3.esp`**
 11. Launch the game to check the new menus. Pressing <kbd>F7</kbd> will show the _Director's Chair_ in-game menu. The best way to get the grasp of the possibilities given by these four mods is watching Gopher's video.
 ![Fallout 3 Director's Chair](Images/Fallout%203%20Director's%20Chair.png)
 
