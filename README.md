@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.34) [20/09/2016] Rewrite complete up to 5.2.**
+
+The chapters 5.1 and 5.2 have been easy to rewrite. I had just to take a couple of new screenshots, but aside from that, everything there is pretty much the same.
+
+The next chapter will be more or less equivalent, but from that point on, there's a lot of new mods to install, mostly textures for specific objects.
+
 **(v0.33) [18/09/2016] New chapter about new explorable places in D.C.**
 
 This is the final chapter before starting with textures, meshes and animations. It's a new chapter, and it covers _DCInteriors Project_, which add tons of explorable places in Downtown D.C. in particular and the Wasteland in general.
@@ -100,7 +106,7 @@ Final chapter finished... Well, _almost_ final chapter. There are a few remainin
 
 This chapter is about people reanimated (new and more natural animations) and redesigned (a huge overhaul of face meshes all around the game). And that's it. This is the game we are going to play.
 
-However, there are certain mods that I would like to include in the following rehearshal. I have wrote them down in a separate sheet in `Mods installed.ods`. I will consider the contents finished then.
+However, there are certain mods that I would like to include in the following rehearsal. I have wrote them down in a separate sheet in `Mods installed.ods`. I will consider the contents finished then.
 
 **(v0.18) [21/08/2016] Section about lighting finished.**
 
@@ -156,7 +162,7 @@ On a side note, it's a bit difficult to write a guide like this with a cat cravi
 
 At last!
 
-I have finished the section about weapons system revamp (WMK, EVE and RH_IronSights). The game runs without crashes (apparently), but I have no installed the compability patch among FWE, EVE and MMM, because we are going to install Project Beauty, and there is a combo patch for all of them.
+I have finished the section about weapons system revamp (WMK, EVE and RH_IronSights). The game runs without crashes (apparently), but I have no installed the compatibility patch among FWE, EVE and MMM, because we are going to install Project Beauty, and there is a combo patch for all of them.
 
 The end is nigh!
 
