@@ -237,7 +237,7 @@ There is one final step to ensure that the patch is loaded in the proper place, 
 
 Each data file can come in two flavors: `.esm` for master files or `.esp` for secondary (patch) files. The DLCs themselves are `.esm` files.
 
-This is a good time to check the load order of the game data files, so fire up LOOT to see what is happening under the hood. On a side note, Gopher has published two videos, one explaining [what is 'load order' and why it is important](https://www.youtube.com/watch?v=YzsBKYUrcbE) (20:00), and other explaining [what is LOOT and how to put it to good use](https://www.youtube.com/watch?v=SzoyWugzZAw) (13:59).
+This is a good time to check the load order of the game data files, so fire up LOOT to see what is happening under the hood.
 
 ![LOOT first run after UF3P](Images/LOOT%20first%20run%20after%20UF3P.png)
 
