@@ -7,57 +7,57 @@
 
 * [1. Introduction](#introduction)
 * [2. The tools we need](#toolsWeNeed)
-* [3. Fixing the game](#fixingGame)
-	- [3.1. Install the game](#installGame)
-	- [3.2. Disable Games for Windows Live](#disableGFWL)
-	- [3.3. Patching the game](#patchingGame)
-	- [3.4. Cleaning up the master files](#cleaningMasterFiles)
-	- [3.5. Enabling the console](#enablingConsole)
-	- [3.6. Enabling access to 4+ GB of memory](#largeAddressAware)
-	- [3.7. _Fallout 3_ Script Extender](#fose)
-	- [3.8. Getting rid of stutter](#gettingRidStutter)
-	- [3.9. Fake full-screen mode](#fakeFullScreen)
-	- [3.10. Saving games the right way](#casm)
-	- [3.11. Adopt an useless rock today!](#adoptUselessRock)
-* [4. Enhancing the game](#enhancingGame)
-	- [4.1. Improving the user interface](#improvingUserInterface)
-		+ [4.1.1. Building the basement](#buildingBasement)
-		+ [4.1.2. Face-washing the HUD](#faceWashingHUD)
-		+ [4.1.3. Rearranging things](#rearrangingThings)
-		+ [4.1.3. Seeing things just when you need to](#seeingThingsWhenNeeded)
-		+ [4.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
-		+ [4.1.5. You don't want to ask for directions](#betterMap)
-		+ [4.1.6. No more dots](#noMoreDots)
-		+ [4.1.7. Shed some light here, please](#shedSomeLight)
-	- [4.2. Lend me your ears](#lendMeYourEars)
-		+ [4.2.1. Hearing the nukes fly in high quality](#hearingNukesFly)
-		+ [4.2.2. Those crickets are driving me mad](#thoseCrickets)
-		+ [4.2.3. A soundtrack for your lonely Wasteland nights](#radioStations)
-	- [4.3. Playing the bad-ass way](#playingBadAss)
-		+ [4.3.1. _Ad astra per aspera_](#adAstraPerAspera)
-		+ [4.3.2. A sound for Chekhov's gun](#checkhovsGun)
-		+ [4.3.3. Fraternizing with the neighborhood](#fraternizingNeighborhood)
-		+ [4.3.4. We need more firepower!](#weNeedMoreFirepower)
-	- [4.4. Expanding your world](#expandingYourWorld)
-		+ [4.4.1. _Hic sunt dracones_](#hicSuntDracones)
-		+ [4.4.2. Gear for a fallen brother](#gearFallenBrother)
-		+ [4.4.3. For the achievement junkie in you](#achievementJunkie)
-	- [4.5. So you want to take over the world, uh?](#takeOverTheWorkd)
-	- [4.6. There's no place like Megaton](#thereIsNoPlaceLikeMegaton)
-	- [4.7. Let's go shopping to D.C.!](#letsGoShopping)
-* [5. Unveiling the real Wasteland](#unveilingRealWasteland)
-	- [5.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
-	- [5.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
-	- [5.3. Everything depends on the point of view](#pointOfView)
-	- [5.4. A beautiful skin](#beautifulSkin)
-	- [5.5. Let there be light!](#letThereBeLight)
-	- [5.6. I don't like your face](#dontLikeYourFace)
-* [6. Wrapping up](#wrappingUp)
-* [7. Resources](#resources)
-	* [7.1. Tools](#tools)
-	* [7.2. Guides](#guides)
-	* [7.3. Mods](#mods)
-	* [7.4. Videos](#videos)
+* [3. Functional vs. technical](#functionalTechnical)
+* [4. Fixing the game](#fixingGame)
+	- [4.1. Install the game](#installGame)
+	- [4.2. Disable Games for Windows Live](#disableGFWL)
+	- [4.3. Patching the game](#patchingGame)
+	- [4.4. Cleaning up the master files](#cleaningMasterFiles)
+	- [4.5. Enabling the console](#enablingConsole)
+	- [4.6. Enabling access to 4+ GB of memory](#largeAddressAware)
+	- [4.7. _Fallout 3_ Script Extender](#fose)
+	- [4.8. Getting rid of stutter](#gettingRidStutter)
+	- [4.9. Fake full-screen mode](#fakeFullScreen)
+	- [4.10. Saving games the right way](#casm)
+	- [4.11. Adopt an useless rock today!](#adoptUselessRock)
+* [5. Enhancing the game](#enhancingGame)
+	- [5.1. Improving the user interface](#improvingUserInterface)
+		+ [5.1.1. Building the basement](#buildingBasement)
+		+ [5.1.2. Face-washing the HUD](#faceWashingHUD)
+		+ [5.1.3. Rearranging things](#rearrangingThings)
+		+ [5.1.3. Seeing things just when you need to](#seeingThingsWhenNeeded)
+		+ [5.1.4. Cleaning up your faithful companion](#retexturingPipBoy)
+		+ [5.1.5. You don't want to ask for directions](#betterMap)
+		+ [5.1.6. Shed some light here, please](#shedSomeLight)
+	- [5.2. Lend me your ears (optional)](#lendMeYourEars)
+		+ [5.2.1. Hearing the nukes fly in high quality](#hearingNukesFly)
+		+ [5.2.2. Those crickets are driving me mad](#thoseCrickets)
+		+ [5.2.3. A soundtrack for your lonely Wasteland nights](#radioStations)
+	- [5.3. Playing the bad-ass way](#playingBadAss)
+		+ [5.3.1. _Ad astra per aspera_](#adAstraPerAspera)
+		+ [5.3.2. A sound for Chekhov's gun](#checkhovsGun)
+		+ [5.3.3. Fraternizing with the neighborhood](#fraternizingNeighborhood)
+		+ [5.3.4. We need more firepower!](#weNeedMoreFirepower)
+	- [5.4. Expanding your world (optional)](#expandingYourWorld)
+		+ [5.4.1. _Hic sunt dracones_](#hicSuntDracones)
+		+ [5.4.2. Gear for a fallen brother](#gearFallenBrother)
+		+ [5.4.3. For the achievement junkie in you](#achievementJunkie)
+	- [5.5. So you want to take over the world, uh?](#takeOverTheWorkd)
+	- [5.6. There's no place like Megaton](#thereIsNoPlaceLikeMegaton)
+	- [5.7. Let's go shopping to D.C.!](#letsGoShopping)
+* [6. Unveiling the real Wasteland](#unveilingRealWasteland)
+	- [6.1. She walks in beauty, like the night of cloudless climes and starry skies](#sheWalksInBeauty)
+	- [6.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
+	- [6.3. Everything depends on the point of view](#pointOfView)
+	- [6.4. Nobody said the Nuclear Holocaust should be unpleasant to look at](#unpleasantNuclearHolocaust)
+	- [6.5. Let there be light!](#letThereBeLight)
+	- [6.6. I don't like your face](#dontLikeYourFace)
+* [7. Wrapping up](#wrappingUp)
+* [8. Resources](#resources)
+	* [8.1. Tools](#tools)
+	* [8.2. Guides](#guides)
+	* [8.3. Mods](#mods)
+	* [8.4. Videos](#videos)
 
 
 
@@ -100,7 +100,33 @@ Install them first and we are good to go.
 
 
 
-## <a id="fixingGame"></a>3. Fixing the game
+## <a id="functionalTechnical"></a>3. Functional vs. technical
+
+There are a lot of _Fallout 3_ modding guides out there. This is just another one, but I'd like to think that my approach to the matter is slightly different, because it's a functional one.
+
+What the hell do I mean by "functional"? Well, at the end of each chapter you will have a version of the game with certain features: a fixed game, a game with new sounds, a game with new animations, etc. This guide is intended to be followed from cover to cover, although there are certain chapters that will be marked as optional.
+
+This approach has its advantages and disadvantages. I think it's more understandable for the reader, albeit more complex to perform under the hood.
+
+It would be good for you to understand the concept of _load order_ before going on. Gopher has two videos explaining [what is load order](https://www.youtube.com/watch?v=YzsBKYUrcbE) (20:00) and [how to use LOOT to manage our load order](https://www.youtube.com/watch?v=SzoyWugzZAw) (13:59). Both are worth checking out.
+
+However, there is something you need to understand besides load order, and it is _installation order_. Each mod could have one of these items, or both:
+
+* One or more data files, which may be `.esm` (master) or `.esp` (ancillary) files.
+* A number of assets, like textures, sounds, meshes, menu files, etc.
+
+Data files are bound by load order, whereas assets are bound by installation order. And this is because Nexus Mod Manager (NMM), the tool we are going to use to mod the game, uses a _destructive approach_.
+
+This is, if you install mod "A" with a certain asset "foo", and later you install mod "B" with an equally named asset "foo", "B" version of "foo" will overwrite "A" version of "foo", for good. This makes critical to know the installation order, because if you want to get back to an earlier state of the game, you will have to uninstall the mods _in the reverse order you installed them_.
+
+NMM does a good job tracking the changes to the game assets as you install new mods, but rollbacks are difficult to perform and error prone (that's why I had to start over again so many times during the writing of this guide). And that's the reason why following a functional approach is somewhat mode difficult with NMM, because sometimes you want to install mod "A" before mod "B", because it makes sense to you, but you **don't** want "B" assets to overwrite "A" assets. Don't worry, that's something I have to deal with, not you.
+
+Without further ado, let's start modding our beloved _Fallout 3_.
+
+
+
+
+## <a id="fixingGame"></a>4. Fixing the game
 
 At the end of this section, you will have a version of _Fallout 3 Game of the Year Edition_ that:
 
@@ -115,7 +141,7 @@ At the end of this section, you will have a version of _Fallout 3 Game of the Ye
 
 
 
-### <a id="installGame"></a>3.1. Install the game
+### <a id="installGame"></a>4.1. Install the game
 
 Pretty much straightforward, uh? Well, no. You need to run the game at least once to create the `.ini` files we will tinker with.
 
@@ -146,13 +172,13 @@ Bear in mind that no matter how hard you pray or curse, this is as far as the ga
 
 
 
-### <a id="disableGFWL"></a>3.2. Disable Games for Windows Live
+### <a id="disableGFWL"></a>4.2. Disable Games for Windows Live
 
 In BenWah's guide you can either update your Games for Windows Live (GFWL for short) installation, or disable it. Unless it's vital to you, I recommend disabling GFWL, just in case.
 
 To disable GFWL, you need to download and run [Games for Windows LIVE disabler](http://www.nexusmods.com/fallout3/mods/1086/).
 
-**DO NOT** use Nexus Mod Manager (NMM for short) to download this tool. Download it manually instead.
+**DO NOT** use NMM to download this tool. Download it manually instead.
 
 If you get a warning about absent `FALLOUT.INI`, please run the game once (I told you).
 
@@ -176,7 +202,7 @@ Notice the absent _LIVE_ option in the main menu screen:
 
 
 
-### <a id="patchingGame"></a>3.3. Patching the game
+### <a id="patchingGame"></a>4.3. Patching the game
 
 _Fallout 3_ comes with a shitload of bugs, even after 5 DLC's. That is Bethesda's hallmark, but people has come to, if not love these bugs, at least consider them like you would consider your old grandpa pissing in the punch bowl on Christmas Eve. Slightly disgusting but, nevertheless, adorable.
 
@@ -227,7 +253,7 @@ This should be your load order by now:
 * (3) `BrokenSteel.esm`
 * (4) `PointLookout.esm`
 * (5) `Zeta.esm`
-* ** (6) `Unofficial Fallout 3 Patch.esm`**
+* (6) `Unofficial Fallout 3 Patch.esm`
 
 You might be surprised to check that there are inconsistencies in the main DLC files, like `Anchorage.esm` (master file for _Operation Anchorage_ DLC). As we said, Bethesda is not known for releasing solid, fully tested programs. We'll address that later.
 
@@ -241,7 +267,7 @@ Yippee ki-yay, motherfucker!
 
 
 
-### <a id="cleaningMasterFiles"></a>3.4. Cleaning up the master files
+### <a id="cleaningMasterFiles"></a>4.4. Cleaning up the master files
 
 Sure, you could play the game right now if you want. You would be playing a crippled, prone to crash game, but hey, if that's your thing...
 
@@ -306,7 +332,7 @@ And, of course, run the game just to be on the safe side.
 
 
 
-### <a id="enablingConsole"></a>3.5. Enabling the console
+### <a id="enablingConsole"></a>4.5. Enabling the console
 
 The game console is not strictly necessary to fix the game, but it will come in handy to test the fixes we apply.
 
@@ -340,7 +366,7 @@ Finally, there is an exhaustive [list of console commands](http://www.tweakguide
 
 
 
-### <a id="largeAddressAware"></a>3.6. Enabling access to 4+ GB of memory
+### <a id="largeAddressAware"></a>4.6. Enabling access to 4+ GB of memory
 
 _Fallout 3_ does not use all the available memory it could have due to its 32 bits nature (the game was launched in 2008, you know). However, you can modify the game executable to take advantage of all the memory it can get.
 
@@ -365,7 +391,7 @@ And that's really it. Now _Fallout 3_ is ready to handle more than 2 GB of RAM, 
 
 
 
-### <a id="fose"></a>3.7. _Fallout 3_ Script Extender
+### <a id="fose"></a>4.7. _Fallout 3_ Script Extender
 
 If you ever want to install a single mod in _Fallout 3_, you will need [_Fallout Script Extender_](http://fose.silverlock.org/) (FOSE, for short).
 
@@ -404,7 +430,7 @@ FOSE provides a [whole new set of console commands](http://fose.silverlock.org/f
 
 
 
-### <a id="gettingRidStutter"></a>3.8. Getting rid of stutter
+### <a id="gettingRidStutter"></a>4.8. Getting rid of stutter
 
 _Fallout 3_ suffers from stuttering, this is, there are certain points in the game where the visuals are lacking in fluidity. Although this can be reduced by optimizing your system (updating your graphics driver to the top, unfragmenting the hard drive, and so on), there is still a micro-stuttering that can be perceived in lower-spec machines when framerate suddenly changes.
 
@@ -434,7 +460,7 @@ Provided that you have installed NMM:
 
 
 
-### <a id="fakeFullScreen"></a>3.9. Fake full-screen mode
+### <a id="fakeFullScreen"></a>4.9. Fake full-screen mode
 
 Believe or not, one of the things that could produce a CTD every other game, is the full-screen mode. As usual, Gopher has a [video explaining the problem](https://www.youtube.com/watch?v=tONiXNbwSt0) (26:38), same as before (this part spans roughly from 17:30 to the end).
 
@@ -451,7 +477,7 @@ Believe or not, one of the things that could produce a CTD every other game, is 
 
 
 
-### <a id="casm"></a>3.10. Saving games the right way
+### <a id="casm"></a>4.10. Saving games the right way
 
 The Sun rises in the East, Michael Fassbender is better than you in everything and _Fallout 3_ crashes. You need to come to terms with these simple Truths of Life.
 
@@ -477,23 +503,14 @@ CASM also saves the game automatically with a given frequency and under certain 
 ![NMM CASM loaded last](Images/NMM%20CASM%20loaded%20last.png)
 7. Close NMM and run LOOT. Click on the _Sort Plugins_ icon to fix the load order. Notice that CASM still sits at the bottom, and no conflicts are detected (this step is fairly unnecessary, but you need to get used to routinely rearrange your load order).
 ![LOOT after installing CASM](Images/LOOT%20after%20installing%20CASM.png)
-8. This should be your load order:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* **(7) `CASM.esp`**
-9. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing <kbd>TAB</kbd> and navigate to the _Items_ button, _Aid_ section. You will see an "item" called _CASM Options Menu_.
+8. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing <kbd>TAB</kbd> and navigate to the _Items_ button, _Aid_ section. You will see an "item" called _CASM Options Menu_.
 ![Fallout 3 CASM option](Images/Fallout%203%20CASM%20option.png)
-10. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
+9. Click on the CASM item _and then exit the Pip-Boy_ by pressing again <kbd>TAB</kbd> (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
 ![Fallout 3 CASM settings](Images/Fallout%203%20CASM%20settings.png)
 
 
 
-### <a id="adoptUselessRock"></a>3.11. Adopt an useless rock today!
+### <a id="adoptUselessRock"></a>4.11. Adopt an useless rock today!
 
 _Fallout 3_ developers show their love for the details in every corner of the game.
 
@@ -509,23 +526,14 @@ Let's install this mod.
 ![NMM Better Game Performance downloaded](Images/NMM%20Better%20Game%20Performance%20downloaded.png)
 2. Activate the mod by double-clicking on its name. The mod will be installed with no hiccups.
 ![NMM Better Game Performance installed](Images/NMM%20Better%20Game%20Performance%20installed.png)
-3. Run LOOT to rearrange your load order. The newly installed mod should sit at the bottom of your load order.
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `CASM.esp`
-	* **(8) `BetterGamePerformance.esp`**
+3. Run LOOT to rearrange your load order.
 
 That's it. We have removed a lot of unused objects from the game. It's difficult to show the difference, because, these are mainly rocks, but take my word for it.
 
 
 
 
-## <a id="enhancingGame"></a>4. Enhancing the game
+## <a id="enhancingGame"></a>5. Enhancing the game
 
 What comes next is pretty much a matter of personal taste. While fixing the game should be completed head to toe for everyone, enhancing the game is something you need to consider, balancing pros and cons.
 
@@ -551,7 +559,7 @@ When it comes to mods, not only the load order is important, but also the [_inst
 
 
 
-### <a id="improvingUserInterface"></a>4.1. Improving the user interface
+### <a id="improvingUserInterface"></a>5.1. Improving the user interface
 
 The first thing we are going to improve is the user interface.
 
@@ -562,7 +570,7 @@ Thus, we are starting with a series of mods that have a low impact on the overal
 There are several videos to warm up the engines: one to cover [the installation of the mods](https://www.youtube.com/watch?v=aqCzCXEydwU) (25:05), and the other to explain how to [stitch them all together](https://www.youtube.com/watch?v=bTlXOqV6pBA) (4:42) (there is also an [extended version](https://www.youtube.com/watch?v=qSA2BFQ2zc4) (11:23)).
 
 
-#### <a id="buildingBasement"></a>4.1.1. Building the basement
+#### <a id="buildingBasement"></a>5.1.1. Building the basement
 
 First things first, we are going to need a way for all the mods to collaborate seamlessly, and for this, we are going to install [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867/), or UIO. This mod will keep every important user interface mod out there in line.
 
@@ -574,7 +582,7 @@ If you have followed the guide so far, you have a grasp of the basics to downloa
 And that's really it. No need to use LOOT because this is a FOSE plugin. FOSE plugins are placed in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]`, so there should be a file named `ui_organizer.dll` in that folder.
 
 
-#### <a id="faceWashingHUD"></a>4.1.2. Face-washing the HUD
+#### <a id="faceWashingHUD"></a>5.1.2. Face-washing the HUD
 
 Next, we are going to _shrink_ the user interface using [_DarNified UI F3_](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/), or DUIF3.
 
@@ -601,18 +609,7 @@ This will be a bit tricky, because there are no NMM packages right out-of-the-bo
 ![NMM DUIF3 installed](Images/NMM%20DUIF3%20installed.png)
 11. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
 ![LOOT DUIF3](Images/LOOT%20DUIF3.png)
-12. Check your load order:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `CASM.esp`
-	* (8) `BetterGamePerformance.esp`
-	* **(9) `DarNifiedUIF3.esp`**
-13. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even done half the job for you.
+12. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the [DUIF3 page](http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/) and copy the text block starting with `[Fonts]`. I have even done half the job for you.
 ```INI
 [Fonts]
 ;sFontFile_1=Textures\Fonts\Glow_Monofonto_Large.fnt
@@ -633,44 +630,33 @@ sFontFile_7=Textures\Fonts\DarN_Libel_Suit_Otl_24.fnt
 ;sFontFile_7=Textures\Fonts\DarN_Klill_Outline_20.fnt
 sFontFile_8=Textures\Fonts\Glow_Futura_Caps_Large.fnt
 ```
-14. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the contents of the `[Fonts]` section.
-15. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
+13. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the contents of the `[Fonts]` section.
+14. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
 ```
 Fallout 3 1.7.0.3
 DarNified UI F3 0.11.1a
 Powered by FOSE 1.2 b2
 ```
-16. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
+15. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
 ![Fallout 3 DUIF3 installed](Images/Fallout%203%20DUIF3%20installed.png)
-17. However, I don't like that option to be visible, so open the file `DUIF3Settings.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\prefabs]` with your favorite text editor. Change the option `<_sm_hideLIVE />` to 1. Save and exit. Launch the game to check the absent LIVE option.
+16. However, I don't like that option to be visible, so open the file `DUIF3Settings.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\prefabs]` with your favorite text editor. Change the option `<_sm_hideLIVE />` to 1. Save and exit. Launch the game to check the absent LIVE option.
 ![Fallout 3 DUIF3 absent LIVE option](Images/Fallout%203%20DUIF3%20absent%20LIVE%20option.png)
-18. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
+17. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
 ![Fallout 3 DUIF3 small HUD](Images/Fallout%203%20DUIF3%20small%20HUD.png)
-19. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
+18. If you press <kbd>ESC</kbd> in game, you will see a new option at the right to configure DUIF3.
 ![Fallout 3 DUIF3 ingame option](Images/Fallout%203%20DUIF3%20ingame%20option.png)
-20. There are a lot of settings for you to configure, adjusting the HUD to your liking.
+19. There are a lot of settings for you to configure, adjusting the HUD to your liking.
 ![Fallout 3 DUIF3 settings](Images/Fallout%203%20DUIF3%20settings.png)
 
 
-#### <a id="rearrangingThings"></a>4.1.3. Rearranging things
+#### <a id="rearrangingThings"></a>5.1.3. Rearranging things
 
 For those of you who don't like the default layout of the Heads Up Display (HUD), there is a little mod (little in size, that is) which helps you to change exactly that: [_Adjustable HUD_](http://www.nexusmods.com/fallout3/mods/15886/) or aHUD.
 
 1. Download the mod with NMM, as usual. Take care to download the DarNified UI F3 version.
 2. Activate it in the _Mods_ tab by double-clicking on its name.
 3. The mod changes files installed by DUIF3, so answer _Yes to all_ when asked to overwrite files.
-4. Run LOOT and sort your load order, which should be:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* **(7) `aHUD.esm`**
-	* (8) `CASM.esp`
-	* (9) `BetterGamePerformance.esp`
-	* (a) `DarNifiedUIF3.esp`
+4. Run LOOT and sort your load order.
 5. Launch the game and press <kbd>F6</kbd> in-game to show the aHUD settings menu.
 ![Fallout 3 aHUD settings](Images/Fallout%203%20aHUD%20settings.png)
 6. Using the menu options you can select any of the following items to relocate:
@@ -684,26 +670,14 @@ For those of you who don't like the default layout of the Heads Up Display (HUD)
 Take into account that if you plan to keep on installing mods using this guide, you may not want to relocate your HUD items, because several of the mods overwrite the XML files used to keep the HUD layout.
 
 
-#### <a id="seeingThingsWhenNeeded"></a>4.1.3. Seeing things just when you need to
+#### <a id="seeingThingsWhenNeeded"></a>5.1.3. Seeing things just when you need to
 
 In addition to have the HUD elements placed where you like, you can improve the immersion by hiding these elements when you don't need them. I like to have them hidden when I am wandering around and have them shown when I am in combat. We have [_Immersive HUD_](http://www.nexusmods.com/fallout3/mods/15790/) or iHUD for this.
 
 1. Download the mod with NMM. We are saving the file _Immersive HUD - Darnified FWE Patch_ for later, when we install _Fallout 3 Wanderer's Edition_.
 2. Activate it, the usual way.
 3. Answer _Yes to all_ when asked to overwrite files.
-4. Use LOOT to sort your load order, which should be:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4 `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* **(8) `iHUD.esm`**
-	* (9) `CASM.esp`
-	* (a) `BetterGamePerformance.esp`
-	* (b) `DarNifiedUIF3.esp`
+4. Use LOOT to sort your load order.
 5. Launch the game and notice the absence of HUD elements on screen.
 ![Fallout 3 iHUD default](Images/Fallout%203%20iHUD%20default.png)
 6. Keep the <kbd>I</kbd> key pressed a few moments. The iHUD settings menu will appear.
@@ -717,7 +691,7 @@ Why this backup? Well, there are a lot of mods which change the user interface, 
 The way we are installing mods in this guide is more functional than technical, so the installation order we are following is less than ideal. However, we are going to manually keep track of the changes made by each mod to stitch all them together.
 
 
-#### <a id="retexturingPipBoy"></a>4.1.4. Cleaning up your faithful companion
+#### <a id="retexturingPipBoy"></a>5.1.4. Cleaning up your faithful companion
 
 One of the things you are going to see a lot in this game is your Pip-Boy. And when I say "a lot", I mean an awful-fucking lot. It's your personal assistant, after all.
 
@@ -749,7 +723,7 @@ It's a little sad to see that glorious piece of junk in low resolution, so, let'
 ![Fallout 3 Pip-Boy after retexturing](Images/Fallout%203%20Pip-Boy%20after%20retexturing.png)
 
 
-#### <a id="betterMap"></a>4.1.5. You don't want to ask for directions
+#### <a id="betterMap"></a>5.1.5. You don't want to ask for directions
 
 Let's face it: the vanilla map in _Fallout 3_ seems to have been produced from Dora the Explorer's backpack. And you don't want to start asking directions in D.C., because super-mutants are not known for their kindness of heart with strangers.
 
@@ -768,27 +742,14 @@ We are going to use [_Better High Detail Map and Icons_](http://www.nexusmods.co
 ![Fallout 3 world map after](Images/Fallout%203%20world%20map%20after.png)
 
 
-#### <a id="shedSomeLight"></a>4.1.7. Shed some light here, please
+#### <a id="shedSomeLight"></a>5.1.6. Shed some light here, please
 
 Lighting in _Fallout 3_ is somewhat weird. Sometimes you will find your self into what seems to be a lucid LSD-induced dream, with overexposed lights all around you. If you use your Pip-Boy's lamplight, things get much worse.
 
 This small mod, [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/), comes to the rescue. Here we go.
 
 1. Download and activate the mod with NMM. There shouldn't be any conflicts.
-2. Use LOOT to sort your load order, which should be:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CASM.esp`
-	* (a) `BetterGamePerformance.esp`
-	* (b) `DarNifiedUIF3.esp`
-	* **(c) `HZSmoothLight - FO3.esp`**
+2. Use LOOT to sort your load order.
 3. Launch the game and activate your Pip-Boy's lamplight long-pressing the <kbd>TAB</kbd> key in a dark area.
 
 See the difference for yourself.
@@ -809,7 +770,7 @@ The difference is subtle, more noticeable in dark interiors.
 
 
 
-### <a id="lendMeYourEars"></a>4.2. Lend me your ears
+### <a id="lendMeYourEars"></a>5.2. Lend me your ears (optional)
 
 Audio is one of the most underrated aspects in videogames. There is an unfortunate term coined for those gamers craving for the ultimate graphics experience: _graphic whores_. For audio? There is none, except if you would consider _audiophile_, but that has not the same taste.
 
@@ -818,7 +779,7 @@ Gaming experience is built on top of both graphics and audio. The latter is a su
 In this chapter we will take care of that, changing the way you hear and listen to the Wasteland.
 
 
-#### <a id="hearingNukesFly"></a>4.2.1. Hearing the nukes fly in high quality
+#### <a id="hearingNukesFly"></a>5.2.1. Hearing the nukes fly in high quality
 
 There is just one mod in this chapter, [_Fallout 3 - HD Audio Overhaul - v1.21_](http://www.nexusmods.com/fallout3/mods/13055/), and it's a complete overhaul of all things related with audio in _Fallout 3_, from ambient sounds to soundtrack.
 
@@ -827,7 +788,7 @@ This mod is _massive_, so grab a mug of coffee and stay tuned with the latest ne
 Launch the game and _listen_ carefully...
 
 
-#### <a id="thoseCrickets"></a>4.2.2. Those crickets are driving me mad
+#### <a id="thoseCrickets"></a>5.2.2. Those crickets are driving me mad
 
 Imagine yourself wandering at night in the radioactive wastes of the slums in D.C. There are a lot of things going on, even in a desolate barren like this: insects, night birds of prey, dogs, etc. These are the small things that boost a real sense of immersion in the game.
 
@@ -840,7 +801,7 @@ Imagine yourself wandering at night in the radioactive wastes of the slums in D.
 And that's really it. Launch the game and search for a deserted area with no imminent danger. Sit back and listen.
 
 
-#### <a id="radioStations"></a>4.2.3. A soundtrack for your lonely Wasteland nights
+#### <a id="radioStations"></a>5.2.3. A soundtrack for your lonely Wasteland nights
 
 I have to confess I have never listened to a single radio station in the game in any of my playthroughs. I usually prefer to listen to the ambient sounds, because you'll never when you are about to become the next meal of a hungry deformed creature.
 
@@ -856,23 +817,7 @@ Let's go, then.
 2. Download _Conelrad 640-1240_ with NMM.
 3. Download _Existence 2.0_ with NMM.
 4. Activate them in any order. There will be no overlapping, except for the _Beta Update_ in GNR.
-5. Run LOOT to rearrange your load order:
-	* (1) `Fallout 3.esm`
-	* (2) `Anchorage.esm`
-	* (3) `ThePitt.esm`
-	* (4) `BrokenSteel.esm`
-	* (5) `PointLookout.esm`
-	* (6) `Zeta.esm`
-	* (7) `Unofficial Fallout 3 Patch.esm`
-	* (8) `aHUD.esm`
-	* (9) `iHUD.esm`
-	* (a) `CASM.esp`
-	* (b) `BetterGamePerformance.esp`
-	* (c) `DarNifiedUIF3.esp`
-	* (d) `HZSmoothLight - FO3.esp`
-	* **(e) `GNR Enhanced.esp`**
-	* **(f) `Existence 2.0.esp`**
-	* **(10) `Conelrad 640-1240.esp`**
+5. Run LOOT to rearrange your load order.
 
 You will need to be in the station's range to tune in (_Data_ button, _Radio_ section in your Pip-Boy), but when you do, enjoy the rhythm! _Conelrad 640-1240_ and _Existence 2.0_ will be immediately available right after leaving Vault 101.
 
@@ -880,14 +825,14 @@ You will need to be in the station's range to tune in (_Data_ button, _Radio_ se
 
 
 
-### <a id="playingBadAss"></a>4.3. Playing the bad-ass way
+### <a id="playingBadAss"></a>5.3. Playing the bad-ass way
 
 We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks and sounds in the previous chapter, but the base game still remains the same.
 
 We are going to dramatically change that. Think of a chicken nugget that turns itself into a _filet mignon_, all of a sudden.
 
 
-#### <a id="adAstraPerAspera"></a>4.3.1. _Ad astra per aspera_
+#### <a id="adAstraPerAspera"></a>5.3.1. _Ad astra per aspera_
 
 The title of this chapter means "through hardships to the stars", in Latin, and it would be a good way to define our next mod: [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/), or FWE. Xuul has a video [explaining how to install FWE](https://www.youtube.com/watch?v=J4y4lui3l9U) (15:16), and there is a [page for the project](https://sites.google.com/site/fo3wanderersedition) with lots of useful information.
 
@@ -930,33 +875,7 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 16. Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
 17. Double click on _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ and answer _Yes to all_ when asked to overwrite files.
 18. Due to the install order we are following (functional, instead of technical), the two user interface patches we have just activated make a little mess of the HUD. To correct that, I have created a small patch of my own (_Modding never changes DUIF3-FWE patch_) with the merged files. Download the patch, add it to NMM and activate it, overwriting files when needed.
-19. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files. This should be your load order:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* **(9) `CRAFT.esm`**
-	* **(a) `CALIBR.esm`**
-	* **(b) `FO3 Wanderers Edition - Main File.esm`**
-	* **(c) `FO3 Wanderers Edition - Alternate Travel.esp`**
-	* (d) `CASM.esp`
-	* (e) `BetterGamePerformance.esp`
-	* (f) `GNR Enhanced.esp`
-	* **(10) `FO3 Wanderers Edition - Main File.esp`**
-	* (11) `HZSmoothLight - FO3.esp`
-	* (12) `Existence 2.0.esp`
-	* (13) `Conelrad 640-1240.esp`
-	* **(14) `FO3 Wanderers Edition - DLC Broken Steel.esp`**
-	* **(15) `FO3 Wanderers Edition - DLC Anchorage.esp`**
-	* **(16) `FO3 Wanderers Edition - DLC Point Lookout.esp`**
-	* **(17) `FO3 Wanderers Edition - DLC The Pitt.esp`**
-	* **(18) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`**
-	* (19) `DarNifiedUIF3.esp`
+19. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files.
 20. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in [the chapter about cleaning up the master files](#cleaningMasterFiles). To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
 	* `Fallout3.esm`
 	* `Fallout3.exe`
@@ -976,12 +895,10 @@ The last one can be downloaded from [the iHUD page](http://www.nexusmods.com/fal
 27. Click on the option to show the shitload of configurable settings for this mod.
 ![Fallout 3 FWE settings](Images/Fallout%203%20FWE%20settings.png)
 
-You may be wondering why the hell we installed aHUD first and then FWE... Well, it's a matter of scalability. Each chapter in the enhancing section will give you a playable milestone. The first one was about having an improved UI, and this one is about playing a radically different game. Each section builds on top of the previous one, but, in this case, the drawbacks are no big deal.
-
 From this point on, we will be using [_The Mergers_](http://www.nexusmods.com/fallout3/mods/16787/), from Paradox Ignition. These are merged patches for the main mods we are going to install. They are aimed to reduce the file load in our data folder and increase stability.
 
 
-#### <a id="checkhovsGun"></a>4.3.2. A sound for Chekhov's gun
+#### <a id="checkhovsGun"></a>5.3.2. A sound for Chekhov's gun
 
 I have never fired a real weapon in my life, so I couldn't tell the sound of a real gun from a virtual one. However, with the [_Improved Sound FX v1\_3_](http://www.nexusmods.com/fallout3/mods/627/) mod, it's not difficult to guess which version sound better.
 
@@ -993,7 +910,7 @@ See, or I should say, listen for yourself, in this [lengthy video](https://www.y
 By the way, this chapter should have been included into the chapter about [music and sound](#lendMeYourEars), but FWE collides with _Improved Sound FX v1\_3_ and doesn't get well along with it, so I decided to alter the functional order I have been following so far to ensure a flawless setup.
 
 
-#### <a id="fraternizingNeighborhood"></a> 4.3.3. Fraternizing with the neighborhood
+#### <a id="fraternizingNeighborhood"></a>5.3.3. Fraternizing with the neighborhood
 
 If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/), or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of rotten flesh-shaped love.
 
@@ -1023,34 +940,7 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 	* `Mart's Mutant Mod - Zones Respawn.esp`
 9. In the _Plugins_ tab, check the presence of the file `Mart's Mutant Mod.esm`, replacing all the files we installed before.
 ![NMM MMM installed](Images/NMM%20MMM%20installed.png)
-10. Run LOOT as usual and rearrange your load order. This should be the deal:
-	* (0) `Fallout 3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CRAFT.esm`
-	* (a) `CALIBR.esm`
-	* (b) `FO3 Wanderers Edition - Main File.esm`
-	* (c) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* **(d) `Mart's Mutant Mod.esm`**
-	* (e) `CASM.esp`
-	* (f) `BetterGamePerformance.esp`
-	* (10) `GNR Enhanced.esp`
-	* (11) `FO3 Wanderers Edition - Main File.esp`
-	* (12) `HZSmoothLight - FO3.esp`
-	* (13) `Existence 2.0.esp`
-	* (14) `Conelrad 640-1240.esp`
-	* (15) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (16) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (17) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (18) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (19) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (1a) `DarNifiedUIF3.esp`
+10. Run LOOT as usual and rearrange your load order.
 11. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
 ![Fallout 3 MMM control panel option](Images/Fallout%203%20MMM%20control%20panel%20option.png)
 12. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
@@ -1059,7 +949,7 @@ If you like real challenges, you will **love** [_Martigen's Mutant Mod_](http://
 Take into account that we need a [_Blackened_ compatibility patch](http://www.nexusmods.com/fallout3/mods/18173/) to run FWE and MMM seamlessly, but Blackened patches come in combos (for example, FWE + MMM + EVE), so we are going to postpone the installation of a patch until we have some other mods installed.
 
 
-#### <a id="weNeedMoreFirepower"></a>4.3.4. We need more firepower!
+#### <a id="weNeedMoreFirepower"></a>5.3.4. We need more firepower!
 
 The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will surely find the aiming system a fucking crap.
 
@@ -1116,58 +1006,19 @@ We are going to install [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mo
 	* _RH\_IronSights - FOSE - RH\_IronSights - WMK Bridge_
 	* _RH\_IronSights - FOSE - RH IronSights - FWE Bridge_
 24. We are going to need a compatibility patch to stitch all these mods together, so navigate to the [_Blackened_ compatibility patches](http://www.nexusmods.com/fallout3/mods/18173/) page, download and activated _Blackened FWE - MMM - EVE_ file with NMM.
-25. Run LOOT to rearrange your load order. This should be your setup by now.
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CRAFT.esm`
-	* (a) `CALIBR.esm`
-	* (b) `FO3 Wanderers Edition - Main File.esm`
-	* (c) `Mart's Mutant Mod.esm`
-	* **(d) `EVE.esm`**
-	* **(e) `RH_IRONSIGHTS.esm`**
-	* (f) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (10) `CASM.esp`
-	* (11) `BetterGamePerformance.esp`
-	* (12) `GNR Enhanced.esp`
-	* (13) `FO3 Wanderers Edition - Main File.esp`
-	* (14) `HZSmoothLight - FO3.esp`
-	* (15) `Existence 2.0.esp`
-	* (16) `Conelrad 640-1240.esp`
-	* (17) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (18) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (19) `DarNifiedUIF3.esp`
-	* **(1a) `Blackened FWE + MMM + EVE.esp`**
-	* (1b) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (1c) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (1d) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* **(1e) `RH_FWE_Bridge.esp`**
-	* **(1f) `WeaponModKits.esp`**
-	* **(20) `WeaponModKits - BrokenSteel.esp`**
-	* **(21) `WeaponModKits - OperationAnchorage.esp`**
-	* **(22) `WeaponModKits - ThePitt.esp`**
-	* **(23) `WeaponModKits - Zeta.esp`**
-	* **(24) `WeaponModKits - PointLookout.esp`**
-	* **(25) `RH_EVE_Bridge.esp`**
-	* **(26) `RH_WMK_Bridge.esp`**
+25. Run LOOT to rearrange your load order.
 26. According to LOOT, the files `RH_IRONSIGHTS.esm` and `RH_EVE_Bridge.esp` are dirty, so proceed to clean them up with FO3Edit. Remember: select just that file and the files it depends on will be automatically loaded.
 27. Run the game and you will notice the dramatic change when aiming your weapon. **NOW**, this is serious shit.
 ![Fallout 3 new sights](Images/Fallout%203%20new%20sights.png)
 
 
 
-### <a id="expandingYourWorld"></a>4.4. Expanding your world
+### <a id="expandingYourWorld"></a>5.4. Expanding your world (optional)
 
 This section is about adding new content to the game, and it's the last block before changing the way the game looks. We are going to add a few new places and quests, a new playable set (armor, range finder, trap detector and nightvision gear), and pulling out a feature the game actually has, but does not show by default.
 
 
-#### <a id="hicSuntDracones"></a>4.4.1. _Hic sunt dracones_
+#### <a id="hicSuntDracones"></a>5.4.1. _Hic sunt dracones_
 
 It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
 
@@ -1222,57 +1073,7 @@ Let's start.
 	* `HeirApparent.esp`
 	* `NotSoFast.esp`
 	* `IntoTheDeepWoods.esp`
-7. Fire up LOOT again an rearrange your load order, which will change due to the cleaning. This should be the deal:
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `EVE.esm`
-	* **(c) `ArefuExpandedByAzar.esm`**
-	* **(d) `Mothership Crew.esm`**
-	* (e) `RH_IRONSIGHTS.esm`
-	* **(f) `TheInstitute.esm`**
-	* **(10) `Vault 101 Revisited.esm`**
-	* **(11) `Alton, IL.esm`**
-	* (12) `CRAFT.esm`
-	* (13) `FO3 Wanderers Edition - Main File.esm`
-	* (14) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (15) `CASM.esp`
-	* (16) `BetterGamePerformance.esp`
-	* (17) `GNR Enhanced.esp`
-	* (18) `DarNifiedUIF3.esp`
-	* **(19) `AltonAddon.esp`**
-	* (1a) `FO3 Wanderers Edition - Main File.esp`
-	* (1b) `HZSmoothLight - FO3.esp`
-	* (1c) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (1d) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (1f) `Blackened FWE + MMM + EVE.esp`
-	* (20) `RH_FWE_Bridge.esp`
-	* **(21) `HeirApparent.esp`**
-	* **(22) `NotSoFast.esp`**
-	* (23) `WeaponModKits.esp`
-	* (24) `RH_EVE_Bridge.esp`
-	* **(25) `IntoTheDeepWoods.esp`**
-	* (26) `Existence 2.0.esp`
-	* (27) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (28) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (29) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (2a) `WeaponModKits - BrokenSteel.esp`
-	* (2b) `WeaponModKits - OperationAnchorage.esp`
-	* (2c) `WeaponModKits - ThePitt.esp`
-	* (2d) `WeaponModKits - Zeta.esp`
-	* (2e) `WeaponModKits - PointLookout.esp`
-	* (2f) `RH_WMK_Bridge.esp`
-	* **(30) `ArefuExpandedByAzar-Radio.esp`**
-	* (31) `Conelrad 640-1240.esp`
-	* **(32) `FasterMorePowerfulMines.esp`**
+7. Fire up LOOT again an rearrange your load order, which will change due to the cleaning.
 8. Launch the game and wait a few moments to see several dialogs to kick-in the missions (except _Mothership Zeta Crew_, which launches elsewhere).
 ![Fallout 3 new quests dialog 1](Images/Fallout%203%20new%20quests%20dialog%201.png)
 ![Fallout 3 new quests dialog 2](Images/Fallout%203%20new%20quests%20dialog%202.png)
@@ -1282,7 +1083,7 @@ Let's start.
 ![Fallout 3 new quests notes](Images/Fallout%203%20new%20quests%20notes.png)
 
 
-#### <a id="gearFallenBrother"></a>4.4.2. Gear for a fallen brother
+#### <a id="gearFallenBrother"></a>5.4.2. Gear for a fallen brother
 
 Gopher has created four mods which add an interesting gear set based on a fallen Brotherhood of Steel's operative. These mods are:
 
@@ -1315,75 +1116,13 @@ Let's install them:
 ![NMM Advanced Recon Stealth Armor install options](Images/NMM%20Advanced%20Recon%20Stealth%20Armor%20install%20options.png)
 8. When you activate _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision_, NMM asks for permission to overwrite files from the previous iHUD installation. It adds certain overlay items when using scopes and binoculars. Answer _Yes to all_, as usual.
 ![NMM Advanced Recon Range Finder overwrite](Images/NMM%20Advanced%20Recon%20Range%20Finder%20overwrite.png)
-9. Fire up LOOT to rearrange your load order. This should be your mod stack:
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `EVE.esm`
-	* (c) `ArefuExpandedByAzar.esm`
-	* (d) `Mothership Crew.esm`
-	* (e) `RH_IRONSIGHTS.esm`
-	* (f) `TheInstitute.esm`
-	* (10) `Vault 101 Revisited.esm`
-	* (11) `Alton, IL.esm`
-	* (12) `CRAFT.esm`
-	* (13) `FO3 Wanderers Edition - Main File.esm`
-	* (14) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* **(15) `Detect Traps.esm`**
-	* **(16) `Advanced Recon Tech.esm`**
-	* (17) `CASM.esp`
-	* (18) `BetterGamePerformance.esp`
-	* (19) `GNR Enhanced.esp`
-	* (1a) `DarNifiedUIF3.esp`
-	* (1b) `AltonAddon.esp`
-	* (1c) `FO3 Wanderers Edition - Main File.esp`
-	* (1d) `HZSmoothLight - FO3.esp`
-	* (1e) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (1f) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (20) `Blackened FWE + MMM + EVE.esp`
-	* (21) `RH_FWE_Bridge.esp`
-	* (22) `HeirApparent.esp`
-	* (23) `NotSoFast.esp`
-	* (24) `WeaponModKits.esp`
-	* (25) `RH_EVE_Bridge.esp`
-	* (26) `IntoTheDeepWoods.esp`
-	* (27) `Existence 2.0.esp`
-	* (28) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (29) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (2a) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (2b) `WeaponModKits - BrokenSteel.esp`
-	* (2c) `WeaponModKits - OperationAnchorage.esp`
-	* (2d) `WeaponModKits - ThePitt.esp`
-	* (2e) `WeaponModKits - Zeta.esp`
-	* (2f) `WeaponModKits - PointLookout.esp`
-	* (30) `RH_WMK_Bridge.esp`
-	* (31) `ArefuExpandedByAzar-Radio.esp`
-	* (32) `Conelrad 640-1240.esp`
-	* (33) `FasterMorePowerfulMines.esp`
-	* **(34) `Advanced Recon Gear.esp`**
-	* **(35) `Advanced Recon Armor.esp`**
-	* **(36) `Detect Traps - Perk.esp`**
-	* **(37) `Detect Traps - The Traponator 4000.esp`**
-	* **(38) `Detect Traps - DLC.esp`**
-	* **(39) `Advanced Recon Range Finder.esp`**
-	* **(3a) `Advanced Recon Tech.esp`**
-	* **(3b) `Advanced Recon Tech - Detect Traps.esp`**
-	* **(3c) `Advanced Recon Equipment Patcher.esp`**
-	* **(3d) `Advanced Recon Tech FWE.esp`**
+9. Fire up LOOT to rearrange your load order.
 10. Launch the game and check your new nice looking outfit. In your Pip-Boy (section _Items_, option _Apparel_), there are two new options to configure your Advanced Recon gear settings.
 ![Fallout 3 Advanced Recon black coat](Images/Fallout%203%20Advanced%20Recon%20black%20coat.png)
 ![Fallout 3 Advanced Recon gear settings](Images/Fallout%203%20Advanced%20Recon%20gear%20settings.png)
 
 
-#### <a id="achievementJunkie"></a>4.4.3. For the achievement junkie in you
+#### <a id="achievementJunkie"></a>5.4.3. For the achievement junkie in you
 
 If you have ever played _World of Warcraft_, you will know that there is a deep, ingrained part of your reptilian brain that generates a huge amount of endorphines every time you get an _Achievement unlocked_ message after fulfilling a series of tasks.
 
@@ -1401,76 +1140,13 @@ Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible 
 	* `PAL - Operation Anchorage.esp`
 	* `PAL - Point Lookout.esp`
 	* `PAL - The Pitt.esp`
-5. Run LOOT to rearrange your load order:
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `EVE.esm`
-	* (c) `ArefuExpandedByAzar.esm`
-	* (d) `Mothership Crew.esm`
-	* (e) `RH_IRONSIGHTS.esm`
-	* (f) `TheInstitute.esm`
-	* (10) `Vault 101 Revisited.esm`
-	* (11) `Alton, IL.esm`
-	* (12) `CRAFT.esm`
-	* (13) `FO3 Wanderers Edition - Main File.esm`
-	* (14) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (15) `Detect Traps.esm`
-	* (16) `Advanced Recon Tech.esm`
-	* (17) `CASM.esp`
-	* (18) `BetterGamePerformance.esp`
-	* (19) `GNR Enhanced.esp`
-	* (1a) `DarNifiedUIF3.esp`
-	* (1b) `AltonAddon.esp`
-	* (1c) `FO3 Wanderers Edition - Main File.esp`
-	* (1d) `HZSmoothLight - FO3.esp`
-	* (1e) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (1f) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (20) `Blackened FWE + MMM + EVE.esp`
-	* (21) `RH_FWE_Bridge.esp`
-	* (22) `HeirApparent.esp`
-	* (23) `NotSoFast.esp`
-	* (24) `WeaponModKits.esp`
-	* (25) `RH_EVE_Bridge.esp`
-	* (26) `IntoTheDeepWoods.esp`
-	* (27) `Existence 2.0.esp`
-	* (28) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (29) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (2a) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (2b) `WeaponModKits - BrokenSteel.esp`
-	* (2c) `WeaponModKits - OperationAnchorage.esp`
-	* (2d) `WeaponModKits - ThePitt.esp`
-	* (2e) `WeaponModKits - Zeta.esp`
-	* (2f) `WeaponModKits - PointLookout.esp`
-	* (30) `RH_WMK_Bridge.esp`
-	* (31) `ArefuExpandedByAzar-Radio.esp`
-	* (32) `Conelrad 640-1240.esp`
-	* (33) `FasterMorePowerfulMines.esp`
-	* (34) `Advanced Recon Gear.esp`
-	* (35) `Advanced Recon Armor.esp`
-	* (36) `Detect Traps - Perk.esp`
-	* (37) `Detect Traps - The Traponator 4000.esp`
-	* (38) `Detect Traps - DLC.esp`
-	* (39) `Advanced Recon Range Finder.esp`
-	* (3a) `Advanced Recon Tech.esp`
-	* (3b) `Advanced Recon Tech - Detect Traps.esp`
-	* (3c) `Advanced Recon Equipment Patcher.esp`
-	* (3d) `Advanced Recon Tech FWE.esp`
-	* **(3e) `PAL - MERGED.esp`**
+5. Run LOOT to rearrange your load order.
 6. You will have to start a fresh game to see the achievements log in action. At your ninth birthday party, when you receive your own Pip-Boy from the hands of the Overseer,  navigate through the _Data_ button, _Notes_ option. There should be a _Personal achievements Log_ option to view your short achievement list (at least for the time being).
 ![Fallout 3 personal achievements log](Images/Fallout%203%20personal%20achievements%20log.png)
 
 
 
-### <a id="takeOverTheWorkd"></a>4.5. So you want to take over the world, uh?
+### <a id="takeOverTheWorkd"></a>5.5. So you want to take over the world, uh?
 
 Who has not ever dreamed of taking over the world with an army of half-crazed human-killing robots manufactured by oneself?
 
@@ -1510,80 +1186,7 @@ This mod requires a bit of fiddling because it's not ready to work along the Par
 	* _EVE - Energy Visuals Enhanced - RobCo Certified Omnipatch for Paradox EVE_
 	* _Impervious Power Armour - Impervious Power Armour v2-2_
 	* _Mr Smiths Scrapyard - Mister Smiths Scrapyard_
-11. Run LOOT to rearrange your load order, which should be like this:
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `EVE.esm`
-	* (c) `ArefuExpandedByAzar.esm`
-	* (d) `Mothership Crew.esm`
-	* (e) `RH_IRONSIGHTS.esm`
-	* (f) `TheInstitute.esm`
-	* (10) `Vault 101 Revisited.esm`
-	* (11) `Alton, IL.esm`
-	* (12) `Advanced Recon Tech.esm`
-	* **(13) `Companion Core.esm`**
-	* **(14) `RobCo Certified v2.esm`**
-	* (15) `CRAFT.esm`
-	* (16) `FO3 Wanderers Edition - Main File.esm`
-	* (17) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (18) `Detect Traps.esm`
-	* **(19) `Impervious Power Armour.esm`**
-	* (1a) `CASM.esp`
-	* (1b) `BetterGamePerformance.esp`
-	* (1c) `GNR Enhanced.esp`
-	* (1d) `DarNifiedUIF3.esp`
-	* (1e) `AltonAddon.esp`
-	* (1f) `FO3 Wanderers Edition - Main File.esp`
-	* (20) `HZSmoothLight - FO3.esp`
-	* (21) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (22) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (23) `Blackened FWE + MMM + EVE.esp`
-	* (24) `RH_FWE_Bridge.esp`
-	* (25) `HeirApparent.esp`
-	* **(26) `RobCo Certified v2 Omnipatch.esp`**
-	* **(27) `Mr Smith's Scrapyard.esp`**
-	* (28) `NotSoFast.esp`
-	* (29) `WeaponModKits.esp`
-	* (2a) `RH_EVE_Bridge.esp`
-	* (2b) `IntoTheDeepWoods.esp`
-	* (2c) `Existence 2.0.esp`
-	* (2d) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (2e) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (2f) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (30) `WeaponModKits - BrokenSteel.esp`
-	* (31) `WeaponModKits - OperationAnchorage.esp`
-	* (32) `WeaponModKits - ThePitt.esp`
-	* (33) `WeaponModKits - Zeta.esp`
-	* (34) `WeaponModKits - PointLookout.esp`
-	* (35) `RH_WMK_Bridge.esp`
-	* (36) `ArefuExpandedByAzar-Radio.esp`
-	* (37) `Conelrad 640-1240.esp`
-	* (38) `FasterMorePowerfulMines.esp`
-	* (39) `Advanced Recon Gear.esp`
-	* (3a) `Advanced Recon Armor.esp`
-	* (3b) `Detect Traps - Perk.esp`
-	* (3c) `Detect Traps - The Traponator 4000.esp`
-	* (3d) `Detect Traps - DLC.esp`
-	* (3e) `Advanced Recon Range Finder.esp`
-	* (3f) `Advanced Recon Tech.esp`
-	* (40) `Advanced Recon Tech - Detect Traps.esp`
-	* (41) `Advanced Recon Equipment Patcher.esp`
-	* (42) `Advanced Recon Tech FWE.esp`
-	* (43) `PAL - MERGED.esp`
-	* **(44) `RobcoCertified24SideMod.esp`**
-	* **(45) `RobCo Certified v2 Impervious FWE.esp`**
-	* **(46) `RobCo Certified v2 Impervious.esp`**
-	* **(47) `RobCo Certified v2 Mechanist's Edition.esp`**
-	* **(48) `Companion Core DLC Addon.esp`**
+11. Run LOOT to rearrange your load order.
 12. There are four dirty files in our mod stack. Clean them up with FO3Edit, as usual:
 	* `Companion Core.esm`
 	* `RobCo Certified v2.esm`
@@ -1594,7 +1197,7 @@ This mod requires a bit of fiddling because it's not ready to work along the Par
 
 
 
-### <a id="thereIsNoPlaceLikeMegaton"></a>4.6. There's no place like Megaton
+### <a id="thereIsNoPlaceLikeMegaton"></a>5.6. There's no place like Megaton
 
 Megaton will be the first settlement you will find right after leaving Vault 101 (or elsewhere, if you choose an alternate start from FWE). You will spend quite a lot of time there, at least at the beginning, because a) it's a main quest hub, and b) you will get homesick with the memories of that rusty pile of shit, eventually.
 
@@ -1605,90 +1208,14 @@ We are going to install two mods here. One will add an [overhead walkway](http:/
 1. Download _Megaton Walkway_ from [_Megaton Walkway_](http://www.nexusmods.com/fallout3/mods/8247/) with NMM.
 2. Download _Expanded Megaton House V3_ from [_Expanded Megaton House V3_](http://www.nexusmods.com/fallout3/mods/2136/) with NMM.
 3. Activate them in the same order you downloaded them. No conflicts here.
-4. Fire up LOOT to rearrange your load order, as usual:
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `EVE.esm`
-	* (c) `ArefuExpandedByAzar.esm`
-	* (d) `Mothership Crew.esm`
-	* (e) `RH_IRONSIGHTS.esm`
-	* (f) `TheInstitute.esm`
-	* (10) `Vault 101 Revisited.esm`
-	* (11) `Alton, IL.esm`
-	* (12) `Advanced Recon Tech.esm`
-	* (13) `Companion Core.esm`
-	* (14) `RobCo Certified v2.esm`
-	* (15) `CRAFT.esm`
-	* (16) `FO3 Wanderers Edition - Main File.esm`
-	* (17) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (18) `Detect Traps.esm`
-	* (19) `Impervious Power Armour.esm`
-	* (1a) `CASM.esp`
-	* (1b) `BetterGamePerformance.esp`
-	* (1c) `GNR Enhanced.esp`
-	* (1d) `DarNifiedUIF3.esp`
-	* (1e) `AltonAddon.esp`
-	* (1f) `FO3 Wanderers Edition - Main File.esp`
-	* (20) `HZSmoothLight - FO3.esp`
-	* (21) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (22) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (23) `Blackened FWE + MMM + EVE.esp`
-	* (24) `RH_FWE_Bridge.esp`
-	* (25) `HeirApparent.esp`
-	* (26) `RobCo Certified v2 Omnipatch.esp`
-	* (27) `Mr Smith's Scrapyard.esp`
-	* **(28) `Expanded Megaton House V3.esp`**
-	* **(29) `Expanded Megaton House V3-No Stove.esp`**
-	* **(2a) `Megaton Walkway.esp`**
-	* (2b) `NotSoFast.esp`
-	* (2c) `WeaponModKits.esp`
-	* (2d) `RH_EVE_Bridge.esp`
-	* (2e) `IntoTheDeepWoods.esp`
-	* (2f) `Existence 2.0.esp`
-	* (30) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (31) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (32) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (33) `WeaponModKits - BrokenSteel.esp`
-	* (34) `WeaponModKits - OperationAnchorage.esp`
-	* (35) `WeaponModKits - ThePitt.esp`
-	* (36) `WeaponModKits - Zeta.esp`
-	* (37) `WeaponModKits - PointLookout.esp`
-	* (38) `RH_WMK_Bridge.esp`
-	* (39) `ArefuExpandedByAzar-Radio.esp`
-	* (3a) `Conelrad 640-1240.esp`
-	* (3b) `FasterMorePowerfulMines.esp`
-	* (3c) `Advanced Recon Gear.esp`
-	* (3d) `Advanced Recon Armor.esp`
-	* (3e) `Detect Traps - Perk.esp`
-	* (3f) `Detect Traps - The Traponator 4000.esp`
-	* (40) `Detect Traps - DLC.esp`
-	* (41) `Advanced Recon Range Finder.esp`
-	* (42) `Advanced Recon Tech.esp`
-	* (43) `Advanced Recon Tech - Detect Traps.esp`
-	* (44) `Advanced Recon Equipment Patcher.esp`
-	* (45) `Advanced Recon Tech FWE.esp`
-	* (46) `PAL - MERGED.esp`
-	* (47) `RobcoCertified24SideMod.esp`
-	* (48) `RobCo Certified v2 Impervious FWE.esp`
-	* (49) `RobCo Certified v2 Impervious.esp`
-	* (4a) `RobCo Certified v2 Mechanist's Edition.esp`
-	* (4b) `Companion Core DLC Addon.esp`
+4. Fire up LOOT to rearrange your load order, as usual.
 5. Launch the game and take a look at the walkway and the extra story in your house
 ![Fallout 3 Megaton walkway](Images/Fallout%203%20Megaton%20walkway.png)
 ![Fallout 3 Megaton new balcony](Images/Fallout%203%20Megaton%20new%20balcony.png)
 
 
 
-### <a id="letsGoShopping"></a>4.7. Let's go shopping to D.C.!
+### <a id="letsGoShopping"></a>5.7. Let's go shopping to D.C.!
 
 Downtown D.C. used to be a place full of life.
 
@@ -1701,92 +1228,14 @@ The next mod addresses that, [adding a lot of places to investigate](http://www.
 1. Download _DCInteriors\_combo Edition Total Merge_ and _MMM\_DCinteriors Patch_ from [_DCInteriors Project_](http://www.nexusmods.com/fallout3/mods/5573/) with NMM.
 2. Activate _DCInteriors Project - DCInteriors\_combo Edition Total Merge_ first. No overwriting required.
 3. Activate _DCInteriors Project - MMM\_DCinteriors Patch_ next. No overwriting either.
-4. Run LOOT and, you know, the usual business:
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* **(b) `DCInteriors_ComboEdition.esm`**
-	* (c) `EVE.esm`
-	* (d) `ArefuExpandedByAzar.esm`
-	* (e) `Mothership Crew.esm`
-	* (f) `RH_IRONSIGHTS.esm`
-	* (10) `TheInstitute.esm`
-	* (11) `Vault 101 Revisited.esm`
-	* (12) `Alton, IL.esm`
-	* (13) `Advanced Recon Tech.esm`
-	* (14) `Companion Core.esm`
-	* (15) `RobCo Certified v2.esm`
-	* (16) `CRAFT.esm`
-	* (17) `FO3 Wanderers Edition - Main File.esm`
-	* (18) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (19) `Detect Traps.esm`
-	* (1a) `Impervious Power Armour.esm`
-	* (1b) `CASM.esp`
-	* (1c) `BetterGamePerformance.esp`
-	* (1d) `GNR Enhanced.esp`
-	* (1e) `DarNifiedUIF3.esp`
-	* (1f) `AltonAddon.esp`
-	* (20) `FO3 Wanderers Edition - Main File.esp`
-	* (21) `HZSmoothLight - FO3.esp`
-	* (22) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (23) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (24) `Blackened FWE + MMM + EVE.esp`
-	* (25) `RH_FWE_Bridge.esp`
-	* (26) `HeirApparent.esp`
-	* (27) `RobCo Certified v2 Omnipatch.esp`
-	* (28) `Mr Smith's Scrapyard.esp`
-	* (29) `Expanded Megaton House V3.esp`
-	* (2a) `Expanded Megaton House V3-No Stove.esp`
-	* (2b) `Megaton Walkway.esp`
-	* (2c) `NotSoFast.esp`
-	* (2d) `WeaponModKits.esp`
-	* (2e) `RH_EVE_Bridge.esp`
-	* (2f) `IntoTheDeepWoods.esp`
-	* (30) `Existence 2.0.esp`
-	* (31) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (32) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (33) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (34) `WeaponModKits - BrokenSteel.esp`
-	* (35) `WeaponModKits - OperationAnchorage.esp`
-	* (36) `WeaponModKits - ThePitt.esp`
-	* (37) `WeaponModKits - Zeta.esp`
-	* (38) `WeaponModKits - PointLookout.esp`
-	* (39) `RH_WMK_Bridge.esp`
-	* (3a) `ArefuExpandedByAzar-Radio.esp`
-	* (3b) `Conelrad 640-1240.esp`
-	* (3c) `FasterMorePowerfulMines.esp`
-	* (3d) `Advanced Recon Gear.esp`
-	* (3e) `Advanced Recon Armor.esp`
-	* (3f) `Detect Traps - Perk.esp`
-	* (40) `Detect Traps - The Traponator 4000.esp`
-	* (41) `Detect Traps - DLC.esp`
-	* (42) `Advanced Recon Range Finder.esp`
-	* (43) `Advanced Recon Tech.esp`
-	* (44) `Advanced Recon Tech - Detect Traps.esp`
-	* (45) `Advanced Recon Equipment Patcher.esp`
-	* (46) `Advanced Recon Tech FWE.esp`
-	* (47) `PAL - MERGED.esp`
-	* (48) `RobcoCertified24SideMod.esp`
-	* (49) `RobCo Certified v2 Impervious FWE.esp`
-	* (4a) `RobCo Certified v2 Impervious.esp`
-	* (4b) `RobCo Certified v2 Mechanist's Edition.esp`
-	* (4c) `Companion Core DLC Addon.esp`
-	* **(4d) `Mart's Mutant Mod - DC Interiors.esp`**
+4. Run LOOT and, you know, the usual business.
 5. The file `DCInteriors_ComboEdition.esm` is dirty, so we have to clean it with FO3Edit.
 6. Sorry, no screenshots here. It's a long way Downtown D.C.
 
 
 
 
-## <a id="unveilingRealWasteland"></a>5. Unveiling the real Wasteland
+## <a id="unveilingRealWasteland"></a>6. Unveiling the real Wasteland
 
 _Fallout 3_ is a terrific game, but it shows its age at first sight.
 
@@ -1796,7 +1245,7 @@ However, be advised: the mods in this section will push your machine capabilitie
 
 
 
-### <a id="sheWalksInBeauty"></a>5.1. She walks in beauty, like the night of cloudless climes and starry skies
+### <a id="sheWalksInBeauty"></a>6.1. She walks in beauty, like the night of cloudless climes and starry skies
 
 One of the first things we can improve regarding the appearance of our world is the night sky. There are two mods ([_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/) and [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/)) that will make you cry tears of joy every time you look up to the Moon.
 
@@ -1811,7 +1260,7 @@ That will also grant you a short lifespan, killed by any night-crawling creature
 
 
 
-### <a id="uncannyNuclearHolocaust"></a>5.2. The Nuclear Holocaust like you have never seen before
+### <a id="uncannyNuclearHolocaust"></a>6.2. The Nuclear Holocaust like you have never seen before
 
 One of the things I like less of the visual aspect of the game is the green tint that pervades everything. I guess that is supposed to depict the residual haze from a nuclear holocaust, but I don't like it anyway.
 
@@ -1841,85 +1290,6 @@ Gopher has a video which covers different [weather and lighting mods available](
 ![NMM renaming Project Reality](Images/NMM%20renaming%20Project%20Reality.png)
 12. Double-click on the mod's name to activate it. There shouldn't be any overwriting.
 13. Launch LOOT to rearrange your load order.
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `DCInteriors_ComboEdition.esm`
-	* (c) `EVE.esm`
-	* (d) `ArefuExpandedByAzar.esm`
-	* (e) `Mothership Crew.esm`
-	* (f) `RH_IRONSIGHTS.esm`
-	* (10) `TheInstitute.esm`
-	* (11) `Vault 101 Revisited.esm`
-	* (12) `Alton, IL.esm`
-	* (13) `Advanced Recon Tech.esm`
-	* (14) `Companion Core.esm`
-	* (15) `RobCo Certified v2.esm`
-	* (16) `CRAFT.esm`
-	* (17) `FO3 Wanderers Edition - Main File.esm`
-	* (18) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (19) `Detect Traps.esm`
-	* (1a) `Impervious Power Armour.esm`
-	* (1b) `CASM.esp`
-	* (1c) `BetterGamePerformance.esp`
-	* (1d) `GNR Enhanced.esp`
-	* (1e) `DarNifiedUIF3.esp`
-	* (1f) `AltonAddon.esp`
-	* (20) `FO3 Wanderers Edition - Main File.esp`
-	* (21) `HZSmoothLight - FO3.esp`
-	* (22) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (23) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (24) `Blackened FWE + MMM + EVE.esp`
-	* (25) `RH_FWE_Bridge.esp`
-	* (26) `HeirApparent.esp`
-	* (27) `RobCo Certified v2 Omnipatch.esp`
-	* (28) `Mr Smith's Scrapyard.esp`
-	* (29) `Expanded Megaton House V3.esp`
-	* (2a) `Expanded Megaton House V3-No Stove.esp`
-	* (2b) `Megaton Walkway.esp`
-	* (2c) `NotSoFast.esp`
-	* (2d) `WeaponModKits.esp`
-	* **(2e) `F3ProjectRealityMkI.esp`**
-	* (2f) `RH_EVE_Bridge.esp`
-	* (30) `IntoTheDeepWoods.esp`
-	* (31) `Existence 2.0.esp`
-	* (32) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (33) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (34) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (35) `WeaponModKits - BrokenSteel.esp`
-	* (36) `WeaponModKits - OperationAnchorage.esp`
-	* (37) `WeaponModKits - ThePitt.esp`
-	* (38) `WeaponModKits - Zeta.esp`
-	* (39) `WeaponModKits - PointLookout.esp`
-	* (3a) `RH_WMK_Bridge.esp`
-	* (3b) `ArefuExpandedByAzar-Radio.esp`
-	* (3c) `Conelrad 640-1240.esp`
-	* (3d) `FasterMorePowerfulMines.esp`
-	* (3e) `Advanced Recon Gear.esp`
-	* (3f) `Advanced Recon Armor.esp`
-	* (40) `Detect Traps - Perk.esp`
-	* (41) `Detect Traps - The Traponator 4000.esp`
-	* (42) `Detect Traps - DLC.esp`
-	* (43) `Advanced Recon Range Finder.esp`
-	* (44) `Advanced Recon Tech.esp`
-	* (45) `Advanced Recon Tech - Detect Traps.esp`
-	* (46) `Advanced Recon Equipment Patcher.esp`
-	* (47) `Advanced Recon Tech FWE.esp`
-	* (48) `PAL - MERGED.esp`
-	* (49) `RobcoCertified24SideMod.esp`
-	* (4a) `RobCo Certified v2 Impervious FWE.esp`
-	* (4b) `RobCo Certified v2 Impervious.esp`
-	* (4c) `RobCo Certified v2 Mechanist's Edition.esp`
-	* (4d) `Companion Core DLC Addon.esp`
-	* (4e) `Mart's Mutant Mod - DC Interiors.esp`
 14. Launch the game and check the incredible look the Wasteland just got! Compare before and after:
 ![Fallout 3 Project Reality before](Images/Fallout%203%20Project%20Reality%20before.png)
 ![Fallout 3 Project Reality after](Images/Fallout%203%20Project%20Reality%20after.png)
@@ -1934,7 +1304,7 @@ Things keep getting better and better!
 
 
 
-### <a id="pointOfView"></a>5.3. Everything depends on the point of view
+### <a id="pointOfView"></a>6.3. Everything depends on the point of view
 
 At first, I didn't think to include these four mod in this guide:
 
@@ -1961,96 +1331,13 @@ Let's get started.
 7. Activate _CINEMATECH - Film Grains and Styles - CINEMATECH_ the same way. It will ask you to overwrite a HUD file previously installed by _Advanced Recon Thermal Nightvision_. Go on and answer _Yes to all_.
 8. Activate _The IMAGINATOR for FO3 - Visual Control Device - The IMAGINATOR for FO3 - Visual Control Device_ the same way. No overwriting required.
 9. Finally, activate _Directors Chair - Total Visual Control - Directors Chair_. No overwriting either.
-10. Fire up LOOT to rearrange your load order. This should be the deal.
-	* (0) `Fallout3.esm`
-	* (1) `Anchorage.esm`
-	* (2) `ThePitt.esm`
-	* (3) `BrokenSteel.esm`
-	* (4) `PointLookout.esm`
-	* (5) `Zeta.esm`
-	* (6) `Unofficial Fallout 3 Patch.esm`
-	* (7) `aHUD.esm`
-	* (8) `iHUD.esm`
-	* (9) `CALIBR.esm`
-	* (a) `Mart's Mutant Mod.esm`
-	* (b) `DCInteriors_ComboEdition.esm`
-	* (c) `EVE.esm`
-	* (d) `ArefuExpandedByAzar.esm`
-	* (e) `Mothership Crew.esm`
-	* (f) `RH_IRONSIGHTS.esm`
-	* (10) `TheInstitute.esm`
-	* (11) `Vault 101 Revisited.esm`
-	* (12) `Alton, IL.esm`
-	* (13) `Advanced Recon Tech.esm`
-	* (14) `Companion Core.esm`
-	* (15) `RobCo Certified v2.esm`
-	* (16) `CRAFT.esm`
-	* (17) `FO3 Wanderers Edition - Main File.esm`
-	* (18) `FO3 Wanderers Edition - Alternate Travel.esp`
-	* (19) `Detect Traps.esm`
-	* (1a) `Impervious Power Armour.esm`
-	* **(1b) `CINEMATECH.esm`**
-	* **(1c) `ImaginatorFO3.esp`**
-	* (1d) `CASM.esp`
-	* (1e) `BetterGamePerformance.esp`
-	* (1f) `GNR Enhanced.esp`
-	* (20) `DarNifiedUIF3.esp`
-	* (21) `AltonAddon.esp`
-	* (22) `FO3 Wanderers Edition - Main File.esp`
-	* (23) `HZSmoothLight - FO3.esp`
-	* (24) `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* (25) `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* (26) `Blackened FWE + MMM + EVE.esp`
-	* (27) `RH_FWE_Bridge.esp`
-	* (28) `HeirApparent.esp`
-	* (29) `RobCo Certified v2 Omnipatch.esp`
-	* (2a) `Mr Smith's Scrapyard.esp`
-	* (2b) `Expanded Megaton House V3.esp`
-	* (2c) `Expanded Megaton House V3-No Stove.esp`
-	* (2d) `Megaton Walkway.esp`
-	* (2e) `NotSoFast.esp`
-	* (2f) `WeaponModKits.esp`
-	* (30) `F3ProjectRealityMkI.esp`
-	* (31) `RH_EVE_Bridge.esp`
-	* (32) `IntoTheDeepWoods.esp`
-	* (33) `Existence 2.0.esp`
-	* (34) `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* (35) `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* (36) `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* (37) `WeaponModKits - BrokenSteel.esp`
-	* (38) `WeaponModKits - OperationAnchorage.esp`
-	* (39) `WeaponModKits - ThePitt.esp`
-	* (3a) `WeaponModKits - Zeta.esp`
-	* (3b) `WeaponModKits - PointLookout.esp`
-	* (3c) `RH_WMK_Bridge.esp`
-	* (3d) `ArefuExpandedByAzar-Radio.esp`
-	* (3e) `Conelrad 640-1240.esp`
-	* (3f) `FasterMorePowerfulMines.esp`
-	* (40) `Advanced Recon Gear.esp`
-	* (41) `Advanced Recon Armor.esp`
-	* (42) `Detect Traps - Perk.esp`
-	* (43) `Detect Traps - The Traponator 4000.esp`
-	* (44) `Detect Traps - DLC.esp`
-	* (45) `Advanced Recon Range Finder.esp`
-	* (46) `Advanced Recon Tech.esp`
-	* (47) `Advanced Recon Tech - Detect Traps.esp`
-	* (48) `Advanced Recon Equipment Patcher.esp`
-	* (49) `Advanced Recon Tech FWE.esp`
-	* (4a) `PAL - MERGED.esp`
-	* (4b) `RobcoCertified24SideMod.esp`
-	* (4c) `RobCo Certified v2 Impervious FWE.esp`
-	* (4d) `RobCo Certified v2 Impervious.esp`
-	* (4e) `RobCo Certified v2 Mechanist's Edition.esp`
-	* (4f) `Companion Core DLC Addon.esp`
-	* (50) `Mart's Mutant Mod - DC Interiors.esp`
-	* **(51) `DYNAVISION - Dynamic Lens Effect.esp`**
-	* **(52) `Directors Chair - Fallout 3.esp`**
+10. Fire up LOOT to rearrange your load order.
 11. Launch the game to check the new menus. Pressing <kbd>F7</kbd> will show the _Director's Chair_ in-game menu. The best way to get the grasp of the possibilities given by these four mods is watching Gopher's video.
 ![Fallout 3 Director's Chair](Images/Fallout%203%20Director's%20Chair.png)
 
 
 
-### <a id="beautifulSkin"></a>5.4. A beautiful skin
+### <a id="unpleasantNuclearHolocaust"></a>6.4. Nobody said the Nuclear Holocaust should be unpleasant to look at
 
 _Fallout 3_ was released in 2008... and it really shows its age when you look at it more than two whole seconds.
 
@@ -2088,64 +1375,6 @@ Let's begin!
 	* `PureWater-LittleRad-.esp`: Normal water transparency and radiation poisoning.
 11. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
 12. Run LOOT to rearrange your load order, as usual.
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `Alton, IL.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Advanced Recon Tech.esm`
-	* `CINEMATECH.esm`
-	* `ImaginatorFO3.esp`
-	* `CASM.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* **`Clean-Deluxe GOTY.esp`**
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `Blackened RH + FWE + EVE.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `F3ProjectRealityMkI.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
-	* `DYNAVISION - Dynamic Lens Effect.esp`
-	* `Directors Chair - Fallout 3.esp`
-	* **`Flora Overhaul.esp`**
-	* **`PureWater-VeryCleanLittleRad-.esp`**
 11. Launch the game to see for yourself.
 ![Fallout 3 new textures and flora night](Images/Fallout%203%20new%20textures%20and%20flora%20night.png)
 ![Fallout 3 new textures and flora day](Images/Fallout%203%20new%20textures%20and%20flora%20day.png)
@@ -2156,7 +1385,7 @@ The quality of the textures is hard to miss, not to mention the fuckload of tree
 
 
 
-### <a id="letThereBeLight"></a>5.5. Let there be light!
+### <a id="letThereBeLight"></a>6.5. Let there be light!
 
 Lighting in _Fallout 3_ is somewhat unnatural. You would think everyone in the Capital Wasteland has developed nightvision, because you can see perfectly in pitch black underground places. Not to mention the horrid HDR blooming you get when the game does not handle well multiple light sources.
 
@@ -2175,70 +1404,6 @@ _Darkened Interiors_ tries to give interiors a realistic lighting, with deep sha
 ![NMM Lighting mods](Images/NMM%20Lighting%20mods.png)
 5. Activate them in the same order you downloaded them. Each mod has its own set of files, so no overwriting is required.
 6. Yeah, you guessed. Run LOOT.
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* **`StreetLights.esm`**
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `Alton, IL.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Advanced Recon Tech.esm`
-	* `CINEMATECH.esm`
-	* `ImaginatorFO3.esp`
-	* `CASM.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `Clean-Deluxe GOTY.esp`
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `Blackened RH + FWE + EVE.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* **`Xepha's Darkened Interiors.esp`**
-	* `WeaponModKits.esp`
-	* **`Xepha's Darkened Interiors - BS.esp`**
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* **`Xepha's Darkened Interiors - PL.esp`**
-	* `WeaponModKits - PointLookout.esp`
-	* `F3ProjectRealityMkI.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
-	* `DYNAVISION - Dynamic Lens Effect.esp`
-	* `Directors Chair - Fallout 3.esp`
-	* `Flora Overhaul.esp`
-	* `PureWater-VeryCleanLittleRad-.esp`
-	* **`Xepha's Darkened Interiors - OA.esp`**
-	* **`megalight.esp`**
 7. LOOT informs us that the file `StreetLights.esm` contains identical to master records, so we need to clean it with FO3Edit. Follow the usual procedure, selecting only that file and letting FO3Edit load the dependencies for you.
 8. Launch the game and take a stroll in the night.
 ![Fallout 3 new lighting](Images/Fallout%203%20new%20lighting.png)
@@ -2247,7 +1412,7 @@ _Darkened Interiors_ tries to give interiors a realistic lighting, with deep sha
 
 
 
-### <a id="dontLikeYourFace"></a>5.6. I don't like your face
+### <a id="dontLikeYourFace"></a>6.6. I don't like your face
 
 I guess no one is able to remember the moment of her birth, unless you are a trickster. However, I would be shitting bricks my whole life if my first sight in this world were these eyes.
 
@@ -2300,73 +1465,7 @@ The installation is a bit tricky, regarding to _Fallout 3 Redesigned_, so let's 
 	* _FO3\_REDESIGNED\_REPACK_ (no overwriting required).
 	* _LiL - An Eye Improvement Mod - Lost in Light - An Eye Improvement Mod_ (this one overwrites files from _Fallout 3 Redesigned_, so answer _Yes to all_ when asked to).
 	* _Blackened - Blackened FWE - MMM - EVE - Project Beauty_ (this is a patch, so overwriting is expected; you know the drill).
-14. Run LOOT to rearrange your load order. This should be it.
-	* `Fallout3.esm`
-	* `Anchorage.esm`
-	* `ThePitt.esm`
-	* `StreetLights.esm`
-	* `BrokenSteel.esm`
-	* `PointLookout.esm`
-	* `Zeta.esm`
-	* `Unofficial Fallout 3 Patch.esm`
-	* `aHUD.esm`
-	* `iHUD.esm`
-	* `CALIBR.esm`
-	* `Mart's Mutant Mod.esm`
-	* **`Project Beauty.esm`**
-	* `EVE.esm`
-	* `ArefuExpandedByAzar.esm`
-	* `Mothership Crew.esm`
-	* `RH_IRONSIGHTS.esm`
-	* `Alton, IL.esm`
-	* `CRAFT.esm`
-	* `FO3 Wanderers Edition - Main File.esm`
-	* `FO3 Wanderers Edition - Alternate Travel.esp`
-	* `Detect Traps.esm`
-	* `Advanced Recon Tech.esm`
-	* `CINEMATECH.esm`
-	* `ImaginatorFO3.esp`
-	* `Flora Overhaul.esp`
-	* `CASM.esp`
-	* `DarNifiedUIF3.esp`
-	* `AltonAddon.esp`
-	* `FO3 Wanderers Edition - Main File.esp`
-	* `HZSmoothLight - FO3.esp`
-	* `Clean-Deluxe GOTY.esp`
-	* `FO3 Wanderers Edition - DLC Broken Steel.esp`
-	* `Xepha's Darkened Interiors.esp`
-	* `Xepha's Darkened Interiors - BS.esp`
-	* `Xepha's Darkened Interiors - PL.esp`
-	* **`Blackened FWE + MMM + EVE + Project Beauty.esp`**
-	* `FO3 Wanderers Edition - DLC Anchorage.esp`
-	* `FO3 Wanderers Edition - DLC The Pitt.esp`
-	* `Blackened RH + FWE + EVE.esp`
-	* `FO3 Wanderers Edition - DLC Point Lookout.esp`
-	* `FO3 Wanderers Edition - DLC Mothership Zeta.esp`
-	* `WeaponModKits.esp`
-	* `WeaponModKits - BrokenSteel.esp`
-	* `WeaponModKits - OperationAnchorage.esp`
-	* `WeaponModKits - Zeta.esp`
-	* `WeaponModKits - ThePitt.esp`
-	* `WeaponModKits - PointLookout.esp`
-	* `F3ProjectRealityMkI.esp`
-	* `ArefuExpandedByAzar-Radio.esp`
-	* `Advanced Recon Gear.esp`
-	* `Advanced Recon Armor.esp`
-	* `Detect Traps - Perk.esp`
-	* `Detect Traps - The Traponator 4000.esp`
-	* `Detect Traps - DLC.esp`
-	* `Advanced Recon Range Finder.esp`
-	* `Advanced Recon Tech.esp`
-	* `Advanced Recon Tech - Detect Traps.esp`
-	* `Advanced Recon Equipment Patcher.esp`
-	* `Advanced Recon Tech FWE.esp`
-	* `PAL - MERGED.esp`
-	* `DYNAVISION - Dynamic Lens Effect.esp`
-	* `Directors Chair - Fallout 3.esp`
-	* `PureWater-VeryCleanLittleRad-.esp`
-	* `Xepha's Darkened Interiors - OA.esp`
-	* `megalight.esp`
+14. Run LOOT to rearrange your load order.
 
 Let's see how the game changes with this. What about the defining moment of your birth?
 
@@ -2393,7 +1492,7 @@ The changes are remarkable, as you can see by looking at before/after images sid
 
 
 
-## <a id="wrappingUp"></a>6. Wrapping up
+## <a id="wrappingUp"></a>7. Wrapping up
 
 No matter which mods you have installed to this point, you will want to create a merged patch to ensure all of them work together like a charm.
 
@@ -2423,13 +1522,13 @@ Remember these golden rules regarding to merged patches:
 
 
 
-## <a id="resources"></a>7. Resources
+## <a id="resources"></a>8. Resources
 
 This is a comprehensive list of the resources used throughout this guide.
 
 
 
-### <a id="tools"></a>7.1. Tools
+### <a id="tools"></a>8.1. Tools
 
 * [Nexus Mod Manager](http://www.nexusmods.com/games/mods/modmanager/). This is the tool of choice when it comes to keep all your mods organized and up-to-date.
 * [LOOT](https://loot.github.io/). Installing mods on Bethesda games can be a pain in the ass, especially if you try to install a lot of possibly-colliding mods. This tool keeps the load order straight.
@@ -2437,7 +1536,7 @@ This is a comprehensive list of the resources used throughout this guide.
 
 
 
-### <a id="guides"></a>7.2. Guides
+### <a id="guides"></a>8.2. Guides
 
 * [_Fallout 3_ Tweaking Guide](http://www.tweakguides.com/Fallout3_1.html).
 * [Gamebryo console commands](http://fallout.wikia.com/wiki/Gamebryo_console_commands)
@@ -2449,7 +1548,7 @@ This is a comprehensive list of the resources used throughout this guide.
 
 
 
-### <a id="mods"></a>7.3. Mods
+### <a id="mods"></a>8.3. Mods
 
 This is the list of mods used throughout this guide, in ascending alphabetical order.
 
@@ -2547,7 +1646,7 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 
 
 
-### <a id="videos"></a>7.4. Videos
+### <a id="videos"></a>8.4. Videos
 
 These are the videos which served as spiritual inspiration author of this guide. That's me.
 

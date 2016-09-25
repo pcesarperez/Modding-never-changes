@@ -6,6 +6,18 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.36) [25/09/2016] New introductory chapter.**
+
+I have been thinking about the second volume of the guide... Yes, there will be a second volume. And a third. And a fourth. All the way up to a planned eighth guide, if I don't end up batshit crazy first.
+
+Well, the second volume will be about the same game, _Fallout 3_, but using Mod Organizer instead of Nexus Mod Manager. However, let's not get ahead of ourselves yet.
+
+The planning of a second volume with a different tool (and philosophy) made me think about a chapter explaining _why_ things are done the way they are, so a chapter named "Functional vs. technical" has born.
+
+The new chapter forced me to renumber the remaining chapters, and I seized the opportunity to get rid of the load order lists, because I considered them useless. LOOT is a solid enough tool to put our trust in.
+
+Finally, I marked two chapters (the ones about sound and new quests/places) as optional.
+
 **(v0.35) [20/09/2016] Rewrite complete up to 5.3.**
 
 Well, another straightforward chapter. Things are getting interesting ahead.
