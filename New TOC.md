@@ -65,7 +65,9 @@
 	- **UPDATED** [5.4. Nobody said the Nuclear Holocaust should be unpleasant to look at](#unpleasantNuclearHolocaust)
 		- Improved LOD Noise Texture	http://www.nexusmods.com/fallout3/mods/17743/?
 		- Rivet City Texture Pack	http://www.nexusmods.com/fallout3/mods/3612/?
-		- UHQ Terrain Overhaul	http://www.nexusmods.com/fallout3/mods/19799/?
+		- Megaton_Texture_Pack	http://www.nexusmods.com/fallout3/mods/1662/?
+		- Terrain_Pack_ROCKS_ADD_ON_PACK	http://www.nexusmods.com/fallout3/mods/866/?
+		- Terrain Pack	http://www.nexusmods.com/fallout3/mods/774/?
 	- **NEW** [5.5. The Devil is in the details](#devilInDetails)
 		- Better Booze	http://www.nexusmods.com/fallout3/mods/626/?
 		- Better HiRes Skill Books	http://www.nexusmods.com/fallout3/mods/3876/?

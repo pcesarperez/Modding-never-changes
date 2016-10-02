@@ -50,8 +50,9 @@
 	- [6.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
 	- [6.3. Everything depends on the point of view](#pointOfView)
 	- [6.4. Nobody said the Nuclear Holocaust should be unpleasant to look at](#unpleasantNuclearHolocaust)
-	- [6.5. Let there be light!](#letThereBeLight)
-	- [6.6. I don't like your face](#dontLikeYourFace)
+	- [6.5. The Devil is in the details](#devilInDetails)
+	- [6.6. Let there be light!](#letThereBeLight)
+	- [6.7. I don't like your face](#dontLikeYourFace)
 * [7. Wrapping up](#wrappingUp)
 * [8. Resources](#resources)
 	* [8.1. Tools](#tools)
@@ -1347,35 +1348,57 @@ Be advised though: these mods will push your rig capabilities to its limits. Gop
 
 These are the mods we are going to install:
 
+* [_Clean-Deluxe_](http://www.nexusmods.com/fallout3/mods/17115/)
 * [_Flora Overhaul_](http://www.nexusmods.com/fallout3/mods/19864/)
+* [_Improved LOD Noise Texture_](http://www.nexusmods.com/fallout3/mods/17743/)
+* [_Megaton\_Texture\_Pack_](http://www.nexusmods.com/fallout3/mods/1662/)
 * [_NMCS Texture Pack_](http://www.nexusmods.com/fallout3/mods/12056/)
 * [_Pure Water_](http://www.nexusmods.com/fallout3/mods/2599/)
-* [_Clean-Deluxe_](http://www.nexusmods.com/fallout3/mods/17115/)
+* [_Rivet City Texture Pack_](http://www.nexusmods.com/fallout3/mods/3612/)
+* [_Terrain Pack_](http://www.nexusmods.com/fallout3/mods/774/)
+* [_Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK_](http://www.nexusmods.com/fallout3/mods/866/)
 
-We are not going to use the full version of _NMCS Texture Pack_ because the performance version is just about as good. Regarding to _Flora Overhaul_, I prefer the _Dead Edition_ because, you know, a Wasteland full of trees cannot barely considered a wasteland anymore. However, feel free to ignore me (why the hell are you reading this, anyway?).
+We are not going to use the full version of _NMCS Texture Pack_ because the performance version is just about as good. We will be adding _Terrain Pack_ and _Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK_ on top of it for better terrain textures and _Improved LOD Noise Texture_ to avoid a severe case of eye bleeding due to low resolution textures when looking through a sniping sight.
+
+Regarding to _Flora Overhaul_, I prefer the _Dead Edition_ because, you know, a Wasteland full of trees cannot barely be considered a wasteland anymore. However, feel free to ignore me (why the hell are you reading this, anyway?).
+
+There are two specific sets of textures for important locations: Megaton and Rivet City. They both are worth installing.
 
 Finally, _Pure Water_ removes the muddy aspect of the water (but not its radiation, although it's optional, too), and _Clean-Deluxe_ will give us a 5-10% improvement in FPS, removing clutter and atmospheric haze which, in fact, add nothing meaningful to the game.
 
 Let's begin!
 
-1. Download _NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ with NMM. Go partying the whole night while this mod is downloaded.
-2. Download _Dead Edition v13C_ with NMM.
-3. Download _PureWater_ with NMM.
-4. Download _Clean-Deluxe GOTY Edition_ with NMM.
-5. We have our 4 mods downloaded and ready to be installed.
+1. Download _NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ from _NMCS Texture Pack_ with NMM. Go partying the whole night while this mod is downloaded.
+2. Download _NeilMc\_Terrain\_Pack\_1024_ and _TREE\_ROOTS\_PATCH_ from _Terrain Pack_ with NMM.
+3. Download _Improved LOD Noise Texture_ from _Improved LOD Noise Texture_ with NMM.
+4. Download _Dead Edition v13C_ from _Flora Overhaul_ with NMM.
+5. Download _Aged\_Paper\_Scraps_, _High\_Resolution\_Megaton_ and _Megaton\_Painted\_Signs\_Revised_ from _Megaton\_Texture\_Pack_ with NMM.
+6. Download _Flatter\_Sign\_Paint\_Patch_ and _Rivet\_City\_High\_Resolution_ from _Rivet City Texture Pack_ with NMM.
+7. Download _PureWater_ from _Pure Water_ with NMM.
+8. Download _Clean-Deluxe GOTY Edition_ with NMM.
+9. We have all our  mods downloaded and ready to be installed.
 ![NMM texture mods](Images/NMM%20texture%20mods.png)
-6. Activate _NMCs\_Texture\_Pack\_for\_FO3 - NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ double-clicking on it. No overwriting required, as this mods comprises just textures.
-7. Activate _FO3 Flora Overhaul - Dead Edition v13C_ double-clicking on it. Again, no overwriting required.
-8. Activate _PureWater - PureWater_. No overwriting required.
-9. Activate _Clean-Deluxe - Clean-Deluxe GOTY Edition_. No overwriting required.
-10. _Pure Water_ comes in four flavours, each one with its own `.esp` file:
+10. Activate _FO3 Flora Overhaul - Dead Edition v13C_ double-clicking on it. No overwriting required from this point on, except pointed out otherwise.
+11. Activate _NMCs\_Texture\_Pack\_for\_FO3 - NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ double-clicking on it.
+12. Activate _Terrain pack - NeilMc\_Terrain\_Pack\_1024_.
+13. Activate _Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK - High\_Resolution\_Rocks\_4096_.
+14. Activate _Terrain pack - TREE\_ROOTS\_PATCH_.
+15. Activate _Rivet City Texture Pack - Rivet\_City\_High\_Resolution_.
+16. Activate _Rivet City Texture Pack - Flatter\_Sign\_Paint\_Patch_.
+17. Activate _Megaton\_Texture\_Pack - High\_Resolution\_Megaton_.
+18. Activate _Megaton\_Texture\_Pack - Aged\_Paper\_Scraps_.
+19. Activate _Megaton\_Texture\_Pack - Megaton\_Painted\_Signs\_Revised_.
+20. Activate _Improved LOD Noise Texture - Improved LOD Noise Texture_.
+21. Activate _PureWater - PureWater_.
+22. Activate _Clean-Deluxe - Clean-Deluxe GOTY Edition_.
+23. _Pure Water_ comes in four flavours, each one with its own `.esp` file:
 	* `PureWater-VeryClearNoRad-.esp`: High water transparency and no radiation poisoning.
 	* `PureWater-VeryCleanLittleRad-.esp`: High water transparency and radiation poisoning.
 	* `PureWater-NoRad-.esp`: Normal water transparency and no radiation poisoning.
 	* `PureWater-LittleRad-.esp`: Normal water transparency and radiation poisoning.
-11. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
-12. Run LOOT to rearrange your load order, as usual.
-11. Launch the game to see for yourself.
+24. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
+25. Run LOOT to rearrange your load order, as usual.
+26. Launch the game to see for yourself.
 ![Fallout 3 new textures and flora night](Images/Fallout%203%20new%20textures%20and%20flora%20night.png)
 ![Fallout 3 new textures and flora day](Images/Fallout%203%20new%20textures%20and%20flora%20day.png)
 
@@ -1385,7 +1408,64 @@ The quality of the textures is hard to miss, not to mention the fuckload of tree
 
 
 
-### <a id="letThereBeLight"></a>6.5. Let there be light!
+### <a id="devilInDetails"></a>6.5. The Devil is in the details
+
+_Fallout 3_ is a great game to develop your kleptomaniac urges. The Wasteland is littered with small objects you can collect to... Well, collect them. Why there should be any veiled meaning to that? The only limit is the [carry weight](http://fallout.wikia.com/wiki/Carry_Weight) of your character, unless you cheat the game with the console command `player.forceav carryweight {amount}`, where `{amount}` is the desired carry weight in pounds (lbs), up to 20.106 lbs (that's 9.128 kg., give or take). But you are not going to do that, are you?
+
+The only problem is, like any other vanilla texture in the game, these small objects are definitely low-res, and that's what we are going to change in this chapter.
+
+The mods we are considering are:
+
+* [_Better Booze_](http://www.nexusmods.com/fallout3/mods/626/)
+* [_Better PreWar and Burned Books_](http://www.nexusmods.com/fallout3/mods/3679/)
+* [_Better HiRes Skill Books_](http://www.nexusmods.com/fallout3/mods/3876/)
+* [_Chems and Meds Re-Texture Pack_](http://www.nexusmods.com/fallout3/mods/15960/)
+* [_Enhanced Blood Textures v2\_22b_](http://www.nexusmods.com/fallout3/mods/101/)
+* [_eXcalibr - ammo eXpansion pack_](http://www.nexusmods.com/fallout3/mods/11684)
+* [_HD Smoky Fire and Explosions for FO3_](http://www.nexusmods.com/fallout3/mods/20053/)
+* [_Improved Glass Bullet Impact_](http://www.nexusmods.com/fallout3/mods/13120/)
+* [_Retextured Clutter Collection_](http://www.nexusmods.com/fallout3/mods/6894/)
+* [_RobCo Certified Textures_](http://www.nexusmods.com/fallout3/mods/13428/)
+* [_Whats Your Brand - cigarette texture megapack_](http://www.nexusmods.com/fallout3/mods/591/)
+
+So, here we go:
+
+1. Download _MAINSTREAM PACK_, _BOTTLE MESH ADDON_ and _WINE ADDON_ from _Better Booze_ with NMM.
+2. Download _HiResSkillBooks_ and _WastelandSurvivalGuideRedone_ from _Better HiRes Skill Books_ with NMM.
+3. Download _HiResBooks-Dirtier-Grimier_ from _Better PreWar and Burned Books_ with NMM.
+4. Download _Chems and Meds Re-Textures Pack v1-0_ from _Chems and Meds Re-Texture Pack_ with NMM.
+5. Download _Enhanced Blood Textures_ from _Enhanced Blood Textures v2\_22b_ with NMM.
+6. Download _eXcalibr Ammo Pack v2-3 Full FOMOD_ from _eXcalibr - ammo eXpansion pack_ with NMM.
+7. Download _HD Fire_ from _HD Smoky Fire and Explosions for FO3_ with NMM.
+8. Download _Improved Glass Bullet Impact_ from _Improved Glass Bullet Impact_ with NMM.
+9. Download _BetterClutterCollection_ from _Retextured Clutter Collection_ with NMM.
+10. Download _RobCo Certified Textures_ from _RobCo Certified Textures_ with NMM.
+11. Download _Whats Your Brand_ from _Whats Your Brand - cigarette texture megapack_ with NMM.
+12. We should have our detail textures downloaded, ready to activate in NMM.
+![NMM detail texture mods](Images/NMM%20detail%20texture%20mods.png)
+13. Activate them in the following order (no conflicts, unless otherwise specified):
+	* _Better Booze - MAINSTREAM PACK_.
+	* _Better Booze - WINE ADDON_.
+	* _Better Booze - BOTTLE MESH ADDON_.
+	* _Better HiRes Skill Books - HiResSkillBooks_.
+	* _Better HiRes Skill Books - WastelandSurvivalGuideRedone_.
+	* _Better PreWar and Burned Books - HiResBooks-Dirtier-Grimier_ (this one conflicts with a texture previously installed by _Arefu Expanded_; answer _Yes to all_).
+	* _Chems and Meds Re-Texture Pack - Chems and Meds Re-Textures Pack v1-0_.
+	* _Enhanced Blood Textures v2\_22b - Enhanced Blood Textures_ (this one conflicts with textures previously installed from _EVE - Energy Visuals Enhanced_; answer _Yes to all_).
+	* _eXcalibr Ammo eXpansion Pack_. This one comes with a FOMOD installer with two options (_Override_ and _Override for FWE 6.0.3_). Select the last one. It also overwrites textures from _FWE_, so answer _Yes to all_.
+![NMM eXcalibr options](Images/NMM%20eXcalibr%20options.png)
+	* _HD Smoky Fire and Explosions for FO3 - HD Fire_.
+	* _Improved Glass Bullet Impact - Improved Glass Bullet Impact_.
+	* _Retextured Clutter Collection - BetterClutterCollection_ (this one overwrites textures from _NMC Texture Pack_; answer _Yes to all_).
+	* _RobCo Certified Textures_. This mod has a FOMOD installer to select the kind of texture you want, with a screenshot to help you choose. I'll go with "Army". It will also overwrite textures from _RobCo Certified_, so answer _Yes to all_.
+![NMM RobCo Certified Textures options](Images/NMM%20RobCo%20Certified%20Textures%20options.png)
+	* _Whats Your Brand - cigarette texture megapack - Whats Your Brand_.
+14. Run LOOT to rearrange your load order, for there are a number of `.esp` files installed alongside the textures.
+15. Run the game and wander around to see for yourself the overall improvement in the textures of the everyday objects.
+
+
+
+### <a id="letThereBeLight"></a>6.6. Let there be light!
 
 Lighting in _Fallout 3_ is somewhat unnatural. You would think everyone in the Capital Wasteland has developed nightvision, because you can see perfectly in pitch black underground places. Not to mention the horrid HDR blooming you get when the game does not handle well multiple light sources.
 
@@ -1412,7 +1492,7 @@ _Darkened Interiors_ tries to give interiors a realistic lighting, with deep sha
 
 
 
-### <a id="dontLikeYourFace"></a>6.6. I don't like your face
+### <a id="dontLikeYourFace"></a>6.7. I don't like your face
 
 I guess no one is able to remember the moment of her birth, unless you are a trickster. However, I would be shitting bricks my whole life if my first sight in this world were these eyes.
 
@@ -1552,97 +1632,97 @@ This is a comprehensive list of the resources used throughout this guide.
 
 This is the list of mods used throughout this guide, in ascending alphabetical order.
 
-|Mod|URL|
-|---|---|
-|_A Note Easily Missed_|http://www.nexusmods.com/fallout3/mods/4730/|
-|_Adjustable HUD_|http://www.nexusmods.com/fallout3/mods/15886/|
-|_Advanced Recon Range Finder_|http://www.nexusmods.com/fallout3/mods/15744/|
-|_Advanced Recon Stealth Armor_|http://www.nexusmods.com/fallout3/mods/2654/|
-|_Advanced Recon Thermal Nightvision Patcher_|http://www.nexusmods.com/fallout3/mods/20806/|
-|_Advanced Recon Thermal Nightvision_|http://www.nexusmods.com/fallout3/mods/15653/|
-|_Advanced Recon Trap Detection_|http://www.nexusmods.com/fallout3/mods/15641/|
-|_Alton IL_|http://www.nexusmods.com/fallout3/mods/16949/|
-|_Alton Revoiced lip files_|http://www.nexusmods.com/fallout3/mods/22041/|
-|_Alton Revoicing Project_|http://www.nexusmods.com/fallout3/mods/20859/|
-|_Ambient Wasteland 2_|http://www.nexusmods.com/fallout3/mods/12602/|
-|_An Evening With Mister Manchester_|http://www.nexusmods.com/fallout3/mods/5630/|
-|_Arefu Expanded_|http://www.nexusmods.com/fallout3/mods/8976/|
-|_Beards of Fallout_|http://www.nexusmods.com/fallout3/mods/18622/|
-|_Better Booze_|http://www.nexusmods.com/fallout3/mods/626/|
-|_Better Game Performance_|http://www.nexusmods.com/fallout3/mods/13520/|
-|_Better High Detail Map and Icons_|http://www.nexusmods.com/fallout3/mods/16898/|
-|_Better HiRes Skill Books_|http://www.nexusmods.com/fallout3/mods/3876/|
-|_Chems and Meds Re-Texture Pack_|http://www.nexusmods.com/fallout3/mods/15960/|
-|_CINEMATECH_|http://www.nexusmods.com/fallout3/mods/15745/|
-|_Clean-Deluxe_|http://www.nexusmods.com/fallout3/mods/17115/|
-|_Community Ammunition Library_|http://www.nexusmods.com/fallout3/mods/3447/|
-|_Darkened Interiors_|http://www.nexusmods.com/fallout3/mods/16935/|
-|_Darnified UI_|http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/|
-|_DCInteriors Project_|http://www.nexusmods.com/fallout3/mods/5573/|
-|_Director’s Chair_|http://www.nexusmods.com/fallout3/mods/17899/|
-|_Dynavision_|http://www.nexusmods.com/fallout3/mods/17876/|
-|_Earth from Space texture for Mothership Zeta_|http://www.nexusmods.com/fallout3/mods/19294/|
-|_Energy Visuals Enhanced_|http://www.nexusmods.com/fallout3/mods/8340/|
-|_Enhanced Blood Textures v2_22b_|http://www.nexusmods.com/fallout3/mods/101/|
-|_Enhanced Night Sky_|http://www.nexusmods.com/fallout3/mods/442/|
-|_eXcalibr - ammo eXpansion pack_|http://www.nexusmods.com/fallout3/mods/11684/|
-|_Existence 2_0 - Robot Radio_|http://www.nexusmods.com/fallout3/mods/5612/|
-|_Expanded Megaton House V3_|http://www.nexusmods.com/fallout3/mods/2136/|
-|_Fake Fullscreen Mode Windowed - Alt Tab Fix_|http://www.nexusmods.com/fallout3/mods/16001/|
-|_Fallout 3 - Enhanced Camera_|http://www.nexusmods.com/fallout3/mods/20183/|
-|_Fallout 3 - HD Audio Overhaul – v1.21_|http://www.nexusmods.com/fallout3/mods/13055/|
-|_Fallout 3 Hirezd_|http://www.nexusmods.com/fallout3/mods/19931/|
-|_Fallout 3 re-animated_|http://www.nexusmods.com/fallout3/mods/7670/|
-|_Fallout 3 redesigned_|http://www.nexusmods.com/fallout3/mods/6341/|
-|_Fallout 3 Wanderers Edition_|http://www.nexusmods.com/fallout3/mods/2761/|
-|_Fallout Street Lights_|http://www.nexusmods.com/fallout3/mods/8069/|
-|_Fallout Stutter Remover_|http://www.nexusmods.com/fallout3/mods/8886/|
-|_Faster Pipboy Faster_|http://www.nexusmods.com/newvegas/mods/35225/|
-|_Flora overhaul_|http://www.nexusmods.com/fallout3/mods/19864/|
-|_FO3-WRP - Weapon Retexture Project_|http://www.nexusmods.com/fallout3/mods/18133/|
-|_GNR Enhanced_|http://www.nexusmods.com/fallout3/mods/14946/|
-|_Hall Of Equipment_|http://www.nexusmods.com/fallout3/mods/17145/|
-|_HD Smoky Fire and Explosions for FO3_|http://www.nexusmods.com/fallout3/mods/20053/|
-|_Hi-Res Weapons v3_|http://www.nexusmods.com/fallout3/mods/481/|
-|_Immersive HUD_|http://www.nexusmods.com/fallout3/mods/15790/|
-|_Impervious Power Armor_|http://www.nexusmods.com/fallout3/mods/13325/|
-|_Improved Glass Bullet Impact_|http://www.nexusmods.com/fallout3/mods/13120/|
-|_Improved LOD Noise Texture_|http://www.nexusmods.com/fallout3/mods/17743/|
-|_Improved Sound FX v1.3_|http://www.nexusmods.com/fallout3/mods/627/|
-|_krzymar HI-RES Moon_|http://www.nexusmods.com/fallout3/mods/538/|
-|_Large Address Aware Enabler for Fallout 3_|http://www.nexusmods.com/fallout3/mods/6510/|
-|_Lost in Light_|http://www.nexusmods.com/fallout3/mods/19163/|
-|_Marts Mutant Mod_|http://www.nexusmods.com/fallout3/mods/3211/|
-|_Megaton Lighting Overhaul_|http://www.nexusmods.com/fallout3/mods/7875/|
-|_Megaton Walkway_|http://www.nexusmods.com/fallout3/mods/8247/|
-|_Mothership Zeta Crew_|http://www.nexusmods.com/fallout3/mods/8747/|
-|_Mothership Zeta DLC Retextured_|http://www.nexusmods.com/fallout3/mods/8260/|
-|_Mr Smiths Scrapyard_|http://www.nexusmods.com/fallout3/mods/14075/|
-|_NMCS Texture Pack_|http://www.nexusmods.com/fallout3/mods/12056/|
-|_Personal Achievements Log_|http://www.nexusmods.com/fallout3/mods/11326/|
-|_PipBoy 3000 HD Retexture_|http://www.nexusmods.com/fallout3/mods/20373/|
-|_Project Reality_|http://www.nexusmods.com/fallout3/mods/17418/|
-|_Pure Water_|http://www.nexusmods.com/fallout3/mods/2599/|
-|_Realistic Death Physics_|http://www.nexusmods.com/fallout3/mods/12306/|
-|_Retextured Clutter Collection_|http://www.nexusmods.com/fallout3/mods/6894/|
-|_RH Ironsights_|http://www.nexusmods.com/fallout3/mods/6938/|
-|_Rivet City Texture Pack_|http://www.nexusmods.com/fallout3/mods/3612/|
-|_RobCo Certified Textures_|http://www.nexusmods.com/fallout3/mods/13428/|
-|_RobCo Certified_|http://www.nexusmods.com/fallout3/mods/712/|
-|_Robot Revolution HD - Protectron_|http://www.nexusmods.com/fallout3/mods/18902/|
-|_SeraphTCs Personal Achievements Log FIX_|http://www.nexusmods.com/fallout3/mods/18678/|
-|_Shiloh DS - Clean Pipboy Screen_|http://www.nexusmods.com/newvegas/mods/36255/|
-|_SmoothLight - Pip-Boy Light Enhancer_|http://www.nexusmods.com/fallout3/mods/18389/|
-|_The IMAGINATOR_|http://www.nexusmods.com/fallout3/mods/16875/|
-|_The Institute - a fully voiced quest mod_|http://www.nexusmods.com/fallout3/mods/14449/|
-|_To sleep - perchance to dream_|http://www.nexusmods.com/fallout3/mods/6921/|
-|_UHQ Terrain Overhaul_|http://www.nexusmods.com/fallout3/mods/19799/|
-|_Unofficial Fallout 3 Patch_|http://www.nexusmods.com/fallout3/mods/19122/|
-|_User Interface Organizer_|http://www.nexusmods.com/fallout3/mods/20867/|
-|_UWWUT - Unique Weapons With Unique Textures_|http://www.nexusmods.com/fallout3/mods/6309/|
-|_Vault 101 Revisited_|http://www.nexusmods.com/fallout3/mods/13308/|
-|_Weapon Mod Kits_|http://www.nexusmods.com/fallout3/mods/3388/|
-|_Whats Your Brand - cigarette texture megapack_|http://www.nexusmods.com/fallout3/mods/591/|
+* [_A Note Easily Missed_](http://www.nexusmods.com/fallout3/mods/4730/)
+* [_Adjustable HUD_](http://www.nexusmods.com/fallout3/mods/15886/)
+* [_Advanced Recon Range Finder_](http://www.nexusmods.com/fallout3/mods/15744/)
+* [_Advanced Recon Stealth Armor_](http://www.nexusmods.com/fallout3/mods/2654/)
+* [_Advanced Recon Thermal Nightvision Patcher_](http://www.nexusmods.com/fallout3/mods/20806/)
+* [_Advanced Recon Thermal Nightvision_](http://www.nexusmods.com/fallout3/mods/15653/)
+* [_Advanced Recon Trap Detection_](http://www.nexusmods.com/fallout3/mods/15641/)
+* [_Alton IL_](http://www.nexusmods.com/fallout3/mods/16949/)
+* [_Alton Revoiced lip files_](http://www.nexusmods.com/fallout3/mods/22041/)
+* [_Alton Revoicing Project_](http://www.nexusmods.com/fallout3/mods/20859/)
+* [_Ambient Wasteland 2_](http://www.nexusmods.com/fallout3/mods/12602/)
+* [_An Evening With Mister Manchester_](http://www.nexusmods.com/fallout3/mods/5630/)
+* [_Arefu Expanded_](http://www.nexusmods.com/fallout3/mods/8976/)
+* [_Beards of Fallout_](http://www.nexusmods.com/fallout3/mods/18622/)
+* [_Better Booze_](http://www.nexusmods.com/fallout3/mods/626/)
+* [_Better Game Performance_](http://www.nexusmods.com/fallout3/mods/13520/)
+* [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/)
+* [_Better HiRes Skill Books_](http://www.nexusmods.com/fallout3/mods/3876/)
+* [_Better PreWar and Burned Books_](http://www.nexusmods.com/fallout3/mods/3679/)
+* [_Chems and Meds Re-Texture Pack_](http://www.nexusmods.com/fallout3/mods/15960/)
+* [_CINEMATECH_](http://www.nexusmods.com/fallout3/mods/15745/)
+* [_Clean-Deluxe_](http://www.nexusmods.com/fallout3/mods/17115/)
+* [_Community Ammunition Library_](http://www.nexusmods.com/fallout3/mods/3447/)
+* [_Darkened Interiors_](http://www.nexusmods.com/fallout3/mods/16935/)
+* [_Darnified UI_](http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/)
+* [_DCInteriors Project_](http://www.nexusmods.com/fallout3/mods/5573/)
+* [_Director’s Chair_](http://www.nexusmods.com/fallout3/mods/17899/)
+* [_Dynavision_](http://www.nexusmods.com/fallout3/mods/17876/)
+* [_Earth from Space texture for Mothership Zeta_](http://www.nexusmods.com/fallout3/mods/19294/)
+* [_Energy Visuals Enhanced_](http://www.nexusmods.com/fallout3/mods/8340/)
+* [_Enhanced Blood Textures v2\_22b_](http://www.nexusmods.com/fallout3/mods/101/)
+* [_Enhanced Night Sky_](http://www.nexusmods.com/fallout3/mods/442/)
+* [_eXcalibr - ammo eXpansion pack_](http://www.nexusmods.com/fallout3/mods/11684/)
+* [_Existence 2_0 - Robot Radio_](http://www.nexusmods.com/fallout3/mods/5612/)
+* [_Expanded Megaton House V3_](http://www.nexusmods.com/fallout3/mods/2136/)
+* [_Fake Fullscreen Mode Windowed - Alt Tab Fix_](http://www.nexusmods.com/fallout3/mods/16001/)
+* [_Fallout 3 - Enhanced Camera_](http://www.nexusmods.com/fallout3/mods/20183/)
+* [_Fallout 3 - HD Audio Overhaul – v1.21_](http://www.nexusmods.com/fallout3/mods/13055/)
+* [_Fallout 3 Hirezd_](http://www.nexusmods.com/fallout3/mods/19931/)
+* [_Fallout 3 re-animated_](http://www.nexusmods.com/fallout3/mods/7670/)
+* [_Fallout 3 redesigned_](http://www.nexusmods.com/fallout3/mods/6341/)
+* [_Fallout 3 Wanderers Edition_](http://www.nexusmods.com/fallout3/mods/2761/)
+* [_Fallout Street Lights_](http://www.nexusmods.com/fallout3/mods/8069/)
+* [_Fallout Stutter Remover_](http://www.nexusmods.com/fallout3/mods/8886/)
+* [_Faster Pipboy Faster_](http://www.nexusmods.com/newvegas/mods/35225/)
+* [_Flora Overhaul_](http://www.nexusmods.com/fallout3/mods/19864/)
+* [_FO3-WRP - Weapon Retexture Project_](http://www.nexusmods.com/fallout3/mods/18133/)
+* [_GNR Enhanced_](http://www.nexusmods.com/fallout3/mods/14946/)
+* [_Hall Of Equipment_](http://www.nexusmods.com/fallout3/mods/17145/)
+* [_HD Smoky Fire and Explosions for FO3_](http://www.nexusmods.com/fallout3/mods/20053/)
+* [_Hi-Res Weapons v3_](http://www.nexusmods.com/fallout3/mods/481/)
+* [_Immersive HUD_](http://www.nexusmods.com/fallout3/mods/15790/)
+* [_Impervious Power Armor_](http://www.nexusmods.com/fallout3/mods/13325/)
+* [_Improved Glass Bullet Impact_](http://www.nexusmods.com/fallout3/mods/13120/)
+* [_Improved LOD Noise Texture_](http://www.nexusmods.com/fallout3/mods/17743/)
+* [_Improved Sound FX v1.3_](http://www.nexusmods.com/fallout3/mods/627/)
+* [_krzymar HI-RES Moon_](http://www.nexusmods.com/fallout3/mods/538/)
+* [_Large Address Aware Enabler for Fallout 3_](http://www.nexusmods.com/fallout3/mods/6510/)
+* [_Lost in Light_](http://www.nexusmods.com/fallout3/mods/19163/)
+* [_Marts Mutant Mod_](http://www.nexusmods.com/fallout3/mods/3211/)
+* [_Megaton Lighting Overhaul_](http://www.nexusmods.com/fallout3/mods/7875/)
+* [_Megaton Walkway_](http://www.nexusmods.com/fallout3/mods/8247/)
+* [_Megaton\_Texture\_Pack_](http://www.nexusmods.com/fallout3/mods/1662/)
+* [_Mothership Zeta Crew_](http://www.nexusmods.com/fallout3/mods/8747/)
+* [_Mothership Zeta DLC Retextured_](http://www.nexusmods.com/fallout3/mods/8260/)
+* [_Mr Smiths Scrapyard_](http://www.nexusmods.com/fallout3/mods/14075/)
+* [_NMCS Texture Pack_](http://www.nexusmods.com/fallout3/mods/12056/)
+* [_Personal Achievements Log_](http://www.nexusmods.com/fallout3/mods/11326/)
+* [_PipBoy 3000 HD Retexture_](http://www.nexusmods.com/fallout3/mods/20373/)
+* [_Project Reality_](http://www.nexusmods.com/fallout3/mods/17418/)
+* [_Pure Water_](http://www.nexusmods.com/fallout3/mods/2599/)
+* [_Realistic Death Physics_](http://www.nexusmods.com/fallout3/mods/12306/)
+* [_Retextured Clutter Collection_](http://www.nexusmods.com/fallout3/mods/6894/)
+* [_RH Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/)
+* [_Rivet City Texture Pack_](http://www.nexusmods.com/fallout3/mods/3612/)
+* [_RobCo Certified Textures_](http://www.nexusmods.com/fallout3/mods/13428/)
+* [_RobCo Certified_](http://www.nexusmods.com/fallout3/mods/712/)
+* [_SeraphTCs Personal Achievements Log FIX_](http://www.nexusmods.com/fallout3/mods/18678/)
+* [_Shiloh DS - Clean Pipboy Screen_](http://www.nexusmods.com/newvegas/mods/36255/)
+* [_SmoothLight - Pip-Boy Light Enhancer_](http://www.nexusmods.com/fallout3/mods/18389/)
+* [_Terrain Pack_](http://www.nexusmods.com/fallout3/mods/774/)
+* [_Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK_](http://www.nexusmods.com/fallout3/mods/866/)
+* [_The IMAGINATOR_](http://www.nexusmods.com/fallout3/mods/16875/)
+* [_The Institute - a fully voiced quest mod_](http://www.nexusmods.com/fallout3/mods/14449/)
+* [_To sleep - perchance to dream_](http://www.nexusmods.com/fallout3/mods/6921/)
+* [_Unofficial Fallout 3 Patch_](http://www.nexusmods.com/fallout3/mods/19122/)
+* [_User Interface Organizer_](http://www.nexusmods.com/fallout3/mods/20867/)
+* [_UWWUT - Unique Weapons With Unique Textures_](http://www.nexusmods.com/fallout3/mods/6309/)
+* [_Vault 101 Revisited_](http://www.nexusmods.com/fallout3/mods/13308/)
+* [_Weapon Mod Kits_](http://www.nexusmods.com/fallout3/mods/3388/)
+* [_Whats Your Brand - cigarette texture megapack_](http://www.nexusmods.com/fallout3/mods/591/)
 
 
 

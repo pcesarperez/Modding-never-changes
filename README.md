@@ -6,6 +6,12 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.37) [02/10/2016] Rewrite complete up to 6.5.**
+
+I have revamped the chapter 6.4 about new textures, focusing on giving the Wasteland a way better look. I had the chapter finished last night, but then I decided to replace _UHQ Terrain Overhaul_ for _Terrain Pack_ from NMC, to ensure maximum compatibility.
+
+The chapter 6.5 is brand new, focusing on small objects scattered throughout the Wasteland. There are a lot of textures here, and my rig is starting to scream in pain every time I run the game to take some screenshots.
+
 **(v0.36) [25/09/2016] New introductory chapter.**
 
 I have been thinking about the second volume of the guide... Yes, there will be a second volume. And a third. And a fourth. All the way up to a planned eighth guide, if I don't end up batshit crazy first.
