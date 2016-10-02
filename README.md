@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.39) [02/10/2016] Rewrite complete up to 6.7.**
+
+This is the last of the rewritten chapters of the first iteration, and it's about animations and faces.
+
+I have two new chapters ahead, one about weapons retexturing and the other about _Mothership Zeta_ DLC retexturing.
+
+We are almost there!
+
 **(v0.38) [02/10/2016] Rewrite complete up to 6.6.**
 
 The chapter about lighting had gone through little modifications: just a bit of extra info about the mods and new downscaled and clean screenshots, that is all.

@@ -52,7 +52,7 @@
 	- [6.4. Nobody said the Nuclear Holocaust should be unpleasant to look at](#unpleasantNuclearHolocaust)
 	- [6.5. The Devil is in the details](#devilInDetails)
 	- [6.6. Let there be light!](#letThereBeLight)
-	- [6.7. I don't like your face](#dontLikeYourFace)
+	- [6.7. I don't like your face (nor the way you move)](#dontLikeYourFace)
 * [7. Wrapping up](#wrappingUp)
 * [8. Resources](#resources)
 	* [8.1. Tools](#tools)
@@ -1492,7 +1492,7 @@ _Darkened Interiors_ tries to give interiors a realistic lighting, with deep sha
 
 
 
-### <a id="dontLikeYourFace"></a>6.7. I don't like your face
+### <a id="dontLikeYourFace"></a>6.7. I don't like your face (nor the way you move)
 
 I guess no one is able to remember the moment of her birth, unless you are a trickster. However, I would be shitting bricks my whole life if my first sight in this world were these eyes.
 
@@ -1512,46 +1512,55 @@ Consider the face of your childhood friend Amata, and take into account that her
 
 The following mods target the faces, character animation and eye textures.
 
+* [_Beards of Fallout_](http://www.nexusmods.com/fallout3/mods/18622/)
+* [_Fallout 3 - Enhanced Camera_](http://www.nexusmods.com/fallout3/mods/20183/)
 * [_Fallout 3 re-animated_](http://www.nexusmods.com/fallout3/mods/7670/)
 * [_Fallout 3 redesigned_](http://www.nexusmods.com/fallout3/mods/6341/)
 * [_Lost in Light_](http://www.nexusmods.com/fallout3/mods/19163/)
 
-_Fallout 3 re-animated_ changes the default animations of every character in-game, getting a more natural stance, both in combat and resting. _Fallout 3 redesigned_, formerly known as _Project Beauty_, changes all the faces throughout the game, giving people a more natural look. Finally, _Lost in Light_ (LiL, for short) replaces the vanilla eye textures with proper eyeballs using proper light reflection. No more people screaming out their pain of their wretched souls through the eyes. As usual, Gopher has a video about [people reanimated and redesigned](https://www.youtube.com/watch?v=smLZNJIMCQA) (11:06), although he doesn't cover LiL.
+_Fallout 3 re-animated_ changes the default animations of every character in-game, getting a more natural stance, both in combat and resting. _Fallout 3 redesigned_, formerly known as _Project Beauty_, changes all the faces throughout the game, giving people a more natural look. _Lost in Light_ (LiL, for short) replaces the vanilla eye textures with proper eyeballs using proper light reflection. No more people screaming out their pain of their wretched souls through the eyes. _Beards of Fallout_ adds a lot of new beards for your character (I am myself strongly biased towards beards, because, you know, I like to groom mine in real life). Finally, _Fallout 3 - Enhanced Camera_ allows us to see our own feet when in first person, improving game immersion.
+
+As usual, Gopher has a video about [people reanimated and redesigned](https://www.youtube.com/watch?v=smLZNJIMCQA) (11:06), although he doesn't cover LiL.
 
 The installation is a bit tricky, regarding to _Fallout 3 Redesigned_, so let's do it.
 
 1. Download _Release v0\_22_ and _Idle Revisions2 - Fixed_ from _Fallout 3 re-animated_ with NMM.
-2. Download _FO3 Redesigned HD_, but download it **manually**. We are going to meddle with the file a little. The file is named `FO3 Redesigned HD-6341-2-74-2.zip` (obviously, these instructions may not apply with a different version of the mod).
+2. Download [_FO3 Redesigned HD_](http://www.nexusmods.com/fallout3/download/1000010302), but download it **manually**. We are going to meddle with the file a little. The file is named `FO3 Redesigned HD-6341-2-74-2.zip` (obviously, these instructions may not apply with a different version of the mod).
 3. Download _Lost in Light - An Eye Improvement Mod_ with NMM.
-4. Unzip `FO3 Redesigned HD-6341-2-74-2.zip` in a location of your choice, say `[%FO3_REDESIGNED%]`.
-5. The structure of the ZIP file is a bit weird.
+4. Download _Beards of Fallout_ from _Beards of Fallout_ with NMM.
+5. Download _Enhanced Camera_ from _Fallout 3 - Enhanced Camera_ with NMM.
+6. Unzip `FO3 Redesigned HD-6341-2-74-2.zip` in a location of your choice, say `[%FO3_REDESIGNED%]`.
+7. The structure of the ZIP file is a bit weird.
 ![FO3 Redesigned mod structure](Images/FO3%20Redesigned%20mod%20structure.png)
-6. We are going to create a mod file with just the items we need, in the proper place. Create a folder anywhere you want, say `[%FO3_REDESIGNED_REPACK%]`.
-7. Create the following folders under `[%FO3_REDESIGNED_REPACK%]`:
+8. We are going to create a mod file with just the items we need, in the proper place. Create a folder anywhere you want, say `[%FO3_REDESIGNED_REPACK%]`.
+9. Create the following folders under `[%FO3_REDESIGNED_REPACK%]`:
 	* `Meshes`
 	* `textures`
-8. Copy the following files from `[%FO3_REDESIGNED%]` into `[%FO3_REDESIGNED_REPACK%]`:
+10. Copy the following files from `[%FO3_REDESIGNED%]` into `[%FO3_REDESIGNED_REPACK%]`:
 	* `/meshes/*.*` &rarr; `/Meshes/`
 	* `/textures/*.*` &rarr; `/textures/`
 	* `/Optional Merged Version/Project Beauty.esm` &rarr; `/`
-9. Zip the contents of the `[%FO3_REDESIGNED_REPACK%]` folder into a file named `FO3_REDESIGNED_REPACK.zip`. The folders `/Meshes/` and `/textures/` should be in the root of the ZIP file.
-10. In NMM, use the option _Add Mod from File_ (green plus sign in the leftmost button bar) and select the newly created file.
-11. We need one final thing to put all the pieces together. Remember the chapter about [weaponry](#weNeedMoreFirepower), when I told you about a Blackened patch we couldn't install yet? That was _Blackened FWE - MMM - EVE - Project Beauty_ file from [_Blackened_](http://www.nexusmods.com/fallout3/mods/18173/). Now it's the time to download it with NMM.
-12. Ok, we have all the files we need, ready to be installed.
+11. Zip the contents of the `[%FO3_REDESIGNED_REPACK%]` folder into a file named `FO3_REDESIGNED_REPACK.zip`. The folders `/Meshes/` and `/textures/` should be in the root of the ZIP file.
+12. In NMM, use the option _Add Mod from File_ (green plus sign in the leftmost button bar) and select the newly created file.
+13. We need one final thing to put all the pieces together. In the chapter about [weaponry](#weNeedMoreFirepower) we installed a Blackened compatibility patch to stitch together _FWE_, _MMM_ and _EVE_. Now, we are going to replace that patch with an expanded version, which includes _Project Beauty_. Download _Blackened FWE - MMM - EVE - Project Beauty_ file from [_Blackened_](http://www.nexusmods.com/fallout3/mods/18173/).
+14. Ok, we have all the files we need, ready to be installed.
 ![NMM people redesigned and reanimated mods](Images/NMM%20people%20redesigned%20and%20reanimated%20mods.png)
-13. Activate the mods in the following order:
+15. Activate the mods in the following order:
 	* _Fallout 3 Re-Animated - Release v0\_22_ (this one overwrites files from _RH\_IronSights_, so answer _Yes to all_ when asked to).
 	* _Fallout 3 Re-Animated - Idle Revisions2 - Fixed_ (this one overwrites files from the previous file, so answer _Yes to all_ when asked to).
-	* _FO3\_REDESIGNED\_REPACK_ (no overwriting required).
+	* _FO3\_REDESIGNED\_REPACK_. No overwriting required.
 	* _LiL - An Eye Improvement Mod - Lost in Light - An Eye Improvement Mod_ (this one overwrites files from _Fallout 3 Redesigned_, so answer _Yes to all_ when asked to).
-	* _Blackened - Blackened FWE - MMM - EVE - Project Beauty_ (this is a patch, so overwriting is expected; you know the drill).
-14. Run LOOT to rearrange your load order.
+	* _Beards of Fallout - Beards of Fallout_. No overwriting required.
+	* _Fallout 3 - Enhanced Camera - Enhanced Camera_. No overwriting required.
+16. To install the _Blackened_ patch, we need first to uninstall the previous _Blackened patch_. Look for _Blackened - Blackened FWE - MMM - EVE_ in your mod list and double-click on it (or press the "forbidden" sign below the "plus" sign after selecting the mod) to install the obsolete patch.
+17. Activate _Blackened - Blackened FWE - MMM - EVE - Project Beauty_. No overwriting required.
+18. Run LOOT to rearrange your load order.
 
 Let's see how the game changes with this. What about the defining moment of your birth?
 
 ![Fallout 3 not so scary first sight](Images/Fallout%203%20not%20so%20scary%20first%20sight.png)
 
-Well, it's a little bit les scary, although there are some remaining embers in these eyes.
+Well, it's a little bit less scary, although there are some remaining embers in these eyes.
 
 ![Fallout 3 embers in your eyes](Images/Fallout%203%20embers%20in%20your%20eyes.png)
 
@@ -1567,7 +1576,9 @@ And what about Amata?
 
 ![Fallout 3 Amata has changed a bit](Images/Fallout%203%20Amata%20has%20changed%20a%20bit.png)
 
-The changes are remarkable, as you can see by looking at before/after images side by side.
+Furthermore, we can lose ourselves staring at our feet!
+
+![Fallout 3 look at your feet](Images/Fallout%203%20look%20at%20your%20feet.png)
 
 
 
@@ -1703,7 +1714,6 @@ This is the list of mods used throughout this guide, in ascending alphabetical o
 * [_PipBoy 3000 HD Retexture_](http://www.nexusmods.com/fallout3/mods/20373/)
 * [_Project Reality_](http://www.nexusmods.com/fallout3/mods/17418/)
 * [_Pure Water_](http://www.nexusmods.com/fallout3/mods/2599/)
-* [_Realistic Death Physics_](http://www.nexusmods.com/fallout3/mods/12306/)
 * [_Retextured Clutter Collection_](http://www.nexusmods.com/fallout3/mods/6894/)
 * [_RH Ironsights_](http://www.nexusmods.com/fallout3/mods/6938/)
 * [_Rivet City Texture Pack_](http://www.nexusmods.com/fallout3/mods/3612/)
