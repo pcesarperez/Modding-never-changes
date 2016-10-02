@@ -1370,37 +1370,75 @@ Finally, _Pure Water_ removes the muddy aspect of the water (but not its radiati
 
 Let's begin!
 
-1. Download _NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ from _NMCS Texture Pack_ with NMM. Go partying the whole night while this mod is downloaded.
-2. Download _NeilMc\_Terrain\_Pack\_1024_ and _TREE\_ROOTS\_PATCH_ from _Terrain Pack_ with NMM.
-3. Download _Improved LOD Noise Texture_ from _Improved LOD Noise Texture_ with NMM.
-4. Download _Dead Edition v13C_ from _Flora Overhaul_ with NMM.
-5. Download _Aged\_Paper\_Scraps_, _High\_Resolution\_Megaton_ and _Megaton\_Painted\_Signs\_Revised_ from _Megaton\_Texture\_Pack_ with NMM.
-6. Download _Flatter\_Sign\_Paint\_Patch_ and _Rivet\_City\_High\_Resolution_ from _Rivet City Texture Pack_ with NMM.
-7. Download _PureWater_ from _Pure Water_ with NMM.
-8. Download _Clean-Deluxe GOTY Edition_ with NMM.
-9. We have all our  mods downloaded and ready to be installed.
+1. Download the following files with NMM:
+	* _NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ from _NMCS Texture Pack_.
+	* _Improved LOD Noise Texture_ from _Improved LOD Noise Texture_.
+	* _Dead Edition v13C_ from _Flora Overhaul_.
+	* _PureWater_ from _Pure Water_.
+	* _Clean-Deluxe GOTY Edition_ from _Clean-Deluxe_.
+2. Download the following files **manually**:
+	* [_NeilMc\_Terrain\_Pack\_1024_](http://www.nexusmods.com/fallout3/download/34025) and [_TREE\_ROOTS\_PATCH_](http://www.nexusmods.com/fallout3/download/34081) from _Terrain Pack_. Copy the files into a folder `[%NMC_TERRAIN_TEXTURES%]`.
+	* [_High\_Resolution\_Rocks\_4096_](http://www.nexusmods.com/fallout3/download/34531) from _Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK_. Copy the file into a folder `[%NMC_TERRAIN_TEXTURES%]`.
+	* [_Aged\_Paper\_Scraps_](http://www.nexusmods.com/fallout3/download/41620), [_High\_Resolution\_Megaton_](http://www.nexusmods.com/fallout3/download/36251) and [_Megaton\_Painted\_Signs\_Revised_](http://www.nexusmods.com/fallout3/download/41764) from _Megaton\_Texture\_Pack_. Copy the files into a folder `[%NMC_MEGATON_TEXTURES%]`.
+	* [_Flatter\_Sign\_Paint\_Patch_](http://www.nexusmods.com/fallout3/download/41767) and [_Rivet\_City\_High\_Resolution_](http://www.nexusmods.com/fallout3/download/41714) from _Rivet City Texture Pack_. Copy the files into a folder `[%NMC_RIVET_CITY_TEXTURES%]`.
+3. Let's start with terrain textures.
+	* Unpack `NeilMc_Terrain_Pack_1024-774.7z` in the same folder with the tool of your choice (7-Zip, WinRAR, etc.). There was _another_ compressed file inside the first one, named `Terrain_Pack_1024_x2.7z`.
+	* Delete the files `archiveinvalidation.txt` and `NeilMc_Terrain_Pack_1024-774.7z`.
+	* Unpack the file `Terrain_Pack_1024_x2.7z`, again in the same folder. A folder named `[data]` is created.
+	* Remove the file `Terrain_Pack_1024_x2.7z`.
+	* _Move_ the contents of the `[data]` folder up a level. This is, move the `[data/Textures]` folder to the root of `[%NMC_TERRAIN_TEXTURES%]`.
+	* Delete the `[data]` folder.
+	* Unpack the file `High_Resolution_Rocks_4096-866.7z` into the same folder. Again, we have another packed file that was inside the first one, this one named `4096_Rocks.7z`.
+	* Delete the files `ArchiveInvalidation.txt` and `High_Resolution_Rocks_4096-866.7z`.
+	* Unpack the file `4096_Rocks.7z` into the same folder. There will be two new files (`rockcanyoncluster01.dds` and `rockcanyoncluster01_n.dds`).
+	* _Move_ the `.dds` texture files to the folder `[%NMC_TERRAIN_TEXTURES\textures\landscape]`, replacing two texture files that were already there.
+	* Unpack the file `TREE_ROOTS_PATCH-774.rar` in its place. You will see three new folders: `[512]`, `[1024]` and `[2048]`.
+	* We are going to use the 1024×1024 textures, so it's safe to delete the `[512]` and `[2048]` folders. Delete the file `TREE_ROOTS_PATCH-774.rar` also.
+	* Move **the contents** of the `[1024]` folder into `[%NMC_TERRAIN_TEXTURES%\textures\landscape]`, replacing two existing files with the same name.
+	* Delete the `[1024]` folder.
+	* Pack the contents of `[%NMC_TERRAIN_TEXTURES%]` into a file called `NMC_TERRAIN_TEXTURES.zip`. The packed file should only contain a folder named `[textures]` in its root.
+	* Add the file to NMM.
+4. Next: Megaton textures.
+	* Unpack `High_Resolution_Megaton-1662.7z` in its place. There was a packed file inside that one, called `MEGATON_TEX_PACK_HIGH_RES.7z`.
+	* Delete the files `ArchiveInvalidation.txt` and `High_Resolution_Megaton-1662.7z`.
+	* Unpack `MEGATON_TEX_PACK_HIGH_RES.7z` in its place. A folder named `[textures]` is created.
+	* Unpack `Aged_Paper_Scraps-1662.7z` in its place. A folder named `[AgedPaperScraps]` is created, with some folders inside.
+	* We are going to use the high resolution version, as usual, so move the files inside `[%NMC_MEGATON_TEXTURES%\AgedPaperScraps\200% (High Resolution)]` into `[%NMC_MEGATON_TEXTURES%\textures\architecture\megaton]`, overwriting any previous existing file.
+	* Delete the folder `[AgedPaperScraps]` and the file `Aged_Paper_Scraps-1662.7z`.
+	* Unpack the file `Megaton_Painted_Signs_Revised-1662.rar` in its place. A folder named `[MegatonPaintedSignsFlattened]` is created.
+	* Again, we are going to use the high resolution version (200% size), so move the contents of the folder `[%NMC_MEGATON_TEXTURES%\MegatonPaintedSignsFlattened\200%Signs (high Res)]` into `[%NMC_MEGATON_TEXTURES%\textures\architecture\megaton]`, overwriting any previous existing file.
+	* Delete the folder `[MegatonPaintedSignsFlattened]` and the file `Megaton_Painted_Signs_Revised-1662.rar`.
+	* Pack the contents of `[%NMC_MEGATON_TEXTURES%]` into a file called `NMC_MEGATON_TEXTURES.zip`. The packed file should only contain a folder named `[textures]` in its root.
+	* Add the file to NMM.
+5. Finally, Rivet City textures.
+	* Unpack the file `Rivet_City_High_Resolution-3612.7z` in its place.There was a packed file inside that one, called `RIVETCITY_HIGH_RES.7z`.
+	* Delete the files `ArchiveInvalidation.txt`, `README.txt` and `Rivet_City_High_Resolution-3612.7z`.
+	* Unpack `RIVETCITY_HIGH_RES.7z` in its place. A folder named `[data]` is created.
+	* Delete the file `RIVETCITY_HIGH_RES.7z`.
+	* _Move_ the contents of the `[data]` folder up a level. This is, move the `[data/textures]` folder to the root of `[%NMC_RIVET_CITY_TEXTURES%]`.
+	* Unpack the file `Flatter_Sign_Paint_Patch-3612.7z` in its place. A folder named `[RIVETCITYPaintedSignsFlattened]` is created.
+	* We are going to use the high resolution version of the textures in that file, so **move** the contents of the folder `[%NMC_RIVET_CITY_TEXTURES%\RIVETCITYPaintedSignsFlattened\200%Signs (high Res)]` into `[%NMC_RIVET_CITY_TEXTURES%\textures\dungeons\rivetcity]`, replacing all files when asked to.
+	* Delete the folder `[RIVETCITYPaintedSignsFlattened]` and the file `Flatter_Sign_Paint_Patch-3612.7z`.
+	* Pack the contents of `[%NMC_RIVET_CITY_TEXTURES%]` into a file called `NMC_RIVET_CITY_TEXTURES.zip`. The packed file should only contain a folder named `[textures]` in its root.
+	* Add the file to NMM.
+6. We have all our mods ready to be installed.
 ![NMM texture mods](Images/NMM%20texture%20mods.png)
-10. Activate _FO3 Flora Overhaul - Dead Edition v13C_ double-clicking on it. No overwriting required from this point on, except pointed out otherwise.
-11. Activate _NMCs\_Texture\_Pack\_for\_FO3 - NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ double-clicking on it.
-12. Activate _Terrain pack - NeilMc\_Terrain\_Pack\_1024_.
-13. Activate _Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK - High\_Resolution\_Rocks\_4096_.
-14. Activate _Terrain pack - TREE\_ROOTS\_PATCH_.
-15. Activate _Rivet City Texture Pack - Rivet\_City\_High\_Resolution_.
-16. Activate _Rivet City Texture Pack - Flatter\_Sign\_Paint\_Patch_.
-17. Activate _Megaton\_Texture\_Pack - High\_Resolution\_Megaton_.
-18. Activate _Megaton\_Texture\_Pack - Aged\_Paper\_Scraps_.
-19. Activate _Megaton\_Texture\_Pack - Megaton\_Painted\_Signs\_Revised_.
-20. Activate _Improved LOD Noise Texture - Improved LOD Noise Texture_.
-21. Activate _PureWater - PureWater_.
-22. Activate _Clean-Deluxe - Clean-Deluxe GOTY Edition_.
-23. _Pure Water_ comes in four flavours, each one with its own `.esp` file:
+7. Activate _FO3 Flora Overhaul - Dead Edition v13C_ double-clicking on it. No overwriting required from this point on, except pointed out otherwise.
+8. Activate _NMCs\_Texture\_Pack\_for\_FO3 - NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_.
+9. Activate _NMC\_TERRAIN\_TEXTURES_. It will overwrite textures from _NMCS Texture Pack_.
+10. Activate _NMC\_RIVET\_CITY\_TEXTURES_. It will overwrite textures from _NMCS Texture Pack_.
+11. Activate _NMC\_MEGATON\_TEXTURES_. It will overwrite textures from _NMCS Texture Pack_.
+12. Activate _Improved LOD Noise Texture - Improved LOD Noise Texture_.
+13. Activate _PureWater - PureWater_.
+14. Activate _Clean-Deluxe - Clean-Deluxe GOTY Edition_.
+14. _Pure Water_ comes in four flavours, each one with its own `.esp` file:
 	* `PureWater-VeryClearNoRad-.esp`: High water transparency and no radiation poisoning.
 	* `PureWater-VeryCleanLittleRad-.esp`: High water transparency and radiation poisoning.
 	* `PureWater-NoRad-.esp`: Normal water transparency and no radiation poisoning.
 	* `PureWater-LittleRad-.esp`: Normal water transparency and radiation poisoning.
-24. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
-25. Run LOOT to rearrange your load order, as usual.
-26. Launch the game to see for yourself.
+15. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
+16. Run LOOT to rearrange your load order, as usual.
+17. Launch the game to see for yourself.
 ![Fallout 3 new textures and flora night](Images/Fallout%203%20new%20textures%20and%20flora%20night.png)
 ![Fallout 3 new textures and flora day](Images/Fallout%203%20new%20textures%20and%20flora%20day.png)
 

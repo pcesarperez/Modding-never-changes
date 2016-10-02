@@ -6,6 +6,19 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.42) [02/10/2016] Correction of chapter 6.4.**
+
+I found out that many of the textures in chapters 6.4 and 6.5 were not correctly installed, due to weird folder structure inside the mod compressed files.
+
+I decided to repack all the broken texture mods in each chapter, creating three mega-packs (terrain, Megaton and Rivet City).
+
+The mods I have merged in this chapter are:
+
+* _Megaton\_Texture\_Pack_
+* _Rivet City Texture Pack_
+* _Terrain Pack_
+* _Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK_
+
 **(v0.41) [02/10/2016] Rewrite complete up to 7.**
 
 As I said, I have rewritten chapter 7, taking new screenshots. Nothing fancy.
