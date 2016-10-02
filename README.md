@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.41) [02/10/2016] Rewrite complete up to 7.**
+
+As I said, I have rewritten chapter 7, taking new screenshots. Nothing fancy.
+
 **(v0.40) [02/10/2016] Rewrite complete up to 6.9.**
 
 FUCK YEAH!
