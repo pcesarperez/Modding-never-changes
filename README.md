@@ -6,6 +6,18 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.40) [02/10/2016] Rewrite complete up to 6.9.**
+
+FUCK YEAH!
+
+I have finished the last two chapters of the book.
+
+Well, almost. Let me explain.
+
+I am going to rewrite chapter 7, about the creation of a merged mod, with updated screenshots, regarding to version 0.40 of the guide. That will be v0.41.
+
+Sadly, I discovered that a lot of the texture mods I have installed are just not working, because the folder structure in these mods is not standard. I will have to rewrite these chapters, paying attention to each file and fixing the structure when necessary. That will be v0.42.
+
 **(v0.39) [02/10/2016] Rewrite complete up to 6.7.**
 
 This is the last of the rewritten chapters of the first iteration, and it's about animations and faces.

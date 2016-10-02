@@ -53,6 +53,8 @@
 	- [6.5. The Devil is in the details](#devilInDetails)
 	- [6.6. Let there be light!](#letThereBeLight)
 	- [6.7. I don't like your face (nor the way you move)](#dontLikeYourFace)
+	- [6.8. Killing with style](#killingWithStyle)
+	- [6.9. I want to believe](#iWantToBelieve)
 * [7. Wrapping up](#wrappingUp)
 * [8. Resources](#resources)
 	* [8.1. Tools](#tools)
@@ -1552,7 +1554,7 @@ The installation is a bit tricky, regarding to _Fallout 3 Redesigned_, so let's 
 	* _LiL - An Eye Improvement Mod - Lost in Light - An Eye Improvement Mod_ (this one overwrites files from _Fallout 3 Redesigned_, so answer _Yes to all_ when asked to).
 	* _Beards of Fallout - Beards of Fallout_. No overwriting required.
 	* _Fallout 3 - Enhanced Camera - Enhanced Camera_. No overwriting required.
-16. To install the _Blackened_ patch, we need first to uninstall the previous _Blackened patch_. Look for _Blackened - Blackened FWE - MMM - EVE_ in your mod list and double-click on it (or press the "forbidden" sign below the "plus" sign after selecting the mod) to install the obsolete patch.
+16. To install the _Blackened_ patch, we need first to uninstall the previous _Blackened patch_. Look for _Blackened - Blackened FWE - MMM - EVE_ in your mod list and double-click on it (or press the "forbidden" sign below the "plus" sign after selecting the mod) to uninstall the obsolete patch.
 17. Activate _Blackened - Blackened FWE - MMM - EVE - Project Beauty_. No overwriting required.
 18. Run LOOT to rearrange your load order.
 
@@ -1580,6 +1582,75 @@ Furthermore, we can lose ourselves staring at our feet!
 
 ![Fallout 3 look at your feet](Images/Fallout%203%20look%20at%20your%20feet.png)
 
+
+
+### <a id="killingWithStyle"></a>6.8. Killing with style
+
+We have changed the way the Wasteland looks in a dramatic way so far, installing textures for everything imaginable... Except for weapons. Because, who said killing monsters shouldn't be done with style? If you don't like how your weapons look in the vanilla game, lo and behold the response to all of your prayers!
+
+The mods we are going to use to change the weapon and armor textures are:
+
+* [_Fallout 3 Hirezd_](http://www.nexusmods.com/fallout3/mods/19931/)
+* [_FO3-WRP - Weapon Retexture Project_](http://www.nexusmods.com/fallout3/mods/18133/)
+* [_Hall Of Equipment_](http://www.nexusmods.com/fallout3/mods/17145/)
+* [_Hi-Res Weapons v3_](http://www.nexusmods.com/fallout3/mods/481/)
+* [_UWWUT - Unique Weapons With Unique Textures_](http://www.nexusmods.com/fallout3/mods/6309/)
+
+Let's begin.
+
+1. Download _HiRes Weapons v3\_1_ from _Hi-Res Weapons v3_ with NMM.
+2. Download _UWWUT v1\_5_, _UWWUT\_WT - WMK Addon Update_ and _UWWUT - Broken Steel Addon Update_ from _UWWUT - Unique Weapons With Unique Textures_ with NMM.
+3. Download _Fallout\_3\_Weapon\_Retexture\_Project_ from _FO3-WRP - Weapon Retexture Project_ with NMM.
+4. Download the following files from _Fallout 3 Hirezd_:
+	* _BB Gun_
+	* _Bullet Casings_
+	* _Flamer_
+	* _Grenades_
+	* _Knuckles_
+	* _Lincolns Repeater_
+	* _Mines_
+	* _Minigun_
+	* _Supermutants_
+5. Download _Hall Of Equipment V2 All In One_ from _Hall of Equipment_.
+6. We have a lot of texture mods ready to be installed.
+![NMM weapon textures ready](Images/NMM%20weapon%20textures%20ready.png)
+7. Activate them in the following order, overwriting when necessary.
+	* _Hi-Res Weapons v3 - HiRes Weapons v3\_1_
+	* _UWWUT - Unique Weapons With Unique Textures - UWWUT v1\_5_
+	* _UWWUT - Unique Weapons With Unique Textures - UWWUT - Broken Steel Addon Update_
+	* _UWWUT - Unique Weapons With Unique Textures - UWWUT\_WT - WMK Addon Update_
+	* _FO3-WRP - Weapon Retexture Project - Fallout\_3\_Weapon\_Retexture\_Project_
+	* All the files from _Fallout 3 Hirezd_, in any order.
+	* _Hall Of Equipment - Hall Of Equipment V2 All In One_
+8. _UWWUT_ comes in two flavours, depending on the type of stats you want for your weaponry. We are going to use vanilla stats, so delete these files from your game data folder:
+	* `UWWUT_WT - BS Addon.esp`
+	* `UWWUT_WT - TP Addon.esp`
+	* `UWWUT_WT - WMK Addon.esp`
+	* `UWWUT_WT.esp`
+9. Fire up LOOT to rearrange your _huge_ load order.
+10. Run the game to see for your self the quality of the new weapon textures.
+![Fallout 3 new textures for weapons](Images/Fallout%203%20new%20textures%20for%20weapons.png)
+
+
+
+### <a id="iWantToBelieve"></a>6.9. I want to believe
+
+We are going to install the last two mods in our journey. These are fairly specific ones, and they are used only in the _Mothership Zeta_ DLC, so sorry, no screenshots here.
+
+These are the mods which are going to improve how _Zeta_ DLC looks:
+
+* [_Earth from Space texture for Mothership Zeta_](http://www.nexusmods.com/fallout3/mods/19294/)
+* [_Mothership Zeta DLC Retextured_](http://www.nexusmods.com/fallout3/mods/8260/)
+
+The installation is straightforward, as usual.
+
+1. Download _WJS DLC05 Retex 1\_0_ from _Mothership Zeta DLC Retextured_.
+2. Download _ms earthfromspacetex_ manually (there is no NMM download), and add the file to your mod stack with NMM.
+3. We have our two mods ready to be installed:
+![NMM Mothership Zeta textures](Images/NMM%20Mothership%20Zeta%20textures.png)
+4. Activate _Mothership Zeta DLC Retextured - WJS DLC05 Retex 1\_0_ first, and then _Earth from Space texture for Mothership Zeta_.
+
+And that's it. There are no data files in these mods, so we are good to go!
 
 
 
