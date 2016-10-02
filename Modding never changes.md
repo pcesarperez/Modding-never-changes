@@ -1477,9 +1477,9 @@ The three following mods try to enhance lighting in _Fallout 3_.
 
 _Darkened Interiors_ tries to give interiors a realistic lighting, with deep shadows and islands of light, which creates a scarier atmosphere. _Fallout Street Lights_ revamps, well, the street lights, creating light beams where there was just diffuse glows. Finally, _Megaton Lighting Overhaul_ adds lights in Megaton, the first settlement you are going to find in your wanderings around the Wasteland (you will spend quite a lot of time there).
 
-1. Download _Darkened Interiors v0\_3_ with NMM.
-2. Download _Fallout Street Lights Version 2_ with NMM.
-3. Download _Megaton Lighting Overhaul_ with NMM.
+1. Download _Darkened Interiors v0\_3_ from _Darkened Interiors_ with NMM.
+2. Download _Fallout Street Lights Version 2_ from _Fallout Street Lights_ with NMM.
+3. Download _Megaton Lighting Overhaul_ from _Megaton Lighting Overhaul_ with NMM.
 4. These are small mods, so you will have them downloaded in a breeze.
 ![NMM Lighting mods](Images/NMM%20Lighting%20mods.png)
 5. Activate them in the same order you downloaded them. Each mod has its own set of files, so no overwriting is required.

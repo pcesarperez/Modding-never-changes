@@ -6,6 +6,10 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.38) [02/10/2016] Rewrite complete up to 6.6.**
+
+The chapter about lighting had gone through little modifications: just a bit of extra info about the mods and new downscaled and clean screenshots, that is all.
+
 **(v0.37) [02/10/2016] Rewrite complete up to 6.5.**
 
 I have revamped the chapter 6.4 about new textures, focusing on giving the Wasteland a way better look. I had the chapter finished last night, but then I decided to replace _UHQ Terrain Overhaul_ for _Terrain Pack_ from NMC, to ensure maximum compatibility.
