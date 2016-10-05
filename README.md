@@ -6,6 +6,14 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.43) [05/10/2016] Correction of chapter 6.5.**
+
+I have corrected the inner structure of some of the texture mods in this chapter, as I did with chapter 6.4.
+
+Taking a look at the data folder of _Fallout 3_, I can see several folders and files that hardly fit in there. I will have to scan through all the installed mods, looking for strange structures to fix them, if necessary.
+
+For now, I am going to fix chapter 6.9, because the texture mod for _Mothership Zeta_ is neither suitable for automatic installation with NMM.
+
 **(v0.42) [02/10/2016] Correction of chapter 6.4.**
 
 I found out that many of the textures in chapters 6.4 and 6.5 were not correctly installed, due to weird folder structure inside the mod compressed files.

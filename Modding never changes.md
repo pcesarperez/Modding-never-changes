@@ -1391,7 +1391,7 @@ Let's begin!
 	* Unpack the file `High_Resolution_Rocks_4096-866.7z` into the same folder. Again, we have another packed file that was inside the first one, this one named `4096_Rocks.7z`.
 	* Delete the files `ArchiveInvalidation.txt` and `High_Resolution_Rocks_4096-866.7z`.
 	* Unpack the file `4096_Rocks.7z` into the same folder. There will be two new files (`rockcanyoncluster01.dds` and `rockcanyoncluster01_n.dds`).
-	* _Move_ the `.dds` texture files to the folder `[%NMC_TERRAIN_TEXTURES\textures\landscape]`, replacing two texture files that were already there.
+	* _Move_ the `.dds` texture files to the folder `[%NMC_TERRAIN_TEXTURES%\textures\landscape]`, replacing two texture files that were already there.
 	* Unpack the file `TREE_ROOTS_PATCH-774.rar` in its place. You will see three new folders: `[512]`, `[1024]` and `[2048]`.
 	* We are going to use the 1024×1024 textures, so it's safe to delete the `[512]` and `[2048]` folders. Delete the file `TREE_ROOTS_PATCH-774.rar` also.
 	* Move **the contents** of the `[1024]` folder into `[%NMC_TERRAIN_TEXTURES%\textures\landscape]`, replacing two existing files with the same name.
@@ -1468,40 +1468,88 @@ The mods we are considering are:
 * [_RobCo Certified Textures_](http://www.nexusmods.com/fallout3/mods/13428/)
 * [_Whats Your Brand - cigarette texture megapack_](http://www.nexusmods.com/fallout3/mods/591/)
 
+We are going to repack some of the mods because their inner structure is non-standard, thus unrecognizable by NMM.
 So, here we go:
 
-1. Download _MAINSTREAM PACK_, _BOTTLE MESH ADDON_ and _WINE ADDON_ from _Better Booze_ with NMM.
-2. Download _HiResSkillBooks_ and _WastelandSurvivalGuideRedone_ from _Better HiRes Skill Books_ with NMM.
-3. Download _HiResBooks-Dirtier-Grimier_ from _Better PreWar and Burned Books_ with NMM.
-4. Download _Chems and Meds Re-Textures Pack v1-0_ from _Chems and Meds Re-Texture Pack_ with NMM.
-5. Download _Enhanced Blood Textures_ from _Enhanced Blood Textures v2\_22b_ with NMM.
-6. Download _eXcalibr Ammo Pack v2-3 Full FOMOD_ from _eXcalibr - ammo eXpansion pack_ with NMM.
-7. Download _HD Fire_ from _HD Smoky Fire and Explosions for FO3_ with NMM.
-8. Download _Improved Glass Bullet Impact_ from _Improved Glass Bullet Impact_ with NMM.
-9. Download _BetterClutterCollection_ from _Retextured Clutter Collection_ with NMM.
+1. We need to repack the files from _Better Booze_:
+	* Download **manually** the following files:
+		- [_MAINSTREAM PACK_](http://www.nexusmods.com/fallout3/download/33801)
+		- [_BOTTLE MESH ADDON_](http://www.nexusmods.com/fallout3/download/50734)
+		- [_WINE ADDON_](http://www.nexusmods.com/fallout3/download/33880)
+	* Unpack them in a location of your choice, say `[%BETTER_BOOZE%]`.
+	* Delete the three `.zip` files. We are not going to need them anymore.
+	* Extract the contents of the folder `[%BETTER_BOOZE%\Better Booze v02 - MAINSTREAM PACK]` to `[%BETTER_BOOZE%]` (that is, move them up a level).
+	* Do the same with the contents of `[%BETTER_BOOZE%\Better Booze v02 - WINE ADDON]`.
+	* Remove the following items under `[%BETTER_BOOZE%]`:
+		- `[Better Booze v02 - MAINSTREAM PACK]`
+		- `[Better Booze v02 - WINE ADDON]`
+		- `*.jpg`
+		- `*.txt`
+	* We need to choose if we want wine bottles in game to be of white wine of red wine. I am partial to white wine, so delete the folder `[%BETTER_BOOZE%\Red (burgundy bottle)]` and move the contents of `[%BETTER_BOOZE%\White (green bottle)]` to `[%BETTER_BOOZE%]` (up a level).
+	* Delete the folder `[%BETTER_BOOZE%\White (green bottle)]`
+	* Pack the contents of the folder `[%BETTER_BOOZE%]` into a file named `BETTER_BOOZE.zip`.
+	* Add `BETTER_BOOZE.zip` to NMM.
+	* Delete the folder `[%BETTER_BOOZE%]`.
+2. Next, we are going to create a single pack for book textures.
+	* Download **manually** the following files:
+		- [_HiResSkillBooks_](http://www.nexusmods.com/fallout3/download/42546) and [_WastelandSurvivalGuideRedone_](http://www.nexusmods.com/fallout3/download/42715) from _Better HiRes Skill Books_.
+		- [_HiResBooks-Dirtier-Grimier_](http://www.nexusmods.com/fallout3/download/41985) from _Better PreWar and Burned Books_.
+	* Unpack them in a location of your choice, say `[%BETTER_BOOKS%]`.
+	* Delete the three `.zip` files you just unpacked.
+	* Delete the following files under `[%BETTER_BOOKS%]`:
+		- `*.gif`
+		- `*.txt`
+	* Move the contents of `[%BETTER_BOOKS%\Data]` to `[%BETTER_BOOKS%]` (up a level).
+	* Delete the folder `[%BETTER_BOOKS%\Data]`.
+	* Pack the contents of `[%BETTER_BOOKS%]` into a file named `BETTER_BOOKS.zip`.
+	* Add `BETTER_BOOKS.zip` to NMM.
+	* Delete the folder `[%BETTER_BOOKS%]`.
+3. Next, the zillion of small things that clutter the Wasteland.
+	* Download **manually** the file [_BetterClutterCollection_](http://www.nexusmods.com/fallout3/download/51147) from _Retextured Clutter Collection_.
+	* Unpack the file in a location of your choice. Yeah, you guessed; `[%BETTER_CLUTTER%]`.
+	* Delete the `.zip` file we just unpacked.
+	* Move the contents of the folder `[%BETTER_CLUTTER%\BetterClutter\Data]` to `[%BETTER_CLUTTER%]` (up two levels).
+	* Delete the following files under `[%BETTER_CLUTTER%]`:
+		- `[BetterClutter]`
+		- `*.gif`
+		- `*.txt`
+	* Pack the contents of `[%BETTER_CLUTTER%]` into the file `BETTER_CLUTTER.zip`.
+	* Add `BETTER_CLUTTER.zip` to NMM.
+	* Delete the folder `[%BETTER_CLUTTER%]`.
+4. Finally (for the manual part), we are going to address cigarette brands.
+	* Download **manually** [_Whats Your Brand_](http://www.nexusmods.com/fallout3/download/33542) from _Whats Your Brand - cigarette texture megapack_.
+	* Unpack the file in a location of your choice, for example, you name it, `[%BETTER_CIGARETTES%]`.
+	* Delete the `.zip` file we just unpacked.
+	* Move the contents of the following folders under `[%BETTER_CIGARETTES%]` up a level:
+		- `[(Optional) White Cigarette]`
+		- `[Black Death]`
+	* Delete **everything** under `[%BETTER_CIGARETTES%]` except the folder `[textures]`.
+	* Pack the contents of `[%BETTER_CIGARETTES%]` into the file `BETTER_CIGARETTES.zip`.
+	* Add `BETTER_CIGARETTES.zip` to NMM.
+	* Delete the folder `[%BETTER_CIGARETTES%]`.
+5. Download _Chems and Meds Re-Textures Pack v1-0_ from _Chems and Meds Re-Texture Pack_ with NMM.
+6. Download _Enhanced Blood Textures_ from _Enhanced Blood Textures v2\_22b_ with NMM.
+7. Download _eXcalibr Ammo Pack v2-3 Full FOMOD_ from _eXcalibr - ammo eXpansion pack_ with NMM.
+8. Download _HD Fire_ from _HD Smoky Fire and Explosions for FO3_ with NMM.
+9. Download _Improved Glass Bullet Impact_ from _Improved Glass Bullet Impact_ with NMM.
 10. Download _RobCo Certified Textures_ from _RobCo Certified Textures_ with NMM.
-11. Download _Whats Your Brand_ from _Whats Your Brand - cigarette texture megapack_ with NMM.
-12. We should have our detail textures downloaded, ready to activate in NMM.
+11. We should have our detail textures downloaded, ready to activate in NMM.
 ![NMM detail texture mods](Images/NMM%20detail%20texture%20mods.png)
-13. Activate them in the following order (no conflicts, unless otherwise specified):
-	* _Better Booze - MAINSTREAM PACK_.
-	* _Better Booze - WINE ADDON_.
-	* _Better Booze - BOTTLE MESH ADDON_.
-	* _Better HiRes Skill Books - HiResSkillBooks_.
-	* _Better HiRes Skill Books - WastelandSurvivalGuideRedone_.
-	* _Better PreWar and Burned Books - HiResBooks-Dirtier-Grimier_ (this one conflicts with a texture previously installed by _Arefu Expanded_; answer _Yes to all_).
+12. Activate them in the following order (no conflicts, unless otherwise specified):
+	* _BETTER\_BOOZE_.
+	* _BETTER\_BOOKS_ (this one conflicts with a texture previously installed by _Arefu Expanded_; answer _Yes to all_).
 	* _Chems and Meds Re-Texture Pack - Chems and Meds Re-Textures Pack v1-0_.
 	* _Enhanced Blood Textures v2\_22b - Enhanced Blood Textures_ (this one conflicts with textures previously installed from _EVE - Energy Visuals Enhanced_; answer _Yes to all_).
 	* _eXcalibr Ammo eXpansion Pack_. This one comes with a FOMOD installer with two options (_Override_ and _Override for FWE 6.0.3_). Select the last one. It also overwrites textures from _FWE_, so answer _Yes to all_.
 ![NMM eXcalibr options](Images/NMM%20eXcalibr%20options.png)
 	* _HD Smoky Fire and Explosions for FO3 - HD Fire_.
 	* _Improved Glass Bullet Impact - Improved Glass Bullet Impact_.
-	* _Retextured Clutter Collection - BetterClutterCollection_ (this one overwrites textures from _NMC Texture Pack_; answer _Yes to all_).
+	* _BETTER\_CLUTTER_ (this one overwrites textures from _NMC Texture Pack_; answer _Yes to all_).
 	* _RobCo Certified Textures_. This mod has a FOMOD installer to select the kind of texture you want, with a screenshot to help you choose. I'll go with "Army". It will also overwrite textures from _RobCo Certified_, so answer _Yes to all_.
 ![NMM RobCo Certified Textures options](Images/NMM%20RobCo%20Certified%20Textures%20options.png)
-	* _Whats Your Brand - cigarette texture megapack - Whats Your Brand_.
-14. Run LOOT to rearrange your load order, for there are a number of `.esp` files installed alongside the textures.
-15. Run the game and wander around to see for yourself the overall improvement in the textures of the everyday objects.
+	* _BETTER\_CIGARETTES_.
+13. Run LOOT to rearrange your load order, for there are a number of `.esp` files installed alongside the textures.
+14. Run the game and wander around to see for yourself the overall improvement in the textures of the everyday objects.
 
 
 
