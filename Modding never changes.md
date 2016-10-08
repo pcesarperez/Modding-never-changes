@@ -50,10 +50,10 @@
 	- [6.2. The Nuclear Holocaust like you have never seen before](#uncannyNuclearHolocaust)
 	- [6.3. Everything depends on the point of view](#pointOfView)
 	- [6.4. Nobody said the Nuclear Holocaust should be unpleasant to look at](#unpleasantNuclearHolocaust)
-	- [6.5. The Devil is in the details](#devilInDetails)
+	- [6.5. The Devil is in the details (optional)](#devilInDetails)
 	- [6.6. Let there be light!](#letThereBeLight)
 	- [6.7. I don't like your face (nor the way you move)](#dontLikeYourFace)
-	- [6.8. Killing with style](#killingWithStyle)
+	- [6.8. Killing with style (optional)](#killingWithStyle)
 	- [6.9. I want to believe](#iWantToBelieve)
 * [7. Wrapping up](#wrappingUp)
 * [8. Resources](#resources)
@@ -1726,13 +1726,23 @@ These are the mods which are going to improve how _Zeta_ DLC looks:
 * [_Earth from Space texture for Mothership Zeta_](http://www.nexusmods.com/fallout3/mods/19294/)
 * [_Mothership Zeta DLC Retextured_](http://www.nexusmods.com/fallout3/mods/8260/)
 
-The installation is straightforward, as usual.
+The file for [_Mothership Zeta DLC Retextured_](http://www.nexusmods.com/fallout3/mods/8260/) is a bit awkward, so we are going to fix it.
 
-1. Download _WJS DLC05 Retex 1\_0_ from _Mothership Zeta DLC Retextured_.
-2. Download _ms earthfromspacetex_ manually (there is no NMM download), and add the file to your mod stack with NMM.
-3. We have our two mods ready to be installed:
+1. Download **manually** [_WJS DLC05 Retex 1\_0_](http://www.nexusmods.com/fallout3/download/54936) from _Mothership Zeta DLC Retextured_.
+2. Unpack the file in a location of your choice, say `[%ZETA_RETEXTURE%]`.
+3. Delete the following items inside `[%ZETA_RETEXTURE%]`:
+	* `[preview screens]`
+	* `*.jpg`
+	* `*.txt`
+4. Move the contents of the folder `[%ZETA_RETEXTURE%\Abomination_Heartbeat]` up a level, to the root of `[%ZETA_RETEXTURE%]`.
+5. Move the contents of the folder `[%ZETA_RETEXTURE%\Open This]` up a level, to the root of `[%ZETA_RETEXTURE%]`.
+6. Delete the folders `[Abomination_Heartbeat]` and `[Open This]` under `[%ZETA_RETEXTURE%]`. There should be only two folders by now (`[meshes]` and `[textures]`).
+7. Zip the contents of `[%ZETA_RETEXTURE%]` into a file named `ZETA_RETEXTURE.zip`.
+8. Add the zipped file to NMM.
+9. Download _ms earthfromspacetex_ manually (there is no NMM download), and add the file to your mod stack with NMM.
+10. We have our two mods ready to be installed:
 ![NMM Mothership Zeta textures](Images/NMM%20Mothership%20Zeta%20textures.png)
-4. Activate _Mothership Zeta DLC Retextured - WJS DLC05 Retex 1\_0_ first, and then _Earth from Space texture for Mothership Zeta_.
+11. Activate _ZETA\_RETEXTURE_ first, and then _Earth from Space texture for Mothership Zeta_. Both require some overwriting.
 
 And that's it. There are no data files in these mods, so we are good to go!
 

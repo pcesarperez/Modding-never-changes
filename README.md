@@ -6,6 +6,16 @@ Take a look at the file `Modding never changes.md`. That is the main guide file,
 
 ### Changelog
 
+**(v0.44) [08/10/2016] Correction of chapter 6.9.**
+
+The mod _Mothership Zeta DLC Retextured_ had a NMM non-compatible structure, so I have had to fix it and reinstall it.
+
+And that's it. This is the last piece of the puzzle. I consider the contents of the guide as closed.
+
+But there are still a lot of things to do, beginning with a restructure of the site, maybe with a wiki and a download link (at least for the HTML version, for the time being).
+
+Stay tuned!
+
 **(v0.43) [05/10/2016] Correction of chapter 6.5.**
 
 I have corrected the inner structure of some of the texture mods in this chapter, as I did with chapter 6.4.
