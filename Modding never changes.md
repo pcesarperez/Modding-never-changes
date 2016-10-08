@@ -1448,7 +1448,7 @@ The quality of the textures is hard to miss, not to mention the fuckload of tree
 
 
 
-### <a id="devilInDetails"></a>6.5. The Devil is in the details
+### <a id="devilInDetails"></a>6.5. The Devil is in the details (optional)
 
 _Fallout 3_ is a great game to develop your kleptomaniac urges. The Wasteland is littered with small objects you can collect to... Well, collect them. Why there should be any veiled meaning to that? The only limit is the [carry weight](http://fallout.wikia.com/wiki/Carry_Weight) of your character, unless you cheat the game with the console command `player.forceav carryweight {amount}`, where `{amount}` is the desired carry weight in pounds (lbs), up to 20.106 lbs (that's 9.128 kg., give or take). But you are not going to do that, are you?
 
@@ -1685,7 +1685,7 @@ The mods we are going to use to change the weapon and armor textures are:
 Let's begin.
 
 1. Download _HiRes Weapons v3\_1_ from _Hi-Res Weapons v3_ with NMM.
-2. Download _UWWUT v1\_5_, _UWWUT\_WT - WMK Addon Update_ and _UWWUT - Broken Steel Addon Update_ from _UWWUT - Unique Weapons With Unique Textures_ with NMM.
+2. Download _UWWUT v1\_5_ and _UWWUT - Broken Steel Addon Update_ from _UWWUT - Unique Weapons With Unique Textures_ with NMM.
 3. Download _Fallout\_3\_Weapon\_Retexture\_Project_ from _FO3-WRP - Weapon Retexture Project_ with NMM.
 4. Download the following files from _Fallout 3 Hirezd_:
 	* _BB Gun_
@@ -1704,14 +1704,12 @@ Let's begin.
 	* _Hi-Res Weapons v3 - HiRes Weapons v3\_1_
 	* _UWWUT - Unique Weapons With Unique Textures - UWWUT v1\_5_
 	* _UWWUT - Unique Weapons With Unique Textures - UWWUT - Broken Steel Addon Update_
-	* _UWWUT - Unique Weapons With Unique Textures - UWWUT\_WT - WMK Addon Update_
 	* _FO3-WRP - Weapon Retexture Project - Fallout\_3\_Weapon\_Retexture\_Project_
 	* All the files from _Fallout 3 Hirezd_, in any order.
 	* _Hall Of Equipment - Hall Of Equipment V2 All In One_
 8. _UWWUT_ comes in two flavours, depending on the type of stats you want for your weaponry. We are going to use vanilla stats, so delete these files from your game data folder:
 	* `UWWUT_WT - BS Addon.esp`
 	* `UWWUT_WT - TP Addon.esp`
-	* `UWWUT_WT - WMK Addon.esp`
 	* `UWWUT_WT.esp`
 9. Fire up LOOT to rearrange your _huge_ load order.
 10. Run the game to see for your self the quality of the new weapon textures.
