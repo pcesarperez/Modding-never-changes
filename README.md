@@ -1,287 +1,32 @@
-# README
+# Modding... Modding never changes
 
-This is a thorough guide about fixing and enhancing _Fallout 3 Game of the Year Edition_, that is, _Fallout 3_ and all its DLCs. For now, this is a work in progress, as I am focusing on the contents first and on the layout later.
+## Description
 
-Take a look at the file `Modding never changes.md`. That is the main guide file, and it will be used to generate different final products (HTML, PDF, etc.).
+This is a thorough guide about fixing and enhancing _Fallout 3 Game of the Year Edition_, that is, _Fallout 3_ and all its DLCs.
 
-### Changelog
+Indeed, there are a lot of _Fallout 3_ modding guides out there, but I would like to contribute with a functional standpoint about the way the mods are installed.
 
-**(v0.44) [08/10/2016] Correction of chapter 6.9.**
+## Installation
 
-The mod _Mothership Zeta DLC Retextured_ had a NMM non-compatible structure, so I have had to fix it and reinstall it.
+For now, all you have is a Markdown file (`Modding never changes.md`), which you can "compile" to HTML. There is a certain sense of elation when you go from this.
 
-And that's it. This is the last piece of the puzzle. I consider the contents of the guide as closed.
+![Sublime Text workspace](Images/Sublime%20Text%20workspace.png)
 
-But there are still a lot of things to do, beginning with a restructure of the site, maybe with a wiki and a download link (at least for the HTML version, for the time being).
+To this.
 
-Stay tuned!
+![HTML version of the book](Images/HTML%20version%20of%20the%20book.png)
 
-**(v0.43) [05/10/2016] Correction of chapter 6.5.**
+As you can see, I am using the awesome [Sublime Text](http://www.sublimetext.com) editor to create the raw version of the book. In order to compile the Markdown source into the HTML version, I am using the following packages, installed using [Package Control](https://packagecontrol.io/installation):
 
-I have corrected the inner structure of some of the texture mods in this chapter, as I did with chapter 6.4.
+* [Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
+* [MarkdownEditing](https://packagecontrol.io/packages/MarkdownEditing)
 
-Taking a look at the data folder of _Fallout 3_, I can see several folders and files that hardly fit in there. I will have to scan through all the installed mods, looking for strange structures to fix them, if necessary.
+## Credits
 
-For now, I am going to fix chapter 6.9, because the texture mod for _Mothership Zeta_ is neither suitable for automatic installation with NMM.
+This insanity is the sole mind derailment of Pablo César Pérez González, aka **pcesarperez**. You may have heard of me in dark echoing chambers by the nickname of **adastra**. Blessed you, then.
 
-**(v0.42) [02/10/2016] Correction of chapter 6.4.**
+You can contact me regarding this guide through the Gmail address `modding.never.changes`.
 
-I found out that many of the textures in chapters 6.4 and 6.5 were not correctly installed, due to weird folder structure inside the mod compressed files.
+## License
 
-I decided to repack all the broken texture mods in each chapter, creating three mega-packs (terrain, Megaton and Rivet City).
-
-The mods I have merged in this chapter are:
-
-* _Megaton\_Texture\_Pack_
-* _Rivet City Texture Pack_
-* _Terrain Pack_
-* _Terrain\_Pack\_ROCKS\_ADD\_ON\_PACK_
-
-**(v0.41) [02/10/2016] Rewrite complete up to 7.**
-
-As I said, I have rewritten chapter 7, taking new screenshots. Nothing fancy.
-
-**(v0.40) [02/10/2016] Rewrite complete up to 6.9.**
-
-FUCK YEAH!
-
-I have finished the last two chapters of the book.
-
-Well, almost. Let me explain.
-
-I am going to rewrite chapter 7, about the creation of a merged mod, with updated screenshots, regarding to version 0.40 of the guide. That will be v0.41.
-
-Sadly, I discovered that a lot of the texture mods I have installed are just not working, because the folder structure in these mods is not standard. I will have to rewrite these chapters, paying attention to each file and fixing the structure when necessary. That will be v0.42.
-
-**(v0.39) [02/10/2016] Rewrite complete up to 6.7.**
-
-This is the last of the rewritten chapters of the first iteration, and it's about animations and faces.
-
-I have two new chapters ahead, one about weapons retexturing and the other about _Mothership Zeta_ DLC retexturing.
-
-We are almost there!
-
-**(v0.38) [02/10/2016] Rewrite complete up to 6.6.**
-
-The chapter about lighting had gone through little modifications: just a bit of extra info about the mods and new downscaled and clean screenshots, that is all.
-
-**(v0.37) [02/10/2016] Rewrite complete up to 6.5.**
-
-I have revamped the chapter 6.4 about new textures, focusing on giving the Wasteland a way better look. I had the chapter finished last night, but then I decided to replace _UHQ Terrain Overhaul_ for _Terrain Pack_ from NMC, to ensure maximum compatibility.
-
-The chapter 6.5 is brand new, focusing on small objects scattered throughout the Wasteland. There are a lot of textures here, and my rig is starting to scream in pain every time I run the game to take some screenshots.
-
-**(v0.36) [25/09/2016] New introductory chapter.**
-
-I have been thinking about the second volume of the guide... Yes, there will be a second volume. And a third. And a fourth. All the way up to a planned eighth guide, if I don't end up batshit crazy first.
-
-Well, the second volume will be about the same game, _Fallout 3_, but using Mod Organizer instead of Nexus Mod Manager. However, let's not get ahead of ourselves yet.
-
-The planning of a second volume with a different tool (and philosophy) made me think about a chapter explaining _why_ things are done the way they are, so a chapter named "Functional vs. technical" has born.
-
-The new chapter forced me to renumber the remaining chapters, and I seized the opportunity to get rid of the load order lists, because I considered them useless. LOOT is a solid enough tool to put our trust in.
-
-Finally, I marked two chapters (the ones about sound and new quests/places) as optional.
-
-**(v0.35) [20/09/2016] Rewrite complete up to 5.3.**
-
-Well, another straightforward chapter. Things are getting interesting ahead.
-
-**(v0.34) [20/09/2016] Rewrite complete up to 5.2.**
-
-The chapters 5.1 and 5.2 have been easy to rewrite. I had just to take a couple of new screenshots, but aside from that, everything there is pretty much the same.
-
-The next chapter will be more or less equivalent, but from that point on, there's a lot of new mods to install, mostly textures for specific objects.
-
-**(v0.33) [18/09/2016] New chapter about new explorable places in D.C.**
-
-This is the final chapter before starting with textures, meshes and animations. It's a new chapter, and it covers _DCInteriors Project_, which add tons of explorable places in Downtown D.C. in particular and the Wasteland in general.
-
-**(v0.32) [18/09/2016] New chapter about Megaton urban planning.**
-
-I have added a new chapter with two mods that change the urban landscape of Megaton, with a new walkway (making easier to get to the key places) and a new story to your house.
-
-**(v0.31) [18/09/2016] New chapter about crafting robots.**
-
-This is a brand new chapter about _RobCo Certified_, a mod which allows you to repair and create robots for a better nerdy experience.
-
-**(v0.30) [16/09/2016] Rewrite complete up to 4.4.3.**
-
-The chapter about personal achievements log has been corrected. The log only appears in a fresh playthrough _using the main Vault 101 start_, not one of the FWE alternate starts.
-
-I have included a screenshot of the log in the ninth birthday of the Wanderer.
-
-**(v0.29) [16/09/2016] Rewrite complete up to 4.4.2.**
-
-Chapter 4.4.2 has gone through minor corrections. The most significant change is the addition of a file which gives a twist about the way you find the Advanced Recon gear.
-
-**(v0.28) [15/09/2016] Rewrite complete up to 4.4.1.**
-
-The chapter about new quests have plumped up a lot. From just 3 mods/quest, the count has increased to 8. Aside from that, there's nothing really remarkable about this update (and I am a little absentminded right now).
-
-I have not tested the mods, so I hope the game won't crash when going on any of these quests.
-
-**(v0.27) [11/09/2016] Rewrite complete up to 4.4.4.**
-
-The chapter about weapons (_EVE_, _RH\_IronSights_ and _WMK_) has changed dramatically. Using Xuul's video as a source of enlightenment, I have a less cluttered procedure, although a bit more complex. _RH\_IronSights_ and _WMK_ install procedures have been completely rewritten, and I have installed several bridges I left out the previous iteration.
-
-I also included the _Blackened_ patch between _FWE_, _MMM_ and _EVE_ permanently. I think it's safer to do so. I will include instructions for the _Project Beauty_ patch later.
-
-**(v0.26) [09/09/2016] Rewrite complete up to 4.3.3.**
-
-The chapter about Mart's Mutant Mod is complete. I have only made a few minor corrections because the chapter was updated enough.
-
-Let's go on.
-
-**(v0.25) [06/09/2016] Rewrite complete up to 4.3.2.**
-
-Well, this has been a hell of a task.
-
-After finishing chapter 4.2, I started with 4.3.1, about FWE. But I made _three_ mistakes.
-
-1. I didn't read BenWah's advice about creating a single file with the three available files for FWE in Nexus, provided you where using NMM instead of FOMOD (as I am doing). NMM doesn't install FWE the right way unless you merge the files first and foremost. As a collateral result, I discovered Xuul's videos, which have been **VERY** helpful.
-2. I installed _Improved Sound FX v1\_3_ before FWE, and I didn't know, at the time, that these two mods collide. And, maybe due to NMM corruption (that's the third point), this simple fact fucked up the installation of FWE.
-3. My copy of NMM was corrupted. I don't know why, but the file which keeps track of the installed files per mod (thus, using them to detect overlaps), located in `%NMM_HOME%\Fallout3\Mods\VirtualInstall\VirtualModConfig.xml`, contained information about _deleted_ mods I was no longer using (or I hadn't installed yet). You can imagine the plethora of WTFs I expelled when my installed mods count didn't match with my active mods count.
-
-In short, I had to start over again! However, several bonuses have been gained:
-
-* I found a new mod to speed up the Pip-Boy animation ([_Faster Pipboy Faster_](http://www.nexusmods.com/newvegas/mods/35225/?)), so pulling it up is not excruciatingly slow.
-* I fixed the green tint problem with high resolution maps using [_Shiloh DS - Clean Pipboy Screen_](http://www.nexusmods.com/newvegas/mods/36255/?) mod. The "Clean Pipboy Screen" feature in [_Better High Detail Map and Icons_](http://www.nexusmods.com/fallout3/mods/16898/?) only removes "old electronics" artifacts from the Pip-Boy screen, but it doesn't remove the green tint. Besides, with this mod the map fits perfectly within the bounds of the usable area, without need to tinker with configuration files.
-* I relocated [_Improved Sound FX v1\_3_](http://www.nexusmods.com/fallout3/mods/627/?) after FWE, screwing up my functional approach to mod setup, but hey, you have to make sacrifices now and then.
-
-Next stop: Mart Mutants Mod!
-
-**(v0.24) [02/09/2016] Complete chapter 4.2 overhaul.**
-
-I have completely rewritten chapter 4.2 about sound and music. Where we had just one mod, we have now six different mods, ranging from weapon sounds to new songs from radio stations scattered throughout the Wasteland. The sense of immersion has greatly improved with the contents of this chapter.
-
-**(v0.23) [29/08/2016] Chapter 4.1 rewritten and updated.**
-
-The chapter 4.1 (user interface) has been easier. Most of the pictures already had red boxes pointing out selected options/buttons. I have downscaled the screenshots anyway.
-
-The biggest changes have been made in 4.1.5 (world map retexturing), because I finally managed to get rid of the green tint of the original map. The full-sized map of the mod is shown in all its colorful glory.
-
-I have not used [_Color Hi-Detailed map and icons_](http://www.nexusmods.com/fallout3/mods/1789/?) because I thought the maps in that mod were high-resolution, but nope!
-
-**(v0.22) [29/08/2016] Chapter 3 rewritten and updated.**
-
-I have started the next iteration, with new mods. However, I am making the most of it by rescaling the images and correcting errors in the text.
-
-The chapter 3 has been rewritten, with downscaled images (a lot less weight in the final file) and with a new section, 3.11, about removing unused objects from the game.
-
-**(v0.21) [29/08/2016] New section about creating a merged patch.**
-
-I have written a new chapter (6; I moved previous chapter 6 to number 7) about creating a merged patch with the mod stack you have installed to that point. It is an important final step in every mod installation we are going to do.
-
-This is the final chapter in the first iteration (now it is, trust me). The next version will be about a new iteration.
-
-**(v0.20) [25/08/2016] Fixed load order lists.**
-
-I have added a few missing load order lists in the initial chapters. I have also highlighted the installed files in the lists that didn't have them highlighted (all load order lists previous to _Project Reality_).
-
-**(v0.19) [24/08/2016] Section about people redesigned finished.**
-
-At last!
-
-Final chapter finished... Well, _almost_ final chapter. There are a few remaining loose ends to finish (a merged patch, highlighting of the installed files in each load order listing, etc.).
-
-This chapter is about people reanimated (new and more natural animations) and redesigned (a huge overhaul of face meshes all around the game). And that's it. This is the game we are going to play.
-
-However, there are certain mods that I would like to include in the following rehearsal. I have wrote them down in a separate sheet in `Mods installed.ods`. I will consider the contents finished then.
-
-**(v0.18) [21/08/2016] Section about lighting finished.**
-
-Added a new section about lighting, both in interiors and exteriors, setting a scarier mood in the nights. These mods fit perfectly with darker nights from _Project Reality_.
-
-**(v0.17) [20/08/2016] Section about new visuals finished.**
-
-Added a new section about visuals (5.4), covering ground from new textures to increased flora, going through crystal clear waters and a cleaned-up environment.
-
-Almost there!
-
-**(v0.16) [15/08/2016] Section about vision control finished.**
-
-Added a new section about vision control (5.3), with four mods which allow to change the way we see the Wasteland.
-
-The final three chapters (5.4, 5.5 and 5.6) are on their way. I have planned the install order, so I have added the chapter stubs, writing down the remaining mods to install.
-
-**(v0.15) [07/08/2016] Section about Project Reality finished.**
-
-Added a new section about Project Reality, a mod that changes the way the Wasteland looks (much better, in my opinion), and adds dynamic weather and much darker (and terrifying) nights.
-
-**(v0.14) [07/08/2016] Section about night sky enhancement finished.**
-
-Finally!
-
-I have started the final big chapter of the book. This big chapter (5) deals with graphic-enhancement mods.
-
-The first chapter (5.1) changes the detail and brightness of the night sky with two simple mods.
-
-**(v0.13) [07/08/2016] Section about achievement list finished.**
-
-I have added a small section about a mod that creates a list of all your fulfilled achievements in the game, with retroactive effect.
-
-There are no screenshots, though, because I am not getting the option in my PipBoy, neither in my regulator, nor in my vault dweller saved games.
-
-If I don't get this mod to work in a fresh playthrough, I will remove this chapter.
-
-**(v0.12) [07/08/2016] Section about Advanced Gear set finished.**
-
-I have included a new section (4.4.2) about Gopher's Advanced Recon set, with new armor, trap detector, nightvision, thermal vision and range finder.
-
-Besides, I have rearranged section 4, moving the expanded content to its own section (4.4.1), and planning a new section about a revamped achievement log (4.4.3).
-
-**(v0.11) [06/08/2016] Section about expanded content revisited.**
-
-I have made a few minor adjustments to the section 4.4 (former 4.3.4), about expanded content. The only remarkable change is the load order.
-
-We are ready to change the way the game looks now.
-
-On a side note, it's a bit difficult to write a guide like this with a cat craving for attention in your lap.
-
-**(v0.10) [26/07/2016] Section about weapons finished.**
-
-At last!
-
-I have finished the section about weapons system revamp (WMK, EVE and RH_IronSights). The game runs without crashes (apparently), but I have no installed the compatibility patch among FWE, EVE and MMM, because we are going to install Project Beauty, and there is a combo patch for all of them.
-
-The end is nigh!
-
-**(v0.9) [24/07/2016] Section about MMM reworked.**
-
-I have rewritten the section about _Martigen's Mutant Mod_, using one of the merged patches from Paradox Ignition. I am going to use these patches for WMK, EVE and RH_IronSights also, applying a _Blackened_ compatibility patch when finished.
-
-**(v0.8) [24/07/2016] Section about audio overhaul finished.**
-
-New section (4.2. Lend me your ears) about audio overhaul of the game. I have added a short chapter (4.1.7. Shed some light here, please) about Pip-Boy's lamplight revamp.
-
-However, the big thing here is that I had to start modding the game from scratch, because I realized I had to use Paradox's The Mergers patches (along with Blackened compatibility patches) to the next main series of mods (FWE, MMM, EVE and WMK).
-
-I didn't feel comfortable rolling back some mods, and my 7 GB backup copy didn't work because I didn't copy metadata from NMM describing the actual installed mods, so, I had no other choice.
-
-**(v0.7) [10/07/2016] Section about new content finished.**
-
-New section (4.2.3. Expanding your world) about new content mods (_Alton, IL_, _Arefu Expanded_ and _Mothership Zeta Crew_).
-
-**(v0.6) [10/07/2016] Section about _Martigen's Mutant Mod_ finished.**
-
-New section (4.2.2. Fraternizing with the neighborhood) about _Martigen's Mutant Mod_, a mod that adds a lot of new creatures and encounter/fight mechanics to the game.
-
-**(v0.5) [04/07/2016] Corrections and additions.**
-
-Corrections and additions in sections 4.1.3 and 4.2.1.
-
-**(v0.4) [29/06/2016] Section about _Fallout 3 Wanderers Edition_ finished.**
-The section 4.2.1 is finished, covering the installation of FWE, letting us play a completely different game, harsher and more challenging.
-
-**(v0.3) [26/06/2016] Section about UI finished.**
-
-The section 4.1 is finished, covering from the HUD to the Pip-Boy. The game should look slightly better now, but not in a blowing-off-your-head way.
-
-**(v0.2) [25/06/2016] Rough draft of the section about UI.**
-
-Two sections finished about improving how your user interface looks (sections 4.1.1 and 4.1.2).
-
-**(v0.1) [24/06/2016] First chapter finished.**
-
-The first chapter is about fixing the game. At the end of the chapter, you will have a fully patched and (mostly) flawless game to play with. The content, visuals and mechanics of the game are not altered in this stage.
+This guide is subject to a [Creative Commons Attribution Share Alike 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Visit the link to read a human-readable summary or load the `LICENSE.txt` file in this repository.
