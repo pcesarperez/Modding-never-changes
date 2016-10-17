@@ -672,8 +672,8 @@ Next, we are going to _shrink_ the user interface using http://forums.bethsoft.c
 
 This will be a bit tricky, because there are no NMM packages right out-of-the-box. Instead, we have the FOMOD (http://www.nexusmods.com/fallout3/mods/640/[_Fallout Mod Manager_]) packages... But they are compatible with NMM, so bear with me.
 
-. Download http://ui.darnified.net/wip/F3/dui_f3a11.zip[DUIF3 Alpha<sup>11</sup>]. The file is called `dui_f3a11.zip`.
-. Download http://ui.darnified.net/wip/F3/dui_f3a11_HF.7z[DUIF3 Alpha<sup>11</sup> Hotfix]. The file is called `dui_f3a11_HF.7z`.
+. Download http://ui.darnified.net/wip/F3/dui_f3a11.zip[DUIF3 Alpha^11^]. The file is called `dui_f3a11.zip`.
+. Download http://ui.darnified.net/wip/F3/dui_f3a11_HF.7z[DUIF3 Alpha^11^ Hotfix]. The file is called `dui_f3a11_HF.7z`.
 . Unzip the main file (`dui_f3a11.zip`) in a location of your choice. The zipped file should contain just one file, `dui_f3a11.fomod`.
 . `.fomod` files are, in fact, `.zip` files, so you can use 7-Zip or WinRAR to unzip the file `dui_f3a11.fomod` to a location of your choice, say `[%DUIF3%]`.
 . Unzip the hotfix (`dui_f3a11_HF.7z`) and copy the contents of the unzipped file into the folder `[%DUIF3%]` we just created. Overwrite files when necessary.
