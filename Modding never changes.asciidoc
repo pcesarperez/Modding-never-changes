@@ -1,0 +1,2198 @@
+= Modding... Modding never changes
+Pablo César Pérez González (aka "adastra") <modding.never.changes@gmail.com>
+v0.5, 16/10/2016
+:toc: left
+:toclevels: 4
+:sectlinks:
+:numbered:
+:imagesdir: ./Images
+:experimental:
+
+
+
+
+
+
+
+
+== Introduction
+
+We, human beings, have a strange knack for imagining Doomsday. We like to depict our planet devastated by plagues, war (either biological or nuclear), alien attacks or all together at the same time.
+
+One of the videogames that best shows how our world could be after a nuclear holocaust is _Fallout 3_. And https://warisboring.com/why-fallout-is-the-best-nuclear-war-story-ever-told-5910918d28e4[I'm not the only one] with that feeling.
+
+However, if you have been around the videogame scene for a while, you will know that _Fallout 3_ can be completely enhanced using _mods_... Well, that is a complete understatement, as you could play a whole different game with the appropriate mods. Or you could break the game. That's the tricky part.
+
+Getting right to the point, vanilla _Fallout 3_ sucks in many different ways. You cannot even run the game if your box uses Windows 7 or higher. A lot of tinkering has to be done for the game to run flawlessly.
+
+There is an awesome http://steamcommunity.com/sharedfiles/filedetails/id=149946772[guide to fix the game in order to run under modern versions of Windows], written by http://steamcommunity.com/id/benwaa[BenWah], which I intend to follow. And there are https://www.youtube.com/channel/UC1CSCMwaDubQ4rcYCpX40Eg[a hell of a lot of videos by Gopher] with the best _Fallout 3_ mods your money can buy (well, sort of). Give credit when credit is due, you know.
+
+So, there is no original work here, just an extended guide to put things into perspective. And this perspective is divided into two parts:
+
+. The firs part (chapters "<<The tools we need>>" and "<<Fixing the game>>") is about _fixing_ the game. At the end of these chapters, you will have a flawless _Fallout 3_ game, running smoothly, with no CTD (_Crashes to Desktop_ in jargon), but it will be a vanilla game, at least content, graphics and audio-wise. No changes will be made to the story or the way you perceive the Wasteland.
+. The second part (chapters "<<Enhancing the game>>", "<<Unveiling the real Wasteland>>" and "<<Wrapping up>>") is about _enhancing_ the game. This is pretty based on personal taste, so feel free to ignore me (too bad) or, even better, modify this guide to your heart's content. I have picked the mods I like most, but your mileage may vary.
+. The final part (chapter "<<Resources>>") is about resources used in the making of this book (videos, guides, etc.).
+
+_I *DO* want to set the world on fire..._
+
+
+
+
+== The tools we need
+
+First and foremost, we need _Fallout 3 Game Of The Year Edition_ installed. This guide refers to the Steam version of the game.
+
+We will need three additional tools to get the job done:
+
+* http://www.nexusmods.com/games/mods/modmanager/[Nexus Mod Manager]. This is the tool of choice when it comes to keep all your mods organized and up-to-date.
+* https://loot.github.io/[LOOT]. Installing mods on Bethesda games can be a pain in the ass, especially if you try to install a lot of possibly-colliding mods. This tool keeps the load order straight.
+* http://www.nexusmods.com/fallout3/mods/637/[FO3Edit]. _Fallout 3_ itself comes out-of-the-box with certain errors in the main and DLC files, and this tool comes in handy to correct them. Besides, this is *THE* tool to <<Wrapping up, create a merged patch>> to run the game with an absurd amount of mods.
+
+Install them first and we are good to go.
+
+
+
+
+== Functional vs. technical
+
+There are a lot of _Fallout 3_ modding guides out there. This is just another one, but I'd like to think that my approach to the matter is slightly different, because it's a functional one.
+
+What the hell do I mean by "functional"? Well, at the end of each chapter you will have a version of the game with certain features: a fixed game, a game with new sounds, a game with new animations, etc. This guide is intended to be followed from cover to cover, although there are certain chapters that will be marked as optional.
+
+This approach has its advantages and disadvantages. I think it's more understandable for the reader, albeit more complex to perform under the hood.
+
+It would be good for you to understand the concept of _load order_ before going on. Gopher has two videos explaining https://www.youtube.com/watch?v=YzsBKYUrcbE[what is load order] (20:00) and https://www.youtube.com/watch?v=SzoyWugzZAw[how to use LOOT to manage our load order] (13:59). Both are worth checking out.
+
+However, there is something you need to understand besides load order, and it is _installation order_. Each mod could have one of these items, or both:
+
+* One or more data files, which may be `.esm` (master) or `.esp` (ancillary) files.
+* A number of assets, like textures, sounds, meshes, menu files, etc.
+
+Data files are bound by load order, whereas assets are bound by installation order. And this is because Nexus Mod Manager (NMM), the tool we are going to use to mod the game, uses a _destructive approach_.
+
+This is, if you install mod "A" with a certain asset "foo", and later you install mod "B" with an equally named asset "foo", "B" version of "foo" will overwrite "A" version of "foo", for good. This makes critical to know the installation order, because if you want to get back to an earlier state of the game, you will have to uninstall the mods _in the reverse order you installed them_.
+
+NMM does a good job tracking the changes to the game assets as you install new mods, but rollbacks are difficult to perform and error prone (that's why I had to start over again so many times during the writing of this guide). And that's the reason why following a functional approach is somewhat mode difficult with NMM, because sometimes you want to install mod "A" before mod "B", because it makes sense to you, but you *don't* want "B" assets to overwrite "A" assets. Don't worry, that's something I have to deal with, not you.
+
+Without further ado, let's start modding our beloved _Fallout 3_.
+
+
+
+
+== Fixing the game
+
+At the end of this section, you will have a version of _Fallout 3 Game of the Year Edition_ that:
+
+* Runs flawlessly (well, almost).
+* Is patched to the max, with most silly (and not-so-silly) errors corrected.
+* Takes advantage of your system memory.
+* Has no (or little) microstutter.
+* Runs in windowed mode, faking full-screen.
+* Has a clean set of data files, including a merged patch to further ensure compatibility among them.
+* Creates saved games automatically and frequently, so that you always have means to recover from a disaster.
+* Has a better performance by getting rid of zillions of unused objects (like tiny rocks) which plague the game.
+
+
+
+=== Install the game
+
+Pretty much straightforward, uh? Well, no. You need to run the game at least once to create the `.ini` files we will tinker with.
+
+Again: you *MUST* run the game at least once in order to fix it.
+
+The launcher dutifully informs you that video hardware is about to be detected, thus setting up the configuration for you.
+
+.Fallout 3 video hardware detection
+image::Fallout%203%20video%20hardware%20detection.png[Fallout 3 video hardware detection]
+
+Lucky me, my video card is up to the task (however, you don't want to know the specs of my box; no need to cry).
+
+.High Quality settings set
+image::HQ%20settings%20set.png[High Quality settings set]
+
+And here we go! This is the launcher in all its greenish glory.
+
+.Fallout 3 launcher
+image::Fallout%203%20launcher.png[Fallout 3 launcher]
+
+Finally, click on _Play_, and enjoy the view.
+
+.Fallout 3 main menu
+image::Fallout%203%20main%20menu.png[Fallout 3 main menu]
+
+Bear in mind that no matter how hard you pray or curse, this is as far as the game gets running in any version of Windows higher than XP. But this is all we need, for now. Just click on _Quit_ and check this files and folders under `[%USERPROFILE%\Documents\My Games\Fallout3]`:
+
+* `[Saves]`
+* `FALLOUT3.INI`
+* `FalloutPrefs.ini`
+* `RendererInfo.txt`
+
+
+
+=== Disable Games for Windows Live
+
+In BenWah's guide you can either update your Games for Windows Live (GFWL for short) installation, or disable it. Unless it's vital to you, I recommend disabling GFWL, just in case.
+
+To disable GFWL, you need to download and run http://www.nexusmods.com/fallout3/mods/1086/[Games for Windows LIVE disabler].
+
+*DO NOT* use NMM to download this tool. Download it manually instead.
+
+If you get a warning about absent `FALLOUT.INI`, please run the game once (I told you).
+
+.GFWL Disabler error
+image::GFWL%20Disabler%20error.png[GFWL Disabler error]
+
+In the following window, just click on _Disable G4WL_.
+
+.GFWL Disabler
+image::GFWL%20Disabler.png[GFWL Disabler]
+
+Of course, you want to remove GFWL buttons in the game.
+
+.GFWL Remove Fallout 3 buttons
+image::GFWL%20Remove%20Fallout%203%20buttons.png[GFWL Remove Fallout 3 buttons]
+
+We have our first patch!
+
+.GFWL Disabled
+image::GFWL%20Disabled.png[GFWL Disabled]
+
+Notice the absent _LIVE_ option in the main menu screen:
+
+.Fallout 3 main menu with no LIVE
+image::Fallout%203%20main%20menu%20with%20no%20LIVE.png[Fallout 3 main menu with no LIVE]
+
+
+
+=== Patching the game
+
+_Fallout 3_ comes with a shitload of bugs, even after 5 DLC's. That is Bethesda's hallmark, but people has come to, if not love these bugs, at least consider them like you would consider your old grandpa pissing in the punch bowl on Christmas Eve. Slightly disgusting but, nevertheless, adorable.
+
+Thanks to the efforts of BenWah and other people around, we have the http://www.nexusmods.com/fallout3/mods/19122/[Unofficial Fallout 3 Patch], with a huge list of fixes and improvements.
+
+. Download manually (not with NMM) the file _Updated_Unofficial_Fallout3_Patch_.
+. Run the file `Updated_Unofficial_Fallout3_Patch-19122-2-2.exe` (or something like that) to show the welcome window.
++
+.UF3P Welcome window
+image::Unofficial%20Fallout%203%20Patch%201.png[UF3P Welcome window]
+. Accept the license agreement.
++
+.UF3P License agreement
+image::Unofficial%20Fallout%203%20Patch%202.png[UF3P License agreement]
+. The program shows the patch notes. These are important, as they clearly point out that you should have the GOTY version of the game, with all DLC to take full advantage of the patch.
++
+.UF3P Patch notes
+image::Unofficial%20Fallout%203%20Patch%203.png[UF3P Patch notes]
+. Choose the location of _Fallout 3_. The program usually picks the correct folder right off the bat.
++
+.UF3P Fallout 3 location
+image::Unofficial%20Fallout%203%20Patch%204.png[UF3P Fallout 3 location]
+. Select the desired patch components. You should keep the default settings (all DLC and several minor but useful fixes).
++
+.UF3P Component selection
+image::Unofficial%20Fallout%203%20Patch%205.png[UF3P Component selection]
+. Choose the menu entry location in the Start Menu folder.
++
+.UF3P Start menu folder
+image::Unofficial%20Fallout%203%20Patch%206.png[UF3P Start menu folder]
+. The program shows the installation summary. Just press _Install_.
++
+.UF3P Installation summary
+image::Unofficial%20Fallout%203%20Patch%207.png[UF3P Installation summary]
+. You should then see this window to be happy. Otherwise, you should be very, very sad (really).
++
+.UF3P Status check
+image::Unofficial%20Fallout%203%20Patch%208.png[UF3P Status check]
+. Here we go! The installation takes a while, because the patch moves around a lot of files.
++
+.UF3P Installation progress
+image::Unofficial%20Fallout%203%20Patch%209.png[UF3P Installation progress]
+. When the installation finishes, the program shows a dialog with some techno-gibberish speak. Fear not! _Fallout 3_ http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html[crashes if running in a box with multiple cores], but the patch fixes the configuration options automatically for you. Click _Yes_, of course.
++
+.UF3P Multicore fix
+image::Unofficial%20Fallout%203%20Patch%2010.png[UF3P Multicore fix]
+. Happy ending! The installation is finished.
++
+.UF3P Happy ending
+image::Unofficial%20Fallout%203%20Patch%2011.png[UF3P Happy ending]
+. Delete the executable file and move on with your life.
+
+There is one final step to ensure that the patch is loaded in the proper place, at the bottom of the data files.
+
+Each data file can come in two flavors: `.esm` for master files or `.esp` for secondary (patch) files. The DLCs themselves are `.esm` files.
+
+This is a good time to check the load order of the game data files, so fire up LOOT to see what is happening under the hood.
+
+.LOOT first run after UF3P
+image::LOOT%20first%20run%20after%20UF3P.png[LOOT first run after UF3P]
+
+After clicking on the sort icon, the program proposes the proper load order, meanwhile detecting data inconsistencies.
+
+.LOOT after sorting
+image::LOOT%20after%20sorting.png[LOOT after sorting]
+
+This should be your load order by now:
+
+* (0) `Fallout 3.esm`
+* (1) `Anchorage.esm`
+* (2) `ThePitt.esm`
+* (3) `BrokenSteel.esm`
+* (4) `PointLookout.esm`
+* (5) `Zeta.esm`
+* (6) `Unofficial Fallout 3 Patch.esm`
+
+You might be surprised to check that there are inconsistencies in the main DLC files, like `Anchorage.esm` (master file for _Operation Anchorage_ DLC). As we said, Bethesda is not known for releasing solid, fully tested programs. We'll address that later.
+
+For now, just click on _Apply_ to put the unofficial patch at the bottom of the load order.
+
+You should test the game right now. If everything went OK, you should be able to play the game.
+
+.Fallout 3 first run
+image::Fallout%203%20first%20run.png[Fallout 3 first run]
+
+Yippee ki-yay, motherfucker!
+
+
+
+=== Cleaning up the master files
+
+Sure, you could play the game right now if you want. You would be playing a crippled, prone to crash game, but hey, if that's your thing...
+
+We have miles to go before we sleep, though. Cheers for the brave who don't take second best!
+
+As we saw earlier, the DLC data files themselves are somewhat _dirty_. This is what LOOT has to say about them (ITM means "Identical to Master"):
+
+* `Anchorage.esm`: Contains 54 ITM records and 10 deleted references.
+* `ThePitt.esm`: Contains 40 ITM records and 5 deleted navmeshes.
+* `BrokenSteel.esm`: Contains 275 ITM records, 34 deleted references and 12 deleted navmeshes.
+* `PointLookout.esm`: Contains 21 ITM records.
+* `Zeta.esm`: Contains 15 ITM records.
+
+The only clean file in your load order is `Unofficial Fallout 3 Patch.esm`, as expected. No wonder, this is a huge patch that fixes the game and all its DLCs.
+
+In every single case, LOOT has a suggestion: clean with http://www.nexusmods.com/fallout3/mods/637/[FO3Edit].
+
+FO3Edit is an utility aimed at mod creators and users both, weighting more on the first group. Gopher has a fantastic video explaining https://www.youtube.com/watch?v=fw3g_N1jcZQ[how to use TES5Edit (the _Skyrim_ version of the tool) to clean your master files] (13:24). You should left what you were doing right now and watch the video. I'll wait.
+
+We are going to clean the master files, one by one. This guide about http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit[cleaning files with TES5Edit] comes in handy, but ignore it if you just want the heart of the issue.
+
+I will show the instructions to clean one of the files, considering the rest are treated all the same.
+
+. Fire up FO3Edit. The tool does a good job detecting _Fallout 3_ data folder, thus showing all the data files we are using so far.
++
+.FO3Edit master-plugin selection
+image::FO3Edit%20master-plugin%20selection.png[FO3Edit master-plugin selection]
+. Right-click on the floating window and select _Select none_. We are going to choose the files to clean, one by one.
++
+.FO3Edit selecting none
+image::FO3Edit%20selecting%20none.png[FO3Edit selecting none]
+. Now select the following files and click _Ok_:
+* `Fallout3.esm`.
+* The data file you are going to clean (for example, `Anchorage.esm`).
++
+.FO3Edit selecting files
+image::FO3Edit%20selecting%20files.png[FO3Edit selecting files]
+. After a while, depending of the size of the data file, the tool finishes loading the data, plus the `Fallout3.exe` executable itself. Wait for the message "Background Loader: finished" to appear in the _Messages_ panel.
++
+.FO3Edit file loaded
+image::FO3Edit%20file%20loaded.png[FO3Edit file loaded]
+. Right-click on the `Anchorage.esm` node in the left panel tree and select _Apply filter for cleaning_.
++
+.FO3Edit apply filter for cleaning
+image::FO3Edit%20apply%20filter%20for%20cleaning.png[FO3Edit apply filter for cleaning]
+. The filtering may take a little while, depending on how big and dirty the file is. When the filtering is completed, a line with the heading "[Filtering done]" appears in the _Messages_ panel. The tree in the left panel shows the files with fancy colors which you don't have to give a fuck, unless you want to delve deeper into the inner workings of the mods.
++
+.FO3Edit after filtering
+image::FO3Edit%20after%20filtering.png[FO3Edit after filtering]
+. First, we are going to remove ITM (_Identical to Master_) records. They are not going to crash the game, but they take up space, and trust me, when you get the I-am-going-to-install-every-fancy-mod-available spree, you will need as much space as you can get. Right-click on the `Anchorage.esm` node in the left panel tree and select _Remove "Identical to Master" records_.
++
+.FO3Edit remove ITM records
+image::FO3Edit%20remove%20ITM%20records.png[FO3Edit remove ITM records]
+. Every time you try to change a data file, a big warning appears. But, as seasoned hard-ass mod installers, we are sure as hell of what we are doing. Aren't we?
++
+.FO3Edit warning
+image::FO3Edit%20warning.png[FO3Edit warning]
+. After a little while, a message shows up in the _Messages_ panel, reporting 43696 records processed and 54 records removed (don't worry if the numbers don't match; your setup may be slightly different).
++
+.FO3Edit ITM records deleted
+image::FO3Edit%20ITM%20records%20deleted.png[FO3Edit ITM records deleted]
+. Next, we are going to undelete and disable deleted references... Unlike ITM records, which can be considered mostly harmless, deleted references can (and will) fuck up your game, because they are references to objects that _are supposed to be in the game_, but they no longer are, _and no one has marked them as disabled_. So, any mod using a deleted but not disabled reference is going to eventually crash your system. We are talking serious shit here. To get rid of these nasty sons of a bitch, right click on the `Anchorage.esm` node in the left panel tree and select _Undelete and Disable References_.
++
+.FO3Edit undelete and disable references
+image::FO3Edit%20undelete%20and%20disable%20references.png[FO3Edit undelete and disable references]
+. A bit of processing again, and we have another message in the right panel, reporting 43642 records processed and 10 undeleted records.
++
+.FO3Edit after undeleting and disabling
+image::FO3Edit%20after%20undeleting%20and%20disabling.png[FO3Edit after undeleting and disabling]
+. Job done! We just need to save the modified data file. To do that, just click on the close button of the tool window. A pop-up window should appear with _just one file_, the one you have been tinkering with (`Anchorage.esm`, in this case). If more than one file is shown, press kbd:[ESC] or click on the close button and start over again, because you surely screwed up at some point in the process. Anyway, make sure that the option _Backup plugins_ is selected before clicking _Ok_.
++
+.FO3Edit save changed files
+image::FO3Edit%20save%20changed%20files.png[FO3Edit save changed files]
+
+You have to repeat the process for each and every one of the aforementioned data files.
+
+In case you wonder, FO3Edit creates a folder named `[FO3Edit Backups]` under `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]` where it stores backup copies of the mods we have modified.
+
+Run LOOT to be sure that we have a clean, patched game now.
+
+.LOOT after cleaning
+image::LOOT%20after%20cleaning.png[LOOT after cleaning]
+
+And, of course, run the game just to be on the safe side.
+
+.Fallout 3 first patched run
+image::Fallout%203%20first%20patched%20run.png[Fallout 3 first patched run]
+
+
+
+=== Enabling the console
+
+The game console is not strictly necessary to fix the game, but it will come in handy to test the fixes we apply.
+
+I am using the console to cheat my way out the Vault 101, because testing each new mod with a fresh start may be weary, to say the least.
+
+Enabling the console means editing `FALLOUT3.INI` file in `[%USERPROFILE%\Documents\My Games\Fallout3]`, setting the following line, which should be enabled by default (make sure you make a backup copy first):
+
+----
+bAllowConsole=1
+----
+
+The actual key used to activate the console depends on the keyboard language layout you are using, but it should be to the left of the kbd:[1] key. In en-US keyboards it is bound to the tilde character kbd:[~], but, for example, in the es-ES layout (Spanish), that key is bound to the numeral character kbd:[º].
+
+To test the console, start the game and press the corresponding key while in the main menu. A tiny vertical cursor will appear in the lower left corner of the screen. Run the following command:
+
+----
+GetDayOfWeek
+----
+
+The system should print something like:
+
+----
+GetDayOfWeek >> 5.00
+----
+
+.Fallout 3 testing the console
+image::Fallout%203%20testing%20the%20console.png[Fallout 3 testing the console]
+
+There is no way to change the key assigned to the console, unless you install http://www.nexusmods.com/fallout3/mods/2637/[_Console Key Binder_] mod. However, you should keep your mod stack to a minimum (says the guy who is creating a guide to install shy of 100 mods). If you want to install this mod nonetheless, you should have installed first _Fallout Script Extender_, which we will be covering in <<Fallout 3 Script Extender, a later section>>.
+
+Finally, there is an exhaustive http://www.tweakguides.com/Fallout3_11.html[list of console commands] in the awesome http://www.tweakguides.com/Fallout3_1.html[_Fallout 3 Tweaking Guide_].
+
+
+
+=== Enabling access to 4+ GB of memory
+
+_Fallout 3_ does not use all the available memory it could have due to its 32 bits nature (the game was launched in 2008, you know). However, you can modify the game executable to take advantage of all the memory it can get.
+
+Gopher explains the way to go with this video about https://www.youtube.com/watch?v=tONiXNbwSt0[performance and stability in _Fallout 3_] (26:38) (the video touches several topics, but the one we are focusing on spans from the beginning to 08:55, give or take).
+
+We don't want to clutter our system with unnecessary tools, so we are sticking with http://www.nexusmods.com/fallout3/mods/6510/[Large Address Aware Enabler for _Fallout 3_].
+
+. Download the mod manually (not using NMM), and extract its contents in a location of your choice (`[%LAA_FOLDER%]`, for reference).
+. Create a backup of the file `Fallout3.exe` from `[%STEAM_HOME%\steamapps\common\Fallout 3 goty]`.
+. Copy the file `Fallout3.exe` to `[%LAA_FOLDER%]`.
+. Run `START.BAT` in `[%LAA_FOLDER%]`. A console window will appear, reporting that the patching is about to start. Press any key.
++
+.LAA Enabler
+image::LAA%20Enabler%20reminder.png[LAA Enabler]
+. Several options are shown. We want to press kbd:[A] to add the LAA feature to _Fallout 3_ executable.
++
+.LAA Enabler options
+image::LAA%20Enabler%20options.png[LAA Enabler options]
+. LAA Enabler patches the executable and happily informs us about it. Press any key.
++
+.LAA Enabler successful
+image::LAA%20Enabler%20successful.png[LAA Enabler successful]
+. The program goes back to the options window. Press kbd:[E] to exit.
+. Copy back `Fallout3.exe` to its original location.
+. Delete the folder `[%LAA_FOLDER%]` and its contents. Delete the ZIP file also. You won't need them anymore.
+
+And that's really it. Now _Fallout 3_ is ready to handle more than 2 GB of RAM, improving stability.
+
+
+
+=== Fallout 3 Script Extender
+
+If you ever want to install a single mod in _Fallout 3_, you will need http://fose.silverlock.org/[_Fallout Script Extender_] (FOSE, for short).
+
+Well... That's not exactly true, as there may be mods that does not make use of the capabilities provided by FOSE (we have been using a few, so far). But they will be a minority. And we will need this tool ahead the road.
+
+As usual, Gopher has published a worth watching video about the https://www.youtube.com/watch?v=QK_f4vHiutA[installation and use of FOSE] (10:07).
+
+. Download the latest version of FOSE (http://fose.silverlock.org/download/fose_v1_2_beta2.7z[1.2b2] as of this writing). You should download the 7Z version, not the loader (`fose_v1_2_beta2.zip`).
+. Extract the contents of the archive into a folder of your choice, say `[%FOSE_FOLDER%]`.
+. Copy the contents of the folder `[%FOSE_FOLDER%]` to `[%STEAM_HOME%\steamapps\common\Fallout 3 goty]`, except the folder `[src]`, which contains FOSE source code.
+. Delete the folder `[%FOLSE_FOLDER%]` and its contents. Delete the ZIP file also.
+. Create a shortcut for the file `fose_loader.exe` in a location of your choice (e.g., your desktop).
+. Rename the shortcut to whatever name you feel comfortable with. I go with _Fallout 3_, because I keep the older shortcut, using the launcher, to configure the game, thus renaming it to _Fallout 3 (config)_.
++
+.Fallout 3 launch shortcuts
+image::Fallout%203%20launch%20shortcuts.png[Fallout 3 launch shortcuts]
+. If you, like me, think that the default shortcut icon is http://fallout.wikia.com/wiki/Deathclaw[Deathclaw] shit, it might be worth considering an http://www.iconarchive.com/show/mega-games-pack-23-icons-by-3xhumed/Fallout-3-new-1-icon.html[alternate icon]. Download the `.ico` version and copy it to `[%STEAM_HOME%\steamapps\common\Fallout 3 goty]`.
+. Right-click on the shortcut icon and select _Properties_.
++
+.Fallout 3 shortcut properties
+image::Fallout%203%20shortcut%20properties.png[Fallout 3 shortcut properties]
+. In the _Shortcut_ tab, select the option _Change icon..._.
++
+.Fallout 3 shortcut change icon
+image::Fallout%203%20shortcut%20change%20icon.png[Fallout 3 shortcut change icon]
+. The system dutifully informs you that `fose_loader.exe` (the executable the shortcut refers to) does not contain any available icon. Click _Ok_.
++
+.Fallout 3 shortcut no default icon
+image::Fallout%203%20shortcut%20no%20default%20icon.png[Fallout 3 shortcut no default icon]
+. The system shows a floating window where you could select one of the shitty system default icons. Just click on _Browse_...
++
+.Fallout 3 shortcut select icon
+image::Fallout%203%20shortcut%20select%20icon.png[Fallout 3 shortcut select icon]
+. Select the `.ico` file you downloaded before and click _Open_.
++
+.Fallout 3 shortcut open icon
+image::Fallout%203%20shortcut%20open%20icon.png[Fallout 3 shortcut open icon]
+. Back to the icon selection window, click on _Ok_.
++
+.Fallout 3 shortcut icon selected
+image::Fallout%203%20shortcut%20icon%20selected.png[Fallout 3 shortcut icon selected]
+. Back to the properties window, click on _Ok_.
++
+.Fallout 3 shortcut properties final
+image::Fallout%203%20shortcut%20properties%20final.png[Fallout 3 shortcut properties final]
+. _Et voila!_ We have now two great-looking icons to launch _Fallout 3_, one to configure it and the other to actually launch a mod-friendly version of the game.
++
+.Fallout 3 launch shortcuts final
+image::Fallout%203%20launch%20shortcuts%20final.png[Fallout 3 launch shortcuts final]
+. We are going to test that FOSE is correctly installed, and for that, launch the game with the new shortcut. In the main menu screen, activate the console and write `GetFOSEVersion`. You should get something like `FOSE version: 1`.
++
+.Fallout 3 FOSE installed
+image::Fallout%203%20FOSE%20installed.png[Fallout 3 FOSE installed]
+
+FOSE provides a http://fose.silverlock.org/fose_command_doc.html[whole new set of console commands] you can use, although they are not strictly necessary.
+
+
+
+=== Getting rid of stutter
+
+_Fallout 3_ suffers from stuttering, this is, there are certain points in the game where the visuals are lacking in fluidity. Although this can be reduced by optimizing your system (updating your graphics driver to the top, unfragmenting the hard drive, and so on), there is still a micro-stuttering that can be perceived in lower-spec machines when framerate suddenly changes.
+
+In the same video about https://www.youtube.com/watch?v=tONiXNbwSt0[performance and stability] (26:38), Gopher talks about this problem, from minute 08:55 to 16:40, more or less. We are going to install our first mod (apart from the unofficial patch), and for this, we are going to need http://www.nexusmods.com/games/mods/modmanager/[_Nexus Mod Manager_] or NMM. This is the tool that allows to keep track of the installed mods, along with their updates.
+
+Provided that you have installed NMM:
+
+. Run NMM. If this is the first time you do so, NMM searches for the games it knows of, modding-wise. In this context, we are only interested in _Fallout 3_, so as soon as NMM finds it, we should confirm the location (with the green tick mark under the name of the game) and then click on _Ok_.
++
+.NMM searching for games
+image::NMM%20searching%20for%20games.png[NMM searching for games]
+. NMM shows then a game selection window, with a list of games which mods NMM is managing. Select _Fallout 3_ and click on _Ok_. You can select _Don't ask me next time_, if you feel like to. However, you can change the game once you start NMM.
++
+.NMM select Fallout 3
+image::NMM%20select%20Fallout%203.png[NMM select Fallout 3]
+. NMM needs to know the paths where the mods are going to be stored before installing them, and so it reminds you. Click on _Ok_.
++
+.NMM setup paths
+image::NMM%20setup%20paths.png[NMM setup paths]
+. NMM has already made sensible choices for you, but feel free to change the suggested paths if you want. When you are finished, click _Finish_.
++
+.NMM confirm paths
+image::NMM%20confirm%20paths.png[NMM confirm paths]
+. NMM may organize your mods in categories, but I don't find that useful. It might be if you have a fuckload of mods, but then, I would recommend long holidays in a quiet and computer-free place, for the sake of your sanity. I would say no in the next window, but it's up to you.
++
+.NMM no categories
+image::NMM%20no%20categories.png[NMM no categories]
+. Finally, the programs is started, in the _Mods_ tab.
++
+.NMM mods tab
+image::NMM%20mods%20tab.png[NMM mods tab]
+. If you take a look at the _Plugins tab_, you can check the presence of the unofficial patch, at the bottom of the load order, as expected.
++
+.NMM plugins tab
+image::NMM%20plugins%20tab.png[NMM plugins tab]
+. Open http://www.nexusmods.com/fallout3/mods/8886/[_Fallout Stutter Remover_] mod page in your browser and navigate to the _Files_ tab. We need the latest version (4.1.36 as of this writing) and nothing else. Download this with NMM. The mod is fairly small, so it takes a breeze to download. When downloaded, you should see something like this in NMM (adjust the user interface as necessary).
++
+.NMM FSR downloaded
+image::NMM%20FSR%20downloaded.png[NMM FSR downloaded]
+. Double-click on the name of the FSR mod in the main panel to install it. Now, you should see a little green check mark to the left of the name of the mod, along with a message in the _Mod Activation Queue_ panel reporting that the installation is complete.
++
+.NMM FSR installation
+image::NMM%20FSR%20installation%20complete.png[NMM FSR installation]
+. Edit the file `sr_Fallout_Stutter_Remover.ini` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]` and change the value of the `bInject_iFPSClamp` to 1. Save the file and we are good to go!
+
+
+
+=== Fake full-screen mode
+
+Believe or not, one of the things that could produce a CTD every other game, is the full-screen mode. As usual, Gopher has a https://www.youtube.com/watch?v=tONiXNbwSt0[video explaining the problem] (26:38), same as before (this part spans roughly from 17:30 to the end).
+
+. Download manually the file _FalloutFullscreenNV_2_2_ from http://www.nexusmods.com/fallout3/mods/16001/[_Fake Fullscreen Mode Windowed_] mod, not with NMM.
+. Extract the contents of the downloaded archive to a location of your choice.
+. Inside that folder there should be just one file, `Fallout_Fullscreen.exe`. Copy the file to `[%STEAM_HOME%\steamapps\common\Fallout 3 goty]`.
+. Create a shortcut to `Fallout_Fullscreen.exe` wherever you want, and rename it to _Fallout 3 (fullscreen)_, for example.
++
+.Fallout 3 launch shortcuts with fullscreen
+image::Fallout%203%20launch%20shortcuts%20with%20fullscreen.png[Fallout 3 launch shortcuts with fullscreen]
+. Run the launcher (_Fallout 3 (config)_, remember?), and select _Options_. Take note of your current resolution.
++
+.Fallout 3 options
+image::Fallout%203%20options.png[Fallout 3 options]
+. Mark _Windowed mode_ and change the resolution to the previous one (every time you change to windowed mode and back, the resolution combo resets). Click _Ok_ and exit the launcher.
++
+.Fallout 3 options windowed
+image::Fallout%203%20options%20windowed.png[Fallout 3 options windowed]
+. Run the game with the new shortcut. The game will start with a window border, but after a little while, the window border disappears, resembling the actual fullscreen mode. This version is fully compatible with FOSE, which you can test running `GetFOSEVersion` in the console.
+
+
+
+=== Saving games the right way
+
+The Sun rises in the East, Michael Fassbender is better than you in everything and _Fallout 3_ crashes. You need to come to terms with these simple Truths of Life.
+
+Even with a fully patched game, _Fallout 3_ spits you out to the desktop now and then. In these cases, your only way back is to restore a saved game. But saved games do get corrupted sometimes. And, unless you have been saving your game *A FUCKING LOT*, and when I say "saving", I mean _not quicksaving_, you are doomed.
+
+There is a mod called http://www.nexusmods.com/fallout3/mods/3729/[CASM] to address that problem. CASM automates saving your game in a sensible way, and it provides two key shortcuts to replace the standard quicksave/quickload built-in feature:
+
+* kbd:[F4] replaces kbd:[F5], creating a _named_ saved game.
+* kbd:[F8] replaces kbd:[F9], loading the last saved game.
+
+CASM also saves the game automatically with a given frequency and under certain events. Let's see how to install this mod.
+
+. Launch the game. When the main menu appears, click on _Settings_ and then _Gameplay_.
++
+.Fallout 3 gameplay settings
+image::Fallout%203%20gameplay%20settings.png[Fallout 3 gameplay settings]
+. Disable all three options (_Save On Rest_, _Save On Wait_ and _Save On Travel_).
++
+.Fallout 3 autosave disabled
+image::Fallout%203%20autosave%20disabled.png[Fallout 3 autosave disabled]
+. Press _Back_, then _Back_, then _Quit_ to exit the game.
+. Download _CASM_v1_2_3_ file from CASM using NMM.
++
+.NMM CASM downloaded
+image::NMM%20CASM%20downloaded.png[NMM CASM downloaded]
+. Activate CASM double-clicking on the mod name.
++
+.NMM CASM installation complete
+image::NMM%20CASM%20installation%20complete.png[NMM CASM installation complete]
+. Check that CASM is loaded at the bottom of the mod stack in the _Plugins_ tab of NMM.
++
+.NMM CASM loaded last
+image::NMM%20CASM%20loaded%20last.png[NMM CASM loaded last]
+. Close NMM and run LOOT. Click on the _Sort Plugins_ icon to fix the load order. Notice that CASM still sits at the bottom, and no conflicts are detected (this step is fairly unnecessary, but you need to get used to routinely rearrange your load order).
++
+.LOOT after installing CASM
+image::LOOT%20after%20installing%20CASM.png[LOOT after installing CASM]
+. CASM is configurable through an in-game option in your Pip-Boy 3000 (you will get your own Pip-Boy at the age of 10). Fire up your Pip-Boy by pressing kbd:[TAB] and navigate to the _Items_ button, _Aid_ section. You will see an "item" called _CASM Options Menu_.
++
+.Fallout 3 CASM option
+image::Fallout%203%20CASM%20option.png[Fallout 3 CASM option]
+. Click on the CASM item _and then exit the Pip-Boy_ by pressing again kbd:[TAB] (yeah, not the most intuitive thing in the world). A screen with CASM settings is shown. There are a lot of options for you to configure, although the default settings are pretty good to go.
++
+.Fallout 3 CASM settings
+image::Fallout%203%20CASM%20settings.png[Fallout 3 CASM settings]
+
+
+
+=== Adopt an useless rock today!
+
+_Fallout 3_ developers show their love for the details in every corner of the game.
+
+In a slightly manic way.
+
+The game engine is not rock solid, to begin with (no pun intended, I swear), but when it comes to handle zillions of useless objects for the sake of just showing you have zillions of rocks around you... Well, *NO*.
+
+There is a mod which does something seemingly very simple: removing all unused objects from the game, improving performance. This mod is called http://www.nexusmods.com/fallout3/mods/13520/[_Better Game Performance_].
+
+Let's install this mod.
+
+. Download the file _V_4_ with NMM.
++
+.NMM Better Game Performance downloaded
+image::NMM%20Better%20Game%20Performance%20downloaded.png[NMM Better Game Performance downloaded]
+. Activate the mod by double-clicking on its name. The mod will be installed with no hiccups.
++
+.NMM Better Game Performance installed
+image::NMM%20Better%20Game%20Performance%20installed.png[NMM Better Game Performance installed]
+. Run LOOT to rearrange your load order.
+
+That's it. We have removed a lot of unused objects from the game. It's difficult to show the difference, because, these are mainly rocks, but take my word for it.
+
+
+
+
+== Enhancing the game
+
+What comes next is pretty much a matter of personal taste. While fixing the game should be completed head to toe for everyone, enhancing the game is something you need to consider, balancing pros and cons.
+
+A rule of thumb: less is more. The fewer mods you install, the better. That said, there are a few areas where the game can be greatly improved.
+
+Mods in this section roughly fall into one of these categories:
+
+* Overhauls.
+* Graphics enhancements.
+* Audio enhancements.
+* User interface enhancements.
+
+It is tempting to install 200 mods, yelling "WOW!" each time you step into one awesome mod you suddenly discover you cannot live without. Nevertheless, before installing a new mod, think carefully, because you will need to:
+
+* Install the mod.
+* Rearrange the load order.
+* Maybe install compatibility patches with other mods previously installed.
+* Create and fine tune a merged patch to avoid crashes.
+
+This is not for the faint of heart, and, remember, our goal is _to play the game_, not _to play the best fucking overmodded possible game_.
+
+When it comes to mods, not only the load order is important, but also the http://www.ign.com/wikis/fallout-3/PC_Mods#Install_Order[_install order_]. You need to be careful, because some mods overwrite files previously written (or overwritten) by other mods.
+
+
+
+=== Improving the user interface
+
+The first thing we are going to improve is the user interface.
+
+Bethesda games have, broadly speaking, a shitty user interface, designed with blind, spastic monkeys in mind. The fonts are humongous, the menu layout is weird, and so forth and so on.
+
+Thus, we are starting with a series of mods that have a low impact on the overall state of the game and, at the same time, are pleasant and noticeable.
+
+There are several videos to warm up the engines: one to cover https://www.youtube.com/watch?v=aqCzCXEydwU[the installation of the mods] (25:05), and the other to explain how to https://www.youtube.com/watch?v=bTlXOqV6pBA[stitch them all together] (4:42) (there is also an https://www.youtube.com/watch?v=qSA2BFQ2zc4[extended version] (11:23)).
+
+
+==== Building the basement
+
+First things first, we are going to need a way for all the mods to collaborate seamlessly, and for this, we are going to install http://www.nexusmods.com/fallout3/mods/20867/[_User Interface Organizer_], or UIO. This mod will keep every important user interface mod out there in line.
+
+If you have followed the guide so far, you have a grasp of the basics to download, activate and reorder any mod, so:
+
+. Download UIO with NMM.
+. Activate it.
+
+And that's really it. No need to use LOOT because this is a FOSE plugin. FOSE plugins are placed in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\FOSE\Plugins]`, so there should be a file named `ui_organizer.dll` in that folder.
+
+
+==== Face-washing the HUD
+
+Next, we are going to _shrink_ the user interface using http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[_DarNified UI F3_], or DUIF3.
+
+This will be a bit tricky, because there are no NMM packages right out-of-the-box. Instead, we have the FOMOD (http://www.nexusmods.com/fallout3/mods/640/[_Fallout Mod Manager_]) packages... But they are compatible with NMM, so bear with me.
+
+. Download http://ui.darnified.net/wip/F3/dui_f3a11.zip[DUIF3 Alpha<sup>11</sup>]. The file is called `dui_f3a11.zip`.
+. Download http://ui.darnified.net/wip/F3/dui_f3a11_HF.7z[DUIF3 Alpha<sup>11</sup> Hotfix]. The file is called `dui_f3a11_HF.7z`.
+. Unzip the main file (`dui_f3a11.zip`) in a location of your choice. The zipped file should contain just one file, `dui_f3a11.fomod`.
+. `.fomod` files are, in fact, `.zip` files, so you can use 7-Zip or WinRAR to unzip the file `dui_f3a11.fomod` to a location of your choice, say `[%DUIF3%]`.
+. Unzip the hotfix (`dui_f3a11_HF.7z`) and copy the contents of the unzipped file into the folder `[%DUIF3%]` we just created. Overwrite files when necessary.
+. Compress the contents of the folder `[%DUIF3%]` into a file called `darNifiedUI F3 Alpha11.zip`. The root of the file should contain the following folders, just for you to check.
+* `[Docs]`
+* `[fomod]`
+* `[menus]`
+* `[meshes]`
+* `[textures]`
+. Start NMM, go to the _Mods_ tab and click on the green plus sign to add mod from file.
++
+.NMM Adding mod from file
+image::NMM%20Adding%20mod%20from%20file.png[NMM Adding mod from file]
+. In the file selector that appears, navigate to the location of `darNifiedUI F3 Alpha11.zip` and choose it.
++
+.NMM DUIF3 files loaded
+image::NMM%20DUIF3%20files%20loaded.png[NMM DUIF3 files loaded]
+. Activate the mod file by double-clicking on it. Eventually, you will be asked to confirm if you want to use the fonts provided with DUIF3. As crazy as it sounds, you want to say _No_, for now.
++
+.NMM DUIF3 font config confirmation
+image::NMM%20DUIF3%20font%20config%20confirmation.png[NMM DUIF3 font config confirmation]
+. DUIF3 is finally installed.
++
+.NMM DUIF3 installed
+image::NMM%20DUIF3%20installed.png[NMM DUIF3 installed]
+. Just in case, use LOOT to sort your load order session. It is not really necessary, as DUIF3 sits on the bottom, but you need to flex your muscles now and then.
++
+.LOOT DUIF3
+image::LOOT%20DUIF3.png[LOOT DUIF3]
+. Remember when we said "no" to use the fonts provided by DUIF3? There is an error in NMM, possibly related to modifying files in certain protected Windows folders, which crashes the program. So, go back to the http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[DUIF3 page] and copy the text block starting with `[Fonts]`. I have even done half the job for you.
+```INI
+[Fonts]
+;sFontFile_1=Textures\Fonts\Glow_Monofonto_Large.fnt
+sFontFile_1=Textures\Fonts\DarN_FranKleinBold_14.fnt
+;sFontFile_2=Textures\Fonts\Monofonto_Large.fnt
+sFontFile_2=Textures\Fonts\DarN_FranKleinBold_16.fnt
+sFontFile_3=Textures\Fonts\Glow_Monofonto_Medium.fnt
+;sFontFile_4=Textures\Fonts\Monofonto_VeryLarge02_Dialogs2.fnt
+;sFontFile_4=Textures\Fonts\DarN_FranKleinBold_Otl_12.fnt
+sFontFile_4=Textures\Fonts\DarN_Sui_Generis_Otl_10.fnt
+sFontFile_5=Textures\Fonts\Fixedsys_Comp_uniform_width.fnt
+;sFontFile_6=Textures\Fonts\Glow_Monofonto_VL_dialogs.fnt
+;sFontFile_6=Textures\Fonts\DarN_PetitaMedium_Outline_18.fnt
+;sFontFile_6=Textures\Fonts\DarN_Forgotten_Futurist_Otl_18.fnt
+sFontFile_6=Textures\Fonts\DarN_Sui_Generis_Otl_13.fnt
+;sFontFile_7=Textures\Fonts\Baked-in_Monofonto_Large.fnt
+sFontFile_7=Textures\Fonts\DarN_Libel_Suit_Otl_24.fnt
+;sFontFile_7=Textures\Fonts\DarN_Klill_Outline_20.fnt
+sFontFile_8=Textures\Fonts\Glow_Futura_Caps_Large.fnt
+```
+. Open the file `FALLOUT.INI` in `[%USERPROFILE%\Documents\My Games\Fallout3]` and paste the text over the contents of the `[Fonts]` section.
+. Launch the game and check the Vault-boy head in the lower-left corner of the screen. If you hover with the mouse over the head, you will see something like that (version numbers may vary):
+```
+Fallout 3 1.7.0.3
+DarNified UI F3 0.11.1a
+Powered by FOSE 1.2 b2
+```
+. As a collateral effect, _LIVE_ button in the main screen is enabled again, but fear not! This is nothing but DUIF3 taking full control of your interface settings in a somewhat standard way. GFWL is still disabled.
++
+.Fallout 3 DUIF3 installed
+image::Fallout%203%20DUIF3%20installed.png[Fallout 3 DUIF3 installed]
+. However, I don't like that option to be visible, so open the file `DUIF3Settings.xml` in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus\prefabs]` with your favorite text editor. Change the option `<_sm_hideLIVE />` to 1. Save and exit. Launch the game to check the absent LIVE option.
++
+.Fallout 3 DUIF3 absent LIVE option
+image::Fallout%203%20DUIF3%20absent%20LIVE%20option.png[Fallout 3 DUIF3 absent LIVE option]
+. Start a new game or continue a previous one, and check the smaller HUD elements, including new information about date and time in the upper-right corner of the screen.
++
+.Fallout 3 DUIF3 small HUD
+image::Fallout%203%20DUIF3%20small%20HUD.png[Fallout 3 DUIF3 small HUD]
+. If you press kbd:[ESC] in game, you will see a new option at the right to configure DUIF3.
++
+.Fallout 3 DUIF3 ingame option
+image::Fallout%203%20DUIF3%20ingame%20option.png[Fallout 3 DUIF3 ingame option]
+. There are a lot of settings for you to configure, adjusting the HUD to your liking.
++
+.Fallout 3 DUIF3 settings
+image::Fallout%203%20DUIF3%20settings.png[Fallout 3 DUIF3 settings]
+
+
+==== Rearranging things
+
+For those of you who don't like the default layout of the Heads Up Display (HUD), there is a little mod (little in size, that is) which helps you to change exactly that: http://www.nexusmods.com/fallout3/mods/15886/[_Adjustable HUD_] or aHUD.
+
+. Download the mod with NMM, as usual. Take care to download the DarNified UI F3 version.
+. Activate it in the _Mods_ tab by double-clicking on its name.
+. The mod changes files installed by DUIF3, so answer _Yes to all_ when asked to overwrite files.
+. Run LOOT and sort your load order.
+. Launch the game and press kbd:[F6] in-game to show the aHUD settings menu.
++
+.Fallout 3 aHUD settings
+image::Fallout%203%20aHUD%20settings.png[Fallout 3 aHUD settings]
+. Using the menu options you can select any of the following items to relocate:
+* Compass.
+* Hitpoints.
+* Actions points.
+* Weapon condition and ammo.
+. Select the items you want to relocate and move them around using the numpad arrow keys (that is kbd:[Num8], kbd:[Num2], kbd:[Num4] and kbd:[Num6] for up, down, left and right, respectively). The kbd:[R] and kbd:[Num5] keys are used to reset the current movement operation (be careful; I restarted unintentionally the movement of the compass three times because I am used to the arrow keys, so I insisted on using kbd:[Num5] as "Down", instead of kbd:[Num2] `¬¬`). Any other key finishes the movement operation.
++
+.Fallout 3 aHUD relocated items
+image::Fallout%203%20aHUD%20relocated%20items.png[Fallout 3 aHUD relocated items]
+
+Take into account that if you plan to keep on installing mods using this guide, you may not want to relocate your HUD items, because several of the mods overwrite the XML files used to keep the HUD layout.
+
+
+==== Seeing things just when you need to
+
+In addition to have the HUD elements placed where you like, you can improve the immersion by hiding these elements when you don't need them. I like to have them hidden when I am wandering around and have them shown when I am in combat. We have http://www.nexusmods.com/fallout3/mods/15790/[_Immersive HUD_] or iHUD for this.
+
+. Download the mod with NMM. We are saving the file _Immersive HUD - Darnified FWE Patch_ for later, when we install _Fallout 3 Wanderer's Edition_.
+. Activate it, the usual way.
+. Answer _Yes to all_ when asked to overwrite files.
+. Use LOOT to sort your load order.
+. Launch the game and notice the absence of HUD elements on screen.
++
+.Fallout 3 iHUD default
+image::Fallout%203%20iHUD%20default.png[Fallout 3 iHUD default]
+. Keep the kbd:[I] key pressed a few moments. The iHUD settings menu will appear.
++
+.Fallout 3 iHUD settings
+image::Fallout%203%20iHUD%20settings.png[Fallout 3 iHUD settings]
+. There are a lot of customization options in iHUD. Tweak around until you feel comfortable with the results (https://youtu.be/aqCzCXEydwU?t=18m20s[Gopher's video] should help, around 18:20).
+
+A final step: we are going to create a backup copy of the folder with the menu definitions (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data\Menus]`).
+
+Why this backup? Well, there are a lot of mods which change the user interface, and we are going to use them. In these matters, installation order is more important than load order, because each mod _overwrites_ several files to fulfill its own goals, thus losing the modifications created by previous mods.
+
+The way we are installing mods in this guide is more functional than technical, so the installation order we are following is less than ideal. However, we are going to manually keep track of the changes made by each mod to stitch all them together.
+
+
+==== Cleaning up your faithful companion
+
+One of the things you are going to see a lot in this game is your Pip-Boy. And when I say "a lot", I mean an awful-fucking lot. It's your personal assistant, after all.
+
+It's a little sad to see that glorious piece of junk in low resolution, so, let's improve how it looks, using:
+
+* http://www.nexusmods.com/fallout3/mods/20373/[_PipBoy 3000 HD Retexture_]
+* http://www.nexusmods.com/newvegas/mods/36255/[_Shiloh DS - Clean Pipboy Screen_] (this is a _Fallout New Vegas_ mod, but it works anyway).
+* http://www.nexusmods.com/newvegas/mods/35225/[_Faster Pipboy Faster_] (same as before).
+
+. Download _PipBoy 3000 HD Retexture - PC and Xbox Controller Versions_ with NMM.
+. Download _Faster Pipboy Faster_ manually. NMM detects this mod is not specifically designed for _Fallout 3_, so it cannot download the file.
+. Download _Shiloh DS - Clean Pipboy Screen v1_4_ manually (same reasons as before).
+. Add the two _Fallout New Vegas_ mods to NMM using the button _Add mod from file_. We will have all the files ready in NMM by then.
++
+.NMM cleaning Pip-Boy mods
+image::NMM%20cleaning%20Pip-Boy%20mods.png[NMM cleaning Pip-Boy mods]
+. Activate _PipBoy 3000 HD Retexture - PipBoy 3000 HD Retexture - PC and Xbox Controller Versions_ first. There shouldn't be any overwriting.
+. Activate _Faster Pipboy Faster-35225_ next. No conflicts should arise, either.
+. Finally, activate _Shiloh DS - Clean Pipboy Screen_. A window with several options will appear. We will choose:
+* Remove Scanlines.
+* Remove Screen Glare.
+* Remove Distorting Effects.
+* Add Pure Black BG.
+* Remove Map Tinting.
+* Glow Intensity 128% (default).
+* Standard compatibility.
++
+.NMM Clean Pip-Boy options
+image::NMM%20Clean%20Pip-Boy%20options.png[NMM Clean Pip-Boy options]
+. The mod overwrites several files installed by DUIF3, so answer _Yes to all_ when asked to.
+. Launch the game and pull out your Pip-Boy with the kbd:[TAB] key. You will notice a piece of junk hitting your face at full speed, and also a dramatic change in the cleanliness of the screen. Compare before and after.
++
+.Fallout 3 Pip-Boy before retexturing
+image::Fallout%203%20Pip-Boy%20before%20retexturing.png[Fallout 3 Pip-Boy before retexturing]
+.Fallout 3 Pip-Boy after retexturing
+image::Fallout%203%20Pip-Boy%20after%20retexturing.png[Fallout 3 Pip-Boy after retexturing]
+
+
+==== You don't want to ask for directions
+
+Let's face it: the vanilla map in _Fallout 3_ seems to have been produced from Dora the Explorer's backpack. And you don't want to start asking directions in D.C., because super-mutants are not known for their kindness of heart with strangers.
+
+We are going to use http://www.nexusmods.com/fallout3/mods/16898/[_Better High Detail Map and Icons_] to have decent maps, along with http://www.nexusmods.com/fallout3/mods/15918/[_No more dots_] to get rid of the white dotted line that tells you the shortest path between you and a suitable http://www.darwinawards.com/[Darwin Awards] death, because in mathematics the straight line may be the shortest path between two points, but in real life, and specially in the Capital Wasteland, it's a ticket to Hell.
+
+. Download _Better High Detail Map and Icons_ with NMM. It will take a while, because the texture files are pretty big (43 MB or so).
+. Download _no more dots v01_ with NMM.
+. Activate NMM shows a floating window with the installation options for the mod. Choose one map size and brightness (I chose 8k with roads and 50% more brightness, but your mileage may vary). Click on _Next_.
++
+.NMM Better High Detail Map and Icons install options
+image::NMM%20Better%20High%20Detail%20Map%20and%20Icons%20install%20options.png[NMM Better High Detail Map and Icons install options]
+. Next window contains the customization options for the mod. I checked "Custom icons" and green markers. It is important *not to check* "Clean Pipboy Screen", because we applied a specific mod to do just that in the previous chapter. Click on _Finish_.
++
+.NMM Better High Detail Map and Icons customization options
+image::NMM%20Better%20High%20Detail%20Map%20and%20Icons%20customization%20options.png[NMM Better High Detail Map and Icons customization options]
+. Answer _No to all_ when asked to overwrite files. The mod tries to overwrite files from _Shiloh DS - Clean Pipboy Screen_, but the files are just fine.
+. Activate _no more dots - no more dots  v01_. No overwriting required.
+. Launch the game, fire up your Pip-Boy and compare, before and after.
++
+.Fallout 3 world map before
+image::Fallout%203%20world%20map%20before.png[Fallout 3 world map before]
+.Fallout 3 world map after
+image::Fallout%203%20world%20map%20after.png[Fallout 3 world map after]
+
+
+==== Shed some light here, please
+
+Lighting in _Fallout 3_ is somewhat weird. Sometimes you will find your self into what seems to be a lucid LSD-induced dream, with overexposed lights all around you. If you use your Pip-Boy's lamplight, things get much worse.
+
+This small mod, http://www.nexusmods.com/fallout3/mods/18389/[_SmoothLight - Pip-Boy Light Enhancer_], comes to the rescue. Here we go.
+
+. Download and activate the mod with NMM. There shouldn't be any conflicts.
+. Use LOOT to sort your load order.
+. Launch the game and activate your Pip-Boy's lamplight long-pressing the kbd:[TAB] key in a dark area.
+
+See the difference for yourself.
+
+With no light:
+
+.Fallout 3 no Pip-Boy light
+image::Fallout%203%20no%20Pip-Boy%20light.png[Fallout 3 no Pip-Boy light]
+
+With standard light:
+
+.Fallout 3 standard light
+image::Fallout%203%20standard%20light.png[Fallout 3 standard light]
+
+With enhanced light:
+
+.Fallout 3 enhanced light
+image::Fallout%203%20enhanced%20light.png[Fallout 3 enhanced light]
+
+The difference is subtle, more noticeable in dark interiors.
+
+
+
+=== Lend me your ears (optional)
+
+Audio is one of the most underrated aspects in videogames. There is an unfortunate term coined for those gamers craving for the ultimate graphics experience: _graphic whores_. For audio? There is none, except if you would consider _audiophile_, but that has not the same taste.
+
+Gaming experience is built on top of both graphics and audio. The latter is a subtle part, but very important, nonetheless. Good ambient sounds and soundtrack can make your journey something memorable.
+
+In this chapter we will take care of that, changing the way you hear and listen to the Wasteland.
+
+
+==== Hearing the nukes fly in high quality
+
+There is just one mod in this chapter, http://www.nexusmods.com/fallout3/mods/13055/[_Fallout 3 - HD Audio Overhaul - v1.21_], and it's a complete overhaul of all things related with audio in _Fallout 3_, from ambient sounds to soundtrack.
+
+This mod is _massive_, so grab a mug of coffee and stay tuned with the latest news while installing it. You just have to download and install it with NMM. No conflicts should arise. No need to rearrange the load order, either, for there is not `.esp` or `.esm` installed.
+
+Launch the game and _listen_ carefully...
+
+
+==== Those crickets are driving me mad
+
+Imagine yourself wandering at night in the radioactive wastes of the slums in D.C. There are a lot of things going on, even in a desolate barren like this: insects, night birds of prey, dogs, etc. These are the small things that boost a real sense of immersion in the game.
+
+http://www.nexusmods.com/fallout3/mods/12602/[_Ambient Wasteland 2_] is for ambient sounds what http://www.nexusmods.com/fallout3/mods/13055/[_Fallout 3 HQ Audio Overhaul_] is for music. It changes the small sounds of the Wasteland so you can shit your pants looking for that owl you heard in the dark.
+
+. Download _Ambient Wasteland 2 WAV edition_ with NMM. Be careful: we want the WAV edition, not the MP3 edition. We want to give it all we've got.
+. Download _Ambient Wasteland 2 Wav Patch_ with NMM.
+. Activate them in the same order you downloaded them. The patch will overwrite files from the main file. Otherwise, there will be no conflicts.
+
+And that's really it. Launch the game and search for a deserted area with no imminent danger. Sit back and listen.
+
+
+==== A soundtrack for your lonely Wasteland nights
+
+I have to confess I have never listened to a single radio station in the game in any of my playthroughs. I usually prefer to listen to the ambient sounds, because you'll never when you are about to become the next meal of a hungry deformed creature.
+
+Radio stations, not being my cup of tea (with butter, Tibet style), are an immersive piece of lore, though. We are going to add two new radio stations and to improve an existent one:
+
+* http://www.nexusmods.com/fallout3/mods/14946/[_GNR Enhanced_]: 100 additional songs to the 20 original in _Galaxy News Radio_.
+* http://www.nexusmods.com/fallout3/mods/6104/[_CONELRAD 640-1240 - Civil Defense Radio_]: A new station with _real_ Civil Defense broadcasting messages.
+* http://www.nexusmods.com/fallout3/mods/5612/[_Existence 2_0 - Robot Radio_]: Can you imagine a robot with existential dread? Well, that's what you get with this radio station.
+
+Let's go, then.
+
+. Download _GNR Enhanced_ with NMM. Download _Beta Update_ too. The main file is _huge_, so go and get a Nuka-Cola somewhere.
+. Download _Conelrad 640-1240_ with NMM.
+. Download _Existence 2.0_ with NMM.
+. Activate them in any order. There will be no overlapping, except for the _Beta Update_ in GNR.
+. Run LOOT to rearrange your load order.
+
+You will need to be in the station's range to tune in (_Data_ button, _Radio_ section in your Pip-Boy), but when you do, enjoy the rhythm! _Conelrad 640-1240_ and _Existence 2.0_ will be immediately available right after leaving Vault 101.
+
+.Fallout 3 new radio stations
+image::Fallout%203%20new%20radio%20stations.png[Fallout 3 new radio stations]
+
+
+
+=== Playing the bad-ass way
+
+We have a pretty much vanilla game up to this point. Yeah, we changed the way the game looks and sounds in the previous chapter, but the base game still remains the same.
+
+We are going to dramatically change that. Think of a chicken nugget that turns itself into a _filet mignon_, all of a sudden.
+
+
+==== _Ad astra per aspera_
+
+The title of this chapter means "through hardships to the stars", in Latin, and it would be a good way to define our next mod: http://www.nexusmods.com/fallout3/mods/2761/[_Fallout 3 Wanderers Edition_], or FWE. Xuul has a video https://www.youtube.com/watch?v=J4y4lui3l9U[explaining how to install FWE] (15:16), and there is a https://sites.google.com/site/fo3wanderersedition[page for the project] with lots of useful information.
+
+The list of changes made by FWE is so long and their implications so deep that you'd better read the mod page to get a glimpse of that. The bottom line is: you will be playing a harsher, more challenging version of the game.
+
+We will be needing five files:
+
+* _FWE Master Release 6-0 - Part 1._
+* _FWE Master Release 6-0 - Part 2._
+* _FWE 6-03a HOTFIX PATCH._
+* _DarnUI Support for FWE 6-02_
+* _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_
+
+The last one can be downloaded from http://www.nexusmods.com/fallout3/mods/15790/[the iHUD page].
+
+. Download the three FWE files _manually_, not with NMM, in a location of your choice.
+. Download the two remaining files with NMM, but _do not activate them_.
+. Create a folder in a location of your choice, say `[%FWE_FULL%]`.
+. Unzip the file `FWE Master Release 6-0 - Part 1-2761.7z` in a location of your choice (say `[%FWE_PART_1%]`), using http://www.7-zip.org/[7-Zip], for example.
+. Unzip the file `FWE Master Release 6-0 - Part 2-2761.7z` in a location of your choice (say `[%FWE_PART_2%]`).
+. Unzip the file `FWE 6-03a HOTFIX PATCH-2761.7z` in a location of your choice (say `[%FWE_HOTFIX%]`).
+. Copy the contents of the folder `[%FWE_PART_1%]` into the folder `[%FWE_FULL%]`.
+. Copy the contents of the folder `[%FWE_PART_2%]` (except the folder `[fomod]`) into the folder `[%FWE_FULL%]`, overwriting when necessary.
+. Copy the contents of the folder `[%FWE_HOTFIX%]` (except the folder `[fomod]`) into the folder `[%FWE_FULL%]`, overwriting when necessary.
+. Create a ZIP file (say `FWE_6.03.zip`) with _the contents of the folder_ `[%FWE_FULL%]`. The compression will take a while, for the mod contents weight over 1 GB. The root of the zipped file should have the following folders, just to check:
+* `[fomod]`
+* `[Meshes]`
+* `[Sound]`
+* `[Textures]`
+. Add `FWE_6.03.zip` to NMM, like we did before with DarNifiedUI.
++
+.NMM FWE add mod from file
+image::NMM%20FWE%20add%20mod%20from%20file.png[NMM FWE add mod from file]
+. We have all the files ready to install.
++
+.NMM FWE entries
+image::NMM%20FWE%20entries.png[NMM FWE entries]
+. Double click on _FWE - FO3 Wanderers Edition_ to bring up a window with some options. Leave all default options checked and check _Alternate Travel_, and maybe https://sites.google.com/site/fo3wanderersedition/detailed-changes/02combat#TOC-VATS-Tweaks[_VATS Halftime_ and _VATS Realtime_] if you feel up to.
++
+.NMM FWE setup
+image::NMM%20FWE%20setup.png[NMM FWE setup]
+. The installation takes a while, for the mod is _huge_...
++
+.NMM FWE installing
+image::NMM%20FWE%20installing.png[NMM FWE installing]
+. Finally, the manager notifies us about a successful installation. There shouldn't be any conflicts.
++
+.NMM FWE installed
+image::NMM%20FWE%20installed.png[NMM FWE installed]
+. Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
+. Double click on _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ and answer _Yes to all_ when asked to overwrite files.
+. Due to the install order we are following (functional, instead of technical), the two user interface patches we have just activated make a little mess of the HUD. To correct that, I have created a small patch of my own (_Modding never changes DUIF3-FWE patch_) with the merged files. Download the patch, add it to NMM and activate it, overwriting files when needed.
+. A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files.
+. LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in <<Cleaning up the master files, the chapter about cleaning up the master files>>. To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
+* `Fallout3.esm`
+* `Fallout3.exe`
+* `CRAFT.esm`
+* `CALIBR.esm`
+. When all the files have been cleaned, run LOOT again and check there are no ITM records or undeleted references in your load order. There shouldn't be any.
+. And that's it. We have FWE completely installed. Launch the game and start a new game (yes, a new game). At certain point, you may choose between the classic storyline or an alternate start.
++
+.Fallout 3 FWE alternate start
+image::Fallout%203%20FWE%20alternate%20start.png[Fallout 3 FWE alternate start]
+. You can assign your skills, perks and even a background story in a terminal right in front of you right after waking up.
++
+.Fallout 3 FWE special terminal
+image::Fallout%203%20FWE%20special%20terminal.png[Fallout 3 FWE special terminal]
+. When you have selected the skill set for your journey, just sleep in the mat on the floor and wake up to your new life. After a moment, a dialog will appear talking about _Wasteland Explorer_, a motorcycle which replaces fast travel (we disabled it, remember?). Enable it for good.
++
+.Fallout 3 FWE Wasteland Explorer enabled
+image::Fallout%203%20FWE%20Wasteland%20Explorer%20enabled.png[Fallout 3 FWE Wasteland Explorer enabled]
+. And now we are at it... Remember when we relocated the HUD elements to fit our needs? Well, FWE resets that, so, regrettably, you will have to relocate them again. Notice the new grenade icon on the right lower corner and the primary needs info under the clock.
++
+.Fallout 3 FWE HUD reset
+image::Fallout%203%20FWE%20HUD%20reset.png[Fallout 3 FWE HUD reset]
+. Pull out your Pip-Boy and go to the _Items_ and then _Apparel_. There it is the option to configure FWE.
++
+.Fallout 3 FWE Pip-Boy option
+image::Fallout%203%20FWE%20Pip-Boy%20option.png[Fallout 3 FWE Pip-Boy option]
+. Click on the option to show the shitload of configurable settings for this mod.
++
+.Fallout 3 FWE settings
+image::Fallout%203%20FWE%20settings.png[Fallout 3 FWE settings]
+
+From this point on, we will be using http://www.nexusmods.com/fallout3/mods/16787/[_The Mergers_], from Paradox Ignition. These are merged patches for the main mods we are going to install. They are aimed to reduce the file load in our data folder and increase stability.
+
+
+==== A sound for Chekhov's gun
+
+I have never fired a real weapon in my life, so I couldn't tell the sound of a real gun from a virtual one. However, with the http://www.nexusmods.com/fallout3/mods/627/[_Improved Sound FX v1_3_] mod, it's not difficult to guess which version sound better.
+
+See, or I should say, listen for yourself, in this https://www.youtube.com/watch?v=aMm31gnXzk8[lengthy video] (6:38) (for what it is), showcasing the difference between vanilla and improved weapon sounds. You will have a much more satisfying rain of bullets in your everyday shoot-outs.
+
+. Download and activate _Improved Sounds FX v13_.
+. The sound files collide with previous files installed by FWE, so answer _Yes to all_ when asked to overwrite.
+
+By the way, this chapter should have been included into the chapter about <<Lend me your ears (optional), music and sound>>, but FWE collides with _Improved Sound FX v1_3_ and doesn't get well along with it, so I decided to alter the functional order I have been following so far to ensure a flawless setup.
+
+
+==== Fraternizing with the neighborhood
+
+If you like real challenges, you will *love* http://www.nexusmods.com/fallout3/mods/3211/[_Martigen's Mutant Mod_], or MMM, for short. MMM adds a lot of color to the game, in the form of new (and tougher) enemies, increased spawn rates, and so on.You will have plenty of rotten flesh-shaped love.
+
+. Download the file _Marts Mutant Mod 1-RC61 FOMOD Ready_ with NMM (yeah, half of this book is plagued with acronyms; I am acutely aware of that). No need to download the update because the merged patch we are going to use overwrites the files in it.
+. Download _Marts Mutant Mod Merged_ from http://www.nexusmods.com/fallout3/mods/16787/[_The Mergers_] page with NMM. Notice the downloaded files.
++
+.NMM MMM files downloaded
+image::NMM%20MMM%20files%20downloaded.png[NMM MMM files downloaded]
+. Activate _Martigen's Mutant Mod_ by double-clicking on it. NMM shows a window to select the preferred configuration method. We will choose the in-game menu, as it requires far less tinkering than its ESP counterpart.
++
+.NMM MMM menu configuration
+image::NMM%20MMM%20menu%20configuration.png[NMM MMM menu configuration]
+. In the next window, all the DLC options should be checked, but leave the global options unchecked. More on that later.
++
+.NMM MMM global options
+image::NMM%20MMM%20global%20options.png[NMM MMM global options]
+. MMM overwrites several files from FWE, as it overhauls the monster system in the game. Let it do its magic.
++
+.NMM MMM FWE overwrite
+image::NMM%20MMM%20FWE%20overwrite.png[NMM MMM FWE overwrite]
+. We are going to get rid of the files installed by MMM to use the merged path we downloaded before. Create a folder in your data folder (namely `[MMM backup]`), and move the following files:
+* `Mart's Mutant Mod.esm`
+* `Mart's Mutant Mod.esp`
+* `Mart's Mutant Mod - DLC Anchorage.esp`
+* `Mart's Mutant Mod - DLC The Pitt.esp`
+* `Mart's Mutant Mod - DLC Broken Steel.esp`
+* `Mart's Mutant Mod - DLC Point Lookout.esp`
+* `Mart's Mutant Mod - DLC Zeta.esp`
+* `Mart's Mutant Mod - Master Menu Module.esp`
+. Reopen NMM and activate _Paradox Ignition presents The Mergers - Marts Mutant Mod Merged_ in the _Mods_ tab. The merged patch will ask for permission to overwrite already installed files. Proceed as usual.
++
+.NMM MMM merged patch overwriting
+image::NMM%20MMM%20merged%20patch%20overwriting.png[NMM MMM merged patch overwriting]
+. There are three files installed we are not going to need, corresponding to the options we didn't choose before regarding MMM configuration. They are in the data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`), and can be safely removed, because the options they provide are yet included in FWE. Navigate to the data folder and delete them.
+* `Mart's Mutant Mod - Natural Selection.esp`
+* `Mart's Mutant Mod - Tougher Traders.esp`
+* `Mart's Mutant Mod - Zones Respawn.esp`
+. In the _Plugins_ tab, check the presence of the file `Mart's Mutant Mod.esm`, replacing all the files we installed before.
++
+.NMM MMM installed
+image::NMM%20MMM%20installed.png[NMM MMM installed]
+. Run LOOT as usual and rearrange your load order.
+. Launch the game and pull up your Pip-Boy. Navigate to the _Items_ button, _Apparel_ section, where you will see a new entry called _MMM Control Panel_.
++
+.Fallout 3 MMM control panel option
+image::Fallout%203%20MMM%20control%20panel%20option.png[Fallout 3 MMM control panel option]
+. Click on the aforementioned option and wade through the zillions of options to fine-tune your monster-hunting experience.
++
+.Fallout 3 MMM settings
+image::Fallout%203%20MMM%20settings.png[Fallout 3 MMM settings]
+
+Take into account that we need a http://www.nexusmods.com/fallout3/mods/18173/[_Blackened_ compatibility patch] to run FWE and MMM seamlessly, but Blackened patches come in combos (for example, FWE + MMM + EVE), so we are going to postpone the installation of a patch until we have some other mods installed.
+
+
+==== We need more firepower!
+
+The vanilla version of _Fallout 3_ is somewhat limited regarding weapons. We'll have plenty of firepower, but the weapon effects are dull, and the customization options are basically zero. Moreover, if you are used to traditional FPSs, you will surely find the aiming system a fucking crap.
+
+We are getting serious here, because, at the end of the chapter, we will have a completely revamped weapon system in the game. As usual, Gopher has a fantastic video https://www.youtube.com/watch?v=Vli2y7ZDUbo[covering weapon mods] (15:02), although not all of them. I have used also a similar Xuul's https://www.youtube.com/watch?v=TOSIL9k9dKk[video to update the weapon systems] to get cutting edge modding procedure.
+
+We are going to install http://www.nexusmods.com/fallout3/mods/3388/[_Weapon Mod Kits_] (WMK), http://www.nexusmods.com/fallout3/mods/8340/[_Energy Visuals Enhanced_] (EVE) and http://www.nexusmods.com/fallout3/mods/6938/[_Rogue Hallow's Ironsights_] (RH_IronSights), along with the corresponding http://www.nexusmods.com/fallout3/mods/16787/[Paradox Ignition merged patches].
+
+. Download the following WMK files manually, not with NMM:
+* http://www.nexusmods.com/fallout3/download/64569[_Weapon Mod Kits_]
+* http://www.nexusmods.com/fallout3/download/62400[_WMK Broken Steel Compatibility Patch_]
+* http://www.nexusmods.com/fallout3/download/64570[_WMK Mothership Zeta Compatibility Patch_]
+* http://www.nexusmods.com/fallout3/download/53514[_WMK Operation Anchorage Compatibility Patch_]
+* http://www.nexusmods.com/fallout3/download/63656[_WMK Point Lookout Compatibility Patch_]
+* http://www.nexusmods.com/fallout3/download/58184[_WMK The Pitt Compatibility Patch_]
+. Create a folder in a location of your choice, namely `[%WMK_FULL%]`.
+. Unpack the contents of every WMK file we have downloaded into that folder. There shouldn't be any overwriting.
+. Zip _the contents_ of `[%WMK_FULL%]` into a file named `WMK.zip`. The root of this file should contain a bunch of `.esp` files, a bunch of `_readme.txt` files and several folders.
+. Add `WMK.zip` to NMM (_Add mod from file_, in the green plus sign on the toolbar).
+. Download the following _RH_IronSights_ files manually, not with NMM:
+* http://www.nexusmods.com/fallout3/download/83555[_RH_IronSights BETA_]
+* http://www.nexusmods.com/fallout3/download/86279[_RH_IronSights BETA Update 1_]
+* http://www.nexusmods.com/fallout3/download/83777[_New Weapons for BETA_]
+* http://www.nexusmods.com/fallout3/download/86278[_RH_IronSights - Better Uniques_]
+. Create a folder in a location of your choice, say `[%RH_IRONSIGHTS_FULL%]`.
+. Unpack the contents of every RH_IronSights file we have downloaded into that folder. Overwrite files when necessary.
+. Every RH_IronSights file contained a `[Data]` folder, but we are going to simplify things a little. _Move_ all the contents of `[%RH_IRONSIGHTS_FULL%\Data]` to `[%RH_IRONSIGHTS_FULL%]` (up a level), and delete `[%RH_IRONSIGHTS_FULL%\Data]` folder.
+. Download http://www.nexusmods.com/fallout3/download/1000005036[_RH_Ironsights Merged_] manually from http://www.nexusmods.com/fallout3/mods/16787/[_Paradox Ignition the Mergers_] page. This is a merged patch that allows us to reduce the number of loaded files for RH_IronSights.
+. Unpack the contents of the merged patch into `[%RH_IRONSIGHTS_FULL%]`, overwriting when necessary. Notice there is no `[Data]` folder this time.
+. Delete the following files, which are replaced by the merged patch (every `.esp` file, in fact):
+* `RH_IronSights_Basic_AnchoragePlugin.esp`
+* `RH_IronSights_Basic_BrokenSteelPlugin.esp`
+* `RH_IronSights_Basic_PittPlugin.esp`
+* `RH_IronSights_Basic_PointLookoutPlugin.esp`
+* `RH_IronSights_Basic_VanillaPlugin.esp`
+* `RH_IronSights_Basic_ZetaPlugin.esp`
+* `RH_IronSights_Pitt_NewRifleSights.esp`
+* `RH_IronSights_PL_NewItems.esp`
+* `RH_IronSights_RemoveReticule.esp`
+* `RH_IronSights_Vanilla_BetterUniques.esp`
+* `RH_IronSights_Vanilla_NewWeapons.esp`
+. Zip the contents of `[%RH_IRONSIGHTS_FULL%]` into a file named `RH_IronSights.zip`.
+. Add `RH_IronSights.zip` to NMM (_Add mod from file_, in the green plus sign on the toolbar).
+. Download _EVE 099_ file from http://www.nexusmods.com/fallout3/mods/8340/[EVE] with NMM. Ignore the optional files.
+. Download _RH IronSights - FWE Bridge_ from http://www.nexusmods.com/fallout3/mods/6938/[_RH_IronSights_] with NMM.
+. Download _RH_IronSights - EVE Bridge_ from http://www.nexusmods.com/fallout3/mods/6938/[_RH_IronSights_] with NMM.
+. Download _RH_IronSights - WMK Bridge_ from http://www.nexusmods.com/fallout3/mods/6938/[_RH_IronSights_] with NMM.
+. We have a good bunch of mods ready to be installed.
++
+.NMM weapon mods ready
+image::NMM%20weapon%20mods%20ready.png[NMM weapon mods ready]
+. Activate _WMK_ and answer _Yes to all_ when asked for overwriting files (all from the previous FWE installation).
+. Activate _EVE - Energy Visuals Enhanced - EVE 099_. Again, it's going to overwrite several FWE files.
+. Activate _RH_IronSights_. Answer _Yes to all_ when asked to overwrite files, as usual.
+. Activate the RH_IronSights bridges, in the following order:
+* _RH_IronSights - FOSE - RH_IronSights - EVE Bridge_
+* _RH_IronSights - FOSE - RH_IronSights - WMK Bridge_
+* _RH_IronSights - FOSE - RH IronSights - FWE Bridge_
+. We are going to need a compatibility patch to stitch all these mods together, so navigate to the http://www.nexusmods.com/fallout3/mods/18173/[_Blackened_ compatibility patches] page, download and activated _Blackened FWE - MMM - EVE_ file with NMM.
+. Run LOOT to rearrange your load order.
+. According to LOOT, the files `RH_IRONSIGHTS.esm` and `RH_EVE_Bridge.esp` are dirty, so proceed to clean them up with FO3Edit. Remember: select just that file and the files it depends on will be automatically loaded.
+. Run the game and you will notice the dramatic change when aiming your weapon. *NOW*, this is serious shit.
++
+.Fallout 3 new sights
+image::Fallout%203%20new%20sights.png[Fallout 3 new sights]
+
+
+
+=== Expanding your world (optional)
+
+This section is about adding new content to the game, and it's the last block before changing the way the game looks. We are going to add a few new places and quests, a new playable set (armor, range finder, trap detector and nightvision gear), and pulling out a feature the game actually has, but does not show by default.
+
+
+==== _Hic sunt dracones_
+
+It's not that _Fallout 3 Game of the Year Edition_ lacks places to visit. On the contrary, you will be ruining your life trying to unfold the secrets of the Capital Wasteland, but, still, why not add some spice to the mix?
+
+We are going to install several mods that add new content to the game:
+
+* http://www.nexusmods.com/fallout3/mods/4730/[_A Note Easily Missed_]
+* http://www.nexusmods.com/fallout3/mods/16949/[_Alton, IL_]
+* http://www.nexusmods.com/fallout3/mods/5630/[_An Evening With Mister Manchester_]
+* http://www.nexusmods.com/fallout3/mods/8976/[_Arefu Expanded_]
+* http://www.nexusmods.com/fallout3/mods/8747/[_Mothership Zeta Crew_].
+* http://www.nexusmods.com/fallout3/mods/14449/[_The Institute - a fully voiced quest mod_]
+* http://www.nexusmods.com/fallout3/mods/6921/[_To sleep - perchance to dream_]
+* http://www.nexusmods.com/fallout3/mods/13308/[_Vault 101 Revisited_]
+
+Visit each mod's page to find out more about what you will find with the new quests and areas.
+
+Let's start.
+
+. Download the following files for each mod, all with NMM, unless otherwise specified:
+* _A Note Easily Missed v107_ for _A Note Easily Missed_.
+* _Alton IL Version 2-0-1_ and _Alton IL Hotfix 2-0-3_ for _Alton, IL_.
+* Manually download http://www.nexusmods.com/fallout3/download/1000007113[_Alton Re-voiced update without lip files_] from http://www.nexusmods.com/fallout3/mods/20859/[_Alton Revoicing Project_].
+* _Alton_IL_lip_for_Revoiced_ from http://www.nexusmods.com/fallout3/mods/22041/[_Alton Revoiced lip files_].
+* _An Evening with Mister Manchester v181_ and _An Evening With Mister manchester v181 UPDATE_ for _An Evening with Mister Manchester_.
+* _Arefu Expanded v1_7a - Data Files_ and _Arefu Expanded v1_7d - ESP and ESM files_ for _Arefu Expanded_.
+* _Mothership Zeta Crew V 166 ZIP_ for _Mothership Zeta Crew_.
+* _The Institute - a fully voiced quest mod 1_0_1_ and _The Institute 1_0_1 ESM only_ from _The Institute - a fully voiced quest mod_.
+* _To sleep - perchance to dream v106_ and _To sleep - perchance to dream v1061_ for _To sleep - perchance to dream_.
+* _Vault 101 Revisited - Main 104_ for _Vault 101 Revisited_.
+. Manually add the file `Alton Re-voiced update without lip files-20859-v1-3.zip` to NMM (this is the only file not downloaded with NMM in this series).
+. Check all the files are downloaded and ready in NMM. Take into account that _Mothership Zeta Crew_ is *HUGE* (over 1 GB), so be patient and make the most of your time reading online documentation about creating a book using Asciidoc, for example.
++
+.NMM new content mods
+image::NMM%20new%20content%20mods.png[NMM new content mods]
+. We are going to activate _Alton, IL_ files first, because there is a main file and several patches. Activate them in the following order, overwriting when asked to.
+* _Alton IL - Huge World and Quest Mod - Alton IL Version 2-0-1_
+* _Alton IL Hotfix 2-0-3 RC_
+* _Alton Revoicing Project_
+* _Alton Revoiced lip files - Alton_IL_lip_for_Revoiced_
+. Activate the following files next, in this order, overwriting original files with patches/updates:
+* _Arefu Expanded v1_7d by Azar - Arefu Expanded v1_7a - Data Files_
+* _Arefu Expanded v1_7d by Azar - Arefu Expanded v1_7d - ESP and ESM files_
+* _Mothership Zeta Crew - Mothership Zeta Crew V 166 ZIP_
+* _A Note Easily Missed - A Note Easily Missed v107_
+* _An Evening With Mister Manchester - An Evening with Mister Manchester v181_
+* _An Evening With Mister Manchester - An Evening With Mister manchester v181 UPDATE_
+* _The Institute - a fully voiced quest mod - The Institute - a fully voiced quest mod 1_0_1_
+* _The Institute - a fully voiced quest mod - The Institute 1_0_1 ESM only_
+* _To sleep - perchance to dream - To sleep - perchance to dream v106_
+* _To sleep - perchance to dream - To sleep - perchance to dream v1061_
+* _Vault 101 Revisited - Vault 101 Revisited - Main 104_
+. When all them mods are installed, fire up LOOT to rearrange your load order. Ignore the load order for now, because there are several dirty files we have to clean first. These are the dirty files to clean with FO3Edit:
+* `Vault 101 Revisited.esm`
+* `HeirApparent.esp`
+* `NotSoFast.esp`
+* `IntoTheDeepWoods.esp`
+. Fire up LOOT again an rearrange your load order, which will change due to the cleaning.
+. Launch the game and wait a few moments to see several dialogs to kick-in the missions (except _Mothership Zeta Crew_, which launches elsewhere).
++
+.Fallout 3 new quests dialog 1
+image::Fallout%203%20new%20quests%20dialog%201.png[Fallout 3 new quests dialog 1]
+.Fallout 3 new quests dialog 2
+image::Fallout%203%20new%20quests%20dialog%202.png[Fallout 3 new quests dialog 2]
+.Fallout 3 new quests dialog 3
+image::Fallout%203%20new%20quests%20dialog%203.png[Fallout 3 new quests dialog 3]
+.Fallout 3 new quests dialog 4
+image::Fallout%203%20new%20quests%20dialog%204.png[Fallout 3 new quests dialog 4]
+. You can check the quests pulling up your Pip-Boy and navigating to the _Data_ section, _Notes_ option. The following notes should be there for you:
++
+.Fallout 3 new quests notes
+image::Fallout%203%20new%20quests%20notes.png[Fallout 3 new quests notes]
+
+
+==== Gear for a fallen brother
+
+Gopher has created four mods which add an interesting gear set based on a fallen Brotherhood of Steel's operative. These mods are:
+
+* http://www.nexusmods.com/fallout3/mods/2654/[_Advanced Recon Stealth Armor_]
+* http://www.nexusmods.com/fallout3/mods/15641/[_Advanced Recon Trap Detection_]
+* http://www.nexusmods.com/fallout3/mods/15744/[_Advanced Recon Range Finder_]
+* http://www.nexusmods.com/fallout3/mods/15653/[_Advanced Recon Thermal Nightvision_]
+
+There is a small Gopher's video showing the https://www.youtube.com/watch?v=OsstmRso_Jw[features of the Advanced Recon gear set] (4:42).
+
+Let's install them:
+
+. Download _Advanced Recon Armor v 4_ from http://www.nexusmods.com/fallout3/mods/2654/[_Advanced Recon Stealth Armor_] with NMM.
+. Download _Detect Traps v 2_ and _Adv Recon Thermal Nightvision - Detect Traps Patch_ from http://www.nexusmods.com/fallout3/mods/15641/[_Advanced Recon Trap Detection_] with NMM.
+. Download _Adv Recon Range Finder_ from http://www.nexusmods.com/fallout3/mods/15744/[_Advanced Recon Range Finder_] with NMM.
+. Download _Adv Recon Thermal Nightvision_, _Mr Burkes key_ and _Adv Recon Thermal Nightvision - FWE Patch_ from http://www.nexusmods.com/fallout3/mods/15653/[_Advanced Recon Thermal Nightvision_] with NMM.
+. There is an interesting patch which http://www.nexusmods.com/fallout3/mods/20806/[enables nightvision/thermalvision on any headgear], not limited to Advanced Recon Armor. Download _Advanced Recon Patcher_ with NMM.
+. You should have the complete _Advanced Recon_ set by now.
++
+.NMM Advanced Recon set
+image::NMM%20Advanced%20Recon%20set.png[NMM Advanced Recon set]
+. Activate the mods in the following order.
+* _Advanced Recon Stealth Armor_
+* _Advanced Recon Trap Detection - Detect Traps v 2_
+* _Advanced Recon Range Finder FO3 - Adv Recon Range Finder_
+* _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision_
+* _Advanced Recon Thermal Nightvision - Mr Burkes key_
+* _Advanced Recon Trap Detection - Adv Recon Thermal Nightvision - Detect Traps Patch_
+* _Advanced Recon Thermal Nightvision Patcher - Advanced Recon Patcher_
+* _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision - FWE Patch_
+. When you activate _Advanced Recon Stealth Armor_, a pop-up with options will, well, pop up. Leave the options unchanged and click on _Install_.
++
+.NMM Advanced Recon Stealth Armor install options
+image::NMM%20Advanced%20Recon%20Stealth%20Armor%20install%20options.png[NMM Advanced Recon Stealth Armor install options]
+. When you activate _Advanced Recon Thermal Nightvision - Adv Recon Thermal Nightvision_, NMM asks for permission to overwrite files from the previous iHUD installation. It adds certain overlay items when using scopes and binoculars. Answer _Yes to all_, as usual.
++
+.NMM Advanced Recon Range Finder overwrite
+image::NMM%20Advanced%20Recon%20Range%20Finder%20overwrite.png[NMM Advanced Recon Range Finder overwrite]
+. Fire up LOOT to rearrange your load order.
+. Launch the game and check your new nice looking outfit. In your Pip-Boy (section _Items_, option _Apparel_), there are two new options to configure your Advanced Recon gear settings.
++
+.Fallout 3 Advanced Recon black coat
+image::Fallout%203%20Advanced%20Recon%20black%20coat.png[Fallout 3 Advanced Recon black coat]
+.Fallout 3 Advanced Recon gear settings
+image::Fallout%203%20Advanced%20Recon%20gear%20settings.png[Fallout 3 Advanced Recon gear settings]
+
+
+==== For the achievement junkie in you
+
+If you have ever played _World of Warcraft_, you will know that there is a deep, ingrained part of your reptilian brain that generates a huge amount of endorphines every time you get an _Achievement unlocked_ message after fulfilling a series of tasks.
+
+I know what I am talking about. Trust me.
+
+Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible after their first (and only) appearance. http://www.nexusmods.com/fallout3/mods/11326/[This mod] (and http://www.nexusmods.com/fallout3/mods/18678/[its fix]) lets you view all your achievements in the _Data_/_Notes_ section of your Pip-Boy. However, be advised: the log gets installed only in a fresh playthrough, using the main Vault 101 start, not one of the alternate starts from FWE.
+
+. Download _Personal Achievements Log v12_ from http://www.nexusmods.com/fallout3/mods/11326/[_Personal Achievements Log_] with NMM.
+. Download _SeraphTCs Personal Achievements Log FIX_ from http://www.nexusmods.com/fallout3/mods/18678/[_SeraphTCs Personal Achievements Log FIX_] with NMM.
+. Activate the mods in the same order you downloaded them. The fix should overwrite files from the main mod, as usual.
+. The mod installs a number of `.esp` files, but we don't need all of them. Since we are using the GOTY version of _Fallout 3_, we only need `PAL - MERGED.esp`, so open the data folder (`[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`) and delete the following files:
+* `PAL - BASE File.esp`
+* `PAL - Broken Steel.esp`
+* `PAL - Mothership Zeta.esp`
+* `PAL - Operation Anchorage.esp`
+* `PAL - Point Lookout.esp`
+* `PAL - The Pitt.esp`
+. Run LOOT to rearrange your load order.
+. You will have to start a fresh game to see the achievements log in action. At your ninth birthday party, when you receive your own Pip-Boy from the hands of the Overseer,  navigate through the _Data_ button, _Notes_ option. There should be a _Personal achievements Log_ option to view your short achievement list (at least for the time being).
++
+.Fallout 3 personal achievements log
+image::Fallout%203%20personal%20achievements%20log.png[Fallout 3 personal achievements log]
+
+
+
+=== So you want to take over the world, uh?
+
+Who has not ever dreamed of taking over the world with an army of half-crazed human-killing robots manufactured by oneself?
+
+Well, I have. Sort of.
+
+But let's talk about robots in _Fallout 3_. By now, you have seen them. They are ubiquitous, and if you mess with them, you will end up being some hundred degrees more roasted than usual. To begin with.
+
+However, they are just NPCs. Rusty, metal-ass NPCs, but NPCs nonetheless. You can't create new robots, and you can't command existing ones either.
+
+Until http://www.nexusmods.com/fallout3/mods/712/[_RobCo Certified_] appeared, that is.
+
+With this mod you get a new perk which gives you the ability to repair destroyed robots or create new ones out of scrap collected throughout your wanderings. The wet dream of you, brother nerds. You can take a peek at the video https://www.youtube.com/watch?v=47sbkmImwDE[showcasing some of the mod features] (1:03), by TheTalkieToaster, the mod author.
+
+This mod requires a bit of fiddling because it's not ready to work along the Paradox version of http://www.nexusmods.com/fallout3/mods/8340/?[_EVE_], so we need to install a patch and make sure the right files are in place. Let's get on with it.
+
+. Download the following files from http://www.nexusmods.com/fallout3/mods/712/[_RobCo Certified_] manually, in a folder of your choice (say, `[%ROBCO_FULL%]`):
+* http://www.nexusmods.com/fallout3/download/81129[_RobCo Certified v2_]
+* http://www.nexusmods.com/fallout3/download/75621[_CuteUnits Side Mod_]
+* http://www.nexusmods.com/fallout3/download/71514[_RobCo Certified Mechanists Edition v2-01_]
+* http://www.nexusmods.com/fallout3/download/75619[_RobCo Certified v2 Patch Pack v1-41_]
+. Unzip all four files into `[%ROBCO_FULL%]`. There will be no files with the same name.
+. Delete the following files inside `[%ROBCO_FULL%]`:
+* `RobCo Certified v2 EVE.esp`
+* `RobCo Certified v2 FWE.esp`
+* `RobCo Certified v2 Omnipatch.esp`
+* `RobCo Certified v2 Version Updater.esp`
+* `RobCo Certified v2 Zeta Addon.esp`
+. Zip the contents of `[%ROBCO_FULL%]` into a file named `RobCo Certified v2.zip`.
+. Fire up NMM and manually add `RobCo Certified v2.zip` in the _Mods_ tab.
+. Download _RobCo Certified Omnipatch for Paradox EVE_ from http://www.nexusmods.com/fallout3/mods/8340/[_EVE - Energy Visuals Enhanced_] with NMM.
+. Download _Impervious Power Armour v2-2_ from http://www.nexusmods.com/fallout3/mods/13325/[_Impervious Power Armour_] to add a stronger armour-plating to robots, impervious to small guns (it will also work with power armors for your character).
+. Download _Mister Smiths Scrapyard_ from http://www.nexusmods.com/fallout3/mods/14075/[_Mr Smiths Scrapyard_] to get a vendor specialized in robot parts and junk.
+. We have all the files we need in NMM, locked and loaded.
++
+.NMM RobCo mods installed
+image::NMM%20RobCo%20mods%20installed.png[NMM RobCo mods installed]
+. Activate the files in the following order, answering _Yes to all_ when asked to overwrite files:
+* _RobCo Certified v2_
+* _EVE - Energy Visuals Enhanced - RobCo Certified Omnipatch for Paradox EVE_
+* _Impervious Power Armour - Impervious Power Armour v2-2_
+* _Mr Smiths Scrapyard - Mister Smiths Scrapyard_
+. Run LOOT to rearrange your load order.
+. There are four dirty files in our mod stack. Clean them up with FO3Edit, as usual:
+* `Companion Core.esm`
+* `RobCo Certified v2.esm`
+* `RobcoCertified24SideMod.esp`
+* `Companion Core DLC Addon.esp`
+. When you level up, you will get the RobCo Certified perk for you to unleash your nerdy urges.
++
+.Fallout 3 RobCo Certified perk
+image::Fallout%203%20RobCo%20Certified%20perk.png[Fallout 3 RobCo Certified perk]
+
+
+
+=== There's no place like Megaton
+
+Megaton will be the first settlement you will find right after leaving Vault 101 (or elsewhere, if you choose an alternate start from FWE). You will spend quite a lot of time there, at least at the beginning, because a) it's a main quest hub, and b) you will get homesick with the memories of that rusty pile of shit, eventually.
+
+However, Megaton has the same problem all the major cities on this planet have: poor urban planning. I guess having an undetonated nuke half-buried in your main square impose certain trade-offs.
+
+We are going to install two mods here. One will add an http://www.nexusmods.com/fallout3/mods/8247/[overhead walkway] which links the most interesting places with your own house (in case you end owning it). The other adds a http://www.nexusmods.com/fallout3/mods/2136/[third floor] to that house, giving you extra room to store the tons of junk you are going to collect (I guess this game is disturbing for people with OCD).
+
+. Download _Megaton Walkway_ from http://www.nexusmods.com/fallout3/mods/8247/[_Megaton Walkway_] with NMM.
+. Download _Expanded Megaton House V3_ from http://www.nexusmods.com/fallout3/mods/2136/[_Expanded Megaton House V3_] with NMM.
+. Activate them in the same order you downloaded them. No conflicts here.
+. Fire up LOOT to rearrange your load order, as usual.
+. Launch the game and take a look at the walkway and the extra story in your house
++
+.Fallout 3 Megaton walkway
+image::Fallout%203%20Megaton%20walkway.png[Fallout 3 Megaton walkway]
+.Fallout 3 Megaton new balcony
+image::Fallout%203%20Megaton%20new%20balcony.png[Fallout 3 Megaton new balcony]
+
+
+
+=== Let's go shopping to D.C.!
+
+Downtown D.C. used to be a place full of life.
+
+Well, it still is, but the life it has now doesn't like other lifeforms. It's not a very friendly neighborhood nowadays, with all the nuclear fallout, the mutants and all that.
+
+Unfriendly non-quite-human beings are not the best thing for small commerce, but why all these cardboard facades? Did everybody take their time to board up the entrances when the anti-aircraft sirens started wailing or what?
+
+The next mod addresses that, http://www.nexusmods.com/fallout3/mods/5573[adding a lot of places to investigate] not only in D.C., but also around the Wasteland.
+
+. Download _DCInteriors_combo Edition Total Merge_ and _MMM_DCinteriors Patch_ from http://www.nexusmods.com/fallout3/mods/5573/[_DCInteriors Project_] with NMM.
+. Activate _DCInteriors Project - DCInteriors_combo Edition Total Merge_ first. No overwriting required.
+. Activate _DCInteriors Project - MMM_DCinteriors Patch_ next. No overwriting either.
+. Run LOOT and, you know, the usual business.
+. The file `DCInteriors_ComboEdition.esm` is dirty, so we have to clean it with FO3Edit.
+. Sorry, no screenshots here. It's a long way Downtown D.C.
+
+
+
+
+== Unveiling the real Wasteland
+
+_Fallout 3_ is a terrific game, but it shows its age at first sight.
+
+If you have followed this guide up to this point, you could play a greatly enjoyable game just with the mods I have recommended. But if you want to go the extra mile and change your visual perception of the Wasteland forever, please, bear with me and keep on reading.
+
+However, be advised: the mods in this section will push your machine capabilities to the limit.
+
+
+
+=== She walks in beauty, like the night of cloudless climes and starry skies
+
+One of the first things we can improve regarding the appearance of our world is the night sky. There are two mods (http://www.nexusmods.com/fallout3/mods/442/[_Enhanced Night Sky_] and http://www.nexusmods.com/fallout3/mods/538/[_krzymar HI-RES Moon_]) that will make you cry tears of joy every time you look up to the Moon.
+
+That will also grant you a short lifespan, killed by any night-crawling creature which happens to find you an easy meal, ready to be disemboweled.
+
+. Download _Enhanced Night Sky_ from http://www.nexusmods.com/fallout3/mods/442/[_Enhanced Night Sky_] with NMM.
+. Download _krzymar_HI-RES_Moon-0_2_0-bright_ from http://www.nexusmods.com/fallout3/mods/538/[_krzymar HI-RES Moon_] with NMM (I prefer the brighter version, instead of the darker one).
+. Activate them in the same order you downloaded them. There shouldn't be any overwriting. There are no data files installed either, so no need to run LOOT.
+. Launch the game and just compare.
++
+.Fallout 3 night before
+image::Fallout%203%20night%20before.png[Fallout 3 night before]
+.Fallout 3 night after
+image::Fallout%203%20night%20after.png[Fallout 3 night after]
+
+
+
+=== The Nuclear Holocaust like you have never seen before
+
+One of the things I like less of the visual aspect of the game is the green tint that pervades everything. I guess that is supposed to depict the residual haze from a nuclear holocaust, but I don't like it anyway.
+
+There is a single mod that not only removes the green tint, but also adds an incredible look to the game and a weather system: http://www.nexusmods.com/fallout3/mods/17418/[_Project Reality_]. No more fixed skin-burning sunny days for the Capital Wasteland.
+
+Gopher has a video which covers different https://www.youtube.com/watch?v=oHariRMIryI[weather and lighting mods available] (14:56), including _Project Reality_. However, we are going to tinker with the mod file because there is apparently a significant framerate drop with the default rain textures. We are going to replace them with http://www.nexusmods.com/fallout3/mods/6170/[_Enhanced weather_] rain textures.
+
+. Download http://www.nexusmods.com/fallout3/download/83330[_F3ProjectRealityMkI_] manually, *NOT* with NMM.
+. Download http://www.nexusmods.com/fallout3/download/72918[_RECCOMANDED Enhanced Weather - Rain and Snow v2 hotfix b Fomod Package- FULL DO NOT DOWNLOAD ANYTHING ELSE_] manually, *NOT* with NMM.
+. Unzip `RECCOMANDED Enhanced Weather - Rain and Snow v2  hotfix b Fomod Package- FULL DO NOT DOWNLOAD ANYTHING ELSE-6170.zip` in a location of your choice. The ZIP contains a single file, `Enhanced Weather - Rain and Snow v2 hotfix b.fomod`.
+. Using 7-zip or any other unzipping tool, extract the contents of `Enhanced Weather - Rain and Snow v2 hotfix b.fomod` to a location of your choice, namely `[%ENHANCED_WEATHER%]` (`.fomod` files are just zipped files).
+. Unzip `F3ProjectRealityMkI-17418-v1-0beta.rar` in a location of your choice, namely `[%PROJECT_REALITY%]`.
+. Browse to `[%ENHANCED_WEATHER%\Textures\Mieimod\Different Weather]`, and copy these two files to `[%PROJECT_REALITY%\textures\F3NV\Weather]`:
+* `Rain.dds`
+* `Rain2.dds`
++
+.Fallout 3 Project Reality with enhanced weather textures
+image::Fallout%203%20Project%20Reality%20with%20enhanced%20weather%20textures.png[Fallout 3 Project Reality with enhanced weather textures]
+. Now, remove the following files from that folder:
+* `F3NVRain.dds`
+* `F3NVRain2.dds`
+. Rename the _Enhanced Weather_ files as follows:
+* `Rain.dds` &rarr; `F3NVRain.dds`
+* `Rain2.dds` &rarr; `F3NVRain2.dds`
+. Re-zip the contents of the `[%PROJECT_REALITY%]` folder into an archive named `F3ProjectRealityMkI-17418-v1-0beta-retextured.zip`
+. Open NMM and click on the green plus sign in the left button bar to manually add the file we just created.
++
+.NMM install mod from file
+image::NMM%20install%20mod%20from%20file.png[NMM install mod from file]
+. When the file is loaded, select it and click on the info button to change the name to "F3ProjectRealityMkI retextured".
++
+.NMM renaming Project Reality
+image::NMM%20renaming%20Project%20Reality.png[NMM renaming Project Reality]
+. Double-click on the mod's name to activate it. There shouldn't be any overwriting.
+. Launch LOOT to rearrange your load order.
+. Launch the game and check the incredible look the Wasteland just got! Compare before and after:
++
+.Fallout 3 Project Reality before
+image::Fallout%203%20Project%20Reality%20before.png[Fallout 3 Project Reality before]
+.Fallout 3 Project Reality after
+image::Fallout%203%20Project%20Reality%20after.png[Fallout 3 Project Reality after]
+. Pull up your PipBoy to check the new option in _Items_/_Apparel_ section to configure _Project Reality_.
++
+.Fallout 3 Project Reality option
+image::Fallout%203%20Project%20Reality%20option.png[Fallout 3 Project Reality option]
+. Click on _Project Reality MkI_ and check the settings. There are a lot of things for you to tinker with until you feel comfortable (or uncomfortable, since I guess radioactive rain is not a pretty thing to be under).
++
+.Fallout 3 Project Reality settings
+image::Fallout%203%20Project%20Reality%20settings.png[Fallout 3 Project Reality settings]
+. Just a small note... Remember the previous screenshot showing our enhanced night? Well, look at this:
++
+.Fallout 3 night after Project Reality
+image::Fallout%203%20night%20after%20Project%20Reality.png[Fallout 3 night after Project Reality]
+
+Things keep getting better and better!
+
+
+
+=== Everything depends on the point of view
+
+At first, I didn't think to include these four mod in this guide:
+
+* http://www.nexusmods.com/fallout3/mods/15745/[_CINEMATECH_]
+* http://www.nexusmods.com/fallout3/mods/17899/[_Director's Chair_]
+* http://fallout3.nexusmods.com/mods/17876/[_Dynavision_]
+* http://www.nexusmods.com/fallout3/mods/16875/[_The IMAGINATOR_]
+
+I only considered _Dynavision_ worth installing, but after revisiting Gopher's video about https://www.youtube.com/watch?v=ry-84eqDvr0[visual enhancements mods] (29:59), I changed my mind, not only because the customization possibilities of the combined mods, but also because you don't even need the Pip-Boy menu to change the settings of the mods (specially _Dynavision_). That's a great plus.
+
+These four mods give you total control about light. And no, these are not lighting mods (we'll be there <<Let there be light!, in a breeze>>). These are mods to _control_ the way the light behaves in your game.
+
+Let me explain. At a very basic level, every game lets you customize three parameters: brightness, contrast and saturation. However, the sum of the aforementioned mods lets you control the kind of light, the "film grain" and even the depth of field of your point of view.
+
+Let's get started.
+
+. Download _DYNAVISION - Dynamic Lens Effect 1_0_1_ from http://fallout3.nexusmods.com/mods/17876/[_Dynavision_] with NMM.
+. Download _CINEMATECH_ from http://www.nexusmods.com/fallout3/mods/15745/[_CINEMATECH_] with NMM.
+. Download _The IMAGINATOR for FO3 - Visual Control Device_ from http://www.nexusmods.com/fallout3/mods/16875/[_The IMAGINATOR_] with NMM.
+. Download _Directors Chair_ from http://www.nexusmods.com/fallout3/mods/17899/[_Director's Chair_] with NMM.
+. We should have the four mods downloaded in no time.
++
+.NMM visual enhancements downloaded
+image::NMM%20visual%20enhancements%20downloaded.png[NMM visual enhancements downloaded]
+. Activate _DYNAVISION - Dynamic Depth of Field - DYNAVISION - Dynamic Lens Effect 1_0_1_ by double-clicking on it. No overwriting is required.
+. Activate _CINEMATECH - Film Grains and Styles - CINEMATECH_ the same way. It will ask you to overwrite a HUD file previously installed by _Advanced Recon Thermal Nightvision_. Go on and answer _Yes to all_.
+. Activate _The IMAGINATOR for FO3 - Visual Control Device - The IMAGINATOR for FO3 - Visual Control Device_ the same way. No overwriting required.
+. Finally, activate _Directors Chair - Total Visual Control - Directors Chair_. No overwriting either.
+. Fire up LOOT to rearrange your load order.
+. Launch the game to check the new menus. Pressing kbd:[F7] will show the _Director's Chair_ in-game menu. The best way to get the grasp of the possibilities given by these four mods is watching Gopher's video.
++
+.Fallout 3 Director's Chair
+image::Fallout%203%20Director's%20Chair.png[Fallout 3 Director's Chair]
+
+
+
+=== Nobody said the Nuclear Holocaust should be unpleasant to look at
+
+_Fallout 3_ was released in 2008... and it really shows its age when you look at it more than two whole seconds.
+
+Old graphics shouldn't be an issue with a game like this, but when you see how the game improves with new textures... Well, you will never be able to play the vanilla version again. Ever.
+
+Be advised though: these mods will push your rig capabilities to its limits. Gopher explains the different flavours of textures you can install in the https://www.youtube.com/watch?v=ry-84eqDvr0[visual enhancements mods] (29:59) we saw earlier, although he covers just _NMCS Texture Pack_.
+
+These are the mods we are going to install:
+
+* http://www.nexusmods.com/fallout3/mods/17115/[_Clean-Deluxe_]
+* http://www.nexusmods.com/fallout3/mods/19864/[_Flora Overhaul_]
+* http://www.nexusmods.com/fallout3/mods/17743/[_Improved LOD Noise Texture_]
+* http://www.nexusmods.com/fallout3/mods/1662/[_Megaton_Texture_Pack_]
+* http://www.nexusmods.com/fallout3/mods/12056/[_NMCS Texture Pack_]
+* http://www.nexusmods.com/fallout3/mods/2599/[_Pure Water_]
+* http://www.nexusmods.com/fallout3/mods/3612/[_Rivet City Texture Pack_]
+* http://www.nexusmods.com/fallout3/mods/774/[_Terrain Pack_]
+* http://www.nexusmods.com/fallout3/mods/866/[_Terrain_Pack_ROCKS_ADD_ON_PACK_]
+
+We are not going to use the full version of _NMCS Texture Pack_ because the performance version is just about as good. We will be adding _Terrain Pack_ and _Terrain_Pack_ROCKS_ADD_ON_PACK_ on top of it for better terrain textures and _Improved LOD Noise Texture_ to avoid a severe case of eye bleeding due to low resolution textures when looking through a sniping sight.
+
+Regarding to _Flora Overhaul_, I prefer the _Dead Edition_ because, you know, a Wasteland full of trees cannot barely be considered a wasteland anymore. However, feel free to ignore me (why the hell are you reading this, anyway?).
+
+There are two specific sets of textures for important locations: Megaton and Rivet City. They both are worth installing.
+
+Finally, _Pure Water_ removes the muddy aspect of the water (but not its radiation, although it's optional, too), and _Clean-Deluxe_ will give us a 5-10% improvement in FPS, removing clutter and atmospheric haze which, in fact, add nothing meaningful to the game.
+
+Let's begin!
+
+. Download the following files with NMM:
+* _NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_ from _NMCS Texture Pack_.
+* _Improved LOD Noise Texture_ from _Improved LOD Noise Texture_.
+* _Dead Edition v13C_ from _Flora Overhaul_.
+* _PureWater_ from _Pure Water_.
+* _Clean-Deluxe GOTY Edition_ from _Clean-Deluxe_.
+. Download the following files *manually*:
+* http://www.nexusmods.com/fallout3/download/34025[_NeilMc_Terrain_Pack_1024_] and http://www.nexusmods.com/fallout3/download/34081[_TREE_ROOTS_PATCH_] from _Terrain Pack_. Copy the files into a folder `[%NMC_TERRAIN_TEXTURES%]`.
+* http://www.nexusmods.com/fallout3/download/34531[_High_Resolution_Rocks_4096_] from _Terrain_Pack_ROCKS_ADD_ON_PACK_. Copy the file into a folder `[%NMC_TERRAIN_TEXTURES%]`.
+* http://www.nexusmods.com/fallout3/download/41620[_Aged_Paper_Scraps_], http://www.nexusmods.com/fallout3/download/36251[_High_Resolution_Megaton_] and http://www.nexusmods.com/fallout3/download/41764[_Megaton_Painted_Signs_Revised_] from _Megaton_Texture_Pack_. Copy the files into a folder `[%NMC_MEGATON_TEXTURES%]`.
+* http://www.nexusmods.com/fallout3/download/41767[_Flatter_Sign_Paint_Patch_] and http://www.nexusmods.com/fallout3/download/41714[_Rivet_City_High_Resolution_] from _Rivet City Texture Pack_. Copy the files into a folder `[%NMC_RIVET_CITY_TEXTURES%]`.
+. Let's start with terrain textures.
+* Unpack `NeilMc_Terrain_Pack_1024-774.7z` in the same folder with the tool of your choice (7-Zip, WinRAR, etc.). There was _another_ compressed file inside the first one, named `Terrain_Pack_1024_x2.7z`.
+* Delete the files `archiveinvalidation.txt` and `NeilMc_Terrain_Pack_1024-774.7z`.
+* Unpack the file `Terrain_Pack_1024_x2.7z`, again in the same folder. A folder named `[data]` is created.
+* Remove the file `Terrain_Pack_1024_x2.7z`.
+* _Move_ the contents of the `[data]` folder up a level. This is, move the `[data/Textures]` folder to the root of `[%NMC_TERRAIN_TEXTURES%]`.
+* Delete the `[data]` folder.
+* Unpack the file `High_Resolution_Rocks_4096-866.7z` into the same folder. Again, we have another packed file that was inside the first one, this one named `4096_Rocks.7z`.
+* Delete the files `ArchiveInvalidation.txt` and `High_Resolution_Rocks_4096-866.7z`.
+* Unpack the file `4096_Rocks.7z` into the same folder. There will be two new files (`rockcanyoncluster01.dds` and `rockcanyoncluster01_n.dds`).
+* _Move_ the `.dds` texture files to the folder `[%NMC_TERRAIN_TEXTURES%\textures\landscape]`, replacing two texture files that were already there.
+* Unpack the file `TREE_ROOTS_PATCH-774.rar` in its place. You will see three new folders: `[512]`, `[1024]` and `[2048]`.
+* We are going to use the 1024×1024 textures, so it's safe to delete the `[512]` and `[2048]` folders. Delete the file `TREE_ROOTS_PATCH-774.rar` also.
+* Move *the contents* of the `[1024]` folder into `[%NMC_TERRAIN_TEXTURES%\textures\landscape]`, replacing two existing files with the same name.
+* Delete the `[1024]` folder.
+* Pack the contents of `[%NMC_TERRAIN_TEXTURES%]` into a file called `NMC_TERRAIN_TEXTURES.zip`. The packed file should only contain a folder named `[textures]` in its root.
+* Add the file to NMM.
+. Next: Megaton textures.
+* Unpack `High_Resolution_Megaton-1662.7z` in its place. There was a packed file inside that one, called `MEGATON_TEX_PACK_HIGH_RES.7z`.
+* Delete the files `ArchiveInvalidation.txt` and `High_Resolution_Megaton-1662.7z`.
+* Unpack `MEGATON_TEX_PACK_HIGH_RES.7z` in its place. A folder named `[textures]` is created.
+* Unpack `Aged_Paper_Scraps-1662.7z` in its place. A folder named `[AgedPaperScraps]` is created, with some folders inside.
+* We are going to use the high resolution version, as usual, so move the files inside `[%NMC_MEGATON_TEXTURES%\AgedPaperScraps\200% (High Resolution)]` into `[%NMC_MEGATON_TEXTURES%\textures\architecture\megaton]`, overwriting any previous existing file.
+* Delete the folder `[AgedPaperScraps]` and the file `Aged_Paper_Scraps-1662.7z`.
+* Unpack the file `Megaton_Painted_Signs_Revised-1662.rar` in its place. A folder named `[MegatonPaintedSignsFlattened]` is created.
+* Again, we are going to use the high resolution version (200% size), so move the contents of the folder `[%NMC_MEGATON_TEXTURES%\MegatonPaintedSignsFlattened\200%Signs (high Res)]` into `[%NMC_MEGATON_TEXTURES%\textures\architecture\megaton]`, overwriting any previous existing file.
+* Delete the folder `[MegatonPaintedSignsFlattened]` and the file `Megaton_Painted_Signs_Revised-1662.rar`.
+* Pack the contents of `[%NMC_MEGATON_TEXTURES%]` into a file called `NMC_MEGATON_TEXTURES.zip`. The packed file should only contain a folder named `[textures]` in its root.
+* Add the file to NMM.
+. Finally, Rivet City textures.
+* Unpack the file `Rivet_City_High_Resolution-3612.7z` in its place.There was a packed file inside that one, called `RIVETCITY_HIGH_RES.7z`.
+* Delete the files `ArchiveInvalidation.txt`, `README.txt` and `Rivet_City_High_Resolution-3612.7z`.
+* Unpack `RIVETCITY_HIGH_RES.7z` in its place. A folder named `[data]` is created.
+* Delete the file `RIVETCITY_HIGH_RES.7z`.
+* _Move_ the contents of the `[data]` folder up a level. This is, move the `[data/textures]` folder to the root of `[%NMC_RIVET_CITY_TEXTURES%]`.
+* Unpack the file `Flatter_Sign_Paint_Patch-3612.7z` in its place. A folder named `[RIVETCITYPaintedSignsFlattened]` is created.
+* We are going to use the high resolution version of the textures in that file, so *move* the contents of the folder `[%NMC_RIVET_CITY_TEXTURES%\RIVETCITYPaintedSignsFlattened\200%Signs (high Res)]` into `[%NMC_RIVET_CITY_TEXTURES%\textures\dungeons\rivetcity]`, replacing all files when asked to.
+* Delete the folder `[RIVETCITYPaintedSignsFlattened]` and the file `Flatter_Sign_Paint_Patch-3612.7z`.
+* Pack the contents of `[%NMC_RIVET_CITY_TEXTURES%]` into a file called `NMC_RIVET_CITY_TEXTURES.zip`. The packed file should only contain a folder named `[textures]` in its root.
+* Add the file to NMM.
+. We have all our mods ready to be installed.
++
+.NMM texture mods
+image::NMM%20texture%20mods.png[NMM texture mods]
+. Activate _FO3 Flora Overhaul - Dead Edition v13C_ double-clicking on it. No overwriting required from this point on, except pointed out otherwise.
+. Activate _NMCs_Texture_Pack_for_FO3 - NMCs Texture Pack PERFORMANCE Pack SINGLE FILE FOR NMM_.
+. Activate _NMC_TERRAIN_TEXTURES_. It will overwrite textures from _NMCS Texture Pack_.
+. Activate _NMC_RIVET_CITY_TEXTURES_. It will overwrite textures from _NMCS Texture Pack_.
+. Activate _NMC_MEGATON_TEXTURES_. It will overwrite textures from _NMCS Texture Pack_.
+. Activate _Improved LOD Noise Texture - Improved LOD Noise Texture_.
+. Activate _PureWater - PureWater_.
+. Activate _Clean-Deluxe - Clean-Deluxe GOTY Edition_.
+. _Pure Water_ comes in four flavours, each one with its own `.esp` file:
+* `PureWater-VeryClearNoRad-.esp`: High water transparency and no radiation poisoning.
+* `PureWater-VeryCleanLittleRad-.esp`: High water transparency and radiation poisoning.
+* `PureWater-NoRad-.esp`: Normal water transparency and no radiation poisoning.
+* `PureWater-LittleRad-.esp`: Normal water transparency and radiation poisoning.
+. I am going to use high water transparency and radiation poisoning (`PureWater-VeryCleanLittleRad-.esp`), because, what could be better than a sip of plutonium-loaded clear water from the Potomac? We need to delete the unused files in `[%STEAM_HOME%\steamapps\common\Fallout 3 goty\Data]`.
+. Run LOOT to rearrange your load order, as usual.
+. Launch the game to see for yourself.
++
+.Fallout 3 new textures and flora night
+image::Fallout%203%20new%20textures%20and%20flora%20night.png[Fallout 3 new textures and flora night]
+.Fallout 3 new textures and flora day
+image::Fallout%203%20new%20textures%20and%20flora%20day.png[Fallout 3 new textures and flora day]
+
+The quality of the textures is hard to miss, not to mention the fuckload of trees that are thrown to your face all of a sudden.
+
+.Fallout 3 new textures
+image::Fallout%203%20new%20textures.png[Fallout 3 new textures]
+
+
+
+=== The Devil is in the details (optional)
+
+_Fallout 3_ is a great game to develop your kleptomaniac urges. The Wasteland is littered with small objects you can collect to... Well, collect them. Why there should be any veiled meaning to that? The only limit is the http://fallout.wikia.com/wiki/Carry_Weight[carry weight] of your character, unless you cheat the game with the console command `player.forceav carryweight {amount}`, where `{amount}` is the desired carry weight in pounds (lbs), up to 20.106 lbs (that's 9.128 kg., give or take). But you are not going to do that, are you?
+
+The only problem is, like any other vanilla texture in the game, these small objects are definitely low-res, and that's what we are going to change in this chapter.
+
+The mods we are considering are:
+
+* http://www.nexusmods.com/fallout3/mods/626/[_Better Booze_]
+* http://www.nexusmods.com/fallout3/mods/3679/[_Better PreWar and Burned Books_]
+* http://www.nexusmods.com/fallout3/mods/3876/[_Better HiRes Skill Books_]
+* http://www.nexusmods.com/fallout3/mods/15960/[_Chems and Meds Re-Texture Pack_]
+* http://www.nexusmods.com/fallout3/mods/101/[_Enhanced Blood Textures v2_22b_]
+* http://www.nexusmods.com/fallout3/mods/11684[_eXcalibr - ammo eXpansion pack_]
+* http://www.nexusmods.com/fallout3/mods/20053/[_HD Smoky Fire and Explosions for FO3_]
+* http://www.nexusmods.com/fallout3/mods/13120/[_Improved Glass Bullet Impact_]
+* http://www.nexusmods.com/fallout3/mods/6894/[_Retextured Clutter Collection_]
+* http://www.nexusmods.com/fallout3/mods/13428/[_RobCo Certified Textures_]
+* http://www.nexusmods.com/fallout3/mods/591/[_Whats Your Brand - cigarette texture megapack_]
+
+We are going to repack some of the mods because their inner structure is non-standard, thus unrecognizable by NMM.
+So, here we go:
+
+. We need to repack the files from _Better Booze_:
+* Download *manually* the following files:
+** http://www.nexusmods.com/fallout3/download/33801[_MAINSTREAM PACK_]
+** http://www.nexusmods.com/fallout3/download/50734[_BOTTLE MESH ADDON_]
+** http://www.nexusmods.com/fallout3/download/33880[_WINE ADDON_]
+* Unpack them in a location of your choice, say `[%BETTER_BOOZE%]`.
+* Delete the three `.zip` files. We are not going to need them anymore.
+* Extract the contents of the folder `[%BETTER_BOOZE%\Better Booze v02 - MAINSTREAM PACK]` to `[%BETTER_BOOZE%]` (that is, move them up a level).
+* Do the same with the contents of `[%BETTER_BOOZE%\Better Booze v02 - WINE ADDON]`.
+* Remove the following items under `[%BETTER_BOOZE%]`:
+** `[Better Booze v02 - MAINSTREAM PACK]`
+** `[Better Booze v02 - WINE ADDON]`
+** `*.jpg`
+** `*.txt`
+* We need to choose if we want wine bottles in game to be of white wine of red wine. I am partial to white wine, so delete the folder `[%BETTER_BOOZE%\Red (burgundy bottle)]` and move the contents of `[%BETTER_BOOZE%\White (green bottle)]` to `[%BETTER_BOOZE%]` (up a level).
+* Delete the folder `[%BETTER_BOOZE%\White (green bottle)]`
+* Pack the contents of the folder `[%BETTER_BOOZE%]` into a file named `BETTER_BOOZE.zip`.
+* Add `BETTER_BOOZE.zip` to NMM.
+* Delete the folder `[%BETTER_BOOZE%]`.
+. Next, we are going to create a single pack for book textures.
+* Download *manually* the following files:
+** http://www.nexusmods.com/fallout3/download/42546[_HiResSkillBooks_] and http://www.nexusmods.com/fallout3/download/42715[_WastelandSurvivalGuideRedone_] from _Better HiRes Skill Books_.
+** http://www.nexusmods.com/fallout3/download/41985[_HiResBooks-Dirtier-Grimier_] from _Better PreWar and Burned Books_.
+* Unpack them in a location of your choice, say `[%BETTER_BOOKS%]`.
+* Delete the three `.zip` files you just unpacked.
+* Delete the following files under `[%BETTER_BOOKS%]`:
+** `*.gif`
+** `*.txt`
+* Move the contents of `[%BETTER_BOOKS%\Data]` to `[%BETTER_BOOKS%]` (up a level).
+* Delete the folder `[%BETTER_BOOKS%\Data]`.
+* Pack the contents of `[%BETTER_BOOKS%]` into a file named `BETTER_BOOKS.zip`.
+* Add `BETTER_BOOKS.zip` to NMM.
+* Delete the folder `[%BETTER_BOOKS%]`.
+. Next, the zillion of small things that clutter the Wasteland.
+* Download *manually* the file http://www.nexusmods.com/fallout3/download/51147[_BetterClutterCollection_] from _Retextured Clutter Collection_.
+* Unpack the file in a location of your choice. Yeah, you guessed; `[%BETTER_CLUTTER%]`.
+* Delete the `.zip` file we just unpacked.
+* Move the contents of the folder `[%BETTER_CLUTTER%\BetterClutter\Data]` to `[%BETTER_CLUTTER%]` (up two levels).
+* Delete the following files under `[%BETTER_CLUTTER%]`:
+** `[BetterClutter]`
+** `*.gif`
+** `*.txt`
+* Pack the contents of `[%BETTER_CLUTTER%]` into the file `BETTER_CLUTTER.zip`.
+* Add `BETTER_CLUTTER.zip` to NMM.
+* Delete the folder `[%BETTER_CLUTTER%]`.
+. Finally (for the manual part), we are going to address cigarette brands.
+* Download *manually* http://www.nexusmods.com/fallout3/download/33542[_Whats Your Brand_] from _Whats Your Brand - cigarette texture megapack_.
+* Unpack the file in a location of your choice, for example, you name it, `[%BETTER_CIGARETTES%]`.
+* Delete the `.zip` file we just unpacked.
+* Move the contents of the following folders under `[%BETTER_CIGARETTES%]` up a level:
+** `[(Optional) White Cigarette]`
+** `[Black Death]`
+* Delete *everything* under `[%BETTER_CIGARETTES%]` except the folder `[textures]`.
+* Pack the contents of `[%BETTER_CIGARETTES%]` into the file `BETTER_CIGARETTES.zip`.
+* Add `BETTER_CIGARETTES.zip` to NMM.
+* Delete the folder `[%BETTER_CIGARETTES%]`.
+. Download _Chems and Meds Re-Textures Pack v1-0_ from _Chems and Meds Re-Texture Pack_ with NMM.
+. Download _Enhanced Blood Textures_ from _Enhanced Blood Textures v2_22b_ with NMM.
+. Download _eXcalibr Ammo Pack v2-3 Full FOMOD_ from _eXcalibr - ammo eXpansion pack_ with NMM.
+. Download _HD Fire_ from _HD Smoky Fire and Explosions for FO3_ with NMM.
+. Download _Improved Glass Bullet Impact_ from _Improved Glass Bullet Impact_ with NMM.
+. Download _RobCo Certified Textures_ from _RobCo Certified Textures_ with NMM.
+. We should have our detail textures downloaded, ready to activate in NMM.
++
+.NMM detail texture mods
+image::NMM%20detail%20texture%20mods.png[NMM detail texture mods]
+. Activate them in the following order (no conflicts, unless otherwise specified):
+* _BETTER_BOOZE_.
+* _BETTER_BOOKS_ (this one conflicts with a texture previously installed by _Arefu Expanded_; answer _Yes to all_).
+* _Chems and Meds Re-Texture Pack - Chems and Meds Re-Textures Pack v1-0_.
+* _Enhanced Blood Textures v2_22b - Enhanced Blood Textures_ (this one conflicts with textures previously installed from _EVE - Energy Visuals Enhanced_; answer _Yes to all_).
+* _eXcalibr Ammo eXpansion Pack_. This one comes with a FOMOD installer with two options (_Override_ and _Override for FWE 6.0.3_). Select the last one. It also overwrites textures from _FWE_, so answer _Yes to all_.
++
+.NMM eXcalibr options
+image::NMM%20eXcalibr%20options.png[NMM eXcalibr options]
+* _HD Smoky Fire and Explosions for FO3 - HD Fire_.
+* _Improved Glass Bullet Impact - Improved Glass Bullet Impact_.
+* _BETTER_CLUTTER_ (this one overwrites textures from _NMC Texture Pack_; answer _Yes to all_).
+* _RobCo Certified Textures_. This mod has a FOMOD installer to select the kind of texture you want, with a screenshot to help you choose. I'll go with "Army". It will also overwrite textures from _RobCo Certified_, so answer _Yes to all_.
++
+.NMM RobCo Certified Textures options
+image::NMM%20RobCo%20Certified%20Textures%20options.png[NMM RobCo Certified Textures options]
+* _BETTER_CIGARETTES_.
+. Run LOOT to rearrange your load order, for there are a number of `.esp` files installed alongside the textures.
+. Run the game and wander around to see for yourself the overall improvement in the textures of the everyday objects.
+
+
+
+=== Let there be light!
+
+Lighting in _Fallout 3_ is somewhat unnatural. You would think everyone in the Capital Wasteland has developed nightvision, because you can see perfectly in pitch black underground places. Not to mention the horrid HDR blooming you get when the game does not handle well multiple light sources.
+
+The three following mods try to enhance lighting in _Fallout 3_.
+
+* http://www.nexusmods.com/fallout3/mods/16935/[_Darkened Interiors_]
+* http://www.nexusmods.com/fallout3/mods/8069/[_Fallout Street Lights_]
+* http://www.nexusmods.com/fallout3/mods/7875/[_Megaton Lighting Overhaul_]
+
+_Darkened Interiors_ tries to give interiors a realistic lighting, with deep shadows and islands of light, which creates a scarier atmosphere. _Fallout Street Lights_ revamps, well, the street lights, creating light beams where there was just diffuse glows. Finally, _Megaton Lighting Overhaul_ adds lights in Megaton, the first settlement you are going to find in your wanderings around the Wasteland (you will spend quite a lot of time there).
+
+. Download _Darkened Interiors v0_3_ from _Darkened Interiors_ with NMM.
+. Download _Fallout Street Lights Version 2_ from _Fallout Street Lights_ with NMM.
+. Download _Megaton Lighting Overhaul_ from _Megaton Lighting Overhaul_ with NMM.
+. These are small mods, so you will have them downloaded in a breeze.
++
+.NMM Lighting mods
+image::NMM%20Lighting%20mods.png[NMM Lighting mods]
+. Activate them in the same order you downloaded them. Each mod has its own set of files, so no overwriting is required.
+. Yeah, you guessed. Run LOOT.
+. LOOT informs us that the file `StreetLights.esm` contains identical to master records, so we need to clean it with FO3Edit. Follow the usual procedure, selecting only that file and letting FO3Edit load the dependencies for you.
+. Launch the game and take a stroll in the night.
++
+.Fallout 3 new lighting
+image::Fallout%203%20new%20lighting.png[Fallout 3 new lighting]
+.Fallout 3 Megaton entrance light
+image::Fallout%203%20Megaton%20entrance%20light.png[Fallout 3 Megaton entrance light]
+.Fallout 3 Megaton street lights
+image::Fallout%203%20Megaton%20street%20lights.png[Fallout 3 Megaton street lights]
+
+
+
+=== I don't like your face (nor the way you move)
+
+I guess no one is able to remember the moment of her birth, unless you are a trickster. However, I would be shitting bricks my whole life if my first sight in this world were these eyes.
+
+.Fallout 3 WTF with your eyes
+image::Fallout%203%20WTF%20with%20your%20eyes.png[Fallout 3 WTF with your eyes]
+
+Seriously, look at _that_.
+
+.Fallout 3 WTF WTF WTF DADDY
+image::Fallout%203%20WTF%20WTF%20WTF%20DADDY.png[Fallout 3 WTF WTF WTF DADDY]
+
+A poor face modeling is one of the worst thing I can imagine to get a proper immersion in the game. Imagine your ninth birthday, surrounded by a bunch of people like this.
+
+.Fallout 3 ugly faces
+image::Fallout%203%20ugly%20faces.png[Fallout 3 ugly faces]
+
+Consider the face of your childhood friend Amata, and take into account that hers is not the ugliest face you will encounter in the game.
+
+.Fallout 3 Amata is not so ugly after all
+image::Fallout%203%20Amata%20is%20not%20so%20ugly%20after%20all.png[Fallout 3 Amata is not so ugly after all]
+
+The following mods target the faces, character animation and eye textures.
+
+* http://www.nexusmods.com/fallout3/mods/18622/[_Beards of Fallout_]
+* http://www.nexusmods.com/fallout3/mods/20183/[_Fallout 3 - Enhanced Camera_]
+* http://www.nexusmods.com/fallout3/mods/7670/[_Fallout 3 re-animated_]
+* http://www.nexusmods.com/fallout3/mods/6341/[_Fallout 3 redesigned_]
+* http://www.nexusmods.com/fallout3/mods/19163/[_Lost in Light_]
+
+_Fallout 3 re-animated_ changes the default animations of every character in-game, getting a more natural stance, both in combat and resting. _Fallout 3 redesigned_, formerly known as _Project Beauty_, changes all the faces throughout the game, giving people a more natural look. _Lost in Light_ (LiL, for short) replaces the vanilla eye textures with proper eyeballs using proper light reflection. No more people screaming out their pain of their wretched souls through the eyes. _Beards of Fallout_ adds a lot of new beards for your character (I am myself strongly biased towards beards, because, you know, I like to groom mine in real life). Finally, _Fallout 3 - Enhanced Camera_ allows us to see our own feet when in first person, improving game immersion.
+
+As usual, Gopher has a video about https://www.youtube.com/watch?v=smLZNJIMCQA[people reanimated and redesigned] (11:06), although he doesn't cover LiL.
+
+The installation is a bit tricky, regarding to _Fallout 3 Redesigned_, so let's do it.
+
+. Download _Release v0_22_ and _Idle Revisions2 - Fixed_ from _Fallout 3 re-animated_ with NMM.
+. Download http://www.nexusmods.com/fallout3/download/1000010302[_FO3 Redesigned HD_], but download it *manually*. We are going to meddle with the file a little. The file is named `FO3 Redesigned HD-6341-2-74-2.zip` (obviously, these instructions may not apply with a different version of the mod).
+. Download _Lost in Light - An Eye Improvement Mod_ with NMM.
+. Download _Beards of Fallout_ from _Beards of Fallout_ with NMM.
+. Download _Enhanced Camera_ from _Fallout 3 - Enhanced Camera_ with NMM.
+. Unzip `FO3 Redesigned HD-6341-2-74-2.zip` in a location of your choice, say `[%FO3_REDESIGNED%]`.
+. The structure of the ZIP file is a bit weird.
++
+.FO3 Redesigned mod structure
+image::FO3%20Redesigned%20mod%20structure.png[FO3 Redesigned mod structure]
+. We are going to create a mod file with just the items we need, in the proper place. Create a folder anywhere you want, say `[%FO3_REDESIGNED_REPACK%]`.
+. Create the following folders under `[%FO3_REDESIGNED_REPACK%]`:
+* `Meshes`
+* `textures`
+. Copy the following files from `[%FO3_REDESIGNED%]` into `[%FO3_REDESIGNED_REPACK%]`:
+* `/meshes/*.*` &rarr; `/Meshes/`
+* `/textures/*.*` &rarr; `/textures/`
+* `/Optional Merged Version/Project Beauty.esm` &rarr; `/`
+. Zip the contents of the `[%FO3_REDESIGNED_REPACK%]` folder into a file named `FO3_REDESIGNED_REPACK.zip`. The folders `/Meshes/` and `/textures/` should be in the root of the ZIP file.
+. In NMM, use the option _Add Mod from File_ (green plus sign in the leftmost button bar) and select the newly created file.
+. We need one final thing to put all the pieces together. In the chapter about <<We need more firepower!, weaponry>> we installed a Blackened compatibility patch to stitch together _FWE_, _MMM_ and _EVE_. Now, we are going to replace that patch with an expanded version, which includes _Project Beauty_. Download _Blackened FWE - MMM - EVE - Project Beauty_ file from http://www.nexusmods.com/fallout3/mods/18173/[_Blackened_].
+. Ok, we have all the files we need, ready to be installed.
++
+.NMM people redesigned and reanimated mods
+image::NMM%20people%20redesigned%20and%20reanimated%20mods.png[NMM people redesigned and reanimated mods]
+. Activate the mods in the following order:
+* _Fallout 3 Re-Animated - Release v0_22_ (this one overwrites files from _RH_IronSights_, so answer _Yes to all_ when asked to).
+* _Fallout 3 Re-Animated - Idle Revisions2 - Fixed_ (this one overwrites files from the previous file, so answer _Yes to all_ when asked to).
+* _FO3_REDESIGNED_REPACK_. No overwriting required.
+* _LiL - An Eye Improvement Mod - Lost in Light - An Eye Improvement Mod_ (this one overwrites files from _Fallout 3 Redesigned_, so answer _Yes to all_ when asked to).
+* _Beards of Fallout - Beards of Fallout_. No overwriting required.
+* _Fallout 3 - Enhanced Camera - Enhanced Camera_. No overwriting required.
+. To install the _Blackened_ patch, we need first to uninstall the previous _Blackened patch_. Look for _Blackened - Blackened FWE - MMM - EVE_ in your mod list and double-click on it (or press the "forbidden" sign below the "plus" sign after selecting the mod) to uninstall the obsolete patch.
+. Activate _Blackened - Blackened FWE - MMM - EVE - Project Beauty_. No overwriting required.
+. Run LOOT to rearrange your load order.
+
+Let's see how the game changes with this. What about the defining moment of your birth?
+
+.Fallout 3 not so scary first sight
+image::Fallout%203%20not%20so%20scary%20first%20sight.png[Fallout 3 not so scary first sight]
+
+Well, it's a little bit less scary, although there are some remaining embers in these eyes.
+
+.Fallout 3 embers in your eyes
+image::Fallout%203%20embers%20in%20your%20eyes.png[Fallout 3 embers in your eyes]
+
+There are certain improvements in the character customization options, although I don't quite get my own look-alike.
+
+.Fallout 3 enhanced character customization
+image::Fallout%203%20enhanced%20character%20customization.png[Fallout 3 enhanced character customization]
+
+Let's check the bunch of people in your ninth birthday.
+
+.Fallout 3 better faces
+image::Fallout%203%20better%20faces.png[Fallout 3 better faces]
+
+And what about Amata?
+
+.Fallout 3 Amata has changed a bit
+image::Fallout%203%20Amata%20has%20changed%20a%20bit.png[Fallout 3 Amata has changed a bit]
+
+Furthermore, we can lose ourselves staring at our feet!
+
+.Fallout 3 look at your feet
+image::Fallout%203%20look%20at%20your%20feet.png[Fallout 3 look at your feet]
+
+
+
+=== Killing with style
+
+We have changed the way the Wasteland looks in a dramatic way so far, installing textures for everything imaginable... Except for weapons. Because, who said killing monsters shouldn't be done with style? If you don't like how your weapons look in the vanilla game, lo and behold the response to all of your prayers!
+
+The mods we are going to use to change the weapon and armor textures are:
+
+* http://www.nexusmods.com/fallout3/mods/19931/[_Fallout 3 Hirezd_]
+* http://www.nexusmods.com/fallout3/mods/18133/[_FO3-WRP - Weapon Retexture Project_]
+* http://www.nexusmods.com/fallout3/mods/17145/[_Hall Of Equipment_]
+* http://www.nexusmods.com/fallout3/mods/481/[_Hi-Res Weapons v3_]
+* http://www.nexusmods.com/fallout3/mods/6309/[_UWWUT - Unique Weapons With Unique Textures_]
+
+Let's begin.
+
+. Download _HiRes Weapons v3_1_ from _Hi-Res Weapons v3_ with NMM.
+. Download _UWWUT v1_5_ and _UWWUT - Broken Steel Addon Update_ from _UWWUT - Unique Weapons With Unique Textures_ with NMM.
+. Download _Fallout_3_Weapon_Retexture_Project_ from _FO3-WRP - Weapon Retexture Project_ with NMM.
+. Download the following files from _Fallout 3 Hirezd_:
+* _BB Gun_
+* _Bullet Casings_
+* _Flamer_
+* _Grenades_
+* _Knuckles_
+* _Lincolns Repeater_
+* _Mines_
+* _Minigun_
+* _Supermutants_
+. Download _Hall Of Equipment V2 All In One_ from _Hall of Equipment_.
+. We have a lot of texture mods ready to be installed.
++
+.NMM weapon textures ready
+image::NMM%20weapon%20textures%20ready.png[NMM weapon textures ready]
+. Activate them in the following order, overwriting when necessary.
+* _Hi-Res Weapons v3 - HiRes Weapons v3_1_
+* _UWWUT - Unique Weapons With Unique Textures - UWWUT v1_5_
+* _UWWUT - Unique Weapons With Unique Textures - UWWUT - Broken Steel Addon Update_
+* _FO3-WRP - Weapon Retexture Project - Fallout_3_Weapon_Retexture_Project_
+* All the files from _Fallout 3 Hirezd_, in any order.
+* _Hall Of Equipment - Hall Of Equipment V2 All In One_
+. _UWWUT_ comes in two flavours, depending on the type of stats you want for your weaponry. We are going to use vanilla stats, so delete these files from your game data folder:
+* `UWWUT_WT - BS Addon.esp`
+* `UWWUT_WT - TP Addon.esp`
+* `UWWUT_WT.esp`
+. Fire up LOOT to rearrange your _huge_ load order.
+. Run the game to see for your self the quality of the new weapon textures.
++
+.Fallout 3 new textures for weapons
+image::Fallout%203%20new%20textures%20for%20weapons.png[Fallout 3 new textures for weapons]
+
+
+
+=== I want to believe
+
+We are going to install the last two mods in our journey. These are fairly specific ones, and they are used only in the _Mothership Zeta_ DLC, so sorry, no screenshots here.
+
+These are the mods which are going to improve how _Zeta_ DLC looks:
+
+* http://www.nexusmods.com/fallout3/mods/19294/[_Earth from Space texture for Mothership Zeta_]
+* http://www.nexusmods.com/fallout3/mods/8260/[_Mothership Zeta DLC Retextured_]
+
+The file for http://www.nexusmods.com/fallout3/mods/8260/[_Mothership Zeta DLC Retextured_] is a bit awkward, so we are going to fix it.
+
+. Download *manually* http://www.nexusmods.com/fallout3/download/54936[_WJS DLC05 Retex 1_0_] from _Mothership Zeta DLC Retextured_.
+. Unpack the file in a location of your choice, say `[%ZETA_RETEXTURE%]`.
+. Delete the following items inside `[%ZETA_RETEXTURE%]`:
+* `[preview screens]`
+* `*.jpg`
+* `*.txt`
+. Move the contents of the folder `[%ZETA_RETEXTURE%\Abomination_Heartbeat]` up a level, to the root of `[%ZETA_RETEXTURE%]`.
+. Move the contents of the folder `[%ZETA_RETEXTURE%\Open This]` up a level, to the root of `[%ZETA_RETEXTURE%]`.
+. Delete the folders `[Abomination_Heartbeat]` and `[Open This]` under `[%ZETA_RETEXTURE%]`. There should be only two folders by now (`[meshes]` and `[textures]`).
+. Zip the contents of `[%ZETA_RETEXTURE%]` into a file named `ZETA_RETEXTURE.zip`.
+. Add the zipped file to NMM.
+. Download _ms earthfromspacetex_ manually (there is no NMM download), and add the file to your mod stack with NMM.
+. We have our two mods ready to be installed:
++
+.NMM Mothership Zeta textures
+image::NMM%20Mothership%20Zeta%20textures.png[NMM Mothership Zeta textures]
+. Activate _ZETA_RETEXTURE_ first, and then _Earth from Space texture for Mothership Zeta_. Both require some overwriting.
+
+And that's it. There are no data files in these mods, so we are good to go!
+
+
+
+== Wrapping up
+
+No matter which mods you have installed to this point, you will want to create a merged patch to ensure all of them work together like a charm.
+
+Even with Bethesda's main files there are inconsistencies across the different DLCs, let alone with a fuckload of mods installed, each one with its own set of items and rules. A merged patch is no magic fix, but it is a good start point to solve certain basic problems that arise when different mods have different visions of the same issue. As usual, Gopher has https://www.youtube.com/watch?v=uPK7R71zcwM[a video about FO3Edit] (39:12) which explains (from 14:05) what is a merged patch, how to create it and the things you will need to know about what it does and what it does not do.
+
+. Open FO3Edit and load *ALL* the plugins you have installed. This is important, as you are going to create a merged patch for your whole mod stack. Don't pay attention to the mods shown in the screenshots. Your mileage may vary.
++
+.FO3Edit load all plugins
+image::FO3Edit%20load%20all%20plugins.png[FO3Edit load all plugins]
+. Wait until FO3Edit finishes loading all data files.
++
+.FO3Edit background loader finished
+image::FO3Edit%20background%20loader%20finished.png[FO3Edit background loader finished]
+. Right-click anywhere in the leftmost panel (the one with the plugin list) and select _Other_, then _Create merged patch_.
++
+.FO3 create merged patch
+image::FO3%20create%20merged%20patch.png[FO3 create merged patch]
+. Give the merged patch a meaningful name. I am using the version number of this guide, but you are free to choose whatever you like.
++
+.FO3 merged patch name
+image::FO3%20merged%20patch%20name.png[FO3 merged patch name]
+. Check the leftmost panel at the bottom. Your merged patch should sit there.
++
+.FO3Edit merged patch created
+image::FO3Edit%20merged%20patch%20created.png[FO3Edit merged patch created]
+. We need to exit FO3Edit to save the merged patch. Click on the _Close Window_ icon and make sure the merged patch is selected in the next window. Click _Ok_ to have the `.esp` file saved to your data folder.
++
+.FO3Edit saving merged patch
+image::FO3Edit%20saving%20merged%20patch.png[FO3Edit saving merged patch]
+. We need to activate the merged patch, so open NMM and navigate to the _Plugins_ tab. Tick the merged patch at the bottom, and you are good to go!
++
+.NMM merged patch loaded
+image::NMM%20merged%20patch%20loaded.png[NMM merged patch loaded]
+
+Remember these golden rules regarding to merged patches:
+
+. A merged patch will not fix any inconsistency you have in your mod stack. As Gopher shows in the aforementioned video, a merged patch may, in fact, add some inconsistencies of its own (although they are minor ones). However, it will stitch together firmly the whole stack.
+. The merged patch should *ALWAYS* sit at the bottom of your load order. In case of conflict, the deepest mod always wins, so you need your merged patch sitting at the bottom to ensure proper conflict resolution.
+. As tedious as it sounds, every time you change your mod stack, adding or removing mods, you need to create a *NEW* merged patch. Otherwise, the game will miserably crash. As you can imagine, I have been creating _a lot_ of merged patches throughout the creation of this guide.
+
+
+
+
+== Resources
+
+This is a comprehensive list of the resources used throughout this guide.
+
+
+
+=== Tools
+
+* http://www.nexusmods.com/games/mods/modmanager/[Nexus Mod Manager]. This is the tool of choice when it comes to keep all your mods organized and up-to-date.
+* https://loot.github.io/[LOOT]. Installing mods on Bethesda games can be a pain in the ass, especially if you try to install a lot of possibly-colliding mods. This tool keeps the load order straight.
+* http://www.nexusmods.com/fallout3/mods/637/[FO3Edit]. _Fallout 3_ itself comes out-of-the-box with certain errors in the main and DLC files, and this tool comes in handy to correct them. Besides, this is *THE* tool to create a merged patch to run the game with an absurd amount of mods.
+
+
+
+=== Guides
+
+* http://www.tweakguides.com/Fallout3_1.html[_Fallout 3_ Tweaking Guide].
+* http://fallout.wikia.com/wiki/Gamebryo_console_commands[Gamebryo console commands]
+* http://steamcommunity.com/sharedfiles/filedetails/id=149946772[Guide to fix the game in order to run under modern versions of Windows].
+* http://www.ign.com/wikis/fallout-3/Item_Codes[Item Codes]
+* http://www.gamingboulevard.com/2015/01/lets-mod-fallout-3-100-mods/[Let's mod _Fallout 3_ with over 100 mods]
+* http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit[TES5Edit cleaning guide].
+* http://www.sevenforums.com/gaming/20199-fallout-3-windows-7-w-quad-core.html[Why the game crashes if it runs in a box with multiple cores].
+
+
+
+=== Mods
+
+This is the list of mods used throughout this guide, in ascending alphabetical order.
+
+* http://www.nexusmods.com/fallout3/mods/4730/[_A Note Easily Missed_]
+* http://www.nexusmods.com/fallout3/mods/15886/[_Adjustable HUD_]
+* http://www.nexusmods.com/fallout3/mods/15744/[_Advanced Recon Range Finder_]
+* http://www.nexusmods.com/fallout3/mods/2654/[_Advanced Recon Stealth Armor_]
+* http://www.nexusmods.com/fallout3/mods/20806/[_Advanced Recon Thermal Nightvision Patcher_]
+* http://www.nexusmods.com/fallout3/mods/15653/[_Advanced Recon Thermal Nightvision_]
+* http://www.nexusmods.com/fallout3/mods/15641/[_Advanced Recon Trap Detection_]
+* http://www.nexusmods.com/fallout3/mods/16949/[_Alton IL_]
+* http://www.nexusmods.com/fallout3/mods/22041/[_Alton Revoiced lip files_]
+* http://www.nexusmods.com/fallout3/mods/20859/[_Alton Revoicing Project_]
+* http://www.nexusmods.com/fallout3/mods/12602/[_Ambient Wasteland 2_]
+* http://www.nexusmods.com/fallout3/mods/5630/[_An Evening With Mister Manchester_]
+* http://www.nexusmods.com/fallout3/mods/8976/[_Arefu Expanded_]
+* http://www.nexusmods.com/fallout3/mods/18622/[_Beards of Fallout_]
+* http://www.nexusmods.com/fallout3/mods/626/[_Better Booze_]
+* http://www.nexusmods.com/fallout3/mods/13520/[_Better Game Performance_]
+* http://www.nexusmods.com/fallout3/mods/16898/[_Better High Detail Map and Icons_]
+* http://www.nexusmods.com/fallout3/mods/3876/[_Better HiRes Skill Books_]
+* http://www.nexusmods.com/fallout3/mods/3679/[_Better PreWar and Burned Books_]
+* http://www.nexusmods.com/fallout3/mods/15960/[_Chems and Meds Re-Texture Pack_]
+* http://www.nexusmods.com/fallout3/mods/15745/[_CINEMATECH_]
+* http://www.nexusmods.com/fallout3/mods/17115/[_Clean-Deluxe_]
+* http://www.nexusmods.com/fallout3/mods/3447/[_Community Ammunition Library_]
+* http://www.nexusmods.com/fallout3/mods/16935/[_Darkened Interiors_]
+* http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/[_Darnified UI_]
+* http://www.nexusmods.com/fallout3/mods/5573/[_DCInteriors Project_]
+* http://www.nexusmods.com/fallout3/mods/17899/[_Director’s Chair_]
+* http://www.nexusmods.com/fallout3/mods/17876/[_Dynavision_]
+* http://www.nexusmods.com/fallout3/mods/19294/[_Earth from Space texture for Mothership Zeta_]
+* http://www.nexusmods.com/fallout3/mods/8340/[_Energy Visuals Enhanced_]
+* http://www.nexusmods.com/fallout3/mods/101/[_Enhanced Blood Textures v2_22b_]
+* http://www.nexusmods.com/fallout3/mods/442/[_Enhanced Night Sky_]
+* http://www.nexusmods.com/fallout3/mods/11684/[_eXcalibr - ammo eXpansion pack_]
+* http://www.nexusmods.com/fallout3/mods/5612/[_Existence 2_0 - Robot Radio_]
+* http://www.nexusmods.com/fallout3/mods/2136/[_Expanded Megaton House V3_]
+* http://www.nexusmods.com/fallout3/mods/16001/[_Fake Fullscreen Mode Windowed - Alt Tab Fix_]
+* http://www.nexusmods.com/fallout3/mods/20183/[_Fallout 3 - Enhanced Camera_]
+* http://www.nexusmods.com/fallout3/mods/13055/[_Fallout 3 - HD Audio Overhaul – v1.21_]
+* http://www.nexusmods.com/fallout3/mods/19931/[_Fallout 3 Hirezd_]
+* http://www.nexusmods.com/fallout3/mods/7670/[_Fallout 3 re-animated_]
+* http://www.nexusmods.com/fallout3/mods/6341/[_Fallout 3 redesigned_]
+* http://www.nexusmods.com/fallout3/mods/2761/[_Fallout 3 Wanderers Edition_]
+* http://www.nexusmods.com/fallout3/mods/8069/[_Fallout Street Lights_]
+* http://www.nexusmods.com/fallout3/mods/8886/[_Fallout Stutter Remover_]
+* http://www.nexusmods.com/newvegas/mods/35225/[_Faster Pipboy Faster_]
+* http://www.nexusmods.com/fallout3/mods/19864/[_Flora Overhaul_]
+* http://www.nexusmods.com/fallout3/mods/18133/[_FO3-WRP - Weapon Retexture Project_]
+* http://www.nexusmods.com/fallout3/mods/14946/[_GNR Enhanced_]
+* http://www.nexusmods.com/fallout3/mods/17145/[_Hall Of Equipment_]
+* http://www.nexusmods.com/fallout3/mods/20053/[_HD Smoky Fire and Explosions for FO3_]
+* http://www.nexusmods.com/fallout3/mods/481/[_Hi-Res Weapons v3_]
+* http://www.nexusmods.com/fallout3/mods/15790/[_Immersive HUD_]
+* http://www.nexusmods.com/fallout3/mods/13325/[_Impervious Power Armor_]
+* http://www.nexusmods.com/fallout3/mods/13120/[_Improved Glass Bullet Impact_]
+* http://www.nexusmods.com/fallout3/mods/17743/[_Improved LOD Noise Texture_]
+* http://www.nexusmods.com/fallout3/mods/627/[_Improved Sound FX v1.3_]
+* http://www.nexusmods.com/fallout3/mods/538/[_krzymar HI-RES Moon_]
+* http://www.nexusmods.com/fallout3/mods/6510/[_Large Address Aware Enabler for Fallout 3_]
+* http://www.nexusmods.com/fallout3/mods/19163/[_Lost in Light_]
+* http://www.nexusmods.com/fallout3/mods/3211/[_Marts Mutant Mod_]
+* http://www.nexusmods.com/fallout3/mods/7875/[_Megaton Lighting Overhaul_]
+* http://www.nexusmods.com/fallout3/mods/8247/[_Megaton Walkway_]
+* http://www.nexusmods.com/fallout3/mods/1662/[_Megaton_Texture_Pack_]
+* http://www.nexusmods.com/fallout3/mods/8747/[_Mothership Zeta Crew_]
+* http://www.nexusmods.com/fallout3/mods/8260/[_Mothership Zeta DLC Retextured_]
+* http://www.nexusmods.com/fallout3/mods/14075/[_Mr Smiths Scrapyard_]
+* http://www.nexusmods.com/fallout3/mods/12056/[_NMCS Texture Pack_]
+* http://www.nexusmods.com/fallout3/mods/11326/[_Personal Achievements Log_]
+* http://www.nexusmods.com/fallout3/mods/20373/[_PipBoy 3000 HD Retexture_]
+* http://www.nexusmods.com/fallout3/mods/17418/[_Project Reality_]
+* http://www.nexusmods.com/fallout3/mods/2599/[_Pure Water_]
+* http://www.nexusmods.com/fallout3/mods/6894/[_Retextured Clutter Collection_]
+* http://www.nexusmods.com/fallout3/mods/6938/[_RH Ironsights_]
+* http://www.nexusmods.com/fallout3/mods/3612/[_Rivet City Texture Pack_]
+* http://www.nexusmods.com/fallout3/mods/13428/[_RobCo Certified Textures_]
+* http://www.nexusmods.com/fallout3/mods/712/[_RobCo Certified_]
+* http://www.nexusmods.com/fallout3/mods/18678/[_SeraphTCs Personal Achievements Log FIX_]
+* http://www.nexusmods.com/newvegas/mods/36255/[_Shiloh DS - Clean Pipboy Screen_]
+* http://www.nexusmods.com/fallout3/mods/18389/[_SmoothLight - Pip-Boy Light Enhancer_]
+* http://www.nexusmods.com/fallout3/mods/774/[_Terrain Pack_]
+* http://www.nexusmods.com/fallout3/mods/866/[_Terrain_Pack_ROCKS_ADD_ON_PACK_]
+* http://www.nexusmods.com/fallout3/mods/16875/[_The IMAGINATOR_]
+* http://www.nexusmods.com/fallout3/mods/14449/[_The Institute - a fully voiced quest mod_]
+* http://www.nexusmods.com/fallout3/mods/6921/[_To sleep - perchance to dream_]
+* http://www.nexusmods.com/fallout3/mods/19122/[_Unofficial Fallout 3 Patch_]
+* http://www.nexusmods.com/fallout3/mods/20867/[_User Interface Organizer_]
+* http://www.nexusmods.com/fallout3/mods/6309/[_UWWUT - Unique Weapons With Unique Textures_]
+* http://www.nexusmods.com/fallout3/mods/13308/[_Vault 101 Revisited_]
+* http://www.nexusmods.com/fallout3/mods/3388/[_Weapon Mod Kits_]
+* http://www.nexusmods.com/fallout3/mods/591/[_Whats Your Brand - cigarette texture megapack_]
+
+
+
+=== Videos
+
+These are the videos which served as spiritual inspiration author of this guide. That's me.
+
+* https://www.youtube.com/watch?v=BP3timf65O4[Fallout 3 : To ENB or not to ENB] (21:36).
+* https://www.youtube.com/watch?v=TeWV1wvg7cU[Fallout 3 Mod Clinic part 1 : Remastered, Blackened and Merged] (24:12).
+* https://www.youtube.com/watch?v=fHbJjkBSD4g[Fallout 3 Mod Clinic part 2 : RH Ironsights] (16:33).
+* https://www.youtube.com/watch?v=bTlXOqV6pBA[FALLOUT 3 Mod Clinic#3: UIO - User Interface Organizer] (4:42).
+* https://www.youtube.com/watch?v=gIY2J6W8FBU[Fallout 3 Multicore Crash Fix] (03:17).
+* https://www.youtube.com/watch?v=QK_f4vHiutA[Fallout 3 Script Extender : FOSE (Installing and using)] (10:07).
+* https://www.youtube.com/watch?v=qSA2BFQ2zc4[Fallout New Vegas Mod Clinic #24 : UIO - User Interface Organizer] (11:23).
+* https://www.youtube.com/watch?v=YzsBKYUrcbE[Load Order # 1 - What is it?] (20:00).
+* https://www.youtube.com/watch?v=SzoyWugzZAw[Load Order # 2 - LOOT] (13:59).
+* https://www.youtube.com/watch?v=-SAeXsA6Nt8[Modding Fallout 3 - Part 1 : Getting Started with FWE and Marts Mutant Mod] (39:38).
+* https://www.youtube.com/watch?v=aqCzCXEydwU[Modding Fallout 3 - Part 2 : User Interface mods] (25:06).
+* https://www.youtube.com/watch?v=oHariRMIryI[Modding Fallout 3 - Part 3 : Weather and Lighting mods] (14:56).
+* https://www.youtube.com/watch?v=tONiXNbwSt0[Modding Fallout 3 - Part 4 : Performance & Stability (BASIC)] (26:38).
+* https://www.youtube.com/watch?v=ry-84eqDvr0[Modding Fallout 3 - Part 5 : Visual Enhancement mods] (30:00).
+* https://www.youtube.com/watch?v=Vli2y7ZDUbo[Modding Fallout 3 - Part 6 : Weapon Mod Kits (WMK) and EVE mods] (15:03).
+* https://www.youtube.com/watch?v=smLZNJIMCQA[Modding Fallout 3 - Part 7 : People Redesigned and Reanimated mods] (11:06).
+* https://www.youtube.com/watch?v=oSaJVzGmQaI[Modding Fallout 3 - Part 8 : Unified HUD Project] (11:00).
+* https://www.youtube.com/watch?v=uPK7R71zcwM[Modding Fallout 3 - Part 9 : FO3Edit] (39:13).
+* https://www.youtube.com/watch?v=fw3g_N1jcZQ[Skyrim Mod Tool TES5EDIT : Cleaning your master files (REVISED)] (13:24).
+* https://www.youtube.com/watch?v=OsstmRso_Jw[Fallout 3 mod : Advanced Recon Gear (Version 3.1)] (4:42).
+* https://www.youtube.com/watch?v=J4y4lui3l9U[Fallout 3 || Mod tutorial || Part 1: MMM, FWE & Blackened] (15:16).

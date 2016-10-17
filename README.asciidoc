@@ -1,0 +1,52 @@
+= Modding... Modding never changes
+:imagesdir: ./Images
+:experimental:
+:icons: font
+
+////
+The following block ensures that GitHub shows proper icons in admonition blocks.
+@see http://blog.jdriven.com/2016/06/awesome-asciidoctor-using-admonition-icons-github/
+////
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
+== Description
+
+This is a thorough guide about fixing and enhancing _Fallout 3 Game of the Year Edition_, that is, _Fallout 3_ and all its DLCs.
+
+Indeed, there are a lot of _Fallout 3_ modding guides out there, but I would like to contribute with a functional standpoint about the way the mods are installed.
+
+[NOTE]
+====
+There are https://github.com/pcesarperez/Modding-never-changes/wiki[a number of wiki pages] to get an in-depth feeling of things related to this guide, like https://github.com/pcesarperez/Modding-never-changes/wiki/Changelog[the changelog] (in case you missed it; it was right here, in the former `README.md`) or https://github.com/pcesarperez/Modding-never-changes/wiki/Roadmap[the roadmap].
+====
+
+== Installation
+
+For now, all you have is a Asciidoc file (`Modding never changes.asciidoc`), which you can "compile" to HTML using https://asciidoctor.org[Asciidoctor] (more on that in the future). There is a certain sense of elation when you go from this.
+
+.Sublime Text workspace
+image::Sublime%20Text%20workspace.png[Sublime Text workspace]
+
+To this.
+
+.HTML version of the book
+image::HTML%20version%20of%20the%20book.png[HTML version of the book]
+
+As you can see, I am using the awesome https://www.sublimetext.com[Sublime Text] with the https://packagecontrol.io/packages/Asciidoctor[Asciidoctor] package to provide syntax highlighting.
+
+== Credits
+
+This insanity is the sole mind derailment of Pablo César Pérez González, aka *pcesarperez*. You may have heard of me in dark echoing chambers by the nickname of *adastra*. Blessed you, then.
+
+You can contact me regarding this guide through the Gmail address `modding.never.changes`.
+
+== License
+
+This guide is subject to a https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution Share Alike 4.0]. Visit the link to read a human-readable summary or load the `LICENSE.txt` file in this repository.
