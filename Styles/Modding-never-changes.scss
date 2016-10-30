@@ -1,0 +1,128 @@
+// Modding-never-changes.scss
+//
+// Explicit customizations for the _Modding never changes_ theme.
+
+
+@import "settings/Modding-never-changes";
+@import "components/asciidoc";
+@import "components/awesome-icons";
+
+
+//
+// Body.
+//
+
+body {
+	font-family: $body_base_font;
+	background: $whitetail;
+}
+
+
+//
+// Document header.
+//
+
+.details {
+	visibility: hidden;
+}
+
+body {
+	background: url(../Images/Fallout%203%20header.jpg) no-repeat;
+	background-size: 100%;
+}
+
+#header h1 {
+	font-size: 3em;
+	padding-top: 6em;
+	padding-bottom: 8em;
+	text-align: center;
+}
+
+#header h1::first-letter {
+	font-size: 4em;
+}
+
+#header h1:first-child {
+	color: $sensible_hue;
+}
+
+
+//
+// Table of contents.
+//
+
+#toc {
+	border-bottom: 0;
+}
+
+
+//
+// Headings.
+//
+
+h1, h2, h3, h4 {
+	font-family: $headings_font;
+}
+
+h2 {
+	background-color: $sensible_hue;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	padding-left: 0.5em;
+	padding-top: 0.8em;
+	padding-right: 0.5em;
+	padding-bottom: 3em;
+}
+
+h2::first-letter {
+	font-size: 4em;
+}
+
+h3 {
+	margin-top: 2em;
+	border-bottom: 2px solid $sensible_hue;
+}
+
+
+//
+// Lists.
+//
+
+ul {
+	margin-left: 2em;
+}
+
+ol {
+	margin-left: 2em;
+}
+
+
+//
+// Images.
+//
+
+.imageblock {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2em;
+	background-color: #B6B5AB;
+	border-radius: 1em;
+}
+
+.imageblock .title {
+	font-size: .8em;
+	padding-top: 1em;
+	font-style: italic;
+	color: #454B40;
+	border-bottom: 1px solid #454B40;
+}
+
+
+//
+// Misc adjustments.
+//
+
+// Getting rid of the separator between sections.
+.sect1 + .sect1 {
+	border-top: 0;
+}

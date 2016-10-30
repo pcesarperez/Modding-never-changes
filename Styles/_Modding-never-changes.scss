@@ -1,0 +1,42 @@
+// _Modding-never-changes.scss
+//
+// Variables that customize Foundation 4 and the AsciiDoc CSS components for the _Modding never changes_ theme.
+
+
+@import "defaults";
+
+
+//
+// Font set.
+//
+// Font "Lora", by Cyreal.
+// Font "321 Impact", by Kenny Redman.
+//
+// @see https://fonts.google.com/specimen/Lora
+// @see http://www.fontspace.com/kenny-redman/321-impact
+//
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@font-face {
+	font-family: 'Fallout';
+	src: url(../Fonts/321impact.ttf);
+}
+
+//
+// Base palette colors.
+// Created using a custom ColorSnap palette with a classic Fallout 3 wallpaper.
+//
+// @see http://snapyourcolors.com/Chip/wiYPie
+//
+$tricorn_black: #2F2F30;
+$whitetail: #F4EFE4;
+$foxhall_green: #454B40;
+$gauntlet_gray: #78736E;
+$sensible_hue: #B6B5AB;
+
+
+//
+// Font variables.
+//
+$headings_font: 'Fallout';
+$body_base_font: 'Lora', serif;
