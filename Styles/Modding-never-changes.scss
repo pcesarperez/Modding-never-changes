@@ -51,8 +51,13 @@ body {
 // Table of contents.
 //
 
+// Getting rid of the separator after the TOC.
 #toc {
 	border-bottom: 0;
+}
+
+#toctitle {
+	font-size: 2.5em;
 }
 
 
@@ -85,19 +90,6 @@ h3 {
 
 
 //
-// Lists.
-//
-
-ul {
-	margin-left: 2em;
-}
-
-ol {
-	margin-left: 2em;
-}
-
-
-//
 // Images.
 //
 
@@ -117,6 +109,18 @@ ol {
 	border-bottom: 1px solid #454B40;
 }
 
+
+//
+// Info notes.
+//
+
+.note {
+	border: 1px solid $sensible_hue;
+	border-radius: 1em;
+	padding: 0;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
 
 //
 // Misc adjustments.

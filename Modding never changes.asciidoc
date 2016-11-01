@@ -253,13 +253,13 @@ image::LOOT%20after%20sorting.png[LOOT after sorting]
 
 This should be your load order by now:
 
-* (0) `Fallout 3.esm`
-* (1) `Anchorage.esm`
-* (2) `ThePitt.esm`
-* (3) `BrokenSteel.esm`
-* (4) `PointLookout.esm`
-* (5) `Zeta.esm`
-* (6) `Unofficial Fallout 3 Patch.esm`
+* `Fallout 3.esm`
+* `Anchorage.esm`
+* `ThePitt.esm`
+* `BrokenSteel.esm`
+* `PointLookout.esm`
+* `Zeta.esm`
+* `Unofficial Fallout 3 Patch.esm`
 
 You might be surprised to check that there are inconsistencies in the main DLC files, like `Anchorage.esm` (master file for _Operation Anchorage_ DLC). As we said, Bethesda is not known for releasing solid, fully tested programs. We'll address that later.
 
