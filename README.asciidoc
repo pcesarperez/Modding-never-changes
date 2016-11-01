@@ -1,5 +1,5 @@
 = Modding... Modding never changes
-:imagesdir: ./Images
+:imagesdir: ./images
 :experimental:
 :icons: font
 
