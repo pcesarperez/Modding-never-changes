@@ -8,8 +8,8 @@ v0.6, 30/10/2016
 :toclevels: 4
 :sectlinks:
 :experimental:
-:imagesdir: ./Images
-:stylesdir: ./Styles
+:imagesdir: ./images
+:stylesdir: ./styles
 
 ////
 The following block ensures that GitHub shows proper icons in admonition blocks.
