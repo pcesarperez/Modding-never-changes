@@ -1,6 +1,6 @@
 = Modding\... Modding never changes
 Pablo César Pérez González (aka "adastra") <modding.never.changes@gmail.com>
-v0.61, 01/11/2016
+v0.7-beta, 02/11/2016
 :stylesheet: Modding-never-changes.css
 :icons: font
 :linkcss:
@@ -87,7 +87,7 @@ Data files are bound by load order, whereas assets are bound by installation ord
 
 This is, if you install mod "A" with a certain asset "foo", and later you install mod "B" with an equally named asset "foo", "B" version of "foo" will overwrite "A" version of "foo", for good. This makes critical to know the installation order, because if you want to get back to an earlier state of the game, you will have to uninstall the mods _in the reverse order you installed them_.
 
-NMM does a good job tracking the changes to the game assets as you install new mods, but rollbacks are difficult to perform and error prone (that's why I had to start over again so many times during the writing of this guide). And that's the reason why following a functional approach is somewhat mode difficult with NMM, because sometimes you want to install mod "A" before mod "B", because it makes sense to you, but you *don't* want "B" assets to overwrite "A" assets. Don't worry, that's something I have to deal with, not you.
+NMM does a good job tracking the changes to the game assets as you install new mods, but rollbacks are difficult to perform and error prone (that's why I had to start over again so many times during the writing of this guide). And that's the reason why following a functional approach is somewhat more difficult with NMM, because sometimes you want to install mod "A" before mod "B", because it makes sense to you, but you *don't* want "B" assets to overwrite "A" assets. Don't worry, that's something I have to deal with, not you.
 
 Without further ado, let's start modding our beloved _Fallout 3_.
 

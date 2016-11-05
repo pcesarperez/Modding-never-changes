@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Script to build the HTML5 output for "Modding Never Changes, vol. 1".
+
+ASCIIDOCTOR_STYLESHEET_FACTORY_DIR=~/Dropbox/Documents/Articles/asciidoctor-stylesheet-factory-master
+SASS_SOURCE_FILES_DIR=src/main/docs/sass
+STYLES_RESOURCES_DIR=src/main/resources/styles
+OUTPUT_DIR=build
+
+# Step 1: Copies the SASS source files to the AsciiDoctor Style Sheet Factory folder.
+cp $SASS_SOURCE_FILES_DIR/_Modding-never-changes.scss $ASCIIDOCTOR_STYLESHEET_FACTORY_DIR/sass/settings
+cp $SASS_SOURCE_FILES_DIR/Modding-never-changes.scss $ASCIIDOCTOR_STYLESHEET_FACTORY_DIR/sass
+
+# Step 2: Compiles the SASS sources into the CSS output.
+pushd $ASCIIDOCTOR_STYLESHEET_FACTORY_DIR
+compass compile
+
+# Step 3: Copies back the CSS generated file into the resources folder.
+popd
+cp $ASCIIDOCTOR_STYLESHEET_FACTORY_DIR/stylesheets/Modding-never-changes.css $STYLES_RESOURCES_DIR
+
+# Step 4: Cleans the output files created in a previous compilation.
+mvn clean
+
+# Step 4: Invoke Maven to build the HTML5 output.
+mvn
+
+# Step 5: Renames the HTML file to `index.html`.
+mv "$OUTPUT_DIR/Modding never changes.html" $OUTPUT_DIR/index.html
