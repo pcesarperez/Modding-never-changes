@@ -24,12 +24,12 @@ Indeed, there are a lot of _Fallout 3_ modding guides out there, but I would lik
 
 [NOTE]
 ====
-There are https://github.com/pcesarperez/Modding-never-changes/wiki[a number of wiki pages] to get an in-depth feeling of things related to this guide, like https://github.com/pcesarperez/Modding-never-changes/wiki/Changelog[the changelog] (in case you missed it; it was right here, in the former `README.md`) or https://github.com/pcesarperez/Modding-never-changes/wiki/Roadmap[the roadmap].
+There are https://github.com/pcesarperez/Modding-never-changes/wiki[a number of wiki pages] to get an in-depth feeling of things related to this guide, like https://github.com/pcesarperez/Modding-never-changes/wiki/Changelog[the changelog] (in case you missed it; it was right here, in the former `README.md`) or https://github.com/pcesarperez/Modding-never-changes/wiki/Roadmap[the roadmap]. You can even https://github.com/pcesarperez/Modding-never-changes/wiki/How-to-compile-the-book[build the guide for yourself].
 ====
 
 == Installation
 
-For now, all you have is a Asciidoc file (`Modding never changes.asciidoc`), which you can "compile" to HTML using https://asciidoctor.org[Asciidoctor] (more on that in the future). There is a certain sense of elation when you go from this.
+For now, all you have is a Asciidoc file (`Modding never changes.asciidoc`), which you can "compile" to HTML using https://asciidoctor.org[Asciidoctor]. There is a certain sense of elation when you go from this.
 
 .Sublime Text workspace
 image::Sublime%20Text%20workspace.png[Sublime Text workspace]

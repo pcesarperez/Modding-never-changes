@@ -1,6 +1,6 @@
 = Modding\... Modding never changes
-Pablo César Pérez González (aka "adastra") <modding.never.changes@gmail.com>
-v0.7-beta, 02/11/2016
+Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
+v0.8-beta, 02/11/2016
 :stylesheet: Modding-never-changes.css
 :icons: font
 :linkcss:
@@ -8,11 +8,12 @@ v0.7-beta, 02/11/2016
 :toclevels: 4
 :sectlinks:
 :experimental:
-:imagesdir: ./images
 :stylesdir: ./styles
 
 ////
 The following block ensures that GitHub shows proper icons in admonition blocks.
+It also points the images path to the repo, instead of using the build.
+
 @see http://blog.jdriven.com/2016/06/awesome-asciidoctor-using-admonition-icons-github/
 ////
 ifdef::env-github[]
@@ -21,11 +22,46 @@ ifdef::env-github[]
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
+
+:imagesdir: ./src/main/resources/images
+endif::[]
+
+////
+If we are *NOT* on GitHub, the images path points to the final product path.
+////
+ifndef::env-github[]
+:imagesdir: ./images
 endif::[]
 
 
 
 
+== Metacrap
+
+No guide would be complete without legal stuff and whatnot. I'll be brief. I promise.
+
+**What?**::
+A modding guide for _Fallout 3 Game of the Year Edition_. This is version *{revnumber}*.
+
+**Who?**::
+Pablo César Pérez González, aka pcesarperez, aka adastra, reachable through mailto:modding.never.changes@gmail.com[modding.never.changes].
+
+**When?**::
+The details are blurred in my mind. Don't ask.
+
+**Where?**::
+Mostly at home, with astonishing views to the distant mountains. That helps. A lot.
+
+**Why?**::
+Just because.
+
+This guide is subject to a https://creativecommons.org/licenses/by-sa/4.0/[image:https://i.creativecommons.org/l/by-sa/4.0/80x15.png[Creative Commons License] Creative Commons Attribution Share Alike 4.0]. I have used several additional resources, like:
+
+* Font https://fonts.google.com/specimen/Lora[Lora], by Cyreal, used in the document body.
+* Font https://fonts.google.com/specimen/Ubuntu+Mono[Ubuntu Mono], by Dalton Maag, used in monospaced texts.
+* Font http://www.fontspace.com/kenny-redman/321-impact[321 Impact], by Kenny Redman, used in the document headings.
+
+Finally, you will find the source for this book in https://github.com/pcesarperez/Modding-never-changes[its GitHub repo]. You can even https://github.com/pcesarperez/Modding-never-changes/issues[create an issue] if you think there is something I should improve in the guide (and trust me, there is a shitload of room to improve).
 
 
 
