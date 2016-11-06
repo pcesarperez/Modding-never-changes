@@ -23,7 +23,7 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 
-:imagesdir: ./src/main/resources/images
+:imagesdir: ../resources/images
 endif::[]
 
 ////
