@@ -1,6 +1,6 @@
 = Modding\... Modding never changes
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.81-beta, 02/11/2016
+v0.82-beta, 02/11/2016
 :stylesheet: Modding-never-changes.css
 :icons: font
 :linkcss:
@@ -8,6 +8,7 @@ v0.81-beta, 02/11/2016
 :toclevels: 4
 :sectlinks:
 :experimental:
+:docinfo:
 :stylesdir: ./styles
 
 ////
@@ -61,6 +62,7 @@ This guide is subject to a https://creativecommons.org/licenses/by-sa/4.0/[image
 * Font https://fonts.google.com/specimen/Lora[Lora], by Cyreal, used in the document body.
 * Font https://fonts.google.com/specimen/Ubuntu+Mono[Ubuntu Mono], by Dalton Maag, used in monospaced texts.
 * Font http://www.fontspace.com/kenny-redman/321-impact[321 Impact], by Kenny Redman, used in the document headings.
+* http://snapyourcolors.com/Chip/wiYPie[Custom palette] created with ColorSnap.
 
 Finally, you will find the source for this book in https://github.com/pcesarperez/Modding-never-changes[its GitHub repo]. You can even https://github.com/pcesarperez/Modding-never-changes/issues[create an issue] if you think there is something I should improve in the guide (and trust me, there is a shitload of room to improve).
 
@@ -1185,7 +1187,7 @@ image::NMM%20FWE%20installing.png[NMM FWE installing]
 image::NMM%20FWE%20installed.png[NMM FWE installed]
 . Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
 . Double click on _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ and answer _Yes to all_ when asked to overwrite files.
-. Due to the install order we are following (functional, instead of technical), the two user interface patches we have just activated make a little mess of the HUD. To correct that, I have created a small patch of my own (_Modding never changes DUIF3-FWE patch_) with the merged files. Download the patch, add it to NMM and activate it, overwriting files when needed.
+. Due to the install order we are following (functional, instead of technical), the two user interface patches we have just activated make a little mess of the HUD. To correct that, I have created a small patch of my own (link:patches/Modding%20never%20changes%20DUIF3-FWE%20patch.zip[_Modding never changes DUIF3-FWE patch_]) with the merged files. Download the patch, add it to NMM and activate it, overwriting files when needed.
 . A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files.
 . LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in <<Cleaning up the master files, the chapter about cleaning up the master files>>. To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
 * `Fallout3.esm`
