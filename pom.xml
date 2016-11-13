@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	POM file for "Modding never changes", vol. 1.
+-->
 <project
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,7 +11,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.moddingneverchanges</groupId>
 	<artifactId>modding-never-changes-vol-1</artifactId>
-	<version>0.82-beta</version>
+	<version>0.91</version>
 	<name>Modding Never Changes, vol. 1</name>
 	<description>A modding guide for _Fallout 3_ using Nexus Mod Manager.</description>
 
@@ -17,35 +21,33 @@
 	</properties>
 
 	<build>
-		<defaultGoal>process-resources</defaultGoal>
+		<defaultGoal>compile</defaultGoal>
 
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.6</version>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.0.0</version>
 
 				<executions>
 					<execution>
-						<id>copy-asciidoc-resources</id>
-						<phase>generate-resources</phase>
+						<id>auto-clean</id>
+						<phase>initialize</phase>
 
 						<goals>
-							<goal>copy-resources</goal>
+							<goal>clean</goal>
 						</goals>
 
 						<configuration>
-							<resources>
-								<resource>
-									<directory>src/main/resources</directory>
+							<filesets>
+								<fileset>
+									<directory>build/</directory>
+								</fileset>
 
-									<includes>
-										<include>**/**</include>
-									</includes>
-								</resource>
-							</resources>
-
-							<outputDirectory>build/</outputDirectory>
+								<fileset>
+									<directory>target/</directory>
+								</fileset>
+							</filesets>
 						</configuration>
 					</execution>
 				</executions>
@@ -60,7 +62,6 @@
 				<configuration>
 					<sourceDirectory>src/main/docs/</sourceDirectory>
 					<resourceDirectory>src/main/resources/</resourceDirectory>
-					<outputDirectory>build/</outputDirectory>
 
 					<attributes>
 						<endpoint-url>https://pcesarperez.github.io/modding-never-changes</endpoint-url>
@@ -83,6 +84,32 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.0.0</version>
+
+				<executions>
+					<execution>
+						<phase>compile</phase>
+
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+
+				<configuration>
+					<finalName>modding-never-changes</finalName>
+					<outputDirectory>build/</outputDirectory>
+
+					<descriptors>
+						<descriptor>src/main/assembly/assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Assembly file for "Modding never changes", vol. 1.
+-->
+<assembly>
+	<id>${project.version}</id>
+
+	<formats>
+		<format>zip</format>
+	</formats>
+
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+	<files>
+		<file>
+			<source>${project.build.directory}/generated-docs/Modding never changes.html</source>
+			<destName>index.html</destName>
+		</file>
+	</files>
+
+	<fileSets>
+		<fileSet>
+			<directory>${project.build.directory}/classes</directory>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
