@@ -1,6 +1,6 @@
 = Modding\... Modding never changes
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.82-beta, 02/11/2016
+v0.9, 13/11/2016
 :stylesheet: Modding-never-changes.css
 :icons: font
 :linkcss:
@@ -145,6 +145,7 @@ At the end of this section, you will have a version of _Fallout 3 Game of the Ye
 * Has a clean set of data files, including a merged patch to further ensure compatibility among them.
 * Creates saved games automatically and frequently, so that you always have means to recover from a disaster.
 * Has a better performance by getting rid of zillions of unused objects (like tiny rocks) which plague the game.
+* Has a saved game just before leaving Vault 101, so that you won't have to repeat the initial story in every new playthrough.
 
 
 
@@ -714,6 +715,30 @@ That's it. We have removed a lot of unused objects from the game. It's difficult
 
 
 
+=== Punxsutawney Phil is not alive anymore
+
+One of the most annoying things I have to suffer every time I start a new playthrough is the introductory part of the game, in Vault 101.
+
+The introductory chapter has its charm the first time you play it, and even the second time, if you ask me. But from the second time onwards, it gets as close as could be to a post-apocalyptic version of the Groundhog Day.
+
+If you follow this guide long enough to install _Fallout Wanderers Edition_ (why shouldn't you?), you will have several different alternate starts for your character, but I have never liked them. I _like_ to be the lone wanderer, abruptly egressed from the dictatorial confinement of Vault 101. What I _don't like_ is repeating all the initial steps over and over again each time I want to start a new game.
+
+If you are worried about this, like me, fear not! I am offering you the perfect groundhog killer: link:saves/FO3-before-leaving-vault-101.zip[a saved game right before leaving Vault 101].
+
+When you open the door to the Wasteland, a menu will appear, offering you the possibility to change every aspect of your character: name, race, gender, S.P.E.C.I.A.L. attributes and skills, so you can customize the Generic Hero included in the saved game to fit your needs and dark desires.
+
+.The Lone Wanderer right before leaving Vault 101
+image::Fallout%203%20right%20before%20leaving%20Vault%20101.png[The Lone Wanderer right before leaving Vault 101]
+
+If you want to use the saved game, just copy the file `FO3-before-leaving-vault-101.zip` to the folder `[%USERPROFILE%\Documents\My Games\Fallout3\Saves]` and unzip it, removing the ZIP file after. Then just run the game and load the saved game, which should run fine as long as you have the mods in this chapter installed.
+
+.Customizable saved game
+image::Fallout%203%20customizable%20saved%20game.png[Customizable saved game]
+
+
+
+
+
 
 == Enhancing the game
 
@@ -1141,18 +1166,19 @@ The title of this chapter means "through hardships to the stars", in Latin, and 
 
 The list of changes made by FWE is so long and their implications so deep that you'd better read the mod page to get a glimpse of that. The bottom line is: you will be playing a harsher, more challenging version of the game.
 
-We will be needing five files:
+We will be needing six files:
 
-* _FWE Master Release 6-0 - Part 1._
-* _FWE Master Release 6-0 - Part 2._
-* _FWE 6-03a HOTFIX PATCH._
-* _DarnUI Support for FWE 6-02_
-* _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_
+* _FWE Master Release 6-0 - Part 1_ (from http://www.nexusmods.com/fallout3/mods/2761/[_FWE_]).
+* _FWE Master Release 6-0 - Part 2_ (from http://www.nexusmods.com/fallout3/mods/2761/[_FWE_]).
+* _FWE 6-03a HOTFIX PATCH_ (from http://www.nexusmods.com/fallout3/mods/2761/[_FWE_]).
+* _DarnUI Support for FWE 6-02_ (from http://www.nexusmods.com/fallout3/mods/2761/[_FWE_]).
+* _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ (from http://www.nexusmods.com/fallout3/mods/15790/[_iHUD_]).
+* _UUF3P - FWE Compatibility Patch_ (from http://www.nexusmods.com/fallout3/mods/19122/[_Unofficial Fallout 3 Patch_]).
 
-The last one can be downloaded from http://www.nexusmods.com/fallout3/mods/15790/[the iHUD page].
+Let's start!
 
 . Download the three FWE files (http://www.nexusmods.com/fallout3/download/74872[_FWE 6-03a HOTFIX PATCH_], http://www.nexusmods.com/fallout3/download/74031[_FWE Master Release 6-0 - Part 1_] and http://www.nexusmods.com/fallout3/download/74033[_FWE Master Release 6-0 - Part 2_]) _manually_, not with NMM, in a location of your choice.
-. Download the two remaining files with NMM, but _do not activate them_.
+. Download the three remaining files with NMM, but _do not activate them_.
 . Create a folder in a location of your choice, say `[%FWE_FULL%]`.
 . Unzip the file `FWE Master Release 6-0 - Part 1-2761.7z` in a location of your choice (say `[%FWE_PART_1%]`), using http://www.7-zip.org/[7-Zip], for example.
 . Unzip the file `FWE Master Release 6-0 - Part 2-2761.7z` in a location of your choice (say `[%FWE_PART_2%]`).
@@ -1187,6 +1213,7 @@ image::NMM%20FWE%20installing.png[NMM FWE installing]
 image::NMM%20FWE%20installed.png[NMM FWE installed]
 . Double click on _FWE - FO3 Wanderers Edition - DarnUI Support for FWE 6-02_ and answer _Yes to all_ when asked to overwrite files.
 . Double click on _Immersive HUD - iHUD - Immersive HUD - Darnified FWE Patch_ and answer _Yes to all_ when asked to overwrite files.
+. Double click on _UPDATED Unofficial Fallout 3 Patch - UUF3P - FWE Compatibility Patch_ and answer _Yew to all_ when asked to overwrite files.
 . Due to the install order we are following (functional, instead of technical), the two user interface patches we have just activated make a little mess of the HUD. To correct that, I have created a small patch of my own (link:patches/Modding%20never%20changes%20DUIF3-FWE%20patch.zip[_Modding never changes DUIF3-FWE patch_]) with the merged files. Download the patch, add it to NMM and activate it, overwriting files when needed.
 . A number of files has been installed, so we need to rearrange our load order. Fire up LOOT and sort the files.
 . LOOT warns you that certain files are somewhat dirty, so a cleaning with FO3Edit is in order. Just clean the files following the same steps we did in <<Cleaning up the master files, the chapter about cleaning up the master files>>. To clean each file, select just this file in FO3Edit and let the tool select the set of files it depends on. For example, if you select `FO3 Wanderers Edition - Main File.esm`, the following files will be loaded altogether:
